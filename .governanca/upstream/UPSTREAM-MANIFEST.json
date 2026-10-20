@@ -6,7 +6,7 @@
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Espelho inicial criado manualmente para preparar a adoção. Os documentos canónicos foram referenciados por URL, mas ainda não foram copiados/sincronizados pelo mecanismo automático. O espelho não prova conformidade nem operação.",
+  "note": "Espelho inicial criado manualmente para preparar a adoção. Os documentos canónicos estão referenciados por URL, mas ainda não foram copiados/sincronizados pelo mecanismo automático. O espelho não prova conformidade nem operação.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
