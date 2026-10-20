@@ -123,11 +123,12 @@
       }
     ]
   },
-  "next_milestone": "Rever o resultado do CI do bootstrap e concluir a revisão formal da adoção; depois validar inventário WATCHDOG e propagação upstream.",
+  "next_milestone": "Ativar proteção da branch main com revisão e verificações obrigatórias, concluir a revisão formal da adoção e depois validar o WATCHDOG e a propagação upstream.",
   "blockers": [
     "Adoção formal da governança local ainda não aprovada.",
+    "Proteção da branch main desativada na verificação atual (protected=false; protection.enabled=false); regras de revisão e verificações obrigatórias ainda precisam ser configuradas.",
     "Espelho canónico inicial e parcial; manter source_commit e proveniência rastreáveis e completar a cobertura de published_roots.",
-    "CI do bootstrap executado com sucesso no escopo implementado; revisão/aceitação integral e operação WATCHDOG local ainda pendentes."
+    "CI do bootstrap executado com sucesso no escopo implementado; revisão/aceitação integral, operação WATCHDOG e propagação upstream de ponta a ponta ainda pendentes."
   ],
   "review_note": "Registo inicial conservador. Todos os critérios permanecem com zero pontos porque este registo ainda não foi validado e aceite formalmente de ponta a ponta. O CI valida apenas os controlos implementados no workflow; a criação de documentos e a aprovação isolada do CI não equivalem a conclusão comprovada.",
   "evidence": [],
