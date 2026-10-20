@@ -6,7 +6,7 @@
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Espelho inicial criado manualmente para preparar a adoção. Os documentos canónicos estão referenciados por URL, mas ainda não foram copiados/sincronizados pelo mecanismo automático. O espelho não prova conformidade nem operação.",
+  "note": "Espelho inicial criado manualmente para preparar a adoção. Os ficheiros canónicos estão referenciados por URL, mas este commit ainda não contém uma cópia completa dos documentos upstream. A sincronização automática não foi executada nem comprovada. O manifesto não prova conformidade nem operação.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
