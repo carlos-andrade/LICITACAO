@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "systems": [
+    {
+      "id": "LICITACAO-REPO",
+      "name": "Repositório GitHub LICITACAO",
+      "owner": "PENDENTE — nomeação formal necessária",
+      "criticality": "high",
+      "checks": [
+        {
+          "id": "LIC-WD-001",
+          "name": "README principal presente",
+          "type": "file_exists",
+          "path": "README.md",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "A existência deve ser verificada por workflow; a declaração não substitui execução."
+        },
+        {
+          "id": "LIC-WD-002",
+          "name": "Carta e roadmap locais presentes",
+          "type": "file_exists",
+          "path": "ROADMAP-PADRAO-GOVERNANCA.md",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Confirmar conjunto completo e links locais."
+        },
+        {
+          "id": "LIC-WD-003",
+          "name": "Registo de status canónico válido",
+          "type": "json_valid",
+          "path": "registry/status-do-projeto.json",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Executar validador e confirmar soma de pontos/evidências."
+        },
+        {
+          "id": "LIC-WD-004",
+          "name": "Validação automatizada em CI",
+          "type": "workflow_success",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Nenhuma execução bem-sucedida foi confirmada nesta preparação."
+        },
+        {
+          "id": "LIC-WD-005",
+          "name": "Segredos ausentes do Git",
+          "type": "secret_scan",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Exige ferramenta de verificação e resultado arquivado."
+        },
+        {
+          "id": "LIC-WD-006",
+          "name": "Branch main protegida por regras",
+          "type": "branch_protection",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Não presumir proteção; consultar e configurar regras no GitHub."
+        },
+        {
+          "id": "LIC-WD-007",
+          "name": "Supervisão externa independente",
+          "type": "external_monitor",
+          "required": true,
+          "status": "UNKNOWN",
+          "notes": "Não implementada nesta fase; exige integração e teste próprio."
+        }
+      ]
+    }
+  ]
+}
