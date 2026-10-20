@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="190" viewBox="0 0 900 190" role="img" aria-labelledby="title desc">
+  <title id="title">Estado provisório de governança do projeto LICITACAO</title>
+  <desc id="desc">Status documental em revisão. Zero pontos estão atribuídos no scorecard inicial, pendente de validação.</desc>
+  <rect width="900" height="190" rx="14" fill="#f8fafc"/>
+  <text x="30" y="38" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#0f172a">LICITACAO — Governança</text>
+  <text x="30" y="66" font-family="Arial, sans-serif" font-size="14" fill="#475569">Estado: EM_REVISAO · Fase: Início · 2026-10-20</text>
+  <rect x="30" y="88" width="840" height="18" rx="9" fill="#e2e8f0"/>
+  <text x="30" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#0f172a">0 pontos comprovados</text>
+  <text x="220" y="130" font-family="Arial, sans-serif" font-size="14" fill="#475569">Scorecard inicial ainda não validado por CI.</text>
+  <text x="30" y="160" font-family="Arial, sans-serif" font-size="12" fill="#64748b">Próximo marco: validar documentação, scorecard, WATCHDOG e CI.</text>
+</svg>
