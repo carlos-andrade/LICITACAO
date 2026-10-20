@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "source_repository": "carlos-andrade/GOVERNANCA",
+  "source_branch": "main",
+  "source_commit": "CURRENT_MAIN_COMMIT_NOT_RESOLVED",
+  "destination_root": ".governanca/upstream",
+  "distribution_policy": "pull_request_only",
+  "adoption_status": "EM_REVISAO",
+  "note": "Inicialização manual do espelho para preparar a adoção. Substituir source_commit pelo SHA exato da origem no ato da sincronização automatizada. O espelho não prova conformidade nem ativação operacional.",
+  "canonical_references": [
+    {
+      "source_path": "CONSTITUICAO.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md"
+    },
+    {
+      "source_path": "ROADMAP-PADRAO-GOVERNANCA.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md"
+    },
+    {
+      "source_path": "CARTA-CONTRATO-PADRAO-ROADMAP.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md"
+    },
+    {
+      "source_path": "standards/status-e-percentual-de-conclusao.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/standards/status-e-percentual-de-conclusao.md"
+    },
+    {
+      "source_path": "CABEÇALHO/NORMA-CABECALHO-PADRAO.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/CABE%C3%87ALHO/NORMA-CABECALHO-PADRAO.md"
+    },
+    {
+      "source_path": "WATCHDOG/README.md",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/WATCHDOG/README.md"
+    },
+    {
+      "source_path": "WATCHDOG/registry/controlos-obrigatorios.json",
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/main/WATCHDOG/registry/controlos-obrigatorios.json"
+    }
+  ],
+  "blocking_conditions": [
+    "Adoção documental inspecionada localmente",
+    "Roadmap e painel de status com evidências",
+    "Checklist WATCHDOG local executada",
+    "Fluxo de distribuição autenticado e validado com PR real, caso a distribuição automática seja ativada"
+  ]
+}
