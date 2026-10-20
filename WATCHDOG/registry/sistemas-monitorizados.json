@@ -40,7 +40,7 @@
           "type": "workflow_success",
           "required": true,
           "status": "PASS",
-          "notes": "Execução 39449489411 concluída com sucesso no commit 965d1a2993e49cd5b0ae7a4dacca84226bb2e379; PASS limitado às verificações definidas pelo workflow, não à adoção integral."
+          "notes": "Execução 39512218234 concluída com sucesso no commit 7c236b33212d310a3787398a328104b59ffc86d0; PASS limitado às verificações definidas pelo workflow, não à adoção integral."
         },
         {
           "id": "LIC-WD-005",
@@ -52,11 +52,11 @@
         },
         {
           "id": "LIC-WD-006",
-          "name": "Branch main protegida por regras",
+          "name": "Branch principal protegida por ruleset",
           "type": "branch_protection",
           "required": true,
-          "status": "FAIL",
-          "notes": "Verificação da API do GitHub em 2026-10-20: protected=false e protection.enabled=false para main. Ativar regras de proteção, revisão e CI obrigatória e repetir a verificação."
+          "status": "PASS",
+          "notes": "Verificação da API do GitHub em 2026-10-21: ruleset protect-main (ID 25512579) com enforcement=active, alvo ~DEFAULT_BRANCH, revisão obrigatória (1 aprovação), resolução de conversas e required_status_checks context=validate. Evidência: https://github.com/carlos-andrade/LICITACAO/rules/25512579. O check deve executar em cada PR; o estado PASS confirma a configuração do ruleset."
         },
         {
           "id": "LIC-WD-007",
@@ -68,5 +68,6 @@
         }
       ]
     }
-  ]
+  ],
+  "note": "Atualização de 2026-10-21. Não converter UNKNOWN em PASS sem execução verificável. O estado PASS de LIC-WD-006 comprova configuração do ruleset, não a adoção integral da GOVERNANCA nem aprovação do Gate G0."
 }
