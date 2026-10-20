@@ -42,7 +42,7 @@ Esta inspeção prepara a adoção no LICITACAO; não é certificação de confo
 | Constituição/carta/roadmap | PENDENTE | Rever cabeçalhos, links e aprovar formalmente |
 | Scorecard canónico | PENDENTE | Executar testes de esquema, pesos e evidências |
 | WATCHDOG local | UNKNOWN | Executar validador e rever sistema/controlos declarados |
-| CI executada com sucesso | UNKNOWN | Confirmar resultado do workflow após push/PR |
+| CI do bootstrap executada com sucesso | PASS (escopo do workflow) | Execução [39449489411](https://github.com/carlos-andrade/LICITACAO/actions/runs/39449489411), commit `965d1a2993e49cd5b0ae7a4dacca84226bb2e379`; não certifica adoção ou conformidade integral |
 | Proteção de branch | UNKNOWN | Verificar/configurar regras no GitHub |
 | Supervisão externa independente | UNKNOWN | Ainda não implementada; exige integração e teste |
 | Propagação automática da GOVERNANCA | BLOQUEADO/UNKNOWN | O mestre registou falha anterior de autenticação do token; revalidar secret sem o expor |
@@ -50,7 +50,7 @@ Esta inspeção prepara a adoção no LICITACAO; não é certificação de confo
 
 ## Decisão
 
-**Não declarar a governança ativada/concluída neste momento.** O pacote local está em preparação. Para completar a adoção: validar todos os ficheiros, obter uma execução CI bem-sucedida, configurar revisão/proteção conforme as permissões disponíveis, inspecionar WATCHDOG e obter aprovação formal.
+**Não declarar a governança ativada/concluída neste momento.** O pacote local está em preparação. Para completar a adoção: concluir a revisão dos ficheiros, obter aprovação formal, confirmar/configurar revisão e proteção conforme as permissões disponíveis, inspecionar e testar WATCHDOG e validar a propagação upstream de ponta a ponta.
 
 ## Limite da inspeção
 
