@@ -123,13 +123,13 @@
       }
     ]
   },
-  "next_milestone": "Rever os documentos locais e confirmar a adoção; depois validar inventário WATCHDOG e CI.",
+  "next_milestone": "Rever o resultado do CI do bootstrap e concluir a revisão formal da adoção; depois validar inventário WATCHDOG e propagação upstream.",
   "blockers": [
     "Adoção formal da governança local ainda não aprovada.",
-    "Espelho canónico inicial; source_commit deve ser fixado pela sincronização autenticada.",
-    "Validação automatizada e operação WATCHDOG local ainda não foram executadas e aceites."
+    "Espelho canónico inicial e parcial; manter source_commit e proveniência rastreáveis e completar a cobertura de published_roots.",
+    "CI do bootstrap executado com sucesso no escopo implementado; revisão/aceitação integral e operação WATCHDOG local ainda pendentes."
   ],
-  "review_note": "Registo inicial conservador. Todos os critérios permanecem com zero pontos porque este registo ainda não foi validado por testes e revisão formal. A criação de documentos não equivale a conclusão comprovada.",
+  "review_note": "Registo inicial conservador. Todos os critérios permanecem com zero pontos porque este registo ainda não foi validado e aceite formalmente de ponta a ponta. O CI valida apenas os controlos implementados no workflow; a criação de documentos e a aprovação isolada do CI não equivalem a conclusão comprovada.",
   "evidence": [],
   "closure_checks": {
     "acceptance_validated": false,
