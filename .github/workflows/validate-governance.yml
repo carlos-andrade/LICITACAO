@@ -1,0 +1,92 @@
+name: Validate LICITACAO governance bootstrap
+
+on:
+  push:
+    branches: [main, "chore/**"]
+    paths:
+      - "README.md"
+      - "CONSTITUICAO.md"
+      - "CARTA-CONTRATO-PADRAO-ROADMAP.md"
+      - "ROADMAP-PADRAO-GOVERNANCA.md"
+      - "registry/**"
+      - "WATCHDOG/registry/**"
+      - "docs/governanca/**"
+      - ".governanca/upstream/**"
+      - "assets/status-dashboard.svg"
+      - ".github/workflows/validate-governance.yml"
+  pull_request:
+    paths:
+      - "README.md"
+      - "CONSTITUICAO.md"
+      - "CARTA-CONTRATO-PADRAO-ROADMAP.md"
+      - "ROADMAP-PADRAO-GOVERNANCA.md"
+      - "registry/**"
+      - "WATCHDOG/registry/**"
+      - "docs/governanca/**"
+      - ".governanca/upstream/**"
+      - "assets/status-dashboard.svg"
+      - ".github/workflows/validate-governance.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-licitacao-governance-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Validate JSON registries
+        run: |
+          python -m json.tool registry/status-do-projeto.json >/dev/null
+          python -m json.tool WATCHDOG/registry/sistemas-monitorizados.json >/dev/null
+          python -m json.tool WATCHDOG/registry/controlos-obrigatorios.json >/dev/null
+          python -m json.tool .governanca/upstream/UPSTREAM-MANIFEST.json >/dev/null
+      - name: Check status scorecard invariants
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("registry/status-do-projeto.json").read_text(encoding="utf-8"))
+          expected = {"inicio": 20, "meio": 60, "fim": 20}
+          assert d["schema_version"] == 2
+          assert set(d["criteria"]) == set(expected)
+          for phase, maximum in expected.items():
+              criteria = d["criteria"][phase]
+              assert sum(c["max_points"] for c in criteria) == maximum, phase
+              assert sum(c["earned_points"] for c in criteria) == d["points"][phase], phase
+              for c in criteria:
+                  assert 0 <= c["earned_points"] <= c["max_points"], c["id"]
+                  assert c["earned_points"] == 0 or c["evidence"], c["id"]
+          total = sum(d["points"].values())
+          assert 0 <= total <= 100
+          if total == 100:
+              assert all(d["closure_checks"].values())
+          print(f"Scorecard válido: {total}/100 pontos atribuídos.")
+          PY
+      - name: Check critical governance links and markers
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          readme = Path("README.md").read_text(encoding="utf-8")
+          required = [
+              "CONSTITUICAO.md",
+              "CARTA-CONTRATO-PADRAO-ROADMAP.md",
+              "ROADMAP-PADRAO-GOVERNANCA.md",
+              "registry/status-do-projeto.json",
+              "docs/governanca/INSPECAO-DE-ADOCAO.md",
+              "WATCHDOG/README.md",
+          ]
+          missing = [p for p in required if p not in readme]
+          assert not missing, f"Faltam referências no README: {missing}"
+          svg = Path("assets/status-dashboard.svg").read_text(encoding="utf-8")
+          assert "<svg" in svg and "</svg>" in svg
+          print("Referências essenciais e SVG encontrados.")
+          PY
