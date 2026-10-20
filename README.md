@@ -56,7 +56,7 @@ O registo canónico é `registry/status-do-projeto.json`. O percentual deve ser 
 
 ## Limitações atuais
 
-Ainda não há aplicação de negócio implementada. A CI, a segurança, a proteção da branch, o WATCHDOG e a sincronização upstream permanecem pendentes de execução, inspeção e evidência. Não guardar credenciais, dados pessoais desnecessários ou informação comercial confidencial no repositório público.
+Ainda não há aplicação de negócio implementada. O workflow de validação do bootstrap executou com sucesso no commit `965d1a2993e49cd5b0ae7a4dacca84226bb2e379` ([execução](https://github.com/carlos-andrade/LICITACAO/actions/runs/39449489411)); esse resultado cobre apenas as verificações implementadas no workflow e não equivale à aprovação formal da adoção. Segurança operacional, WATCHDOG e sincronização upstream continuam pendentes de verificação e evidência. Na leitura atual da API do GitHub, a branch `main` está sem proteção (`protected=false`; `protection.enabled=false`) e ainda precisa de regras obrigatórias de revisão e verificações. Não guardar credenciais, dados pessoais desnecessários ou informação comercial confidencial no repositório público.
 
 ## Próximo marco
 

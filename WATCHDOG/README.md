@@ -34,7 +34,7 @@ Ausência de dados ou de execução nunca equivale a PASS. Remediação automát
 
 ## Sistemas a monitorizar
 
-Consultar [registry/sistemas-monitorizados.json](registry/sistemas-monitorizados.json) e [registry/controlos-obrigatorios.json](registry/controlos-obrigatorios.json). Owners funcionais permanecem pendentes até nomeação. Verificações externas e supervisão independente permanecem UNKNOWN até implementação e teste.
+Consultar [registry/sistemas-monitorizados.json](registry/sistemas-monitorizados.json) e [registry/controlos-obrigatorios.json](registry/controlos-obrigatorios.json). Owners funcionais permanecem pendentes até nomeação. Verificações externas e supervisão independente permanecem UNKNOWN até implementação e teste. A verificação atual da API do GitHub reporta a branch `main` sem proteção (`protected=false`; `protection.enabled=false`); o controlo correspondente está em `FAIL` até serem ativadas e verificadas regras de proteção, revisão e CI obrigatória.
 
 ## Critério de adoção operacional
 

@@ -39,8 +39,8 @@
           "name": "Validação automatizada em CI",
           "type": "workflow_success",
           "required": true,
-          "status": "UNKNOWN",
-          "notes": "Nenhuma execução bem-sucedida confirmada nesta preparação."
+          "status": "PASS",
+          "notes": "Execução 39449489411 concluída com sucesso no commit 965d1a2993e49cd5b0ae7a4dacca84226bb2e379; PASS limitado às verificações definidas pelo workflow, não à adoção integral."
         },
         {
           "id": "LIC-WD-005",
@@ -55,8 +55,8 @@
           "name": "Branch main protegida por regras",
           "type": "branch_protection",
           "required": true,
-          "status": "UNKNOWN",
-          "notes": "Não presumir proteção; consultar e configurar regras no GitHub."
+          "status": "FAIL",
+          "notes": "Verificação da API do GitHub em 2026-10-20: protected=false e protection.enabled=false para main. Ativar regras de proteção, revisão e CI obrigatória e repetir a verificação."
         },
         {
           "id": "LIC-WD-007",
