@@ -1,0 +1,141 @@
+{
+  "schema_version": 2,
+  "project": "LICITACAO",
+  "status": "Em início",
+  "updated_at": "2026-10-20",
+  "last_reviewed_at": "2026-10-20",
+  "phase": "inicio",
+  "points": {
+    "inicio": 0,
+    "meio": 0,
+    "fim": 0
+  },
+  "criteria": {
+    "inicio": [
+      {
+        "id": "INI-01",
+        "label": "Objetivo e problema definidos",
+        "max_points": 5,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "INI-02",
+        "label": "Responsável e partes interessadas identificados",
+        "max_points": 3,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "INI-03",
+        "label": "Escopo e exclusões registados",
+        "max_points": 4,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "INI-04",
+        "label": "Riscos e dependências iniciais avaliados",
+        "max_points": 4,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "INI-05",
+        "label": "Critérios de aceitação e plano aprovados",
+        "max_points": 4,
+        "earned_points": 0,
+        "evidence": []
+      }
+    ],
+    "meio": [
+      {
+        "id": "MEI-01",
+        "label": "Entregáveis executados contra o plano",
+        "max_points": 30,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "MEI-02",
+        "label": "Requisitos e decisões rastreáveis",
+        "max_points": 10,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "MEI-03",
+        "label": "Testes/revisões proporcionais ao risco",
+        "max_points": 10,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "MEI-04",
+        "label": "Documentação e evidências atualizadas",
+        "max_points": 5,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "MEI-05",
+        "label": "Desvios e riscos tratados ou formalmente aceites",
+        "max_points": 5,
+        "earned_points": 0,
+        "evidence": []
+      }
+    ],
+    "fim": [
+      {
+        "id": "FIM-01",
+        "label": "Critérios de aceitação demonstrados",
+        "max_points": 8,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "FIM-02",
+        "label": "Validação e revisão final aprovadas",
+        "max_points": 4,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "FIM-03",
+        "label": "Entrega/publicação e operação confirmadas",
+        "max_points": 3,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "FIM-04",
+        "label": "Documentação e transferência de conhecimento concluídas",
+        "max_points": 2,
+        "earned_points": 0,
+        "evidence": []
+      },
+      {
+        "id": "FIM-05",
+        "label": "Aprovação de encerramento e lições aprendidas registadas",
+        "max_points": 3,
+        "earned_points": 0,
+        "evidence": []
+      }
+    ]
+  },
+  "next_milestone": "Rever os documentos locais e confirmar a adoção; depois validar inventário WATCHDOG e CI.",
+  "blockers": [
+    "Adoção formal da governança local ainda não aprovada.",
+    "Espelho canónico inicial; source_commit deve ser fixado pela sincronização autenticada.",
+    "Validação automatizada e operação WATCHDOG local ainda não foram executadas e aceites."
+  ],
+  "review_note": "Registo inicial conservador. Todos os critérios permanecem com zero pontos porque este registo ainda não foi validado por testes e revisão formal. A criação de documentos não equivale a conclusão comprovada.",
+  "evidence": [],
+  "closure_checks": {
+    "acceptance_validated": false,
+    "final_review_approved": false,
+    "delivery_confirmed": false,
+    "knowledge_transfer_done": false,
+    "closure_approved": false
+  }
+}
