@@ -2,11 +2,11 @@
   "schema_version": 1,
   "source_repository": "carlos-andrade/GOVERNANCA",
   "source_branch": "main",
-  "source_commit": "CURRENT_MAIN_COMMIT_NOT_RESOLVED",
+  "source_commit": "bf6d33e173356802bf921da299c22b2a9baaa8e1",
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Inicialização manual do espelho para preparar a adoção. Substituir source_commit pelo SHA exato da origem no ato da sincronização automatizada. O espelho não prova conformidade nem ativação operacional.",
+  "note": "Espelho inicial criado manualmente para preparar a adoção. Os documentos canónicos foram referenciados por URL, mas ainda não foram copiados/sincronizados pelo mecanismo automático. O espelho não prova conformidade nem operação.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
