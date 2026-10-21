@@ -6,7 +6,7 @@
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Distribuição normativa completa proposta por Pull Request. Foram incluídos 79 ficheiros de texto dos published_roots do registo-mestre, diretamente referenciados pelos Git blob SHA da origem no commit 4da3029356e446ecbc6303124fc8019ee188450b. A revisão, o merge e a validação pós-merge continuam obrigatórios. Esta distribuição não aprova por si só o Gate G0 nem ativa o projeto.",
+  "note": "Distribuição normativa completa proposta por Pull Request. Foram incluídos 79 ficheiros de texto dos published_roots do registo-mestre, diretamente referenciados pelos Git blob SHA da origem no commit 4da3029356e446ecbc6303124fc8019ee188450b. A checklist documental WATCHDOG foi executada e registada, mas os controlos operacionais sem evidência permanecem UNKNOWN. O estado só pode ser atualizado após revisão independente, merge, checks verdes e confirmação pós-merge. Esta distribuição não ativa por si só o projeto.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
@@ -24,9 +24,9 @@
   "blocking_conditions": [
     "Aprovação formal individual da adoção e do Gate G0",
     "Revisão local do roadmap, scorecard e inspeção de adoção",
-    "Execução e registo da checklist WATCHDOG, sem converter UNKNOWN em PASS",
     "Merge da distribuição por Pull Request e validação pós-merge dos conteúdos/checks",
-    "Aprovação de ativação no registo-mestre da GOVERNANCA"
+    "Aprovação de ativação no registo-mestre da GOVERNANCA",
+    "Controlos WATCHDOG em UNKNOWN permanecem limitações operacionais; não declarar WATCHDOG operacional sem evidência."
   ],
   "mirrored_files": [
     {
