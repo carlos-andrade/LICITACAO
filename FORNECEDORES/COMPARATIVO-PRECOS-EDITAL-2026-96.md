@@ -1,0 +1,54 @@
+# Comparativo de preços — Edital UFRB 2026/96
+
+> **Status: preliminar, sem cotações recebidas.** Valores de fornecedores não foram inventados. A estimativa de R$ 10.072,00 consta apenas em fonte secundária e precisa ser confirmada no PNCP/aviso oficial. Não há itens, quantidades, unidades ou preços unitários oficiais confirmados nesta ficha.
+
+- **Órgão:** Universidade Federal do Recôncavo da Bahia (UFRB)
+- **Identificador PNCP:** 07777800000162-1-000096/2026
+- **Objeto descrito por fonte secundária:** aquisição de fita isolante para manutenção corretiva dos circuitos elétricos dos campi da UFRB.
+- **Local indicado:** Cruz das Almas/BA
+- **Fonte oficial a conferir:** https://pncp.gov.br/app/editais/07777800000162/2026/96
+- **Ficha do edital neste repositório:** [EDITAIS/2026-96-UFRB.md](../EDITAIS/2026-96-UFRB.md)
+- **Cadastro de fornecedores:** [FORNECEDORES/EDITAL-2026-96-UFRB.md](./EDITAL-2026-96-UFRB.md)
+
+## 1. Tabela comparativa
+
+| Referência | Preço total informado | Preço unitário | Frete para Cruz das Almas/BA | Prazo de entrega | Estado da evidência |
+|---|---:|---:|---|---|---|
+| Estimativa da licitação (fonte secundária) | R$ 10.072,00 | Não disponível | Não confirmado | Não confirmado | Confirmar no edital/PNCP; não usar como preço-alvo antes de obter a planilha oficial |
+| Elétrica Bahiana | Não cotado | Não cotado | A consultar | A consultar | Lead comercial; ainda não contactado pelo projeto |
+| Eletrobahia | Não cotado | Não cotado | A consultar | A consultar | Lead comercial; ainda não contactado pelo projeto |
+| Forte Materiais Elétricos | Não cotado | Não cotado | A consultar | A consultar | Lead comercial; ainda não contactado pelo projeto |
+| Revolux Elétrica | Não cotado | Não cotado | A consultar | A consultar | Lead comercial; ainda não contactado pelo projeto |
+| Elétrica Israel | Não cotado | Não cotado | A consultar | A consultar | Lead comercial; ainda não contactado pelo projeto |
+| Steck / canal autorizado de revenda | Não cotado | Não cotado | A consultar com revendedor | A consultar | Fabricante/canal potencial; identificar revendedor e pedir cotação |
+
+## 2. Leitura atual
+
+- **Não é possível apontar o fornecedor mais barato**: não foram recebidas propostas comerciais.
+- **Não é possível calcular economia ou margem**: faltam preços unitários oficiais, quantidades, tributos, frete e condições de fornecimento.
+- **R$ 10.072,00 é somente o valor total divulgado por fonte secundária**, não um preço unitário nem necessariamente o limite aplicável a cada item.
+- Antes de solicitar propostas comparáveis, obter o aviso e o Termo de Referência e confirmar descrição exata, marca/referência quando aplicável, especificações, unidade, quantidades, local e prazo de entrega.
+
+## 3. Modelo para preencher quando as cotações chegarem
+
+| Fornecedor | Marca/modelo e conformidade | Quantidade/unidade | Preço unitário | Subtotal | Frete/tributos adicionais | Total entregue | Validade da proposta |
+|---|---|---:|---:|---:|---:|---:|---|
+| Elétrica Bahiana | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+| Eletrobahia | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+| Forte Materiais Elétricos | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+| Revolux Elétrica | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+| Elétrica Israel | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+| Steck / revendedor autorizado | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente | Pendente |
+
+**Regra de comparação:** comparar somente propostas para a mesma especificação, unidade e quantidade. Calcular o custo total entregue com tributos e frete incluídos, registrar a validade da cotação e documentar qualquer diferença técnica. Não selecionar fornecedor apenas pelo menor preço nominal se a proposta não atender ao edital.
+
+## 4. Próximas ações
+
+1. Confirmar no PNCP o edital, o Termo de Referência, a tabela oficial de itens e eventuais retificações.
+2. Enviar o mesmo pedido de cotação aos seis contatos comerciais, com as especificações oficiais anexadas.
+3. Registrar as propostas recebidas e as evidências de conformidade; verificar habilitação separadamente.
+4. Atualizar esta tabela somente com valores documentados e datados.
+
+## 5. Histórico
+
+- 2026-10-21 — criada tabela comparativa preliminar; nenhuma cotação recebida.

@@ -40,6 +40,15 @@ Antes da estrutura funcional, o projeto adota como referência a GOVERNANCA. A d
 - [WATCHDOG local](WATCHDOG/README.md)
 - [Espelho das referências canónicas](.governanca/upstream/UPSTREAM-MANIFEST.json)
 
+## Hierarquia de fontes para licitações
+
+**Fonte oficial primária:** [Portal Nacional de Contratações Públicas (PNCP)](https://pncp.gov.br/). Para identificar e validar editais, avisos, documentos da contratação, retificações, datas, itens, quantidades, valores de referência e situação do procedimento, consultar primeiro o PNCP e os documentos oficiais nele disponibilizados.
+
+- Registrar o link do registo específico e, quando disponíveis, os documentos oficiais originais e suas datas de consulta.
+- Usar fontes secundárias apenas como pistas de pesquisa ou apoio; identificá-las expressamente como secundárias e confirmar os dados relevantes no PNCP antes de decidir ou agir.
+- Se o PNCP estiver indisponível, incompleto ou não expuser um anexo, registrar a limitação e buscar a plataforma oficial de contratação indicada no instrumento. Não preencher lacunas com suposições nem tratar dados secundários como confirmação oficial.
+- Para cada edital, preservar rastreabilidade entre os dados analisados e o registo/documentos oficiais correspondentes.
+
 ## Direção comercial preliminar
 
 - **Jurisdição:** Brasil.
