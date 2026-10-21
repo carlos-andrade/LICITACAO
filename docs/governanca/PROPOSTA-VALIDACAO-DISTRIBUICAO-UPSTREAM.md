@@ -8,7 +8,7 @@
 | **Tipo documental** | RELATORIO_DE_VALIDACAO |
 | **Fase** | Adoção de governança — distribuição upstream |
 | **Estado** | EM_REVISAO |
-| **Versão** | 0.1.0 |
+| **Versão** | 0.2.0 |
 | **Data de atualização** | 2026-10-21 |
 | **Responsável** | Pendente de confirmação formal |
 | **Aprovador** | Pendente |
@@ -21,9 +21,15 @@ Registar uma proposta de atualização do snapshot de normas GOVERNANCA no LICIT
 
 ## Evidência de comparação
 
-A referência de origem foi atualizada para o commit `4da3029356e446ecbc6303124fc8019ee188450b`. Foram consultados os nove ficheiros enumerados em `.governanca/upstream/UPSTREAM-MANIFEST.json`; os Git blob SHA da origem coincidem com os hashes já registados para os respetivos ficheiros espelhados.
+A referência de origem foi atualizada para o commit `4da3029356e446ecbc6303124fc8019ee188450b`. A PR [#23](https://github.com/carlos-andrade/LICITACAO/pull/23) distribui 79 ficheiros de texto abrangidos pelos `published_roots` do registo-mestre. A comparação pré-PR da árvore Git confirmou 79/79 Git blob SHA coincidentes entre origem e destino proposto, sem divergências.
 
-Esta comparação demonstra que os nove ficheiros listados correspondem aos blobs consultados na origem. **Não demonstra distribuição integral** de todos os ficheiros abrangidos por `published_roots`, execução de workflow de distribuição, nem aceitação operacional ponta a ponta.
+A comparação demonstra igualdade de conteúdo para todos os 79 ficheiros incluídos na PR. A validação operacional final exige check `validate` concluído com sucesso, merge da PR, comparação pós-merge e execução documentada da checklist WATCHDOG.
+
+## Estado da PR de distribuição
+
+- PR: [#23 — distribuição integral dos documentos normativos publicados](https://github.com/carlos-andrade/LICITACAO/pull/23).
+- Check obrigatório `validate`: em fila na última verificação; ainda sem conclusão.
+- Estado da distribuição: submetida a revisão; não considerar concluída até merge e validação pós-merge.
 
 ## Conteúdo da proposta
 

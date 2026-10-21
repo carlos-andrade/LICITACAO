@@ -22,10 +22,10 @@
 ## Painel executivo
 
 - **Objetivo:** preparar uma base governada para o futuro sistema de inteligência comercial e apoio ao fornecimento em contratações públicas brasileiras.
-- **Estado:** EM_REVISAO — adoção e estruturação ainda não concluídas.
+- **Estado:** EM_REVISAO — G0 aprovado para entrada/planeamento; adoção individual e ativação ainda pendentes.
 - **Fase atual:** Início / adoção de governança.
 - **Percentual comprovado:** 0% até existir um scorecard validado; não confundir criação de ficheiros com controlo aceite.
-- **Próximo marco:** completar inspeção de conformidade local, validar registos de status e WATCHDOG e executar testes verificáveis.
+- **Próximo marco:** integrar e validar a distribuição upstream completa (PR #23), executar a checklist WATCHDOG e obter aprovação formal da adoção individual antes de alterar enabled.
 - **Bloqueios:** a distribuição automática da GOVERNANCA depende de credencial válida e operação comprovada; o repositório mestre documenta falha de autenticação anterior. Não afirmar sincronização automática ativa.
 - **Riscos principais:** adoção meramente documental; regras upstream desatualizadas; exposição indevida de informação comercial; preços calculados com custos incompletos; dependência de fontes externas; falta de cobertura de testes.
 - **Evidência central:** [GOVERNANCA — Carta/Contrato](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md), [Roadmap padrão](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md), [Constituição](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md).

@@ -8,7 +8,7 @@
 | **Tipo documental** | RELATORIO_DE_INSPECAO |
 | **Fase** | Adoção de governança — revalidação |
 | **Estado** | EM_REVISAO |
-| **Versão** | 0.2.0 |
+| **Versão** | 0.3.0 |
 | **Data de atualização** | 2026-10-21 |
 | **Responsável** | Pendente de nomeação formal no registo do projeto |
 | **Aprovador** | Pendente |
@@ -19,7 +19,7 @@
 
 A revalidação confirma que o ruleset protect-main está ativo na branch predefinida e exige o check de estado validate. A execução de CI conhecida terminou com sucesso no commit de referência. Estes factos corrigem a inspeção anterior, que refletia o estado anterior à ativação do ruleset.
 
-**Resultado global: EM_REVISAO; Gate G0 não aprovado.** A existência de proteção técnica e CI verde não prova adoção integral nem satisfaz, por si só, os critérios de entrada do projeto. Não iniciar estrutura funcional enquanto G0 não tiver evidência suficiente e aprovação explícita.
+**Resultado global: EM_REVISAO; Gate G0 aprovado para entrada/planeamento.** A adoção global continua pendente da revisão e integração da distribuição documental completa (PR #23), dos checks pós-merge e do registo da checklist WATCHDOG. A proteção técnica e CI verde não provam adoção integral. A avaliação G0 foi atualizada em `docs/governanca/GATE-G0-AVALIACAO.md`; a autorização para ativar o repositório continua condicionada à validação da distribuição e dos controlos locais.
 
 ## Evidências verificadas
 
@@ -71,3 +71,12 @@ O registo de avaliação está em [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md). 
 |---|---|---|---|
 | 0.1.0 | 2026-10-20 | Inspeção inicial, com proteção da branch ainda não ativada | Commit de referência anterior |
 | 0.2.0 | 2026-10-21 | Ruleset e check obrigatório revalidados; Gate G0 formalizado como bloqueado até haver evidência e aprovação | [Ruleset](https://github.com/carlos-andrade/LICITACAO/rules/25512579), [CI](https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234) |
+
+## Revalidação complementar — 2026-10-21
+
+- G0: aprovado para entrada/planeamento com problema, resultado mensurável, beneficiários, papéis, escopo, exclusões, riscos e critérios documentados na avaliação atualizada.
+- Distribuição upstream: [PR #23](https://github.com/carlos-andrade/LICITACAO/pull/23) contém 79 ficheiros de texto dos diretórios publicados; comparação pré-PR confirmou 79/79 Git blob SHA coincidentes. O check obrigatório `validate` está atualmente em fila, pelo que não há ainda resultado CI final nem validação pós-merge.
+- WATCHDOG: controlos obrigatórios locais permanecem `UNKNOWN`; a checklist de adoção operacional ainda precisa de execução e evidência. Não declarar WATCHDOG operacional.
+- Registo-mestre: `LICITACAO.enabled=false` deve ser preservado até a distribuição ser integrada e validada e a adoção individual receber aprovação formal.
+
+- Checklist WATCHDOG executada documentalmente: [CHECKLIST-WATCHDOG-ADOPCAO.md](CHECKLIST-WATCHDOG-ADOPCAO.md). Resultado: 1 controlo PASS por evidência direta e 7 UNKNOWN; WATCHDOG não operacional.

@@ -6,7 +6,7 @@
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Espelho parcial, versionado e manual das normas canónicas essenciais da GOVERNANCA no commit source_commit. Em 2026-10-21, os nove ficheiros espelhados listados abaixo foram comparados com a origem e os Git blob SHA coincidem. Isto não comprova distribuição integral de todos os published_roots nem validação operacional ponta a ponta. A política é PR-only e a adoção permanece EM_REVISAO.",
+  "note": "Distribuição normativa completa proposta por Pull Request. Foram incluídos 79 ficheiros de texto dos published_roots do registo-mestre, diretamente referenciados pelos Git blob SHA da origem no commit 4da3029356e446ecbc6303124fc8019ee188450b. A checklist documental WATCHDOG foi executada e registada, mas os controlos operacionais sem evidência permanecem UNKNOWN. O estado só pode ser atualizado após revisão independente, merge, checks verdes e confirmação pós-merge. Esta distribuição não ativa por si só o projeto.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
@@ -19,75 +19,489 @@
     {
       "source_path": "CARTA-CONTRATO-PADRAO-ROADMAP.md",
       "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/CARTA-CONTRATO-PADRAO-ROADMAP.md"
-    },
-    {
-      "source_path": "standards/status-e-percentual-de-conclusao.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/standards/status-e-percentual-de-conclusao.md"
-    },
-    {
-      "source_path": "CABEÇALHO/NORMA-CABECALHO-PADRAO.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/CABE%C3%87ALHO/NORMA-CABECALHO-PADRAO.md"
-    },
-    {
-      "source_path": "WATCHDOG/README.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/WATCHDOG/README.md"
-    },
-    {
-      "source_path": "WATCHDOG/registry/controlos-obrigatorios.json",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/WATCHDOG/registry/controlos-obrigatorios.json"
     }
   ],
   "blocking_conditions": [
-    "Adoção documental inspecionada localmente",
-    "Roadmap e painel de status com evidências",
-    "Checklist WATCHDOG local executada",
-    "Fluxo de distribuição autenticado e validado com PR real, caso a distribuição automática seja ativada"
+    "Aprovação formal individual da adoção e do Gate G0",
+    "Revisão local do roadmap, scorecard e inspeção de adoção",
+    "Merge da distribuição por Pull Request e validação pós-merge dos conteúdos/checks",
+    "Aprovação de ativação no registo-mestre da GOVERNANCA",
+    "Controlos WATCHDOG em UNKNOWN permanecem limitações operacionais; não declarar WATCHDOG operacional sem evidência."
   ],
   "mirrored_files": [
     {
-      "source_path": "CONSTITUICAO.md",
-      "destination_path": ".governanca/upstream/CONSTITUICAO.md",
-      "source_git_blob_sha": "1340aac210fc8f429b5902df79210fd78ae8ba22"
+      "source_path": "CABEÇALHO/CHECKLIST-VALIDACAO.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/CHECKLIST-VALIDACAO.md",
+      "source_git_blob_sha": "61efbb8e39b84dae1069083a81fa0fd42b44edf1",
+      "destination_git_blob_sha": "61efbb8e39b84dae1069083a81fa0fd42b44edf1"
     },
     {
-      "source_path": "ROADMAP-PADRAO-GOVERNANCA.md",
-      "destination_path": ".governanca/upstream/ROADMAP-PADRAO-GOVERNANCA.md",
-      "source_git_blob_sha": "13f1de3372997c11391b8f2fcd2ec8c6335290d7"
+      "source_path": "CABEÇALHO/CLASSIFICACAO-PRE-NORMALIZACAO.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/CLASSIFICACAO-PRE-NORMALIZACAO.md",
+      "source_git_blob_sha": "3a620130430b14fc734874b4ebf4f4b9c1daac91",
+      "destination_git_blob_sha": "3a620130430b14fc734874b4ebf4f4b9c1daac91"
     },
     {
-      "source_path": "CARTA-CONTRATO-PADRAO-ROADMAP.md",
-      "destination_path": ".governanca/upstream/CARTA-CONTRATO-PADRAO-ROADMAP.md",
-      "source_git_blob_sha": "26b4e4f9ad7e237510f5fba7226a5cee3565ac92"
+      "source_path": "CABEÇALHO/HISTORICO.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/HISTORICO.md",
+      "source_git_blob_sha": "de89b26cd7570e83bda645792d35e88e4f8d7369",
+      "destination_git_blob_sha": "de89b26cd7570e83bda645792d35e88e4f8d7369"
     },
     {
-      "source_path": "standards/status-e-percentual-de-conclusao.md",
-      "destination_path": ".governanca/upstream/standards/status-e-percentual-de-conclusao.md",
-      "source_git_blob_sha": "106b65a0e45a4b83794fa1491e9819e75f0e2f5c"
+      "source_path": "CABEÇALHO/INVENTARIO-DOCUMENTAL.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/INVENTARIO-DOCUMENTAL.md",
+      "source_git_blob_sha": "70f97321cb8eaf0fe0bd86620fa55a8329e91540",
+      "destination_git_blob_sha": "70f97321cb8eaf0fe0bd86620fa55a8329e91540"
+    },
+    {
+      "source_path": "CABEÇALHO/INVENTARIO-REPOSITORIOS-ABRANGIDOS.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/INVENTARIO-REPOSITORIOS-ABRANGIDOS.md",
+      "source_git_blob_sha": "e80d44f26c666113694d1ece1408eb4dc2a3ac2c",
+      "destination_git_blob_sha": "e80d44f26c666113694d1ece1408eb4dc2a3ac2c"
+    },
+    {
+      "source_path": "CABEÇALHO/MODELO-CABECALHO.yml",
+      "destination_path": ".governanca/upstream/CABEÇALHO/MODELO-CABECALHO.yml",
+      "source_git_blob_sha": "af99642388816c3b4c38f998f83a445a9a7f2cb6",
+      "destination_git_blob_sha": "af99642388816c3b4c38f998f83a445a9a7f2cb6"
+    },
+    {
+      "source_path": "CABEÇALHO/MODELO-DOCUMENTO.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/MODELO-DOCUMENTO.md",
+      "source_git_blob_sha": "3b096a115e4086cfb37b7635a4bdcc7e44b5ea5a",
+      "destination_git_blob_sha": "3b096a115e4086cfb37b7635a4bdcc7e44b5ea5a"
     },
     {
       "source_path": "CABEÇALHO/NORMA-CABECALHO-PADRAO.md",
       "destination_path": ".governanca/upstream/CABEÇALHO/NORMA-CABECALHO-PADRAO.md",
-      "source_git_blob_sha": "1e28e4e943731483ce23940e7ee523b1d4b06915"
+      "source_git_blob_sha": "1e28e4e943731483ce23940e7ee523b1d4b06915",
+      "destination_git_blob_sha": "1e28e4e943731483ce23940e7ee523b1d4b06915"
     },
     {
-      "source_path": "templates/projeto/status-do-projeto.md",
-      "destination_path": ".governanca/upstream/templates/projeto/status-do-projeto.md",
-      "source_git_blob_sha": "25e8c26fcc45cd9751d153dcd91201c185e58b61"
+      "source_path": "CABEÇALHO/PLANO-LOTES-NORMALIZACAO.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/PLANO-LOTES-NORMALIZACAO.md",
+      "source_git_blob_sha": "f2c41824a86ebe92342641b9369dd48674113857",
+      "destination_git_blob_sha": "f2c41824a86ebe92342641b9369dd48674113857"
+    },
+    {
+      "source_path": "CABEÇALHO/README.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/README.md",
+      "source_git_blob_sha": "cf49c7876a56df63494031f2a19a6511d6559393",
+      "destination_git_blob_sha": "cf49c7876a56df63494031f2a19a6511d6559393"
+    },
+    {
+      "source_path": "CABEÇALHO/REGISTO-APROVACAO-NORMA-1.0.3.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/REGISTO-APROVACAO-NORMA-1.0.3.md",
+      "source_git_blob_sha": "3e4ad15caa928c01eae795d06c440521a9623196",
+      "destination_git_blob_sha": "3e4ad15caa928c01eae795d06c440521a9623196"
+    },
+    {
+      "source_path": "CABEÇALHO/REGISTO-TIPOS-DOCUMENTAIS.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/REGISTO-TIPOS-DOCUMENTAIS.md",
+      "source_git_blob_sha": "d7233491e24570ec425b016e86a86e46caf6b668",
+      "destination_git_blob_sha": "d7233491e24570ec425b016e86a86e46caf6b668"
+    },
+    {
+      "source_path": "CABEÇALHO/ROADMAP-ADOCAO-TRANSVERSAL.md",
+      "destination_path": ".governanca/upstream/CABEÇALHO/ROADMAP-ADOCAO-TRANSVERSAL.md",
+      "source_git_blob_sha": "d40ad4db0335232cda6b2517de25843c70b8c54e",
+      "destination_git_blob_sha": "d40ad4db0335232cda6b2517de25843c70b8c54e"
+    },
+    {
+      "source_path": "CARTA-CONTRATO-PADRAO-ROADMAP.md",
+      "destination_path": ".governanca/upstream/CARTA-CONTRATO-PADRAO-ROADMAP.md",
+      "source_git_blob_sha": "26b4e4f9ad7e237510f5fba7226a5cee3565ac92",
+      "destination_git_blob_sha": "26b4e4f9ad7e237510f5fba7226a5cee3565ac92"
+    },
+    {
+      "source_path": "CONSTITUICAO.md",
+      "destination_path": ".governanca/upstream/CONSTITUICAO.md",
+      "source_git_blob_sha": "1340aac210fc8f429b5902df79210fd78ae8ba22",
+      "destination_git_blob_sha": "1340aac210fc8f429b5902df79210fd78ae8ba22"
+    },
+    {
+      "source_path": "ROADMAP-PADRAO-GOVERNANCA.md",
+      "destination_path": ".governanca/upstream/ROADMAP-PADRAO-GOVERNANCA.md",
+      "source_git_blob_sha": "13f1de3372997c11391b8f2fcd2ec8c6335290d7",
+      "destination_git_blob_sha": "13f1de3372997c11391b8f2fcd2ec8c6335290d7"
+    },
+    {
+      "source_path": "WATCHDOG/CARTA-WATCHDOG.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/CARTA-WATCHDOG.md",
+      "source_git_blob_sha": "b3e80afabe26331ce420a8ddf8afc8c2bd57baf7",
+      "destination_git_blob_sha": "b3e80afabe26331ce420a8ddf8afc8c2bd57baf7"
     },
     {
       "source_path": "WATCHDOG/README.md",
       "destination_path": ".governanca/upstream/WATCHDOG/README.md",
-      "source_git_blob_sha": "97841156798f255fa3c0fea1a00942c95cc7a168"
+      "source_git_blob_sha": "97841156798f255fa3c0fea1a00942c95cc7a168",
+      "destination_git_blob_sha": "97841156798f255fa3c0fea1a00942c95cc7a168"
+    },
+    {
+      "source_path": "WATCHDOG/adapters/aplicacoes/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/adapters/aplicacoes/README.md",
+      "source_git_blob_sha": "efb4d193e5051b09c0450dcdd4addb68ef7461d8",
+      "destination_git_blob_sha": "efb4d193e5051b09c0450dcdd4addb68ef7461d8"
+    },
+    {
+      "source_path": "WATCHDOG/adapters/dados/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/adapters/dados/README.md",
+      "source_git_blob_sha": "3bdb57f64f0f9c19278bac7208d6e95fefe1e1da",
+      "destination_git_blob_sha": "3bdb57f64f0f9c19278bac7208d6e95fefe1e1da"
+    },
+    {
+      "source_path": "WATCHDOG/adapters/github-actions/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/adapters/github-actions/README.md",
+      "source_git_blob_sha": "a13e4e7bfce448a2e9a508fd970a7059edf938c1",
+      "destination_git_blob_sha": "a13e4e7bfce448a2e9a508fd970a7059edf938c1"
+    },
+    {
+      "source_path": "WATCHDOG/adapters/infraestrutura/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/adapters/infraestrutura/README.md",
+      "source_git_blob_sha": "fc6a286e5b43a756c99cf0743b1a2f7505924576",
+      "destination_git_blob_sha": "fc6a286e5b43a756c99cf0743b1a2f7505924576"
+    },
+    {
+      "source_path": "WATCHDOG/adapters/processos/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/adapters/processos/README.md",
+      "source_git_blob_sha": "c12b1c9f7f237e61cdb1052487faf19c2a4b3656",
+      "destination_git_blob_sha": "c12b1c9f7f237e61cdb1052487faf19c2a4b3656"
+    },
+    {
+      "source_path": "WATCHDOG/arquitetura/arquitetura-geral.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/arquitetura/arquitetura-geral.md",
+      "source_git_blob_sha": "fac733717c438b76d4605902a966b68098053cfa",
+      "destination_git_blob_sha": "fac733717c438b76d4605902a966b68098053cfa"
+    },
+    {
+      "source_path": "WATCHDOG/arquitetura/modelo-de-execucao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/arquitetura/modelo-de-execucao.md",
+      "source_git_blob_sha": "51adcbd6379e3b10f70658b0a79bf9cf346ea9b6",
+      "destination_git_blob_sha": "51adcbd6379e3b10f70658b0a79bf9cf346ea9b6"
+    },
+    {
+      "source_path": "WATCHDOG/arquitetura/modelo-de-integracao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/arquitetura/modelo-de-integracao.md",
+      "source_git_blob_sha": "c79b637f4d19b9ed7b27655551c3ea8c21afb981",
+      "destination_git_blob_sha": "c79b637f4d19b9ed7b27655551c3ea8c21afb981"
+    },
+    {
+      "source_path": "WATCHDOG/contratos/contrato-da-evidencia.json",
+      "destination_path": ".governanca/upstream/WATCHDOG/contratos/contrato-da-evidencia.json",
+      "source_git_blob_sha": "e8fb15471f9872b796f2fbd2f0ab1b65071052b1",
+      "destination_git_blob_sha": "e8fb15471f9872b796f2fbd2f0ab1b65071052b1"
+    },
+    {
+      "source_path": "WATCHDOG/contratos/contrato-do-alerta.json",
+      "destination_path": ".governanca/upstream/WATCHDOG/contratos/contrato-do-alerta.json",
+      "source_git_blob_sha": "d48a5eca33698dc0c826c4b80c46966c485f377f",
+      "destination_git_blob_sha": "d48a5eca33698dc0c826c4b80c46966c485f377f"
+    },
+    {
+      "source_path": "WATCHDOG/contratos/contrato-do-monitor.json",
+      "destination_path": ".governanca/upstream/WATCHDOG/contratos/contrato-do-monitor.json",
+      "source_git_blob_sha": "477967b86ce03a3503317fd3a626826f56bef3e4",
+      "destination_git_blob_sha": "477967b86ce03a3503317fd3a626826f56bef3e4"
+    },
+    {
+      "source_path": "WATCHDOG/docs/configuracao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/docs/configuracao.md",
+      "source_git_blob_sha": "843adc4aa8d090d1e9ef48a6da05264bc45e9546",
+      "destination_git_blob_sha": "843adc4aa8d090d1e9ef48a6da05264bc45e9546"
+    },
+    {
+      "source_path": "WATCHDOG/docs/instalacao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/docs/instalacao.md",
+      "source_git_blob_sha": "18eb93f0b997e0394bdea0fe002d51b809dfb60b",
+      "destination_git_blob_sha": "18eb93f0b997e0394bdea0fe002d51b809dfb60b"
+    },
+    {
+      "source_path": "WATCHDOG/docs/operacao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/docs/operacao.md",
+      "source_git_blob_sha": "76e489711ec7d3d6ccc735421649b26ea927d46c",
+      "destination_git_blob_sha": "76e489711ec7d3d6ccc735421649b26ea927d46c"
+    },
+    {
+      "source_path": "WATCHDOG/normas/classificacao-de-estados.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/classificacao-de-estados.md",
+      "source_git_blob_sha": "2134f112028a02e19ce091064ac842ed9486563e",
+      "destination_git_blob_sha": "2134f112028a02e19ce091064ac842ed9486563e"
+    },
+    {
+      "source_path": "WATCHDOG/normas/evidencias-e-auditoria.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/evidencias-e-auditoria.md",
+      "source_git_blob_sha": "aa8926356f347e7297dd1d594bae95eef1ec881b",
+      "destination_git_blob_sha": "aa8926356f347e7297dd1d594bae95eef1ec881b"
+    },
+    {
+      "source_path": "WATCHDOG/normas/politica-de-monitorizacao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/politica-de-monitorizacao.md",
+      "source_git_blob_sha": "86d515e2e02384b330190af7f5e64ddc5a1ca2f8",
+      "destination_git_blob_sha": "86d515e2e02384b330190af7f5e64ddc5a1ca2f8"
+    },
+    {
+      "source_path": "WATCHDOG/normas/recuperacao-e-remediacao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/recuperacao-e-remediacao.md",
+      "source_git_blob_sha": "9cf114ad1008457ae517a717829e8b85d9a1cbfb",
+      "destination_git_blob_sha": "9cf114ad1008457ae517a717829e8b85d9a1cbfb"
+    },
+    {
+      "source_path": "WATCHDOG/normas/seguranca-e-privacidade.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/seguranca-e-privacidade.md",
+      "source_git_blob_sha": "e5c211e0450d2584063156ca7b44c2f349754fb0",
+      "destination_git_blob_sha": "e5c211e0450d2584063156ca7b44c2f349754fb0"
+    },
+    {
+      "source_path": "WATCHDOG/normas/severidade-e-escalonamento.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/normas/severidade-e-escalonamento.md",
+      "source_git_blob_sha": "80b03513e08ba123c3b72cb837b80ac1a806f16e",
+      "destination_git_blob_sha": "80b03513e08ba123c3b72cb837b80ac1a806f16e"
+    },
+    {
+      "source_path": "WATCHDOG/registry/adocao-transversal.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/registry/adocao-transversal.md",
+      "source_git_blob_sha": "c0e4536ee545cd5d980f2d77dc19b68b7f8383be",
+      "destination_git_blob_sha": "c0e4536ee545cd5d980f2d77dc19b68b7f8383be"
     },
     {
       "source_path": "WATCHDOG/registry/controlos-obrigatorios.json",
       "destination_path": ".governanca/upstream/WATCHDOG/registry/controlos-obrigatorios.json",
-      "source_git_blob_sha": "7f5422908cfabfee85cb4dc4dfc76585f45eb3d9"
+      "source_git_blob_sha": "7f5422908cfabfee85cb4dc4dfc76585f45eb3d9",
+      "destination_git_blob_sha": "7f5422908cfabfee85cb4dc4dfc76585f45eb3d9"
+    },
+    {
+      "source_path": "WATCHDOG/registry/matriz-de-cobertura.json",
+      "destination_path": ".governanca/upstream/WATCHDOG/registry/matriz-de-cobertura.json",
+      "source_git_blob_sha": "bfcd2eb583ada95c09b8cdda16e58d5e7fbcace4",
+      "destination_git_blob_sha": "bfcd2eb583ada95c09b8cdda16e58d5e7fbcace4"
     },
     {
       "source_path": "WATCHDOG/registry/sistemas-monitorizados.json",
       "destination_path": ".governanca/upstream/WATCHDOG/registry/sistemas-monitorizados.json",
-      "source_git_blob_sha": "ec050c9199e8c4f05be2cd30ae927fc1fe3d0b87"
+      "source_git_blob_sha": "ec050c9199e8c4f05be2cd30ae927fc1fe3d0b87",
+      "destination_git_blob_sha": "ec050c9199e8c4f05be2cd30ae927fc1fe3d0b87"
+    },
+    {
+      "source_path": "WATCHDOG/reports/exemplos/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/reports/exemplos/README.md",
+      "source_git_blob_sha": "7cd9e7d47760f9b392a5d13ae0945aae7cc03f82",
+      "destination_git_blob_sha": "7cd9e7d47760f9b392a5d13ae0945aae7cc03f82"
+    },
+    {
+      "source_path": "WATCHDOG/reports/modelos/relatorio-de-execucao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/reports/modelos/relatorio-de-execucao.md",
+      "source_git_blob_sha": "265fd70150add8eb0662747400487952e5e37268",
+      "destination_git_blob_sha": "265fd70150add8eb0662747400487952e5e37268"
+    },
+    {
+      "source_path": "WATCHDOG/roadmap-de-implementacao.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/roadmap-de-implementacao.md",
+      "source_git_blob_sha": "f2705bdcf28b03481bcbbcf8b2c5eb1563de0325",
+      "destination_git_blob_sha": "f2705bdcf28b03481bcbbcf8b2c5eb1563de0325"
+    },
+    {
+      "source_path": "WATCHDOG/runbooks/incidente-critico.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/runbooks/incidente-critico.md",
+      "source_git_blob_sha": "f32fe3604e7701f1b743b04cc5011dec70dff0a2",
+      "destination_git_blob_sha": "f32fe3604e7701f1b743b04cc5011dec70dff0a2"
+    },
+    {
+      "source_path": "WATCHDOG/runbooks/operacao-de-alertas-e-sla.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/runbooks/operacao-de-alertas-e-sla.md",
+      "source_git_blob_sha": "822efcb3533ade00e6da9c3c7d03d4c9708b31a9",
+      "destination_git_blob_sha": "822efcb3533ade00e6da9c3c7d03d4c9708b31a9"
+    },
+    {
+      "source_path": "WATCHDOG/tests/README.md",
+      "destination_path": ".governanca/upstream/WATCHDOG/tests/README.md",
+      "source_git_blob_sha": "34b8085affafacec6f9133bb3c075f56bc0971d4",
+      "destination_git_blob_sha": "34b8085affafacec6f9133bb3c075f56bc0971d4"
+    },
+    {
+      "source_path": "docs/00-fundamentos/modelo-operacional.md",
+      "destination_path": ".governanca/upstream/docs/00-fundamentos/modelo-operacional.md",
+      "source_git_blob_sha": "7c8b154f4483a005536dcefc2b2f35cc1f1943a0",
+      "destination_git_blob_sha": "7c8b154f4483a005536dcefc2b2f35cc1f1943a0"
+    },
+    {
+      "source_path": "docs/00-fundamentos/principios-de-adaptacao.md",
+      "destination_path": ".governanca/upstream/docs/00-fundamentos/principios-de-adaptacao.md",
+      "source_git_blob_sha": "239b74f71e1204efa55278521e8cbbd42c0c7066",
+      "destination_git_blob_sha": "239b74f71e1204efa55278521e8cbbd42c0c7066"
+    },
+    {
+      "source_path": "docs/00-fundamentos/taxonomia-e-glossario.md",
+      "destination_path": ".governanca/upstream/docs/00-fundamentos/taxonomia-e-glossario.md",
+      "source_git_blob_sha": "65453784a2b4c24abdade568c5eb6459ba4840dd",
+      "destination_git_blob_sha": "65453784a2b4c24abdade568c5eb6459ba4840dd"
+    },
+    {
+      "source_path": "docs/01-governanca/AUDITORIA-CONCORRENCIA-WORKFLOWS-42-2026-10-21.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/AUDITORIA-CONCORRENCIA-WORKFLOWS-42-2026-10-21.md",
+      "source_git_blob_sha": "b48f2043c66d9a7bc37ad0ef6f0c6b2f7e77afb3",
+      "destination_git_blob_sha": "b48f2043c66d9a7bc37ad0ef6f0c6b2f7e77afb3"
+    },
+    {
+      "source_path": "docs/01-governanca/DEC-GOV-INTEGRATION-FRAMEWORK-001.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/DEC-GOV-INTEGRATION-FRAMEWORK-001.md",
+      "source_git_blob_sha": "fe117b18308000afb27aa6a044393d99905ad5f6",
+      "destination_git_blob_sha": "fe117b18308000afb27aa6a044393d99905ad5f6"
+    },
+    {
+      "source_path": "docs/01-governanca/ESPECIFICACAO-GOVERNANCE-INTEGRATION-FRAMEWORK-001.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/ESPECIFICACAO-GOVERNANCE-INTEGRATION-FRAMEWORK-001.md",
+      "source_git_blob_sha": "53711172e991996b630eec2a76132732fdaad629",
+      "destination_git_blob_sha": "53711172e991996b630eec2a76132732fdaad629"
+    },
+    {
+      "source_path": "docs/01-governanca/EXECUCAO-CONTROLADA-DISTRIBUICAO.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/EXECUCAO-CONTROLADA-DISTRIBUICAO.md",
+      "source_git_blob_sha": "123f9b91b5c120edfea51bc0f325c7059659b393",
+      "destination_git_blob_sha": "123f9b91b5c120edfea51bc0f325c7059659b393"
+    },
+    {
+      "source_path": "docs/01-governanca/IMPLEMENTACAO-F2-GOVERNANCE-ENGINE.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/IMPLEMENTACAO-F2-GOVERNANCE-ENGINE.md",
+      "source_git_blob_sha": "e0494741beca676cc880f328e0676566642cbe5a",
+      "destination_git_blob_sha": "e0494741beca676cc880f328e0676566642cbe5a"
+    },
+    {
+      "source_path": "docs/01-governanca/MATRIZ-ADOPCAO-CONSUMIDORES-2026-10-21.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/MATRIZ-ADOPCAO-CONSUMIDORES-2026-10-21.md",
+      "source_git_blob_sha": "db44338a399b371f5113256ed162876de4977d76",
+      "destination_git_blob_sha": "db44338a399b371f5113256ed162876de4977d76"
+    },
+    {
+      "source_path": "docs/01-governanca/RELATORIO-PILOTO-F3-STOCKS.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/RELATORIO-PILOTO-F3-STOCKS.md",
+      "source_git_blob_sha": "d6ead3679c34af4d6835915725b13d8fb84e2c07",
+      "destination_git_blob_sha": "d6ead3679c34af4d6835915725b13d8fb84e2c07"
+    },
+    {
+      "source_path": "docs/01-governanca/ROADMAP-FINALIZACAO-CONTROLOS.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/ROADMAP-FINALIZACAO-CONTROLOS.md",
+      "source_git_blob_sha": "dd014d2abda4bf012afa48b5488eea3207bde5bc",
+      "destination_git_blob_sha": "dd014d2abda4bf012afa48b5488eea3207bde5bc"
+    },
+    {
+      "source_path": "docs/01-governanca/distribuicao-automatica-regras.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/distribuicao-automatica-regras.md",
+      "source_git_blob_sha": "6ae5a5fe1349dea801866108bc8e72b5bfcd4d83",
+      "destination_git_blob_sha": "6ae5a5fe1349dea801866108bc8e72b5bfcd4d83"
+    },
+    {
+      "source_path": "docs/01-governanca/papeis-e-responsabilidades.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/papeis-e-responsabilidades.md",
+      "source_git_blob_sha": "98f8f575aa5782f0f13747e69b5405a42d27558a",
+      "destination_git_blob_sha": "98f8f575aa5782f0f13747e69b5405a42d27558a"
+    },
+    {
+      "source_path": "docs/01-governanca/politica-de-conformidade-documental.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/politica-de-conformidade-documental.md",
+      "source_git_blob_sha": "86cb56452b7063b2e389142ddd4f94538c52367d",
+      "destination_git_blob_sha": "86cb56452b7063b2e389142ddd4f94538c52367d"
+    },
+    {
+      "source_path": "docs/01-governanca/politica-de-decisoes.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/politica-de-decisoes.md",
+      "source_git_blob_sha": "8983f500c83066a1ce61c65b3e6ffb3099f80386",
+      "destination_git_blob_sha": "8983f500c83066a1ce61c65b3e6ffb3099f80386"
+    },
+    {
+      "source_path": "docs/01-governanca/politica-de-excecoes.md",
+      "destination_path": ".governanca/upstream/docs/01-governanca/politica-de-excecoes.md",
+      "source_git_blob_sha": "186ffcae5bc4481b36da0b97c0dd337dc6911673",
+      "destination_git_blob_sha": "186ffcae5bc4481b36da0b97c0dd337dc6911673"
+    },
+    {
+      "source_path": "docs/02-ciclo-de-vida/ciclo-de-vida-e-gates.md",
+      "destination_path": ".governanca/upstream/docs/02-ciclo-de-vida/ciclo-de-vida-e-gates.md",
+      "source_git_blob_sha": "06ba0df7eb5c5173b4f2256041dc73686bc39fc5",
+      "destination_git_blob_sha": "06ba0df7eb5c5173b4f2256041dc73686bc39fc5"
+    },
+    {
+      "source_path": "docs/02-ciclo-de-vida/gestao-de-requisitos-e-escopo.md",
+      "destination_path": ".governanca/upstream/docs/02-ciclo-de-vida/gestao-de-requisitos-e-escopo.md",
+      "source_git_blob_sha": "65fef39ee9c189b37169ef070bb191d9455dbb2a",
+      "destination_git_blob_sha": "65fef39ee9c189b37169ef070bb191d9455dbb2a"
+    },
+    {
+      "source_path": "docs/03-portfolio-e-estrategia/priorizacao-de-portfolio.md",
+      "destination_path": ".governanca/upstream/docs/03-portfolio-e-estrategia/priorizacao-de-portfolio.md",
+      "source_git_blob_sha": "1e1288828f0a04b0607f693faf80fc9d5cbed1fa",
+      "destination_git_blob_sha": "1e1288828f0a04b0607f693faf80fc9d5cbed1fa"
+    },
+    {
+      "source_path": "docs/04-arquitetura-e-engenharia/arquitetura-e-padroes.md",
+      "destination_path": ".governanca/upstream/docs/04-arquitetura-e-engenharia/arquitetura-e-padroes.md",
+      "source_git_blob_sha": "5af3692df6e442007d0ab54cc2ba321c3bb63ec0",
+      "destination_git_blob_sha": "5af3692df6e442007d0ab54cc2ba321c3bb63ec0"
+    },
+    {
+      "source_path": "docs/04-arquitetura-e-engenharia/controle-de-versao-e-revisao.md",
+      "destination_path": ".governanca/upstream/docs/04-arquitetura-e-engenharia/controle-de-versao-e-revisao.md",
+      "source_git_blob_sha": "86419361a26e37a25a4066adcd0b0793e7fde2fe",
+      "destination_git_blob_sha": "86419361a26e37a25a4066adcd0b0793e7fde2fe"
+    },
+    {
+      "source_path": "docs/05-dados-e-ia/governanca-de-dados.md",
+      "destination_path": ".governanca/upstream/docs/05-dados-e-ia/governanca-de-dados.md",
+      "source_git_blob_sha": "0920affdf1e98dcb6816861ee5b69a5f55a73289",
+      "destination_git_blob_sha": "0920affdf1e98dcb6816861ee5b69a5f55a73289"
+    },
+    {
+      "source_path": "docs/05-dados-e-ia/qualidade-e-linhagem.md",
+      "destination_path": ".governanca/upstream/docs/05-dados-e-ia/qualidade-e-linhagem.md",
+      "source_git_blob_sha": "b976e7c96d881ccd4f23e07520bdaddf64bc82dc",
+      "destination_git_blob_sha": "b976e7c96d881ccd4f23e07520bdaddf64bc82dc"
+    },
+    {
+      "source_path": "docs/05-dados-e-ia/uso-responsavel-de-ia.md",
+      "destination_path": ".governanca/upstream/docs/05-dados-e-ia/uso-responsavel-de-ia.md",
+      "source_git_blob_sha": "578e6576afe0eaa68dcaa11d9b3cfd6ea5a8bdbc",
+      "destination_git_blob_sha": "578e6576afe0eaa68dcaa11d9b3cfd6ea5a8bdbc"
+    },
+    {
+      "source_path": "docs/06-seguranca-e-privacidade/gestao-de-risco.md",
+      "destination_path": ".governanca/upstream/docs/06-seguranca-e-privacidade/gestao-de-risco.md",
+      "source_git_blob_sha": "49ff5994b9714a0b1aa4e52a0d1971727b1519f1",
+      "destination_git_blob_sha": "49ff5994b9714a0b1aa4e52a0d1971727b1519f1"
+    },
+    {
+      "source_path": "docs/06-seguranca-e-privacidade/politica-de-seguranca.md",
+      "destination_path": ".governanca/upstream/docs/06-seguranca-e-privacidade/politica-de-seguranca.md",
+      "source_git_blob_sha": "9605224912e2f838d7587719bccda98012432949",
+      "destination_git_blob_sha": "9605224912e2f838d7587719bccda98012432949"
+    },
+    {
+      "source_path": "docs/06-seguranca-e-privacidade/privacidade-e-dados-pessoais.md",
+      "destination_path": ".governanca/upstream/docs/06-seguranca-e-privacidade/privacidade-e-dados-pessoais.md",
+      "source_git_blob_sha": "83cc3c0d82d819a81fad5574748557a9461cbd26",
+      "destination_git_blob_sha": "83cc3c0d82d819a81fad5574748557a9461cbd26"
+    },
+    {
+      "source_path": "docs/07-operacoes-e-resiliencia/continuidade-backup-recuperacao.md",
+      "destination_path": ".governanca/upstream/docs/07-operacoes-e-resiliencia/continuidade-backup-recuperacao.md",
+      "source_git_blob_sha": "f20616f7a4c06210ea88e53e058816cafa29efad",
+      "destination_git_blob_sha": "f20616f7a4c06210ea88e53e058816cafa29efad"
+    },
+    {
+      "source_path": "docs/07-operacoes-e-resiliencia/operacoes-e-observabilidade.md",
+      "destination_path": ".governanca/upstream/docs/07-operacoes-e-resiliencia/operacoes-e-observabilidade.md",
+      "source_git_blob_sha": "427af44aab6fd7113d168d8268d144ae4f00ae1e",
+      "destination_git_blob_sha": "427af44aab6fd7113d168d8268d144ae4f00ae1e"
+    },
+    {
+      "source_path": "standards/status-e-percentual-de-conclusao.md",
+      "destination_path": ".governanca/upstream/standards/status-e-percentual-de-conclusao.md",
+      "source_git_blob_sha": "106b65a0e45a4b83794fa1491e9819e75f0e2f5c",
+      "destination_git_blob_sha": "106b65a0e45a4b83794fa1491e9819e75f0e2f5c"
+    },
+    {
+      "source_path": "templates/projeto/status-do-projeto.md",
+      "destination_path": ".governanca/upstream/templates/projeto/status-do-projeto.md",
+      "source_git_blob_sha": "25e8c26fcc45cd9751d153dcd91201c185e58b61",
+      "destination_git_blob_sha": "25e8c26fcc45cd9751d153dcd91201c185e58b61"
     }
   ]
 }
