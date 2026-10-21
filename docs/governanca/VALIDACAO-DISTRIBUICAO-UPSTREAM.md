@@ -7,6 +7,7 @@
 - **Repositório de destino:** [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO)
 - **PR do modo de teste controlado:** [GOVERNANCA #21](https://github.com/carlos-andrade/GOVERNANCA/pull/21)
 - **PR da proposta de adoção:** [LICITACAO #4](https://github.com/carlos-andrade/LICITACAO/pull/4)
+- **Acompanhamento:** [LICITACAO #6 — concluir Gate G0 e validar distribuição upstream](https://github.com/carlos-andrade/LICITACAO/issues/6)
 
 ## Estado verificado
 
@@ -14,9 +15,9 @@ A PR GOVERNANCA #21 está integrada. A PR LICITACAO #4 também está integrada. 
 
 A execução [39520440947](https://github.com/carlos-andrade/GOVERNANCA/actions/runs/39520440947) terminou com sucesso, mas o nome do workflow é **Governance Integration — validação F1/F2**. É evidência de CI da PR #21, não é uma execução do workflow de distribuição para LICITACAO e não comprova a criação de uma PR de sincronização.
 
-O workflow oficial [Propagar regras canónicas da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/blob/main/.github/workflows/propagar-regras-governanca.yml) disponibiliza `workflow_dispatch` com os parâmetros de teste controlado. A execução manual deve ser acionada no GitHub Actions. A integração disponível nesta sessão não expõe uma ação para disparar `workflow_dispatch`; portanto, não se afirma que o teste foi executado.
+O workflow oficial [Propagar regras canónicas da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/blob/main/.github/workflows/propagar-regras-governanca.yml) disponibiliza `workflow_dispatch` com os parâmetros de teste controlado. A integração disponível nesta sessão não expõe uma ação para disparar `workflow_dispatch`; portanto, não se afirma que o teste foi executado.
 
-O registo central continua a manter `carlos-andrade/LICITACAO` com `enabled: false`.
+A leitura atual do registo central mantém `carlos-andrade/LICITACAO` com `enabled: false`. A consulta atual não encontrou PRs abertas em LICITACAO nem em GOVERNANCA. A issue #6 consolida as ações pendentes, mas não constitui evidência de que tenham sido executadas.
 
 ## Procedimento para concluir o teste
 
