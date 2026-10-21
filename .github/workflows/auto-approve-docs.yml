@@ -1,3 +1,4 @@
+# Workflow changes are covered by validate-governance.yml via .github/workflows/** path filters.
 name: Auto-approve low-risk documentation PRs
 
 on:
