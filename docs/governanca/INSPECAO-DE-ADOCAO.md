@@ -7,11 +7,11 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | RELATORIO_DE_INSPECAO |
 | **Fase** | Adoção de governança — revalidação |
-| **Estado** | EM_REVISAO |
-| **Versão** | 0.3.0 |
+| **Estado** | APROVADO_COM_LIMITACOES |
+| **Versão** | 0.4.0 |
 | **Data de atualização** | 2026-10-21 |
-| **Responsável** | Pendente de nomeação formal no registo do projeto |
-| **Aprovador** | Pendente |
+| **Responsável** | Carlos Andrade, conforme registo-mestre |
+| **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Autoridade superior** | [GOVERNANCA/CONSTITUICAO.md](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
@@ -19,7 +19,7 @@
 
 A revalidação confirma que o ruleset protect-main está ativo na branch predefinida e exige o check de estado validate. A execução de CI conhecida terminou com sucesso no commit de referência. Estes factos corrigem a inspeção anterior, que refletia o estado anterior à ativação do ruleset.
 
-**Resultado global: EM_REVISAO; Gate G0 aprovado para entrada/planeamento.** A adoção global continua pendente da revisão e integração da distribuição documental completa (PR #23), dos checks pós-merge e do registo da checklist WATCHDOG. A proteção técnica e CI verde não provam adoção integral. A avaliação G0 foi atualizada em `docs/governanca/GATE-G0-AVALIACAO.md`; a autorização para ativar o repositório continua condicionada à validação da distribuição e dos controlos locais.
+**Resultado global: APROVADO_COM_LIMITACOES; Gate G0 aprovado.** A distribuição documental foi integrada pela PR #24, os 79 ficheiros foram verificados por Git blob SHA e a CI pós-merge concluiu com sucesso. A checklist WATCHDOG foi executada, mas sete controlos permanecem UNKNOWN; o WATCHDOG não é declarado operacional. A proteção técnica e CI verde não provam adoção integral. A avaliação G0 foi atualizada em `docs/governanca/GATE-G0-AVALIACAO.md`; a autorização para ativar o repositório continua condicionada à validação da distribuição e dos controlos locais.
 
 ## Evidências verificadas
 
@@ -77,6 +77,11 @@ O registo de avaliação está em [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md). 
 - G0: aprovado para entrada/planeamento com problema, resultado mensurável, beneficiários, papéis, escopo, exclusões, riscos e critérios documentados na avaliação atualizada.
 - Distribuição upstream: [PR #23](https://github.com/carlos-andrade/LICITACAO/pull/23) contém 79 ficheiros de texto dos diretórios publicados; comparação pré-PR confirmou 79/79 Git blob SHA coincidentes. O check obrigatório `validate` está atualmente em fila, pelo que não há ainda resultado CI final nem validação pós-merge.
 - WATCHDOG: controlos obrigatórios locais permanecem `UNKNOWN`; a checklist de adoção operacional ainda precisa de execução e evidência. Não declarar WATCHDOG operacional.
-- Registo-mestre: `LICITACAO.enabled=false` deve ser preservado até a distribuição ser integrada e validada e a adoção individual receber aprovação formal.
+- Registo-mestre: `LICITACAO.enabled=false` continua efetivo em `main` até integração da proposta de ativação [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32).
 
 - Checklist WATCHDOG executada documentalmente: [CHECKLIST-WATCHDOG-ADOPCAO.md](CHECKLIST-WATCHDOG-ADOPCAO.md). Resultado: 1 controlo PASS por evidência direta e 7 UNKNOWN; WATCHDOG não operacional.
+
+
+## Decisão de adoção
+
+**APROVADO_COM_LIMITACOES**, decisão registada em 2026-10-21 pelo proprietário indicado no registo-mestre. A aprovação cobre a adoção documental e a distribuição normativa. Não cobre certificação jurídica, operação do WATCHDOG ou autorização para automatizar decisões de participação/lances. Os sete controlos WATCHDOG UNKNOWN permanecem abertos.
