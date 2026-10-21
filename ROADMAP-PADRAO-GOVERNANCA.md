@@ -7,14 +7,14 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | ROADMAP |
 | **Fase** | Adoção de governança |
-| **Estado** | EM_REVISAO |
+| **Estado** | APROVADO_COM_LIMITACOES |
 | **Versão** | 0.1.0 |
 | **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após validação final do conteúdo |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
 | **Data de atualização** | 2026-10-20 |
 | **Responsável** | Proprietário do repositório LICITACAO |
-| **Aprovador** | Pendente de aprovação formal |
+| **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | Adaptação do [Roadmap padrão aprovado da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md) |
 | **Autoridade superior** | [Constituição local](CONSTITUICAO.md) e Carta/Contrato de adoção local |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
@@ -22,10 +22,10 @@
 ## Painel executivo
 
 - **Objetivo:** preparar uma base governada para o futuro sistema de inteligência comercial e apoio ao fornecimento em contratações públicas brasileiras.
-- **Estado:** EM_REVISAO — adoção e estruturação ainda não concluídas.
+- **Estado:** APROVADO_COM_LIMITACOES — G0 aprovado e distribuição upstream validada; WATCHDOG não operacional.
 - **Fase atual:** Início / adoção de governança.
 - **Percentual comprovado:** 0% até existir um scorecard validado; não confundir criação de ficheiros com controlo aceite.
-- **Próximo marco:** completar inspeção de conformidade local, validar registos de status e WATCHDOG e executar testes verificáveis.
+- **Próximo marco:** avançar para G1 — viabilidade, com análise de fontes, procura, custo total, margem, risco e dependências. A ativação do âmbito de distribuição foi efetivada pela GOVERNANCA PR #32; os gates funcionais continuam a aplicar-se.
 - **Bloqueios:** a distribuição automática da GOVERNANCA depende de credencial válida e operação comprovada; o repositório mestre documenta falha de autenticação anterior. Não afirmar sincronização automática ativa.
 - **Riscos principais:** adoção meramente documental; regras upstream desatualizadas; exposição indevida de informação comercial; preços calculados com custos incompletos; dependência de fontes externas; falta de cobertura de testes.
 - **Evidência central:** [GOVERNANCA — Carta/Contrato](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md), [Roadmap padrão](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md), [Constituição](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md).
@@ -34,7 +34,7 @@
 
 | Gate | Objetivo | Entregáveis | Critério de saída | Estado |
 |---|---|---|---|---|
-| G0 | Registar propósito e propriedade | Charter, escopo inicial, owner e beneficiários | Propósito, owner, limites e critérios documentados | EM_REVISAO |
+| G0 | Registar propósito e propriedade | Charter, escopo inicial, owner e beneficiários | Propósito, owner, limites e critérios documentados | APROVADO |
 | G1 | Validar viabilidade | Fontes oficiais, hipóteses de categorias, riscos, custos e dependências | Viabilidade com pressupostos e evidências | BLOQUEADO |
 | G2 | Desenhar solução | Requisitos, arquitetura, modelo de dados, ameaças e testes | Revisão do desenho e critérios aprovados | NÃO_INICIADO |
 | G3 | Construir e validar | Código, testes, documentação e rastreabilidade | Testes executados, revisão e evidências aceites | NÃO_INICIADO |
@@ -48,11 +48,11 @@ Gates podem ser adaptados ao risco, mas obrigações legais, controlos críticos
 
 | Prioridade | Ação | Critério de conclusão | Estado |
 |---|---|---|---|
-| P0 | Rever pacote de governança local | Referências, cabeçalhos, estados e links verificados | EM_CURSO |
+| P0 | Rever pacote de governança local | Referências, cabeçalhos, estados e links verificados | CONCLUÍDO COM LIMITAÇÕES |
 | P0 | Validar scorecard e registo canónico | Critérios e evidências; soma válida 20/60/20 | EM_CURSO |
-| P0 | Inspecionar adoção | Resultado documentado e aprovação autorizada; sem presumir sincronização | PENDENTE |
+| P0 | Inspecionar adoção | Resultado documentado e aprovação autorizada; sem presumir sincronização | APROVADO_COM_LIMITACOES |
 | P1 | Validar WATCHDOG local | Sistemas, owners, criticidade e controlos testados | PENDENTE |
-| P1 | Validar CI | Workflow executado com resultado acessível | PENDENTE |
+| P1 | Validar CI | Workflow executado com resultado acessível | PASS — run pós-merge 39623794138 |
 | P2 | Estruturar aplicação e estratégia comercial | Somente depois do gate de governança e dos requisitos | BLOQUEADO |
 
 ## Critérios de aceitação desta fase

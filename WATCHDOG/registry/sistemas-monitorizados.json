@@ -4,7 +4,7 @@
     {
       "id": "LICITACAO-REPO",
       "name": "Repositório GitHub LICITACAO",
-      "owner": "PENDENTE — nomeação formal necessária",
+      "owner": "Carlos Andrade",
       "criticality": "high",
       "checks": [
         {
@@ -66,7 +66,8 @@
           "status": "UNKNOWN",
           "notes": "Não implementada nesta fase; exige integração e teste próprio."
         }
-      ]
+      ],
+      "notes": " Nomeação de responsável formal registada em docs/governanca/GATE-G0-AVALIACAO.md em 2026-10-21; a supervisão operacional continua pendente."
     }
   ],
   "note": "Atualização de 2026-10-21. Não converter UNKNOWN em PASS sem execução verificável. O estado PASS de LIC-WD-006 comprova configuração do ruleset, não a adoção integral da GOVERNANCA nem aprovação do Gate G0."
