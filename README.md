@@ -7,19 +7,19 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | README |
 | **Fase** | Adoção de governança |
-| **Estado** | EM_REVISAO |
+| **Estado** | APROVADO_COM_LIMITACOES |
 | **Versão** | 0.2.0 |
 | **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após validação final do conteúdo |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
 | **Data de atualização** | 2026-10-20 |
 | **Responsável** | Proprietário do repositório LICITACAO |
-| **Aprovador** | Pendente de aprovação formal |
+| **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | Expansão controlada do README inicial |
 | **Autoridade superior** | [Constituição local](CONSTITUICAO.md) e [GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
-> **Estado de governança: EM_REVISAO.** A adoção está em preparação; não é certificação nem declaração de conformidade completa.
+ > **Estado de governança: APROVADO_COM_LIMITACOES.** A distribuição normativa e a adoção documental foram aprovadas com limitações explícitas; isto não certifica conformidade jurídica nem declara o WATCHDOG operacional.
 
 ![Painel visual de status](assets/status-dashboard.svg)
 
@@ -65,7 +65,7 @@ O registo canónico é `registry/status-do-projeto.json`. O percentual deve ser 
 
 ## Limitações atuais
 
-Ainda não há aplicação de negócio implementada. O workflow de validação do bootstrap executou com sucesso no commit `965d1a2993e49cd5b0ae7a4dacca84226bb2e379` ([execução](https://github.com/carlos-andrade/LICITACAO/actions/runs/39449489411)); esse resultado cobre apenas as verificações implementadas no workflow e não equivale à aprovação formal da adoção. Segurança operacional, WATCHDOG e sincronização upstream continuam pendentes de verificação e evidência. Na leitura atual da API do GitHub, a branch `main` está sem proteção (`protected=false`; `protection.enabled=false`) e ainda precisa de regras obrigatórias de revisão e verificações. Não guardar credenciais, dados pessoais desnecessários ou informação comercial confidencial no repositório público.
+Ainda não há aplicação de negócio implementada. A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24); a comparação pós-merge confirmou 79/79 Git blob SHA coincidentes e o check `validate` terminou com sucesso ([execução pós-merge](https://github.com/carlos-andrade/LICITACAO/actions/runs/39623794138)). O ruleset `protect-main` está ativo e exige o check `validate`. A checklist WATCHDOG foi executada: 1 controlo PASS e 7 UNKNOWN; por isso, o WATCHDOG não é declarado operacional. A adoção está aprovada com limitações, e os gates de viabilidade/desenho continuam a aplicar-se antes de qualquer implementação funcional. Não guardar credenciais, dados pessoais desnecessários ou informação comercial confidencial no repositório público.
 
 ## Próximo marco
 
