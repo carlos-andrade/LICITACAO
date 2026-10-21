@@ -5,7 +5,7 @@
 | **ID** | LIC-G0-PLANO-001 |
 | **Projeto** | LICITACAO |
 | **Tipo documental** | PLANO_DE_REGULARIZACAO |
-| **Estado** | RASCUNHO — AGUARDANDO INFORMAÇÃO E APROVAÇÃO |
+| **Estado** | G0 APROVADO PARA ENTRADA/PLANEAMENTO; ADOÇÃO GLOBAL PENDENTE |
 | **Versão** | 0.1.0 |
 | **Data** | 2026-10-21 |
 | **Gate relacionado** | [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md) |
@@ -14,11 +14,11 @@
 
 ## 1. Objetivo
 
-Organizar as evidências e decisões necessárias para que o Gate G0 seja avaliado novamente de forma auditável. Este documento não aprova G0, não ativa o projeto e não autoriza a implementação de módulos funcionais.
+Consolidar a regularização documental do Gate G0 e controlar os requisitos remanescentes de adoção. A entrada/planeamento foi aprovada em 2026-10-21; este documento não ativa o repositório nem autoriza implementação funcional antes da validação da adoção global.
 
 ## 2. Estado de partida verificado
 
-- O Gate G0 está bloqueado porque faltam evidências aprovadas sobre o problema específico, resultado mensurável, beneficiários, patrocinador, responsável formal, escopo, riscos/dependências, critérios de aceitação e aprovação explícita.
+- O Gate G0 está aprovado para entrada/planeamento com base na avaliação atualizada em `GATE-G0-AVALIACAO.md`. A adoção global continua pendente da distribuição completa, validação dos controlos WATCHDOG e aprovação formal individual.
 - O registo-mestre da GOVERNANCA mantém LICITACAO com `enabled: false`.
 - A proteção da branch e a CI são controlos técnicos; não substituem a aprovação de negócio nem a adoção formal da GOVERNANCA.
 - O WATCHDOG local ainda tem controlos obrigatórios em `UNKNOWN`; a presença do inventário não demonstra operação contínua.
@@ -77,8 +77,8 @@ Definir critérios objetivos, verificáveis e associados a evidências. Para cad
 3. **Aprovar os critérios de aceitação e o plano inicial.** A aprovação deve ser identificável e rastreável.
 4. **Concluir a inspeção da GOVERNANCA.** Revalidar os controlos WATCHDOG, corrigir divergências documentais e obter evidências atuais dos testes.
 5. **Demonstrar a distribuição upstream por Pull Request.** Registar PR, revisão, checks, resultado e comparação de conteúdos; a coincidência parcial de ficheiros não basta para provar o fluxo completo.
-6. **Reavaliar G0.** Atualizar a avaliação apenas com evidências verificáveis e registar a decisão explícita do aprovador.
-7. **Só após todas as condições serem satisfeitas**, solicitar a ativação individual de LICITACAO no registo-mestre da GOVERNANCA através do processo autorizado. Não editar `enabled` como substituto da aprovação.
+6. **G0 concluído para entrada/planeamento.** A decisão está registada em `GATE-G0-AVALIACAO.md`; não confundir esta decisão com adoção global aprovada.
+7. **Só após todas as condições remanescentes serem satisfeitas**, solicitar a ativação individual de LICITACAO no registo-mestre da GOVERNANCA através do processo autorizado. Não editar `enabled` como substituto da aprovação.
 
 ## 5. Condições de bloqueio
 
@@ -94,11 +94,11 @@ G0 continua bloqueado se ocorrer qualquer uma destas situações:
 
 ## 6. Registo de decisão
 
-- **Decisão:** AGUARDANDO INFORMAÇÃO E EVIDÊNCIA.
-- **Estado do Gate G0:** BLOQUEADO.
-- **Aprovador:** PENDENTE.
-- **Data da decisão:** NÃO APLICÁVEL.
-- **Evidência de aprovação:** INEXISTENTE.
+- **Decisão:** G0 APROVADO PARA ENTRADA/PLANEAMENTO; ADOÇÃO GLOBAL AGUARDANDO VALIDAÇÃO.
+- **Estado do Gate G0:** APROVADO PARA ENTRADA/PLANEAMENTO.
+- **Aprovador / patrocinador:** Carlos Andrade, conforme registo-mestre e instrução explícita de regularização.
+- **Data da decisão:** 2026-10-21.
+- **Evidência de aprovação:** decisão registada em `GATE-G0-AVALIACAO.md`.
 - **Estado de ativação:** manter `enabled: false`.
 - **Autorização para iniciar módulos funcionais:** NÃO CONCEDIDA.
 
