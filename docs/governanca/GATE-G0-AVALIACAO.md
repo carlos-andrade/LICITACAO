@@ -93,3 +93,5 @@ A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-
 ## 7. Histórico
 
 - 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado; adoção documental aprovada com limitações após validação da distribuição; ativação central pendente de PR #32.
+
+- 2026-10-21 — Estado de ativação reconciliado após a integração da GOVERNANCA PR #32; `enabled=true` efetivo para âmbito de distribuição.
