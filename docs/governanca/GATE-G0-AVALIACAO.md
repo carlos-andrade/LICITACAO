@@ -5,7 +5,7 @@
 | **ID** | LIC-G0-001 |
 | **Projeto** | LICITACAO |
 | **Gate** | G0 — Entrada |
-| **Estado** | APROVADO — entrada documental; adoção global ainda pendente |
+| **Estado** | APROVADO — G0 e adoção documental aprovados com limitações |
 | **Data da avaliação** | 2026-10-21 |
 | **Autoridade normativa** | [Constituição da GOVERNANCA, secção 5](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Inspeção associada** | [INSPECAO-DE-ADOCAO.md](INSPECAO-DE-ADOCAO.md) |
@@ -83,13 +83,13 @@ Este é um levantamento inicial para entrada do projeto; não equivale a parecer
 
 **Decisão: APROVADO para entrada e planeamento do projeto**, com base no propósito, beneficiários, papéis, escopo, exclusões, riscos e critérios iniciais documentados acima e na instrução explícita de regularização e ativação emitida pelo titular do repositório em 2026-10-21.
 
-Esta aprovação de entrada **não equivale** à aprovação global da adoção GOVERNANCA e não autoriza ignorar os controlos de ativação. O registo-mestre deve permanecer `enabled: false` até AC-06 e AC-07 estarem comprovados e a respetiva alteração passar pelo processo autorizado.
+A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24), com 79/79 Git blob SHA coincidentes e CI pós-merge PASS. A adoção documental fica aprovada com limitações; sete controlos WATCHDOG permanecem UNKNOWN e o WATCHDOG não é operacional. A alteração do registo-mestre para `enabled: true` é proposta separadamente pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), sujeita aos checks e à integração autorizada.
 
 - **Aprovador / patrocinador registado:** Carlos Andrade (titular indicado no registo-mestre).
 - **Data da decisão:** 2026-10-21.
 - **Evidência:** pedido explícito de resolução do Gate G0 e ativação, mais esta decisão versionada no repositório.
-- **Estado de ativação atual:** bloqueado até validação da adoção global.
+- **Estado de ativação no registo-mestre:** `false` até integração da proposta [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32).
 
 ## 7. Histórico
 
-- 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado para entrada/planeamento; adoção global e ativação continuam pendentes.
+- 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado; adoção documental aprovada com limitações após validação da distribuição; ativação central pendente de PR #32.
