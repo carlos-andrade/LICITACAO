@@ -1,5 +1,7 @@
 # Evidência de validação da distribuição GOVERNANCA → LICITACAO
 
+> **Correção de estado — 2026-10-21:** a issue #6 foi reaberta porque a checklist anterior estava assinalada como concluída apesar de não haver evidência de runs de distribuição nem aprovação formal de G0. Os passos operacionais abaixo permanecem pendentes até haver URLs de execução e artefactos verificáveis. O fecho da issue não é prova de execução.
+
 - **ID:** LIC-GOV-DIST-001
 - **Estado:** BLOQUEADO — execução operacional real pendente
 - **Última verificação:** 2026-10-21
