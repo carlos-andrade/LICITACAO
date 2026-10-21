@@ -46,6 +46,12 @@ A Constituição da GOVERNANCA define G0 como a confirmação de problema, benef
 
 **G0 permanece BLOQUEADO. Não iniciar a estrutura funcional nem criar módulos de negócio enquanto os critérios acima não estiverem documentados e aprovados.** Esta decisão evita inventar patrocinador, beneficiários, requisitos ou aceitação que não foram fornecidos.
 
+## Proposta de processo operacional (não constitui aprovação)
+
+A conceção do processo operacional brasileiro foi preparada em [MODELO-OPERACIONAL-VENDEDOR-GOVERNAMENTAL-BRASIL.md](../processo/MODELO-OPERACIONAL-VENDEDOR-GOVERNAMENTAL-BRASIL.md). Trata-se de documentação de planeamento; não comprova beneficiários formalmente identificados, nomeações, aceitação ou aprovação de G0. O gate permanece bloqueado.
+
+A issue [LICITACAO #6](https://github.com/carlos-andrade/LICITACAO/issues/6) foi reaberta porque o fecho anterior era incompatível com os itens ainda pendentes.
+
 ## Registo de decisão
 
 - Decisão atual: AGUARDANDO_EVIDENCIA.
