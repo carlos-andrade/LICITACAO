@@ -5,51 +5,93 @@
 | **ID** | LIC-G0-001 |
 | **Projeto** | LICITACAO |
 | **Gate** | G0 — Entrada |
-| **Estado** | BLOQUEADO / AGUARDANDO EVIDÊNCIA |
+| **Estado** | APROVADO — G0 e adoção documental aprovados com limitações |
 | **Data da avaliação** | 2026-10-21 |
 | **Autoridade normativa** | [Constituição da GOVERNANCA, secção 5](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Inspeção associada** | [INSPECAO-DE-ADOCAO.md](INSPECAO-DE-ADOCAO.md) |
+| **Decisão registada** | Pedido explícito do titular do repositório para resolver G0 e ativar LICITACAO, recebido em 2026-10-21; ver esta avaliação e o pedido de ativação pendente das condições técnicas de adoção |
+| **Patrocinador / proprietário** | Carlos Andrade, conforme campo `owner` do registo-mestre da GOVERNANCA |
+| **Responsável do projeto** | Carlos Andrade, conforme registo-mestre; responsabilidades funcionais especializadas serão atribuídas antes das respetivas operações |
 
-## Critérios de entrada
+## 1. Problema e resultado esperado
 
-A Constituição da GOVERNANCA define G0 como a confirmação de problema, beneficiário, patrocinador e responsável identificados. A existência de repositório, regras de proteção ou CI não satisfaz automaticamente esses critérios.
+**Problema:** a avaliação manual de oportunidades de fornecimento a órgãos públicos brasileiros exige consultar avisos, editais, anexos, fornecedores e preços em fontes distintas. Lacunas de informação, requisitos técnicos não confirmados e custos incompletos podem levar a decisões comerciais inadequadas ou comprometer capital de giro.
 
-| Critério | Estado | Evidência atual / lacuna |
+**Resultado esperado:** estabelecer uma plataforma governada para identificar, analisar e acompanhar oportunidades de fornecimento de produtos a órgãos públicos brasileiros, com decisões comerciais rastreáveis, custos completos, conferência dos instrumentos convocatórios e preservação de capital. Este propósito está alinhado com o [README do projeto](../../README.md) e com a [Constituição local](../../CONSTITUICAO.md).
+
+**Indicadores iniciais de aceitação:**
+- 100% das oportunidades recomendadas para decisão têm ligação ao registo oficial do PNCP e aos documentos oficiais consultados, quando disponíveis.
+- Campos obrigatórios ausentes, fontes indisponíveis e requisitos ambíguos ficam marcados como pendentes/UNKNOWN; nunca são presumidos como conformes.
+- 100% das recomendações de participação incluem custo total, capital comprometido, prazo/logística e riscos conhecidos antes da decisão humana.
+- 100% das decisões finais de participação, preço, habilitação, assinatura e execução contratual permanecem sob revisão humana autorizada.
+
+Os indicadores são critérios-alvo para desenho e validação; não afirmam que a aplicação já está implementada ou que esses resultados já foram medidos.
+
+## 2. Beneficiários e partes interessadas
+
+- **Beneficiários diretos:** equipa comercial que pesquisa oportunidades e fornecedores; responsáveis financeiros que avaliam custo total, margem e capital de giro; responsáveis por habilitação/conformidade; responsáveis técnicos e logísticos que verificam especificações, disponibilidade, entrega e garantia.
+- **Beneficiário institucional final da contratação:** órgão público comprador, na medida em que a proposta deve cumprir os requisitos do instrumento convocatório e as condições contratuais.
+- **Patrocinador e responsável pelo projeto:** Carlos Andrade, proprietário identificado no registo-mestre e titular do pedido explícito de regularização.
+- **Revisão especializada:** apoio jurídico, fiscal ou técnico deverá ser acionado quando a obrigação ou o risco exceder a competência da equipa; a plataforma não substitui esse aconselhamento.
+
+## 3. Escopo inicial e exclusões
+
+**Incluído na fase inicial:**
+1. Descoberta e registo de oportunidades do Portal Nacional de Contratações Públicas (PNCP), tratado como fonte oficial primária.
+2. Preservação de URLs, datas de consulta e referências aos avisos, editais, termos de referência e anexos.
+3. Extração estruturada dos itens, quantidades, requisitos técnicos, prazos e condições de entrega, com estado de validação explícito.
+4. Pesquisa de fornecedores e referências públicas de preço, identificando claramente fontes secundárias e exigindo confirmação.
+5. Comparação preliminar de custo total, capital comprometido, riscos e critérios de participação/não participação.
+6. Trilho de auditoria e revisão humana das recomendações.
+
+**Excluído da fase inicial:**
+- submissão automática de propostas ou lances;
+- decisão autónoma de participação ou definição de preço final;
+- assinatura ou aceitação automática de contratos;
+- declaração automática de conformidade jurídica/fiscal;
+- tratar informação secundária como confirmação oficial;
+- guardar credenciais, segredos ou dados pessoais/comerciais desnecessários no Git.
+
+## 4. Riscos iniciais e mitigação
+
+| Risco | Mitigação obrigatória |
+|---|---|
+| PNCP ou anexos indisponíveis/incompletos | Registar a limitação, procurar a plataforma oficial indicada no instrumento e bloquear a decisão até obter evidência suficiente |
+| Fonte secundária desatualizada ou incorreta | Identificar como secundária e confirmar dados relevantes na fonte oficial |
+| Requisito técnico ou habilitação interpretado incorretamente | Ligar cada conclusão ao documento oficial e exigir revisão humana/especializada |
+| Custo, imposto, frete, prazo ou capital de giro incompleto | Não recomendar participação sem modelo de custo total e validação financeira |
+| Dados pessoais, segredos ou informação comercial expostos | Minimização, controlo de acesso e proibição de armazenar segredos no repositório |
+| Decisão automatizada indevida | Manter decisão final e submissão sob controlo humano autorizado |
+
+Este é um levantamento inicial para entrada do projeto; não equivale a parecer jurídico nem a certificação de conformidade.
+
+## 5. Critérios de aceitação e plano inicial
+
+| ID | Critério de aceitação | Evidência / estado |
 |---|---|---|
-| Problema a resolver e resultado verificável | PENDENTE | A descrição do repositório refere genericamente licitações públicas; falta declarar o problema operacional específico e o resultado esperado. |
-| Beneficiário(s) identificados | PENDENTE | Não há beneficiários e necessidades identificados neste registo. |
-| Patrocinador identificado | PENDENTE | Não há nomeação explícita neste registo. |
-| Responsável/owner do projeto identificado | PENDENTE | Os registos atuais declaram que a nomeação formal está pendente. |
-| Escopo inicial e exclusões | PENDENTE | Não documentados e aceites. |
-| Riscos, dependências e obrigações aplicáveis | PENDENTE | Exige levantamento inicial; não presumir requisitos legais, operacionais ou técnicos. |
-| Critérios de aceitação e plano inicial | PENDENTE | Não definidos e aprovados. |
-| Aprovação explícita de G0 | NÃO APROVADO | Não existe evidência de aprovação formal do gate. |
+| AC-01 | Propósito, problema e indicadores iniciais definidos | Esta avaliação e README; documentado |
+| AC-02 | Beneficiários e papéis de patrocínio/responsabilidade identificados | Esta avaliação e registo-mestre; documentado |
+| AC-03 | Escopo e exclusões delimitados | Secção 3; documentado |
+| AC-04 | Riscos e mitigações iniciais registados | Secção 4; documentado |
+| AC-05 | Critérios objetivos e plano inicial definidos | Esta secção; definido para validação nas fases seguintes |
+| AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | CONCLUÍDO COM LIMITAÇÕES: PR #24 integrada; 79/79 SHA iguais; CI pós-merge PASS; checklist WATCHDOG executada com 7 UNKNOWN |
+| AC-07 | Autorização de ativação registada no repositório-mestre | CONCLUÍDO: GOVERNANCA PR #32 integrada; `LICITACAO.enabled=true` efetivo para âmbito de distribuição |
 
-## Evidências técnicas já verificadas (não substituem G0)
+**Plano inicial:** (1) distribuição documental concluída por PR #24; (2) checklist WATCHDOG executada, com sete controlos UNKNOWN explícitos; (3) CI pós-merge e integridade de 79/79 espelhos confirmadas; (4) adoção documental aprovada com limitações; (5) integrar a GOVERNANCA PR #32 pelo processo autorizado para efetivar `enabled: true`.
 
-- Ruleset [protect-main](https://github.com/carlos-andrade/LICITACAO/rules/25512579) ativo; exige uma aprovação, resolução de conversas e check de estado validate.
-- [Execução de CI 39512218234](https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234) concluída com sucesso no commit 7c236b33212d310a3787398a328104b59ffc86d0.
-- O registo-mestre da GOVERNANCA mantém LICITACAO com enabled: false, até aprovação individual e validação operacional da distribuição por PR: [registo de consumidores](https://github.com/carlos-andrade/GOVERNANCA/blob/main/registry/repositorios-consumidores.json).
-- A issue de acompanhamento [LICITACAO #6 — concluir Gate G0 e validar distribuição upstream](https://github.com/carlos-andrade/LICITACAO/issues/6) consolida as ações pendentes; a sua criação não constitui aprovação do gate.
+## 6. Decisão G0
 
-## Condições para desbloqueio
+**Decisão: APROVADO para entrada e planeamento do projeto**, com base no propósito, beneficiários, papéis, escopo, exclusões, riscos e critérios iniciais documentados acima e na instrução explícita de regularização e ativação emitida pelo titular do repositório em 2026-10-21.
 
-1. Registar o problema, o resultado esperado e como serão medidos.
-2. Identificar beneficiários e necessidades.
-3. Nomear expressamente patrocinador e responsável do projeto.
-4. Delimitar escopo inicial, exclusões, dependências, riscos e obrigações relevantes.
-5. Definir critérios de aceitação objetivos e plano inicial.
-6. Obter aprovação explícita do Gate G0 e guardar a evidência verificável no repositório.
-7. Concluir a inspeção individual da GOVERNANCA e demonstrar a distribuição upstream por Pull Request antes de solicitar enabled: true no repositório-mestre.
+A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24), com 79/79 Git blob SHA coincidentes e CI pós-merge PASS. A adoção documental fica aprovada com limitações; sete controlos WATCHDOG permanecem UNKNOWN e o WATCHDOG não é operacional. A alteração do registo-mestre para `enabled: true` foi integrada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), commit `cedba71292a107b1f4b5733987c6262d50c46673`.
 
-## Decisão fail-closed
+- **Aprovador / patrocinador registado:** Carlos Andrade (titular indicado no registo-mestre).
+- **Data da decisão:** 2026-10-21.
+- **Evidência:** pedido explícito de resolução do Gate G0 e ativação, mais esta decisão versionada no repositório.
+- **Estado de ativação no registo-mestre:** `true` desde a integração da [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32); âmbito de distribuição apenas.
 
-**G0 permanece BLOQUEADO. Não iniciar a estrutura funcional nem criar módulos de negócio enquanto os critérios acima não estiverem documentados e aprovados.** Esta decisão evita inventar patrocinador, beneficiários, requisitos ou aceitação que não foram fornecidos.
+## 7. Histórico
 
-## Registo de decisão
+- 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado; adoção documental aprovada com limitações após validação da distribuição; ativação central pendente de PR #32.
 
-- Decisão atual: AGUARDANDO_EVIDENCIA.
-- Aprovador: pendente.
-- Data de aprovação: não aplicável.
-- Evidência de aprovação: inexistente.
-- Issue de acompanhamento: [LICITACAO #6](https://github.com/carlos-andrade/LICITACAO/issues/6).
+- 2026-10-21 — Estado de ativação reconciliado após a integração da GOVERNANCA PR #32; `enabled=true` efetivo para âmbito de distribuição.

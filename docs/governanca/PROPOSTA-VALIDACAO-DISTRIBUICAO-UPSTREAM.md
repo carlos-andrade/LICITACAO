@@ -7,11 +7,11 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | RELATORIO_DE_VALIDACAO |
 | **Fase** | Adoção de governança — distribuição upstream |
-| **Estado** | EM_REVISAO |
-| **Versão** | 0.1.0 |
+| **Estado** | VALIDADA_COM_LIMITACOES |
+| **Versão** | 0.2.0 |
 | **Data de atualização** | 2026-10-21 |
-| **Responsável** | Pendente de confirmação formal |
-| **Aprovador** | Pendente |
+| **Responsável** | Carlos Andrade, conforme registo-mestre |
+| **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | [GOVERNANCA/main](https://github.com/carlos-andrade/GOVERNANCA/tree/main) |
 | **Autoridade superior** | [Constituição da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 
@@ -21,14 +21,20 @@ Registar uma proposta de atualização do snapshot de normas GOVERNANCA no LICIT
 
 ## Evidência de comparação
 
-A referência de origem foi atualizada para o commit `4da3029356e446ecbc6303124fc8019ee188450b`. Foram consultados os nove ficheiros enumerados em `.governanca/upstream/UPSTREAM-MANIFEST.json`; os Git blob SHA da origem coincidem com os hashes já registados para os respetivos ficheiros espelhados.
+A referência de origem foi atualizada para o commit `4da3029356e446ecbc6303124fc8019ee188450b`. A PR [#24](https://github.com/carlos-andrade/LICITACAO/pull/24) foi integrada. A comparação pós-merge confirmou 79/79 Git blob SHA coincidentes entre origem e destino, sem divergências.
 
-Esta comparação demonstra que os nove ficheiros listados correspondem aos blobs consultados na origem. **Não demonstra distribuição integral** de todos os ficheiros abrangidos por `published_roots`, execução de workflow de distribuição, nem aceitação operacional ponta a ponta.
+A comparação pós-merge demonstra igualdade de conteúdo para todos os 79 ficheiros incluídos na PR. O check `validate` concluiu com sucesso e a checklist documental WATCHDOG foi executada; os sete controlos sem evidência permanecem UNKNOWN.
+
+## Estado da PR de distribuição
+
+- PR: [#24 — distribuição integral dos documentos normativos publicados](https://github.com/carlos-andrade/LICITACAO/pull/24), integrada.
+- Check obrigatório `validate`: PASS na [execução pós-merge](https://github.com/carlos-andrade/LICITACAO/actions/runs/39623794138).
+- Estado da distribuição: VALIDADA — 79/79 hashes coincidentes após o merge.
 
 ## Conteúdo da proposta
 
 - Atualizar `source_commit` e as referências canónicas no manifesto.
-- Preservar o estado `adoption_status: EM_REVISAO`.
+- Estado do manifesto atualizado para `adoption_status: APROVADO_COM_LIMITACOES` na PR de alinhamento documental #25.
 - Preservar a política `distribution_policy: pull_request_only`.
 - Manter os bloqueios de adoção e validação operacional explícitos.
 - Submeter a alteração a revisão por pull request; não executar merge automaticamente.
@@ -38,10 +44,10 @@ Esta comparação demonstra que os nove ficheiros listados correspondem aos blob
 1. Verificar o diff da PR e confirmar que os destinos locais não são sobrescritos indevidamente.
 2. Executar a validação automatizada aplicável e registar o resultado real do workflow.
 3. Demonstrar o processo de distribuição ponta a ponta por PR, incluindo geração da proposta, checks, revisão e ausência de merge automático.
-4. Executar a checklist WATCHDOG local e documentar cada resultado com evidência.
-5. Obter revisão independente e aprovação formal da adoção.
-6. Só após aprovação individual e validação operacional, propor por PR a alteração de `LICITACAO.enabled` no registo central GOVERNANCA.
+4. Checklist WATCHDOG executada: 1 PASS e 7 UNKNOWN; os UNKNOWN permanecem limitações operacionais.
+5. A adoção documental foi aprovada com limitações; integração do alinhamento final aguarda a PR #25.
+6. A ativação central foi efetivada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32) após integração da PR #25.
 
 ## Resultado
 
-**Estado: EM_REVISAO / G0 continua bloqueado.** Esta PR atualiza a referência documental do snapshot e regista o âmbito da comparação. Não é prova de que a distribuição completa foi executada nem autoriza ativar LICITACAO.
+**Estado: VALIDADA_COM_LIMITACOES / G0 aprovado.** A distribuição integral dos 79 ficheiros de texto está comprovada por hashes e CI pós-merge. Os controlos WATCHDOG UNKNOWN continuam limitações operacionais; a ativação central foi efetivada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32); `LICITACAO.enabled=true` indica âmbito de distribuição, não certificação operacional.
