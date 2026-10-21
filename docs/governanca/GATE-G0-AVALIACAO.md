@@ -5,7 +5,7 @@
 | **ID** | LIC-G0-001 |
 | **Projeto** | LICITACAO |
 | **Gate** | G0 — Entrada |
-| **Estado** | APROVADO — entrada documental; adoção global ainda pendente |
+| **Estado** | APROVADO — G0 e adoção documental aprovados com limitações |
 | **Data da avaliação** | 2026-10-21 |
 | **Autoridade normativa** | [Constituição da GOVERNANCA, secção 5](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Inspeção associada** | [INSPECAO-DE-ADOCAO.md](INSPECAO-DE-ADOCAO.md) |
@@ -74,22 +74,22 @@ Este é um levantamento inicial para entrada do projeto; não equivale a parecer
 | AC-03 | Escopo e exclusões delimitados | Secção 3; documentado |
 | AC-04 | Riscos e mitigações iniciais registados | Secção 4; documentado |
 | AC-05 | Critérios objetivos e plano inicial definidos | Esta secção; definido para validação nas fases seguintes |
-| AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | PENDENTE: PR #23, checks pós-merge e checklist WATCHDOG |
-| AC-07 | Autorização de ativação registada no repositório-mestre | PENDENTE até concluir AC-06 e a revisão formal da adoção |
+| AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | CONCLUÍDO COM LIMITAÇÕES: PR #24 integrada; 79/79 SHA iguais; CI pós-merge PASS; checklist WATCHDOG executada com 7 UNKNOWN |
+| AC-07 | Autorização de ativação registada no repositório-mestre | PROPOSTA PENDENTE: GOVERNANCA PR #32, em rascunho até integrar a inspeção APROVADO_COM_LIMITACOES |
 
-**Plano inicial:** (1) concluir distribuição documental por PR; (2) validar os controlos locais WATCHDOG e atualizar evidências; (3) confirmar CI e integridade dos espelhos; (4) reavaliar adoção individual; (5) só então propor a alteração do registo-mestre para `enabled: true`.
+**Plano inicial:** (1) distribuição documental concluída por PR #24; (2) checklist WATCHDOG executada, com sete controlos UNKNOWN explícitos; (3) CI pós-merge e integridade de 79/79 espelhos confirmadas; (4) adoção documental aprovada com limitações; (5) integrar a GOVERNANCA PR #32 pelo processo autorizado para efetivar `enabled: true`.
 
 ## 6. Decisão G0
 
 **Decisão: APROVADO para entrada e planeamento do projeto**, com base no propósito, beneficiários, papéis, escopo, exclusões, riscos e critérios iniciais documentados acima e na instrução explícita de regularização e ativação emitida pelo titular do repositório em 2026-10-21.
 
-Esta aprovação de entrada **não equivale** à aprovação global da adoção GOVERNANCA e não autoriza ignorar os controlos de ativação. O registo-mestre deve permanecer `enabled: false` até AC-06 e AC-07 estarem comprovados e a respetiva alteração passar pelo processo autorizado.
+A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24), com 79/79 Git blob SHA coincidentes e CI pós-merge PASS. A adoção documental fica aprovada com limitações; sete controlos WATCHDOG permanecem UNKNOWN e o WATCHDOG não é operacional. A alteração do registo-mestre para `enabled: true` é proposta separadamente pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), sujeita aos checks e à integração autorizada.
 
 - **Aprovador / patrocinador registado:** Carlos Andrade (titular indicado no registo-mestre).
 - **Data da decisão:** 2026-10-21.
 - **Evidência:** pedido explícito de resolução do Gate G0 e ativação, mais esta decisão versionada no repositório.
-- **Estado de ativação atual:** bloqueado até validação da adoção global.
+- **Estado de ativação no registo-mestre:** `false` até integração da proposta [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32).
 
 ## 7. Histórico
 
-- 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado para entrada/planeamento; adoção global e ativação continuam pendentes.
+- 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado; adoção documental aprovada com limitações após validação da distribuição; ativação central pendente de PR #32.

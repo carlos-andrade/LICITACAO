@@ -5,7 +5,7 @@
 | **ID** | LIC-G0-PLANO-001 |
 | **Projeto** | LICITACAO |
 | **Tipo documental** | PLANO_DE_REGULARIZACAO |
-| **Estado** | G0 APROVADO PARA ENTRADA/PLANEAMENTO; ADOÇÃO GLOBAL PENDENTE |
+| **Estado** | ADOÇÃO DOCUMENTAL APROVADA_COM_LIMITACOES; ATIVAÇÃO CENTRAL PENDENTE |
 | **Versão** | 0.1.0 |
 | **Data** | 2026-10-21 |
 | **Gate relacionado** | [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md) |
@@ -18,7 +18,7 @@ Consolidar a regularização documental do Gate G0 e controlar os requisitos rem
 
 ## 2. Estado de partida verificado
 
-- O Gate G0 está aprovado para entrada/planeamento com base na avaliação atualizada em `GATE-G0-AVALIACAO.md`. A adoção global continua pendente da distribuição completa, validação dos controlos WATCHDOG e aprovação formal individual.
+- O Gate G0 está aprovado para entrada/planeamento com base na avaliação atualizada em `GATE-G0-AVALIACAO.md`. A adoção documental está aprovada com limitações após a distribuição completa e a CI pós-merge. Os controlos WATCHDOG sem evidência permanecem UNKNOWN; a ativação central está proposta na GOVERNANCA PR #32.
 - O registo-mestre da GOVERNANCA mantém LICITACAO com `enabled: false`.
 - A proteção da branch e a CI são controlos técnicos; não substituem a aprovação de negócio nem a adoção formal da GOVERNANCA.
 - O WATCHDOG local ainda tem controlos obrigatórios em `UNKNOWN`; a presença do inventário não demonstra operação contínua.
@@ -94,8 +94,8 @@ G0 continua bloqueado se ocorrer qualquer uma destas situações:
 
 ## 6. Registo de decisão
 
-- **Decisão:** G0 APROVADO PARA ENTRADA/PLANEAMENTO; ADOÇÃO GLOBAL AGUARDANDO VALIDAÇÃO.
-- **Estado do Gate G0:** APROVADO PARA ENTRADA/PLANEAMENTO.
+- **Decisão:** G0 APROVADO; ADOÇÃO DOCUMENTAL APROVADO_COM_LIMITACOES; ATIVAÇÃO CENTRAL PENDENTE.
+- **Estado do Gate G0:** APROVADO.
 - **Aprovador / patrocinador:** Carlos Andrade, conforme registo-mestre e instrução explícita de regularização.
 - **Data da decisão:** 2026-10-21.
 - **Evidência de aprovação:** decisão registada em `GATE-G0-AVALIACAO.md`.
