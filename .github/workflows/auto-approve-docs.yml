@@ -1,0 +1,83 @@
+name: Auto-approve low-risk documentation PRs
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: read
+
+jobs:
+  auto-approve:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write
+    steps:
+      - name: Approve eligible documentation-only changes
+        uses: actions/github-script@v7
+        env:
+          REVIEW_TOKEN: ${{ secrets.LICITACAO_REVIEW_TOKEN }}
+          AUTOREVIEW_BOT: ${{ vars.LICITACAO_AUTOREVIEW_BOT }}
+        with:
+          github-token: ${{ secrets.LICITACAO_REVIEW_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+            const botLogin = (process.env.AUTOREVIEW_BOT || '').trim().replace(/^@/, '').toLowerCase();
+
+            if (!process.env.REVIEW_TOKEN) {
+              core.setFailed('Secret LICITACAO_REVIEW_TOKEN is not configured.');
+              return;
+            }
+            if (!botLogin) {
+              core.setFailed('Variable LICITACAO_AUTOREVIEW_BOT is not configured.');
+              return;
+            }
+            if (pr.user.login.toLowerCase() === botLogin) {
+              core.info('Skipping: PR author is the configured review bot.');
+              return;
+            }
+            if (pr.draft) {
+              core.info('Skipping: draft PR.');
+              return;
+            }
+
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner, repo, pull_number: pr.number, per_page: 100
+            });
+            if (files.length === 0) {
+              core.info('Skipping: no changed files returned.');
+              return;
+            }
+
+            const eligible = files.every(file =>
+              file.status !== 'removed' &&
+              file.filename.endsWith('.md') &&
+              (file.filename.startsWith('EDITAIS/') || file.filename.startsWith('FORNECEDORES/'))
+            );
+            if (!eligible) {
+              core.info('Skipping: PR includes files outside the documentation-only allowlist or removes files.');
+              return;
+            }
+
+            const reviews = await github.paginate(github.rest.pulls.listReviews, {
+              owner, repo, pull_number: pr.number, per_page: 100
+            });
+            const alreadyApproved = reviews.some(review =>
+              review.user?.login?.toLowerCase() === botLogin &&
+              review.state === 'APPROVED' &&
+              review.commit_id === pr.head.sha
+            );
+            if (alreadyApproved) {
+              core.info('Skipping: configured bot already approved this exact head commit.');
+              return;
+            }
+
+            await github.rest.pulls.createReview({
+              owner, repo, pull_number: pr.number,
+              event: 'APPROVE',
+              body: 'Aprovação automática limitada a documentação Markdown em EDITAIS/ ou FORNECEDORES/. Esta aprovação não valida preços, cotações, habilitação de fornecedores ou conformidade jurídica.'
+            });
+            core.info('Approved eligible documentation-only PR.');
