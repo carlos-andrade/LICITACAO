@@ -46,8 +46,8 @@ A comparação pós-merge demonstra igualdade de conteúdo para todos os 79 fich
 3. Demonstrar o processo de distribuição ponta a ponta por PR, incluindo geração da proposta, checks, revisão e ausência de merge automático.
 4. Checklist WATCHDOG executada: 1 PASS e 7 UNKNOWN; os UNKNOWN permanecem limitações operacionais.
 5. A adoção documental foi aprovada com limitações; integração do alinhamento final aguarda a PR #25.
-6. A ativação central está proposta na [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), que permanece em rascunho até a PR #25 ser integrada.
+6. A ativação central foi efetivada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32) após integração da PR #25.
 
 ## Resultado
 
-**Estado: VALIDADA_COM_LIMITACOES / G0 aprovado.** A distribuição integral dos 79 ficheiros de texto está comprovada por hashes e CI pós-merge. Os controlos WATCHDOG UNKNOWN continuam limitações operacionais; a ativação central é tratada separadamente pela GOVERNANCA PR #32.
+**Estado: VALIDADA_COM_LIMITACOES / G0 aprovado.** A distribuição integral dos 79 ficheiros de texto está comprovada por hashes e CI pós-merge. Os controlos WATCHDOG UNKNOWN continuam limitações operacionais; a ativação central foi efetivada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32); `LICITACAO.enabled=true` indica âmbito de distribuição, não certificação operacional.
