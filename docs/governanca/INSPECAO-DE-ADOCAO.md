@@ -78,3 +78,5 @@ O registo de avaliação está em [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md). 
 - Distribuição upstream: [PR #23](https://github.com/carlos-andrade/LICITACAO/pull/23) contém 79 ficheiros de texto dos diretórios publicados; comparação pré-PR confirmou 79/79 Git blob SHA coincidentes. O check obrigatório `validate` está atualmente em fila, pelo que não há ainda resultado CI final nem validação pós-merge.
 - WATCHDOG: controlos obrigatórios locais permanecem `UNKNOWN`; a checklist de adoção operacional ainda precisa de execução e evidência. Não declarar WATCHDOG operacional.
 - Registo-mestre: `LICITACAO.enabled=false` deve ser preservado até a distribuição ser integrada e validada e a adoção individual receber aprovação formal.
+
+- Checklist WATCHDOG executada documentalmente: [CHECKLIST-WATCHDOG-ADOPCAO.md](CHECKLIST-WATCHDOG-ADOPCAO.md). Resultado: 1 controlo PASS por evidência direta e 7 UNKNOWN; WATCHDOG não operacional.
