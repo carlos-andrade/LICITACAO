@@ -2,39 +2,39 @@
   "schema_version": 1,
   "source_repository": "carlos-andrade/GOVERNANCA",
   "source_branch": "main",
-  "source_commit": "bf6d33e173356802bf921da299c22b2a9baaa8e1",
+  "source_commit": "4da3029356e446ecbc6303124fc8019ee188450b",
   "destination_root": ".governanca/upstream",
   "distribution_policy": "pull_request_only",
   "adoption_status": "EM_REVISAO",
-  "note": "Espelho parcial, versionado e manual das normas canónicas essenciais da GOVERNANCA no commit source_commit. A política de distribuição é PR-only. Não se afirma sincronização automática contínua nem conformidade operacional do LICITACAO; esta adoção permanece EM_REVISAO.",
+  "note": "Espelho parcial, versionado e manual das normas canónicas essenciais da GOVERNANCA no commit source_commit. Em 2026-10-21, os nove ficheiros espelhados listados abaixo foram comparados com a origem e os Git blob SHA coincidem. Isto não comprova distribuição integral de todos os published_roots nem validação operacional ponta a ponta. A política é PR-only e a adoção permanece EM_REVISAO.",
   "canonical_references": [
     {
       "source_path": "CONSTITUICAO.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/CONSTITUICAO.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/CONSTITUICAO.md"
     },
     {
       "source_path": "ROADMAP-PADRAO-GOVERNANCA.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/ROADMAP-PADRAO-GOVERNANCA.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/ROADMAP-PADRAO-GOVERNANCA.md"
     },
     {
       "source_path": "CARTA-CONTRATO-PADRAO-ROADMAP.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/CARTA-CONTRATO-PADRAO-ROADMAP.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/CARTA-CONTRATO-PADRAO-ROADMAP.md"
     },
     {
       "source_path": "standards/status-e-percentual-de-conclusao.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/standards/status-e-percentual-de-conclusao.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/standards/status-e-percentual-de-conclusao.md"
     },
     {
       "source_path": "CABEÇALHO/NORMA-CABECALHO-PADRAO.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/CABE%C3%87ALHO/NORMA-CABECALHO-PADRAO.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/CABE%C3%87ALHO/NORMA-CABECALHO-PADRAO.md"
     },
     {
       "source_path": "WATCHDOG/README.md",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/WATCHDOG/README.md"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/WATCHDOG/README.md"
     },
     {
       "source_path": "WATCHDOG/registry/controlos-obrigatorios.json",
-      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/bf6d33e173356802bf921da299c22b2a9baaa8e1/WATCHDOG/registry/controlos-obrigatorios.json"
+      "url": "https://github.com/carlos-andrade/GOVERNANCA/blob/4da3029356e446ecbc6303124fc8019ee188450b/WATCHDOG/registry/controlos-obrigatorios.json"
     }
   ],
   "blocking_conditions": [
