@@ -1,52 +1,59 @@
 # Evidência de validação da distribuição GOVERNANCA → LICITACAO
 
 - **ID:** LIC-GOV-DIST-001
-- **Estado:** PENDENTE — teste operacional ainda não executado
+- **Estado:** BLOQUEADO — execução operacional real pendente
+- **Última verificação:** 2026-10-21
 - **Repositório de origem:** [carlos-andrade/GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA)
 - **Repositório de destino:** [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO)
-- **PR que prepara o modo de teste controlado:** [GOVERNANCA #21](https://github.com/carlos-andrade/GOVERNANCA/pull/21)
-- **PR que formaliza a adoção proposta:** [LICITACAO #4](https://github.com/carlos-andrade/LICITACAO/pull/4)
+- **PR do modo de teste controlado:** [GOVERNANCA #21](https://github.com/carlos-andrade/GOVERNANCA/pull/21)
+- **PR da proposta de adoção:** [LICITACAO #4](https://github.com/carlos-andrade/LICITACAO/pull/4)
 
-## Estado factual
+## Estado verificado
 
-A infraestrutura de distribuição existente usa a política `pull_request_only`. O script cria/atualiza uma branch e abre/atualiza uma Pull Request; não executa merge.
+A PR GOVERNANCA #21 está integrada. A PR LICITACAO #4 também está integrada. A consulta à API de reviews de ambas devolveu listas vazias: não existe review de aprovação registada nas evidências consultadas. Por isso, a integração não deve ser descrita como aprovação humana comprovada.
 
-O mecanismo atual filtra os destinos para incluir apenas `enabled: true`. Por isso, o teste de LICITACAO exige primeiro que a PR GOVERNANCA #21 seja revista, aprovada e integrada, incluindo a exceção de teste limitada a este repositório. Até lá, **não há evidência de que a distribuição para LICITACAO tenha sido executada com sucesso**.
+A execução [39520440947](https://github.com/carlos-andrade/GOVERNANCA/actions/runs/39520440947) terminou com sucesso, mas o nome do workflow é **Governance Integration — validação F1/F2**. É evidência de CI da PR #21, não é uma execução do workflow de distribuição para LICITACAO e não comprova a criação de uma PR de sincronização.
 
-## Procedimento de teste após a integração da GOVERNANCA #21
+O workflow oficial [Propagar regras canónicas da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/blob/main/.github/workflows/propagar-regras-governanca.yml) disponibiliza `workflow_dispatch` com os parâmetros de teste controlado. A execução manual deve ser acionada no GitHub Actions. A integração disponível nesta sessão não expõe uma ação para disparar `workflow_dispatch`; portanto, não se afirma que o teste foi executado.
 
-1. Confirmar que a PR #21 foi integrada por revisão humana autorizada e que os testes CI passaram.
-2. No repositório GOVERNANCA, abrir Actions → **Propagar regras canónicas da GOVERNANCA** → Run workflow.
-3. Primeira execução (simulação):
+O registo central continua a manter `carlos-andrade/LICITACAO` com `enabled: false`.
+
+## Procedimento para concluir o teste
+
+1. Abrir o workflow [Propagar regras canónicas da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/actions/workflows/propagar-regras-governanca.yml) no GitHub e escolher **Run workflow**.
+2. Executar primeiro a simulação com:
    - `dry_run=true`
    - `repository=carlos-andrade/LICITACAO`
    - `allow_disabled_test=true`
-4. Confirmar no relatório que o destino único é LICITACAO e que o resultado é `WOULD_OPEN_PR`; guardar URL da execução e artefacto.
-5. Segunda execução (publicação controlada):
+3. Guardar a URL da execução e o artefacto `relatorio-propagacao-governanca`; confirmar que o relatório identifica apenas LICITACAO e o resultado `WOULD_OPEN_PR`.
+4. Só depois da simulação validada, executar publicação controlada com:
    - `dry_run=false`
    - `repository=carlos-andrade/LICITACAO`
    - `allow_disabled_test=true`
-6. Confirmar que o workflow termina sem erro, registar o artefacto `relatorio-propagacao-governanca` e identificar a PR criada/atualizada em LICITACAO.
-7. Verificar o diff da PR de destino: ficheiros somente sob `.governanca/upstream/`, manifesto com commit de origem e hashes, sem sobrescrita de documentos locais.
-8. Verificar que a PR permanece aberta e não foi integrada automaticamente; guardar URL, estado e data/hora da verificação.
-9. Confirmar que o registo central continua com `enabled: false` durante o teste.
+5. Guardar URL da execução, relatório e URL da PR criada/atualizada em LICITACAO.
+6. Verificar o diff: alterações confinadas a `.governanca/upstream/`, manifesto com commit de origem e hashes, sem sobrescrita de documentos locais.
+7. Confirmar que a PR de sincronização permanece aberta e não foi integrada automaticamente.
+8. Confirmar que o registo central continua com `enabled: false` durante o teste.
 
-## Registo dos resultados
+## Matriz de evidências
 
-| Evidência | Resultado |
+| Evidência | Resultado verificado |
 |---|---|
-| Review e merge humano da GOVERNANCA #21 | PENDENTE |
-| CI da GOVERNANCA #21 | EM EXECUÇÃO no momento da preparação deste documento |
-| URL da execução dry-run | PENDENTE |
-| Relatório dry-run / artefacto | PENDENTE |
-| URL da execução de publicação controlada | PENDENTE |
-| PR criada/atualizada em LICITACAO | PENDENTE |
-| Diff confinado a `.governanca/upstream/` | PENDENTE |
-| Confirmação de ausência de merge automático | PENDENTE |
-| Verificação de `enabled: false` mantido durante o teste | PENDENTE |
+| PR GOVERNANCA #21 integrada | SIM |
+| Review APPROVE registada na PR #21 | NÃO ENCONTRADA |
+| CI da PR #21 | SUCESSO; execução 39520440947, workflow de validação F1/F2 |
+| PR LICITACAO #4 integrada | SIM |
+| Review APPROVE registada na PR #4 | NÃO ENCONTRADA |
+| Execução dry-run do workflow de distribuição | PENDENTE |
+| Relatório/artefacto da simulação | PENDENTE |
+| Execução real de publicação controlada | PENDENTE |
+| PR de sincronização criada pelo workflow | PENDENTE |
+| Diff da PR verificado | PENDENTE |
+| Ausência de merge automático verificada | PENDENTE |
+| `enabled: false` mantido | CONFIRMADO na última leitura do registo central |
 
 ## Critério de conclusão
 
-Esta evidência só pode ser marcada como **APROVADA** quando as ligações e resultados reais forem registados e revistos. Não preencher resultados por inferência. Uma simulação bem-sucedida não substitui a execução real de publicação por PR.
+Esta validação só pode ser marcada como **APROVADA** quando as URLs, os relatórios e a PR real de destino forem registados e revistos. Não inferir a execução operacional a partir de testes unitários ou CI de outro workflow.
 
-A conclusão desta validação não aprova automaticamente a adoção da GOVERNANCA, não altera o registo central e não desbloqueia o Gate G0 de LICITACAO.
+A adoção normativa, o teste de distribuição e o Gate G0 são controlos separados. Este documento não ativa o registo central, não certifica aprovação humana e não desbloqueia o Gate G0 de LICITACAO.
