@@ -1,0 +1,72 @@
+name: Auto-approve low-risk documentation
+
+on:
+  pull_request_target:
+    types: [opened, reopened, synchronize, ready_for_review]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+jobs:
+  auto-approve-docs:
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check scope and approve eligible documentation
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.LICITACAO_REVIEW_TOKEN }}
+          script: |
+            const { owner, repo } = context.repo;
+            const pr = context.payload.pull_request;
+            const author = pr.user.login.toLowerCase();
+
+            if (!process.env.LICITACAO_AUTOREVIEW_BOT || author === process.env.LICITACAO_AUTOREVIEW_BOT.toLowerCase()) {
+              core.notice('Auto-approval skipped: bot identity is not configured or authored this PR.');
+              return;
+            }
+
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner, repo, pull_number: pr.number, per_page: 100
+            });
+
+            if (files.length === 0) {
+              core.notice('Auto-approval skipped: no changed files found.');
+              return;
+            }
+
+            const eligible = files.every(f =>
+              f.status !== 'removed' &&
+              (f.filename.startsWith('EDITAIS/') || f.filename.startsWith('FORNECEDORES/')) &&
+              f.filename.endsWith('.md')
+            );
+
+            if (!eligible) {
+              core.notice('Auto-approval skipped: PR includes files outside the low-risk documentation allowlist.');
+              return;
+            }
+
+            const reviews = await github.paginate(github.rest.pulls.listReviews, {
+              owner, repo, pull_number: pr.number, per_page: 100
+            });
+            const alreadyApproved = reviews.some(r =>
+              r.user?.login?.toLowerCase() === process.env.LICITACAO_AUTOREVIEW_BOT.toLowerCase() &&
+              r.state === 'APPROVED' &&
+              r.commit_id === pr.head.sha
+            );
+
+            if (alreadyApproved) {
+              core.notice('This head commit is already approved by the configured documentation bot.');
+              return;
+            }
+
+            await github.rest.pulls.createReview({
+              owner,
+              repo,
+              pull_number: pr.number,
+              event: 'APPROVE',
+              body: 'Aprovação automática de baixo risco: somente arquivos Markdown em EDITAIS/ e/ou FORNECEDORES/ foram alterados. Esta aprovação não valida preços, fontes externas, conformidade jurídica ou habilitação de fornecedores. As verificações obrigatórias e as regras de merge continuam aplicáveis.'
+            });
+        env:
+          LICITACAO_AUTOREVIEW_BOT: ${{ vars.LICITACAO_AUTOREVIEW_BOT }}
