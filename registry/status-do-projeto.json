@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "project": "LICITACAO",
-  "status": "G0 aprovado para entrada; adoção GOVERNANCA e ativação pendentes",
+  "status": "G0 aprovado; adoção GOVERNANCA aprovada com limitações; ativação central pendente da PR #32",
   "updated_at": "2026-10-21",
   "last_reviewed_at": "2026-10-21",
   "phase": "inicio",
@@ -140,7 +140,7 @@
     "Distribuição upstream por PR ainda não foi demonstrada ponta a ponta.",
     "WATCHDOG: LIC-WD-006 foi revalidado como PASS; outros controlos permanecem UNKNOWN ou pendentes e precisam de evidência operacional.",
     "O CI valida apenas os controlos implementados no workflow; não equivale à aceitação integral da adoção.",
-    "Adoção individual da GOVERNANCA permanece EM_REVISAO até revisão/merge/CI da distribuição upstream PR #23 e execução documentada da checklist WATCHDOG; manter LICITACAO.enabled=false até conclusão."
+    "Ativação central de LICITACAO.enabled depende da integração da GOVERNANCA PR #32; sete controlos WATCHDOG continuam UNKNOWN e não podem ser declarados operacionais."
   ],
   "review_note": "Revalidação documental em 2026-10-21. O ruleset protect-main está ativo e exige o check validate; o run 39512218234 concluiu com sucesso. A pontuação permanece zero porque o Gate G0 e os critérios de aceitação ainda não foram formalmente validados e aprovados. Não inferir conclusão a partir da configuração técnica isolada.",
   "evidence": [
