@@ -13,9 +13,10 @@ on:
       - "docs/governanca/**"
       - "EDITAIS/**"
       - "FORNECEDORES/**"
+      - "GOVERNANCA/**"
       - ".governanca/upstream/**"
       - "assets/status-dashboard.svg"
-      - ".github/workflows/validate-governance.yml"
+      - ".github/workflows/**"
   pull_request:
     paths:
       - "README.md"
@@ -27,9 +28,10 @@ on:
       - "docs/governanca/**"
       - "EDITAIS/**"
       - "FORNECEDORES/**"
+      - "GOVERNANCA/**"
       - ".governanca/upstream/**"
       - "assets/status-dashboard.svg"
-      - ".github/workflows/validate-governance.yml"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
