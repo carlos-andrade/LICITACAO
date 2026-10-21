@@ -74,10 +74,10 @@ Este é um levantamento inicial para entrada do projeto; não equivale a parecer
 | AC-03 | Escopo e exclusões delimitados | Secção 3; documentado |
 | AC-04 | Riscos e mitigações iniciais registados | Secção 4; documentado |
 | AC-05 | Critérios objetivos e plano inicial definidos | Esta secção; definido para validação nas fases seguintes |
-| AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | PENDENTE: PR #23, checks pós-merge e checklist WATCHDOG |
-| AC-07 | Autorização de ativação registada no repositório-mestre | PENDENTE até concluir AC-06 e a revisão formal da adoção |
+| AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | CONCLUÍDO COM LIMITAÇÕES: PR #24 integrada; 79/79 SHA iguais; CI pós-merge PASS; checklist WATCHDOG executada com 7 UNKNOWN |
+| AC-07 | Autorização de ativação registada no repositório-mestre | PROPOSTA PENDENTE: GOVERNANCA PR #32, em rascunho até integrar a inspeção APROVADO_COM_LIMITACOES |
 
-**Plano inicial:** (1) concluir distribuição documental por PR; (2) validar os controlos locais WATCHDOG e atualizar evidências; (3) confirmar CI e integridade dos espelhos; (4) reavaliar adoção individual; (5) só então propor a alteração do registo-mestre para `enabled: true`.
+**Plano inicial:** (1) distribuição documental concluída por PR #24; (2) checklist WATCHDOG executada, com sete controlos UNKNOWN explícitos; (3) CI pós-merge e integridade de 79/79 espelhos confirmadas; (4) adoção documental aprovada com limitações; (5) integrar a GOVERNANCA PR #32 pelo processo autorizado para efetivar `enabled: true`.
 
 ## 6. Decisão G0
 
