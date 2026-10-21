@@ -23,7 +23,7 @@ Registar uma proposta de atualização do snapshot de normas GOVERNANCA no LICIT
 
 A referência de origem foi atualizada para o commit `4da3029356e446ecbc6303124fc8019ee188450b`. A PR [#24](https://github.com/carlos-andrade/LICITACAO/pull/24) foi integrada. A comparação pós-merge confirmou 79/79 Git blob SHA coincidentes entre origem e destino, sem divergências.
 
-A comparação demonstra igualdade de conteúdo para todos os 79 ficheiros incluídos na PR. A validação operacional final exige check `validate` concluído com sucesso, merge da PR, comparação pós-merge e execução documentada da checklist WATCHDOG.
+A comparação pós-merge demonstra igualdade de conteúdo para todos os 79 ficheiros incluídos na PR. O check `validate` concluiu com sucesso e a checklist documental WATCHDOG foi executada; os sete controlos sem evidência permanecem UNKNOWN.
 
 ## Estado da PR de distribuição
 
@@ -34,7 +34,7 @@ A comparação demonstra igualdade de conteúdo para todos os 79 ficheiros inclu
 ## Conteúdo da proposta
 
 - Atualizar `source_commit` e as referências canónicas no manifesto.
-- Preservar o estado `adoption_status: EM_REVISAO`.
+- Estado do manifesto atualizado para `adoption_status: APROVADO_COM_LIMITACOES` na PR de alinhamento documental #25.
 - Preservar a política `distribution_policy: pull_request_only`.
 - Manter os bloqueios de adoção e validação operacional explícitos.
 - Submeter a alteração a revisão por pull request; não executar merge automaticamente.
@@ -44,9 +44,9 @@ A comparação demonstra igualdade de conteúdo para todos os 79 ficheiros inclu
 1. Verificar o diff da PR e confirmar que os destinos locais não são sobrescritos indevidamente.
 2. Executar a validação automatizada aplicável e registar o resultado real do workflow.
 3. Demonstrar o processo de distribuição ponta a ponta por PR, incluindo geração da proposta, checks, revisão e ausência de merge automático.
-4. Executar a checklist WATCHDOG local e documentar cada resultado com evidência.
-5. Obter revisão independente e aprovação formal da adoção.
-6. Só após aprovação individual e validação operacional, propor por PR a alteração de `LICITACAO.enabled` no registo central GOVERNANCA.
+4. Checklist WATCHDOG executada: 1 PASS e 7 UNKNOWN; os UNKNOWN permanecem limitações operacionais.
+5. A adoção documental foi aprovada com limitações; integração do alinhamento final aguarda a PR #25.
+6. A ativação central está proposta na [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), que permanece em rascunho até a PR #25 ser integrada.
 
 ## Resultado
 
