@@ -32,6 +32,20 @@
 
 Esses preços são referências externas para orientar a pesquisa, não cotações recebidas dos seis leads nem preço unitário oficial deste edital. As datas, especificações completas, frete, tributos e condições comerciais podem diferir. O registo específico da UFRB no PNCP e seus anexos continuam sendo a fonte oficial primária para a demanda objeto desta análise.
 
+## 2.2 Preços publicados no catálogo dos fornecedores pesquisados
+
+| Fornecedor | Produto anunciado | Preço público encontrado | Disponibilidade / ressalva | Fonte |
+|---|---|---:|---|---|
+| Elétrica Bahiana | Fita isolante 3M Imperial preta, 18 mm × 20 m | R$ 11,45/un. | Preço de catálogo público; confirmar estoque, preço atual, desconto para CNPJ e frete. A dimensão/modelo precisa ser confrontada com o termo de referência. | https://www.eletricabahiana.com.br/ |
+| Elétrica Bahiana | Fita isolante antichama Enerbras 2000-EN, preta, 20 m | R$ 6,49/un. | Preço exibido na página de ofertas; confirmar estoque, preço atual e especificação técnica. | https://www.eletricabahiana.com.br/ofertas |
+| Eletrobahia | Não foi localizado preço público verificável para o item | Não localizado | Solicitar cotação diretamente. | https://www.eletrobahia.net.br/ |
+| Forte Materiais Elétricos | Não foi localizado preço público verificável para o item | Não localizado | Solicitar cotação diretamente. | https://fortemateriaiseletricos.com.br/ |
+| Revolux Elétrica | Não foi localizado preço público verificável para o item | Não localizado | Solicitar cotação diretamente. | https://revoluxeletrica.com.br/ |
+| Elétrica Israel | Não foi localizado preço público verificável para o item | Não localizado | Solicitar cotação diretamente. | https://eletricaisrael.com.br/ |
+| Steck / canal autorizado | Preço publicado por revendedores, não cotação direta da Steck | R$ 16,60–R$ 16,77/un. para Fiteck Pro SFT1820 em páginas de varejo | Referência varejista para 19 mm × 20 m × 0,18 mm, 750 V; não equivale a proposta comercial da Steck nem confirma adequação ao edital. | https://www.anhangueraferramentas.com.br/produto/fita-isolante-fiteck-pro-19mm-x-20m-sft1820-steck-106557 ; https://www.eletrolico.com.br/instalacao/fitas-adesivas/fita-isolante-19mm-20mt-preta-fiteck-s8640-steck |
+
+**Nota:** preços acima são anúncios públicos consultados em 21/10/2026, não propostas formais emitidas para esta licitação. Não incluem frete confirmado para Cruz das Almas/BA e podem variar por disponibilidade, quantidade, condições de pagamento e desconto empresarial. A comparação definitiva exige a especificação oficial do item e cotação escrita.
+
 ## 3. Leitura atual
 
 - **Não é possível apontar o fornecedor mais barato**: não foram recebidas propostas comerciais.
@@ -63,3 +77,4 @@ Esses preços são referências externas para orientar a pesquisa, não cotaçõ
 
 - 2026-10-21 — criada tabela comparativa preliminar; nenhuma cotação recebida.
 - 2026-10-21 — adicionadas duas referências públicas de preço, explicitamente separadas de cotações comerciais.
+- 2026-10-21 — adicionados preços públicos de catálogo encontrados para Elétrica Bahiana e referências varejistas da linha Steck; cotações formais dos fornecedores permanecem pendentes.
