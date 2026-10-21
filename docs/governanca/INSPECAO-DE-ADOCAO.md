@@ -66,5 +66,5 @@ A próxima fase de projeto é G1 — viabilidade. A implementação funcional de
 
 - **Decisão de adoção:** APROVADO_COM_LIMITACOES em 2026-10-21.
 - **Aprovador:** Carlos Andrade, conforme registo-mestre e instrução explícita de regularização.
-- **Registo-mestre efetivo:** `LICITACAO.enabled=false` até a [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32) ser aprovada e integrada pelo processo autorizado.
+- **Registo-mestre efetivo:** `LICITACAO.enabled=true` desde a [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32). A ativação não equivale a certificação operacional.
 - **Condição de ativação:** manter limitações WATCHDOG visíveis e não declarar controlo operacional sem evidência.

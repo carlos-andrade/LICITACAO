@@ -75,7 +75,7 @@ Este é um levantamento inicial para entrada do projeto; não equivale a parecer
 | AC-04 | Riscos e mitigações iniciais registados | Secção 4; documentado |
 | AC-05 | Critérios objetivos e plano inicial definidos | Esta secção; definido para validação nas fases seguintes |
 | AC-06 | Adoção individual da GOVERNANCA e distribuição upstream validadas | CONCLUÍDO COM LIMITAÇÕES: PR #24 integrada; 79/79 SHA iguais; CI pós-merge PASS; checklist WATCHDOG executada com 7 UNKNOWN |
-| AC-07 | Autorização de ativação registada no repositório-mestre | PROPOSTA PENDENTE: GOVERNANCA PR #32, em rascunho até integrar a inspeção APROVADO_COM_LIMITACOES |
+| AC-07 | Autorização de ativação registada no repositório-mestre | CONCLUÍDO: GOVERNANCA PR #32 integrada; `LICITACAO.enabled=true` efetivo para âmbito de distribuição |
 
 **Plano inicial:** (1) distribuição documental concluída por PR #24; (2) checklist WATCHDOG executada, com sete controlos UNKNOWN explícitos; (3) CI pós-merge e integridade de 79/79 espelhos confirmadas; (4) adoção documental aprovada com limitações; (5) integrar a GOVERNANCA PR #32 pelo processo autorizado para efetivar `enabled: true`.
 
@@ -83,13 +83,15 @@ Este é um levantamento inicial para entrada do projeto; não equivale a parecer
 
 **Decisão: APROVADO para entrada e planeamento do projeto**, com base no propósito, beneficiários, papéis, escopo, exclusões, riscos e critérios iniciais documentados acima e na instrução explícita de regularização e ativação emitida pelo titular do repositório em 2026-10-21.
 
-A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24), com 79/79 Git blob SHA coincidentes e CI pós-merge PASS. A adoção documental fica aprovada com limitações; sete controlos WATCHDOG permanecem UNKNOWN e o WATCHDOG não é operacional. A alteração do registo-mestre para `enabled: true` é proposta separadamente pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), sujeita aos checks e à integração autorizada.
+A distribuição upstream foi integrada pela [PR #24](https://github.com/carlos-andrade/LICITACAO/pull/24), com 79/79 Git blob SHA coincidentes e CI pós-merge PASS. A adoção documental fica aprovada com limitações; sete controlos WATCHDOG permanecem UNKNOWN e o WATCHDOG não é operacional. A alteração do registo-mestre para `enabled: true` foi integrada pela [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32), commit `cedba71292a107b1f4b5733987c6262d50c46673`.
 
 - **Aprovador / patrocinador registado:** Carlos Andrade (titular indicado no registo-mestre).
 - **Data da decisão:** 2026-10-21.
 - **Evidência:** pedido explícito de resolução do Gate G0 e ativação, mais esta decisão versionada no repositório.
-- **Estado de ativação no registo-mestre:** `false` até integração da proposta [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32).
+- **Estado de ativação no registo-mestre:** `true` desde a integração da [GOVERNANCA PR #32](https://github.com/carlos-andrade/GOVERNANCA/pull/32); âmbito de distribuição apenas.
 
 ## 7. Histórico
 
 - 2026-10-21 — Reavaliação documental; problema, resultado, beneficiários, papéis, escopo, riscos e critérios iniciais consolidados. G0 aprovado; adoção documental aprovada com limitações após validação da distribuição; ativação central pendente de PR #32.
+
+- 2026-10-21 — Estado de ativação reconciliado após a integração da GOVERNANCA PR #32; `enabled=true` efetivo para âmbito de distribuição.

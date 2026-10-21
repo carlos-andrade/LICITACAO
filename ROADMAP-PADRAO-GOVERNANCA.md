@@ -25,7 +25,7 @@
 - **Estado:** APROVADO_COM_LIMITACOES — G0 aprovado e distribuição upstream validada; WATCHDOG não operacional.
 - **Fase atual:** Início / adoção de governança.
 - **Percentual comprovado:** 0% até existir um scorecard validado; não confundir criação de ficheiros com controlo aceite.
-- **Próximo marco:** avançar para G1 — viabilidade, com análise de fontes, procura, custo total, margem, risco e dependências; ativação de distribuição será formalizada na GOVERNANCA por PR #32.
+- **Próximo marco:** avançar para G1 — viabilidade, com análise de fontes, procura, custo total, margem, risco e dependências. A ativação do âmbito de distribuição foi efetivada pela GOVERNANCA PR #32; os gates funcionais continuam a aplicar-se.
 - **Bloqueios:** a distribuição automática da GOVERNANCA depende de credencial válida e operação comprovada; o repositório mestre documenta falha de autenticação anterior. Não afirmar sincronização automática ativa.
 - **Riscos principais:** adoção meramente documental; regras upstream desatualizadas; exposição indevida de informação comercial; preços calculados com custos incompletos; dependência de fontes externas; falta de cobertura de testes.
 - **Evidência central:** [GOVERNANCA — Carta/Contrato](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md), [Roadmap padrão](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md), [Constituição](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md).
