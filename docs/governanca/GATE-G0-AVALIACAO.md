@@ -30,6 +30,7 @@ A Constituição da GOVERNANCA define G0 como a confirmação de problema, benef
 - Ruleset [protect-main](https://github.com/carlos-andrade/LICITACAO/rules/25512579) ativo; exige uma aprovação, resolução de conversas e check de estado validate.
 - [Execução de CI 39512218234](https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234) concluída com sucesso no commit 7c236b33212d310a3787398a328104b59ffc86d0.
 - O registo-mestre da GOVERNANCA mantém LICITACAO com enabled: false, até aprovação individual e validação operacional da distribuição por PR: [registo de consumidores](https://github.com/carlos-andrade/GOVERNANCA/blob/main/registry/repositorios-consumidores.json).
+- A issue de acompanhamento [LICITACAO #6 — concluir Gate G0 e validar distribuição upstream](https://github.com/carlos-andrade/LICITACAO/issues/6) consolida as ações pendentes; a sua criação não constitui aprovação do gate.
 
 ## Condições para desbloqueio
 
@@ -51,3 +52,4 @@ A Constituição da GOVERNANCA define G0 como a confirmação de problema, benef
 - Aprovador: pendente.
 - Data de aprovação: não aplicável.
 - Evidência de aprovação: inexistente.
+- Issue de acompanhamento: [LICITACAO #6](https://github.com/carlos-andrade/LICITACAO/issues/6).
