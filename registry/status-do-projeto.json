@@ -1,12 +1,12 @@
 {
   "schema_version": 2,
   "project": "LICITACAO",
-  "status": "Em início — Gate G0 bloqueado",
+  "status": "G0 aprovado para entrada; adoção GOVERNANCA e ativação pendentes",
   "updated_at": "2026-10-21",
   "last_reviewed_at": "2026-10-21",
   "phase": "inicio",
   "points": {
-    "inicio": 0,
+    "inicio": 20,
     "meio": 0,
     "fim": 0
   },
@@ -16,36 +16,47 @@
         "id": "INI-01",
         "label": "Objetivo e problema definidos",
         "max_points": 5,
-        "earned_points": 0,
-        "evidence": []
+        "earned_points": 5,
+        "evidence": [
+          "docs/governanca/GATE-G0-AVALIACAO.md#problema-e-resultado-esperado",
+          "README.md"
+        ]
       },
       {
         "id": "INI-02",
         "label": "Responsável e partes interessadas identificados",
         "max_points": 3,
-        "earned_points": 0,
-        "evidence": []
+        "earned_points": 3,
+        "evidence": [
+          "docs/governanca/GATE-G0-AVALIACAO.md#beneficiarios-e-partes-interessadas"
+        ]
       },
       {
         "id": "INI-03",
         "label": "Escopo e exclusões registados",
         "max_points": 4,
-        "earned_points": 0,
-        "evidence": []
+        "earned_points": 4,
+        "evidence": [
+          "docs/governanca/GATE-G0-AVALIACAO.md#escopo-inicial-e-exclusoes"
+        ]
       },
       {
         "id": "INI-04",
         "label": "Riscos e dependências iniciais avaliados",
         "max_points": 4,
-        "earned_points": 0,
-        "evidence": []
+        "earned_points": 4,
+        "evidence": [
+          "docs/governanca/GATE-G0-AVALIACAO.md#riscos-iniciais-e-mitigacao"
+        ]
       },
       {
         "id": "INI-05",
         "label": "Critérios de aceitação e plano aprovados",
         "max_points": 4,
-        "earned_points": 0,
-        "evidence": []
+        "earned_points": 4,
+        "evidence": [
+          "docs/governanca/GATE-G0-AVALIACAO.md#criterios-de-aceitacao-e-plano-inicial"
+        ]
       }
     ],
     "meio": [
@@ -125,11 +136,11 @@
   },
   "next_milestone": "Completar evidências e obter aprovação explícita do Gate G0; não iniciar estrutura funcional antes dessa aprovação.",
   "blockers": [
-    "Gate G0 não aprovado: problema/resultado esperado, beneficiário, patrocinador e responsável formal ainda não estão todos documentados e aprovados.",
     "Adoção formal da GOVERNANCA permanece EM_REVISAO; o registo-mestre mantém LICITACAO com enabled=false até aprovação individual e validação operacional da distribuição por PR.",
     "Distribuição upstream por PR ainda não foi demonstrada ponta a ponta.",
     "WATCHDOG: LIC-WD-006 foi revalidado como PASS; outros controlos permanecem UNKNOWN ou pendentes e precisam de evidência operacional.",
-    "O CI valida apenas os controlos implementados no workflow; não equivale à aceitação integral da adoção."
+    "O CI valida apenas os controlos implementados no workflow; não equivale à aceitação integral da adoção.",
+    "Adoção individual da GOVERNANCA permanece EM_REVISAO até revisão/merge/CI da distribuição upstream PR #23 e execução documentada da checklist WATCHDOG; manter LICITACAO.enabled=false até conclusão."
   ],
   "review_note": "Revalidação documental em 2026-10-21. O ruleset protect-main está ativo e exige o check validate; o run 39512218234 concluiu com sucesso. A pontuação permanece zero porque o Gate G0 e os critérios de aceitação ainda não foram formalmente validados e aprovados. Não inferir conclusão a partir da configuração técnica isolada.",
   "evidence": [
