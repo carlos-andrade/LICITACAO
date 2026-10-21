@@ -34,7 +34,7 @@ Ausência de dados ou de execução nunca equivale a PASS. Remediação automát
 
 ## Sistemas a monitorizar
 
-Consultar [registry/sistemas-monitorizados.json](registry/sistemas-monitorizados.json) e [registry/controlos-obrigatorios.json](registry/controlos-obrigatorios.json). Owners funcionais permanecem pendentes até nomeação. Verificações externas e supervisão independente permanecem UNKNOWN até implementação e teste. A verificação atual da API do GitHub reporta a branch `main` sem proteção (`protected=false`; `protection.enabled=false`); o controlo correspondente está em `FAIL` até serem ativadas e verificadas regras de proteção, revisão e CI obrigatória.
+Consultar [registry/sistemas-monitorizados.json](registry/sistemas-monitorizados.json) e [registry/controlos-obrigatorios.json](registry/controlos-obrigatorios.json). Owners funcionais permanecem pendentes até nomeação. Verificações externas e supervisão independente permanecem UNKNOWN até implementação e teste. A inspeção de adoção registada em 2026-10-21 reporta o ruleset `protect-main` ativo, com aprovação obrigatória, resolução de conversas e check `validate`. Esta evidência contradiz o registo histórico anterior de branch sem proteção; por isso, o estado do controlo de proteção deve ser revalidado na próxima execução e o resultado atual documentado com evidência datada. Não declarar o WATCHDOG operacional apenas com base na proteção da branch.
 
 ## Critério de adoção operacional
 
