@@ -29,7 +29,7 @@ on:
       - "FORNECEDORES/**"
       - ".governanca/upstream/**"
       - "assets/status-dashboard.svg"
-      - ".github/workflows/validate-governance.yml"
+      - ".github/workflows/**"
   workflow_dispatch:
 
 permissions:
