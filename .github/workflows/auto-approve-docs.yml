@@ -14,30 +14,30 @@ jobs:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     permissions:
+      contents: read
       pull-requests: write
     steps:
+      - name: Create short-lived token for LICITACAO-AutoReview
+        id: app-token
+        uses: actions/create-github-app-token@v2
+        with:
+          app-id: ${{ secrets.LICITACAO_APP_ID }}
+          private-key: ${{ secrets.LICITACAO_APP_PRIVATE_KEY }}
+          owner: ${{ github.repository_owner }}
+          repositories: LICITACAO
+          permission-pull-requests: write
+
       - name: Approve eligible documentation-only changes
         uses: actions/github-script@v7
-        env:
-          REVIEW_TOKEN: ${{ secrets.LICITACAO_REVIEW_TOKEN }}
-          AUTOREVIEW_BOT: ${{ vars.LICITACAO_AUTOREVIEW_BOT }}
         with:
-          github-token: ${{ secrets.LICITACAO_REVIEW_TOKEN }}
+          github-token: ${{ steps.app-token.outputs.token }}
           script: |
             const { owner, repo } = context.repo;
             const pr = context.payload.pull_request;
-            const botLogin = (process.env.AUTOREVIEW_BOT || '').trim().replace(/^@/, '').toLowerCase();
+            const botLogin = 'licitacao-autoreview[bot]';
 
-            if (!process.env.REVIEW_TOKEN) {
-              core.setFailed('Secret LICITACAO_REVIEW_TOKEN is not configured.');
-              return;
-            }
-            if (!botLogin) {
-              core.setFailed('Variable LICITACAO_AUTOREVIEW_BOT is not configured.');
-              return;
-            }
             if (pr.user.login.toLowerCase() === botLogin) {
-              core.info('Skipping: PR author is the configured review bot.');
+              core.info('Skipping: PR author is the review bot.');
               return;
             }
             if (pr.draft) {
@@ -72,7 +72,7 @@ jobs:
               review.commit_id === pr.head.sha
             );
             if (alreadyApproved) {
-              core.info('Skipping: configured bot already approved this exact head commit.');
+              core.info('Skipping: review bot already approved this exact head commit.');
               return;
             }
 
