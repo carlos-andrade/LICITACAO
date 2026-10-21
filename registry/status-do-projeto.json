@@ -1,9 +1,9 @@
 {
   "schema_version": 2,
   "project": "LICITACAO",
-  "status": "Em início",
-  "updated_at": "2026-10-20",
-  "last_reviewed_at": "2026-10-20",
+  "status": "Em início — Gate G0 bloqueado",
+  "updated_at": "2026-10-21",
+  "last_reviewed_at": "2026-10-21",
   "phase": "inicio",
   "points": {
     "inicio": 0,
@@ -123,15 +123,35 @@
       }
     ]
   },
-  "next_milestone": "Ativar proteção da branch main com revisão e verificações obrigatórias, concluir a revisão formal da adoção e depois validar o WATCHDOG e a propagação upstream.",
+  "next_milestone": "Completar evidências e obter aprovação explícita do Gate G0; não iniciar estrutura funcional antes dessa aprovação.",
   "blockers": [
-    "Adoção formal da governança local ainda não aprovada.",
-    "Proteção da branch main desativada na verificação atual (protected=false; protection.enabled=false); regras de revisão e verificações obrigatórias ainda precisam ser configuradas.",
-    "Espelho canónico inicial e parcial; manter source_commit e proveniência rastreáveis e completar a cobertura de published_roots.",
-    "CI do bootstrap executado com sucesso no escopo implementado; revisão/aceitação integral, operação WATCHDOG e propagação upstream de ponta a ponta ainda pendentes."
+    "Gate G0 não aprovado: problema/resultado esperado, beneficiário, patrocinador e responsável formal ainda não estão todos documentados e aprovados.",
+    "Adoção formal da GOVERNANCA permanece EM_REVISAO; o registo-mestre mantém LICITACAO com enabled=false até aprovação individual e validação operacional da distribuição por PR.",
+    "Distribuição upstream por PR ainda não foi demonstrada ponta a ponta.",
+    "WATCHDOG: LIC-WD-006 foi revalidado como PASS; outros controlos permanecem UNKNOWN ou pendentes e precisam de evidência operacional.",
+    "O CI valida apenas os controlos implementados no workflow; não equivale à aceitação integral da adoção."
   ],
-  "review_note": "Registo inicial conservador. Todos os critérios permanecem com zero pontos porque este registo ainda não foi validado e aceite formalmente de ponta a ponta. O CI valida apenas os controlos implementados no workflow; a criação de documentos e a aprovação isolada do CI não equivalem a conclusão comprovada.",
-  "evidence": [],
+  "review_note": "Revalidação documental em 2026-10-21. O ruleset protect-main está ativo e exige o check validate; o run 39512218234 concluiu com sucesso. A pontuação permanece zero porque o Gate G0 e os critérios de aceitação ainda não foram formalmente validados e aprovados. Não inferir conclusão a partir da configuração técnica isolada.",
+  "evidence": [
+    {
+      "id": "EVID-GOV-001",
+      "description": "Ruleset protect-main ativo; required status check validate configurado.",
+      "url": "https://github.com/carlos-andrade/LICITACAO/rules/25512579",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "EVID-CI-001",
+      "description": "GitHub Actions workflow run 39512218234 concluído com success no commit 7c236b33212d310a3787398a328104b59ffc86d0.",
+      "url": "https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234",
+      "verified_at": "2026-10-21"
+    },
+    {
+      "id": "EVID-G0-001",
+      "description": "Avaliação de Gate G0; estado bloqueado até registo completo e aprovação explícita.",
+      "url": "https://github.com/carlos-andrade/LICITACAO/blob/main/docs/governanca/GATE-G0-AVALIACAO.md",
+      "verified_at": "2026-10-21"
+    }
+  ],
   "closure_checks": {
     "acceptance_validated": false,
     "final_review_approved": false,

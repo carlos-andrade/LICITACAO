@@ -6,56 +6,68 @@
 | **Projeto** | LICITACAO |
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | RELATORIO_DE_INSPECAO |
-| **Fase** | Adoção de governança |
+| **Fase** | Adoção de governança — revalidação |
 | **Estado** | EM_REVISAO |
-| **Versão** | 0.1.0 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após validação final do conteúdo |
-| **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
-| **Data de criação** | 2026-10-20 |
-| **Data de atualização** | 2026-10-20 |
-| **Responsável** | Responsável do repositório — nomeação formal pendente |
+| **Versão** | 0.2.0 |
+| **Data de atualização** | 2026-10-21 |
+| **Responsável** | Pendente de nomeação formal no registo do projeto |
 | **Aprovador** | Pendente |
-| **Origem** | Inspeção documental inicial das referências públicas da GOVERNANCA e do LICITACAO |
 | **Autoridade superior** | [GOVERNANCA/CONSTITUICAO.md](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
-## Resultado
+## Resultado executivo
 
-Esta inspeção prepara a adoção no LICITACAO; não é certificação de conformidade. A GOVERNANCA exige inspeção individual e declara que referência normativa ou espelhamento, por si só, não prova adoção.
+A revalidação confirma que o ruleset protect-main está ativo na branch predefinida e exige o check de estado validate. A execução de CI conhecida terminou com sucesso no commit de referência. Estes factos corrigem a inspeção anterior, que refletia o estado anterior à ativação do ruleset.
 
-## Fontes canónicas consultadas
+**Resultado global: EM_REVISAO; Gate G0 não aprovado.** A existência de proteção técnica e CI verde não prova adoção integral nem satisfaz, por si só, os critérios de entrada do projeto. Não iniciar estrutura funcional enquanto G0 não tiver evidência suficiente e aprovação explícita.
 
-- [Constituição](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) — princípios, hierarquia, gates e WATCHDOG.
-- [Carta/Contrato de roadmap](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md) — adoção individual, fail-closed e evidências.
-- [Roadmap padrão](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md) — formato do plano executivo.
-- [Norma de status](https://github.com/carlos-andrade/GOVERNANCA/blob/main/standards/status-e-percentual-de-conclusao.md) — scorecard 20/60/20 e exigência de evidências.
-- [Norma de cabeçalho](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CABE%C3%87ALHO/NORMA-CABECALHO-PADRAO.md) — metadados documentais.
-- [WATCHDOG](https://github.com/carlos-andrade/GOVERNANCA/blob/main/WATCHDOG/README.md) — estados, limites e critérios operacionais.
-- [Registo dos consumidores](https://github.com/carlos-andrade/GOVERNANCA/blob/main/registry/repositorios-consumidores.json) — LICITACAO não estava listado como consumidor ativo na revisão.
+## Evidências verificadas
+
+- Ruleset ativo: [protect-main — ID 25512579](https://github.com/carlos-andrade/LICITACAO/rules/25512579). A leitura da API em 2026-10-21 confirmou enforcement active, alvo ~DEFAULT_BRANCH, revisão obrigatória de uma pessoa, resolução de conversas e check obrigatório validate (integration_id 15368).
+- CI de referência: [workflow run 39512218234](https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234), conclusão success, commit 7c236b33212d310a3787398a328104b59ffc86d0. Este run ocorreu em push para a branch principal; é evidência do workflow executado, não prova de que todas as futuras alterações passaram pelo check obrigatório.
+- Registo canónico da GOVERNANCA: [repositorios-consumidores.json](https://github.com/carlos-andrade/GOVERNANCA/blob/main/registry/repositorios-consumidores.json). LICITACAO consta do registo com enabled: false; a própria nota do registo condiciona a ativação à aprovação individual e validação operacional da distribuição por PR.
+- Constituição: [G0 — Entrada](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md), que exige problema, beneficiário, patrocinador e responsável identificados.
+- Carta/Contrato e roadmap padrão: [Carta](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CARTA-CONTRATO-PADRAO-ROADMAP.md) e [Roadmap](https://github.com/carlos-andrade/GOVERNANCA/blob/main/ROADMAP-PADRAO-GOVERNANCA.md), que exigem inspeção local, critérios objetivos e evidências verificáveis.
 
 ## Estado dos controlos locais
 
-| Controlo | Estado inicial | Ação exigida |
+| Controlo | Estado revalidado | Evidência / ação |
 |---|---|---|
-| Repositório acessível | PASS | Consultas públicas responderam |
-| README e referências locais | EM_REVISAO | Revisar links e escopo nesta branch |
-| Constituição/carta/roadmap | PENDENTE | Rever cabeçalhos, links e aprovar formalmente |
-| Scorecard canónico | PENDENTE | Executar testes de esquema, pesos e evidências |
-| WATCHDOG local | UNKNOWN | Executar validador e rever sistema/controlos declarados |
-| CI do bootstrap executada com sucesso | PASS (escopo do workflow) | Execução [39449489411](https://github.com/carlos-andrade/LICITACAO/actions/runs/39449489411), commit `965d1a2993e49cd5b0ae7a4dacca84226bb2e379`; não certifica adoção ou conformidade integral |
-| Proteção da branch `main` | FAIL (desativada) | Ativar proteção com revisão obrigatória e verificações de CI exigidas; repetir a leitura e guardar evidência |
-| Supervisão externa independente | UNKNOWN | Ainda não implementada; exige integração e teste |
-| Propagação automática da GOVERNANCA | BLOQUEADO/UNKNOWN | O mestre registou falha anterior de autenticação do token; revalidar secret sem o expor |
-| Adoção formal | EM_REVISAO | Revisão e aprovação de pessoa autorizada pendentes |
+| Repositório acessível | PASS | Repositório público acessível pela API do GitHub. |
+| Ruleset da branch principal | PASS | Ruleset protect-main ativo, ID 25512579; revisão e resolução de conversas exigidas. |
+| Check de CI obrigatório | PASS (configuração) | Contexto validate presente em required_status_checks; confirmar execução em cada PR. |
+| CI executado | PASS (escopo limitado) | Run 39512218234 concluído com sucesso; não certifica adoção integral. |
+| Constituição/carta/roadmap e mapeamento local | EM_REVISAO | Rever consistência documental e obter aceitação formal. |
+| Scorecard canónico | EM_REVISAO | Pontuação mantém-se a zero até validação e aceitação formal de critérios com evidências. |
+| WATCHDOG local | EM_REVISAO | LIC-WD-006 corrigido para PASS; os restantes controlos UNKNOWN/PENDENTES exigem execução ou integração real. |
+| Supervisão externa independente | UNKNOWN | Não demonstrada por evidência operacional. |
+| Distribuição upstream por PR | BLOQUEADO/PENDENTE | LICITACAO continua enabled: false no registo-mestre; validar fluxo operacional antes de pedir ativação. |
+| Adoção formal da GOVERNANCA | EM_REVISAO | Depende da inspeção, aprovação autorizada e validação operacional da distribuição por PR. |
+| Gate G0 — Entrada | BLOQUEADO | Problema/resultado esperado, beneficiário, patrocinador e responsável formal ainda não estão todos documentados e aprovados num registo de entrada. |
 
-## Decisão
+## Gate G0 — avaliação
 
-**Não declarar a governança ativada/concluída neste momento.** O pacote local está em preparação. Para completar a adoção: concluir a revisão dos ficheiros, obter aprovação formal, ativar e verificar proteção de `main` e regras de revisão/CI, inspecionar e testar WATCHDOG e validar a propagação upstream de ponta a ponta.
+O registo de avaliação está em [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md). O estado é **BLOQUEADO / AGUARDANDO EVIDÊNCIA**. Não atribuir aprovação implícita com base nesta revalidação técnica.
 
-## Limite da inspeção
+## Decisão e limites
 
-Não foi feita alteração ao repositório-mestre GOVERNANCA. O manifesto local identifica a origem e a política PR-only; não constitui espelho completo dos ficheiros canónicos nem prova de sincronização automática.
+1. Atualizar os registos não equivale a aprovar a adoção da GOVERNANCA.
+2. Não alterar o registo-mestre para enabled: true enquanto a aprovação individual e o teste de distribuição por PR não estiverem comprovados.
+3. Não iniciar a estrutura funcional do produto enquanto G0 não estiver aprovado.
+4. A proteção técnica foi verificada via ruleset API. A leitura do endpoint clássico de branch protection não foi usada como prova, pois não estava acessível pela integração; o ruleset é a evidência autoritativa disponível para esta verificação.
+5. O CI atual valida apenas o que está implementado no workflow. Não substitui revisão independente, validação de WATCHDOG nem aceitação formal.
 
-## Próxima ação
+## Próximas ações
 
-Rever esta preparação numa Pull Request; não fazer merge automático nem iniciar a estrutura funcional antes de concluir o gate de governança.
+1. Completar o registo G0 com problema, resultado, beneficiário, patrocinador, responsável, escopo inicial, riscos/dependências e critérios de aceitação.
+2. Obter aprovação explícita do Gate G0 por pessoa autorizada.
+3. Testar o fluxo de distribuição da GOVERNANCA por Pull Request sem merge automático e recolher evidência.
+4. Após os passos anteriores, solicitar a ativação de LICITACAO no registo-mestre por PR.
+5. Só após G0 aprovado, iniciar a estrutura funcional; manter a política de PR e CI obrigatório.
+
+## Histórico
+
+| Versão | Data | Alteração | Evidência |
+|---|---|---|---|
+| 0.1.0 | 2026-10-20 | Inspeção inicial, com proteção da branch ainda não ativada | Commit de referência anterior |
+| 0.2.0 | 2026-10-21 | Ruleset e check obrigatório revalidados; Gate G0 formalizado como bloqueado até haver evidência e aprovação | [Ruleset](https://github.com/carlos-andrade/LICITACAO/rules/25512579), [CI](https://github.com/carlos-andrade/LICITACAO/actions/runs/39512218234) |
