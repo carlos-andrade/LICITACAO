@@ -29,7 +29,7 @@ Preparar uma plataforma para identificar, analisar e acompanhar oportunidades de
 
 ## Governança primeiro
 
-Antes da estrutura funcional, o projeto adota como referência a GOVERNANCA. A documentação local, os gates, o estado do projeto e as verificações precisam ser revistos e aceites individualmente.
+O projeto adotou documentalmente a GOVERNANCA com limitações registadas. G0 está aprovado; a próxima fase é G1 — viabilidade. Os controlos WATCHDOG sem evidência permanecem UNKNOWN e não devem ser tratados como operacionais.
 
 - [Constituição local](CONSTITUICAO.md)
 - [Carta/Contrato de adoção do roadmap](CARTA-CONTRATO-PADRAO-ROADMAP.md)
@@ -61,7 +61,7 @@ Nenhuma proposta, preço, fornecedor ou edital será considerado aprovado sem va
 
 ## Status de governança
 
-O registo canónico é `registry/status-do-projeto.json`. O percentual deve ser calculado apenas a partir de critérios e evidências verificáveis segundo a norma de status da GOVERNANCA. O SVG é, nesta fase, uma representação provisória; automatizar sua geração a partir do registo é um critério de adoção pendente.
+O registo canónico é `registry/status-do-projeto.json`. O percentual deve ser calculado apenas a partir de critérios e evidências verificáveis segundo a norma de status da GOVERNANCA. O SVG é uma representação provisória; automatizar a sua geração a partir do registo permanece melhoria técnica, não uma alegação de monitorização operacional.
 
 ## Limitações atuais
 
