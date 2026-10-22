@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 import requests
 
 DEFAULT_URL = "https://pncp.gov.br/app/editais/00394502000144/2026/14259"
-API_ROOT = "https://pncp.gov.br/api/pncp/v1"
+API_ROOT = "https://pncp.gov.br/api/consulta/v1"
 USER_AGENT = "LICITACAO-PNCP-Contratacao/1.0 (+https://github.com/carlos-andrade/LICITACAO)"
 TIMEOUT = 40
 HEADERS = ["numero_item","descricao_resumida","descricao_detalhada","quantidade","unidade","valor_unitario_estimado","valor_total_estimado","situacao_item","criterio_julgamento","link_item"]
@@ -121,10 +121,10 @@ def flatten_item(item: dict, fallback_num: int) -> dict[str,str]:
     }
 def flatten_event(e: dict) -> dict[str,str]:
     return {k:clean(v) for k,v in {
-      "data":pick(e,"data","dataEvento","dataHora"),
-      "tipo":pick(e,"tipo","tipoEvento","descricaoTipoEvento"),
-      "descricao":pick(e,"descricao","descricaoEvento","mensagem"),
-      "usuario":pick(e,"usuario","nomeUsuario"),
+      "data":pick(e,"logManutencaoDataInclusao","data","dataEvento","dataHora"),
+      "tipo":pick(e,"tipoLogManutencaoNome","tipo","tipoEvento","descricaoTipoEvento"),
+      "descricao":pick(e,"justificativa","descricao","descricaoEvento","mensagem","documentoTitulo"),
+      "usuario":pick(e,"usuarioNome","usuario","nomeUsuario"),
     }.items()}
 def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
     with path.open("w",encoding="utf-8-sig",newline="") as f:
@@ -163,7 +163,7 @@ def main():
     item_rows=[flatten_item(it,i+1) for i,it in enumerate(items)]
     event_rows=[flatten_event(e) for e in events]
     meta={
-      "status":"COMPLETO" if "geral" in raw and "itens" in raw and not errors else ("PARCIAL" if raw else "FALHA"),
+      "status":"COMPLETO" if "geral" in raw and "itens" in raw and general and len(items) > 0 and not errors else ("PARCIAL" if raw else "FALHA"),
       "capturado_em_utc":captured,"url_contratacao":args.url,"cnpj":cnpj,"ano":year,"sequencial":seq,
       "endpoints_consultados":[x[1] for x in candidates],
       "base_api":"https://pncp.gov.br/api/pncp",
@@ -208,5 +208,5 @@ def main():
       wb.save(out/"contratacao-completa.xlsx")
     except ImportError: logging.warning("openpyxl não instalado; CSV e JSON gerados.")
     print(json.dumps({"status":meta["status"],"diretorio":str(out),"campos_gerais":len(general_row),"itens":len(item_rows),"eventos":len(event_rows),"erros":errors},ensure_ascii=False,indent=2))
-    return 0 if raw else 2
+    return 0 if meta["status"] == "COMPLETO" else 2
 if __name__=="__main__": raise SystemExit(main())
