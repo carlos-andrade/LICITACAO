@@ -1,19 +1,29 @@
 {
-  "status": "COMPLETO",
-  "capturado_em_utc": "2026-10-22T21:24:06+00:00",
+  "status": "PARCIAL",
+  "capturado_em_utc": "2026-10-22T22:20:34+00:00",
   "url_contratacao": "https://pncp.gov.br/app/editais/00394502000144/2026/14259",
   "cnpj": "00394502000144",
   "ano": 2026,
   "sequencial": 14259,
-  "endpoints_consultados": [
-    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259",
-    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/itens",
-    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/historico"
-  ],
-  "base_api": "https://pncp.gov.br/api/pncp",
-  "documentacao_api": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
-  "erros_por_endpoint": {},
+  "endpoints_consultados": {
+    "geral": "https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259",
+    "itens": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/itens",
+    "eventos": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/historico",
+    "fallback_geral": "https://pncp.gov.br/api/consulta/v1/contratacoes/proposta"
+  },
+  "fonte_dados_gerais": "consulta_detalhe",
+  "base_api_consulta": "https://pncp.gov.br/api/consulta/v1",
+  "base_api_itens_historico": "https://pncp.gov.br/api/pncp/v1",
+  "documentacao_api_consulta": "https://pncp.gov.br/api/consulta/swagger-ui/index.html",
+  "documentacao_api_itens_historico": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
+  "erros_por_endpoint": {
+    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. proposta_cnpj_janela: páginas=5; registros=244; amostras=['00394502000144-1-003337/2026', '00394502000144-1-013399/2026', '00394502000144-1-013455/2026', '00394502000144-1-013637/2026'] | proposta_cnpj_sem_modalidade_janela: páginas=5; registros=250; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026'] | proposta_cnpj: falha na página 2: HTTP 429 em https://pncp.gov.br/api/consulta/v1/contratacoes/proposta?dataFinal=20271022&cnpj=00394502000144&tamanhoPagina=50&pagina=2 | proposta_cnpj: páginas=1; registros=50; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
+  },
+  "avisos_por_endpoint": {
+    "geral_detalhe": "HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259"
+  },
   "quantidade_itens": 14,
   "quantidade_eventos": 30,
-  "observacao": "Os campos são preenchidos com os valores efetivamente devolvidos pela API; campos ausentes permanecem vazios. A extração deve ser comparada à página pública se o PNCP alterar o esquema dos endpoints."
+  "quantidade_itens_esperada": 14,
+  "observacao": "Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A consulta alternativa pesquisa uma janela de publicação com e sem filtro de modalidade, para reduzir paginação e respeitar os códigos publicados pelo PNCP. A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
 }

@@ -1,7 +1,1 @@
-{
-  "timestamp": "2026-10-22T18:24:07.515-03:00",
-  "status": "301",
-  "error": "301 MOVED_PERMANENTLY",
-  "message": "Este endpoint foi movido para: https://pncp.gov.br/api/consulta/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}",
-  "path": "/pncp-api/v1/orgaos/00394502000144/compras/2026/14259"
-}
+{}
