@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PNCP-UFRJ-2026-548",
+  "source": {
+    "system": "PNCP",
+    "external_id": "33663683000116-1-000548/2026",
+    "url": "https://pncp.gov.br/app/editais/33663683000116/2026/548",
+    "captured_at": "2026-10-22T00:00:00-03:00",
+    "capture_status": "partial",
+    "capture_method": "registro de trabalho baseado na análise documental existente"
+  },
+  "buyer": {
+    "name": "Universidade Federal do Rio de Janeiro",
+    "tax_id": "33663683000116",
+    "uasg": "153132",
+    "unit_name": "Centro de Ciências Jurídicas e Econômicas",
+    "state": "RJ",
+    "city": "Rio de Janeiro"
+  },
+  "process": {
+    "administrative_process": "23079.235349/2026-08",
+    "modality": "Dispensa de Licitação",
+    "legal_basis": "Lei 14.133/2021, art. 75, II",
+    "judgment_criterion": "Menor preço por item",
+    "dispute_type": "Dispensa com disputa"
+  },
+  "object": "Aquisição de copos descartáveis biodegradáveis",
+  "status": "EM_ANALISE",
+  "dates": {
+    "published_at": "2026-10-21T00:00:00-03:00",
+    "proposal_start_at": "2026-10-22T08:00:00-03:00",
+    "proposal_end_at": "2026-10-27T08:00:00-03:00",
+    "session_at": "2026-10-27T08:00:00-03:00",
+    "delivery_deadline": null,
+    "proposal_validity_days": 60
+  },
+  "estimated_value": {
+    "amount": 6199.05,
+    "currency": "BRL",
+    "evidence_status": "confirmed",
+    "source_document_id": "UFRJ-AVISO-25-2026"
+  },
+  "validation_status": "has_conflicts",
+  "responsible": null,
+  "notes": [
+    "Exemplo de referência; revalidar datas e situação do edital antes de qualquer ação.",
+    "Divergência de referência técnica: aviso menciona NBR 13230/2 e Termo de Referência menciona ABNT 14865:2012 e selo Inmetro; requer esclarecimento.",
+    "A viabilidade financeira ainda depende de cotação formal de produto conforme, frete para cinco destinos e validação fiscal.",
+    "Não considerar fornecedor como aprovado com base apenas em preço público de varejo."
+  ],
+  "created_at": "2026-10-22T00:00:00-03:00",
+  "updated_at": "2026-10-22T00:00:00-03:00"
+}
