@@ -1,5 +1,25 @@
 # Comparativo de preços — UFRJ / PNCP 33663683000116-1-000548/2026
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-COMP-PRECOS-UFRJ-001 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | COMPARATIVO_PRECOS |
+| **Fase** | Pesquisa de preços e viabilidade |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.1 |
+| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **Commit de referência (versão anterior)** | [ef34a20311342cc737c4258e80093b80833e955e](https://github.com/carlos-andrade/LICITACAO/commit/ef34a20311342cc737c4258e80093b80833e955e) |
+| **Data de criação** | 2026-10-22 |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente de validação comercial |
+| **Origem** | PNCP e páginas públicas dos fornecedores citadas no corpo |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
+
 **Data da pesquisa:** 22/10/2026  
 **Objeto:** copo descartável biodegradável, 180 ml, pacote com 100 unidades, em PP, para líquidos quentes e frios, atóxico, com aditivo oxibiodegradável conforme descrição do item.  
 **Quantidade:** 715 pacotes (71.500 copos).  
