@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 9f77a2a0d4a00dcf357dc64012183107db02ac1ff1331f87e5ba52011ed68e9b |
-| **Commit de referência (versão anterior)** | [7cf4dd6c019b150d2e0e187ba2734b69c332a94b](https://github.com/carlos-andrade/LICITACAO/commit/7cf4dd6c019b150d2e0e187ba2734b69c332a94b) |
+| **SHA-256 (conteúdo canónico)** | cbcd29733ee36e7e6b0b24d4b9d80fecde6174ecebbefc288d4d6c080464516e |
+| **Commit de referência (versão anterior)** | [f20d8cf9c0ade95badb3727e39523739b45cc088](https://github.com/carlos-andrade/LICITACAO/commit/f20d8cf9c0ade95badb3727e39523739b45cc088) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -26,7 +26,7 @@
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **1**.
+- Ficheiros Markdown alterados nesta execução: **0**.
 
 ## Inventário Markdown
 
