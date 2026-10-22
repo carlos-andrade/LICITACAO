@@ -205,9 +205,14 @@ def login_with_env(session: requests.Session, robots: urllib.robotparser.RobotFi
             return False, "ação de login fora do domínio HTTPS esperado"
         submitted = session.post(action, data=payload, timeout=timeout, allow_redirects=True)
         submitted.raise_for_status()
-        if BeautifulSoup(submitted.text, "html.parser").select_one('input[type="password"]'):
+        result_soup = BeautifulSoup(submitted.text, "html.parser")
+        if result_soup.select_one('input[type="password"]'):
             return False, "login não confirmado; formulário de senha continua presente"
-        return True, "login enviado; sessão mantida no requests.Session"
+        page_text = result_soup.get_text(" ", strip=True).lower()
+        authenticated_markers = ("sair", "logout", "minha conta", "my account", "log out")
+        if not any(marker in page_text for marker in authenticated_markers):
+            return False, "login não confirmado por indicador de sessão; sem captura autenticada"
+        return True, "sessão autenticada confirmada por indicador da página"
     except requests.RequestException as exc:
         return False, "falha de rede no login: " + type(exc).__name__
 
@@ -244,16 +249,23 @@ def meta_product(soup: BeautifulSoup, url: str, timestamp: str) -> dict[str, str
     typ = meta("og:type")
     if not name or ("product" not in typ.lower() and not soup.select_one('[itemtype*="schema.org/Product"]')):
         return None
+    price = meta("product:price:amount")
+    currency = meta("product:price:currency")
+    price_source = "Open Graph/meta" if price else ""
+    if not price:
+        price, price_source = extract_visible_price(soup)
+    if price and not currency:
+        currency = "BRL"
     return {
         "capturado_em_utc": timestamp, "nome": name,
         "marca": meta("product:brand"), "modelo": meta("product:retailer_item_id"),
         "sku": meta("product:retailer_item_id"), "gtin": "",
-        "categoria": "", "preco": meta("product:price:amount"),
-        "moeda": meta("product:price:currency"),
+        "categoria": "", "preco": price,
+        "moeda": currency,
         "disponibilidade": meta("product:availability"),
-        "url_produto": url, "origem_dado": "Open Graph/meta",
-        "status_captura": "capturado_com_campos_limitados",
-        "observacoes": "Metadados estruturados incompletos; confirmar página de origem.",
+        "url_produto": url, "origem_dado": price_source or "Open Graph/meta",
+        "status_captura": "capturado_com_preco" if price else "produto_sem_preco_exposto",
+        "observacoes": "Preço não inferido; confirmar condições comerciais quando ausente.",
     }
 
 def main() -> int:
@@ -296,7 +308,8 @@ def main() -> int:
     auth_ok, auth_status = login_with_env(session, robots, args.timeout)
     print("Autenticacao ALLNATIONS: " + auth_status)
     if not auth_ok and (os.environ.get("ALLNATIONS_EMAIL") or os.environ.get("ALLNATIONS_PASSWORD")):
-        print("Aviso: captura continuará sem sessão autenticada.", file=sys.stderr)
+        print("Erro: login não confirmado; encerrando para evitar publicar captura pública como autenticada.", file=sys.stderr)
+        return 4
 
     if not allowed(start):
         print(f"robots.txt não permite capturar {start}. Encerrado sem contornar a regra.", file=sys.stderr)
