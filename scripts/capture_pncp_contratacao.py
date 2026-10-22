@@ -14,7 +14,9 @@ from urllib.parse import urlparse
 import requests
 
 DEFAULT_URL = "https://pncp.gov.br/app/editais/00394502000144/2026/14259"
-API_ROOT = "https://pncp.gov.br/api/consulta/v1"
+CONSULTA_ROOT = "https://pncp.gov.br/api/consulta/v1"
+API_ROOT = "https://pncp.gov.br/api/pncp/v1"
+PROPOSTA_URL = f"{CONSULTA_ROOT}/contratacoes/proposta"
 USER_AGENT = "LICITACAO-PNCP-Contratacao/1.0 (+https://github.com/carlos-andrade/LICITACAO)"
 TIMEOUT = 40
 HEADERS = ["numero_item","descricao_resumida","descricao_detalhada","quantidade","unidade","valor_unitario_estimado","valor_total_estimado","situacao_item","criterio_julgamento","link_item"]
@@ -33,19 +35,40 @@ def sub(d: dict,key: str) -> dict:
 def control_id(cnpj: str, year: int, seq: int) -> str:
     return f"{cnpj}-{year}-{seq}"
 def fetch_json(session: requests.Session, url: str, params: dict|None=None) -> Any:
+    """Consulta a API sem repetir 404 determinísticos e respeitando limites temporários."""
     last=None
-    for n in range(5):
+    for n in range(4):
         try:
             r=session.get(url,params=params,timeout=TIMEOUT)
-            if r.status_code in (429,500,502,503,504): raise requests.HTTPError(f"HTTP {r.status_code}")
+            if r.status_code == 404:
+                raise RuntimeError(f"HTTP 404 em {r.url}")
+            if r.status_code == 429 or r.status_code in (500,502,503,504):
+                last=f"HTTP {r.status_code} em {r.url}"
+                if n < 3:
+                    retry=r.headers.get("Retry-After","")
+                    try: wait=max(1,min(float(retry),45)) if retry else min(2**(n+1),20)
+                    except ValueError: wait=min(2**(n+1),20)
+                    time.sleep(wait)
+                    continue
+                raise RuntimeError(last)
             r.raise_for_status()
-            payload = r.json()
-            if isinstance(payload, dict) and (payload.get("error") or str(payload.get("status", "")).startswith(("301", "302", "400", "404", "500")) or "endpoint foi movido" in str(payload.get("message", "")).lower()):
-                raise RuntimeError(f"Resposta de erro da API: {payload}")
+            try:
+                payload=r.json()
+            except ValueError as e:
+                raise RuntimeError(f"Resposta não é JSON válido em {r.url}: {e}") from e
+            if isinstance(payload,dict) and (
+                payload.get("error")
+                or str(payload.get("status","")).startswith(("301","302","400","404","500"))
+                or "endpoint foi movido" in str(payload.get("message","")).lower()
+            ):
+                raise RuntimeError(f"Resposta de erro da API em {r.url}: {payload}")
             return payload
-        except (requests.RequestException,ValueError) as e:
+        except RuntimeError:
+            raise
+        except requests.RequestException as e:
             last=e
-            if n<4: time.sleep(min(2**n,20))
+            if n < 3:
+                time.sleep(min(2**(n+1),20))
     raise RuntimeError(f"Não foi possível consultar {url}: {last}")
 def get_data(payload: Any) -> Any:
     if isinstance(payload,dict):
@@ -63,6 +86,47 @@ def first_dict(payload: Any) -> dict:
     x=get_data(payload)
     if isinstance(x,list): return x[0] if x and isinstance(x[0],dict) else {}
     return x if isinstance(x,dict) else {}
+def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int) -> dict:
+    """Fallback público: encontra a contratação exata na listagem de propostas abertas."""
+    expected_cnpj=cnpj
+    expected_year=int(year)
+    expected_seq=int(seq)
+    data_final=(datetime.now(timezone.utc).date()).strftime("%Y%m%d")
+    # A consulta exige dataFinal; uma data futura captura avisos que ainda recebem propostas.
+    from datetime import timedelta
+    data_final=(datetime.now(timezone.utc).date()+timedelta(days=365)).strftime("%Y%m%d")
+    params_base={
+        "dataFinal":data_final,
+        "codigoModalidadeContratacao":8,
+        "cnpj":cnpj,
+        "pagina":1,
+        "tamanhoPagina":50,
+    }
+    max_pages=20
+    for page in range(1,max_pages+1):
+        params={**params_base,"pagina":page}
+        payload=fetch_json(session,PROPOSTA_URL,params)
+        records=list_data(payload)
+        for record in records:
+            control=clean(pick(record,"numeroControlePNCP","numeroControlePncp"))
+            match=re.fullmatch(r"(\\d{14})-(\\d+)-(\\d+)/(\\d{4})",control)
+            if match:
+                rec_cnpj,_,rec_seq,rec_year=match.groups()
+                if rec_cnpj==expected_cnpj and int(rec_year)==expected_year and int(rec_seq)==expected_seq:
+                    return record
+        if not records or len(records)<50:
+            break
+        total_pages=pick(payload,"totalPaginas","totalPaginasEncontradas","pages",default="")
+        try:
+            if total_pages and page>=int(total_pages): break
+        except (ValueError,TypeError):
+            pass
+        time.sleep(1.0)
+    raise RuntimeError(
+        f"Contratação {cnpj}-1-{seq:06d}/{year} não localizada na listagem pública "
+        f"de propostas abertas após até {max_pages} páginas (dataFinal={data_final})."
+    )
+
 def money(x: Any) -> str:
     if x in (None,""): return ""
     try: return f"{float(x):.2f}".replace(".",",")
@@ -148,31 +212,53 @@ def main():
     out.mkdir(parents=True,exist_ok=True)
     s=requests.Session(); s.headers.update({"Accept":"application/json","User-Agent":USER_AGENT})
     captured=datetime.now(timezone.utc).isoformat(timespec="seconds")
-    # Endpoints documented by PNCP: public contracting details, items and events.
-    candidates=[
-      ("geral",f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}",None),
-      ("itens",f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/itens",{"pagina":1,"tamanhoPagina":100}),
-      ("eventos",f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/historico",None),
-    ]
-    raw={}; errors={}
-    for key,endpoint,params in candidates:
-      if key=="itens" and args.no_items: continue
-      try: raw[key]=fetch_json(s,endpoint,params)
-      except Exception as e: errors[key]=str(e); logging.warning("%s: %s",key,e)
+    # O PNCP mantém a consulta pública e a API de itens/histórico em bases distintas.
+    general_endpoint=f"{CONSULTA_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}"
+    items_endpoint=f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/itens"
+    events_endpoint=f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/historico"
+    raw={}; errors={}; warnings={}; general_source="consulta_detalhe"
+    try:
+      raw["geral"]=fetch_json(s,general_endpoint)
+    except Exception as e:
+      if "404" in str(e) or "endpoint foi movido" in str(e).lower():
+        warnings["geral_detalhe"]=str(e)
+        try:
+          raw["geral"]=find_open_proposal(s,cnpj,year,seq)
+          general_source="consulta_propostas_abertas_fallback"
+        except Exception as fallback_error:
+          errors["geral"]=f"Detalhe: {e}; fallback de propostas: {fallback_error}"
+          logging.warning("geral: %s",errors["geral"])
+      else:
+        errors["geral"]=str(e)
+        logging.warning("geral: %s",e)
+    time.sleep(0.75)
+    if not args.no_items:
+      try: raw["itens"]=fetch_json(s,items_endpoint,{"pagina":1,"tamanhoPagina":100})
+      except Exception as e: errors["itens"]=str(e); logging.warning("itens: %s",e)
+      time.sleep(0.75)
+    try: raw["eventos"]=fetch_json(s,events_endpoint,{"pagina":1,"tamanhoPagina":100})
+    except Exception as e: errors["eventos"]=str(e); logging.warning("eventos: %s",e)
     general=first_dict(raw.get("geral",{}))
     items=list_data(raw.get("itens",{}))
     events=list_data(raw.get("eventos",{}))
     general_row=flatten_general(general,captured,args.url,cnpj,year,seq)
     item_rows=[flatten_item(it,i+1) for i,it in enumerate(items)]
     event_rows=[flatten_event(e) for e in events]
+    expected_items=(len(item_rows)==14) if not args.no_items else False
+    is_complete=bool(general) and expected_items and len(event_rows)>0 and not errors
     meta={
-      "status":"COMPLETO" if "geral" in raw and "itens" in raw and general and len(items) == 14 and not errors else ("PARCIAL" if raw else "FALHA"),
+      "status":"COMPLETO" if is_complete else ("PARCIAL" if raw else "FALHA"),
       "capturado_em_utc":captured,"url_contratacao":args.url,"cnpj":cnpj,"ano":year,"sequencial":seq,
-      "endpoints_consultados":[x[1] for x in candidates],
-      "base_api":API_ROOT,
-      "documentacao_api":"https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html","erros_por_endpoint":errors,
+      "endpoints_consultados":{"geral":general_endpoint,"itens":items_endpoint,"eventos":events_endpoint,"fallback_geral":PROPOSTA_URL},
+      "fonte_dados_gerais":general_source,
+      "base_api_consulta":CONSULTA_ROOT,
+      "base_api_itens_historico":API_ROOT,
+      "documentacao_api_consulta":"https://pncp.gov.br/api/consulta/swagger-ui/index.html",
+      "documentacao_api_itens_historico":"https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
+      "erros_por_endpoint":errors,"avisos_por_endpoint":warnings,
       "quantidade_itens":len(item_rows),"quantidade_eventos":len(event_rows),
-      "observacao":"Os campos são preenchidos com os valores efetivamente devolvidos pela API; campos ausentes permanecem vazios. A extração deve ser comparada à página pública se o PNCP alterar o esquema dos endpoints."
+      "quantidade_itens_esperada":14,
+      "observacao":"Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato na lista oficial de propostas abertas. A extração só é marcada COMPLETO quando dados gerais, 14 itens e histórico são recuperados."
     }
     (out/"contratacao-geral.json").write_text(json.dumps(raw.get("geral",{}),ensure_ascii=False,indent=2),encoding="utf-8")
     (out/"itens.json").write_text(json.dumps(raw.get("itens",{}),ensure_ascii=False,indent=2),encoding="utf-8")
