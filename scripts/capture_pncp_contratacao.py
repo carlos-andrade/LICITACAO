@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 import requests
 
 DEFAULT_URL = "https://pncp.gov.br/app/editais/00394502000144/2026/14259"
-API_ROOT = "https://pncp.gov.br/api/consulta/v1"
+API_ROOT = "https://pncp.gov.br/api/pncp/v1"
 USER_AGENT = "LICITACAO-PNCP-Contratacao/1.0 (+https://github.com/carlos-andrade/LICITACAO)"
 TIMEOUT = 40
 HEADERS = ["numero_item","descricao_resumida","descricao_detalhada","quantidade","unidade","valor_unitario_estimado","valor_total_estimado","situacao_item","criterio_julgamento","link_item"]
@@ -169,7 +169,7 @@ def main():
       "status":"COMPLETO" if "geral" in raw and "itens" in raw and general and len(items) == 14 and not errors else ("PARCIAL" if raw else "FALHA"),
       "capturado_em_utc":captured,"url_contratacao":args.url,"cnpj":cnpj,"ano":year,"sequencial":seq,
       "endpoints_consultados":[x[1] for x in candidates],
-      "base_api":"https://pncp.gov.br/api/pncp",
+      "base_api":API_ROOT,
       "documentacao_api":"https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html","erros_por_endpoint":errors,
       "quantidade_itens":len(item_rows),"quantidade_eventos":len(event_rows),
       "observacao":"Os campos são preenchidos com os valores efetivamente devolvidos pela API; campos ausentes permanecem vazios. A extração deve ser comparada à página pública se o PNCP alterar o esquema dos endpoints."
