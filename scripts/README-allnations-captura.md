@@ -40,7 +40,7 @@ python scripts/capture_allnations_catalog.py
 Limitar ou ajustar a velocidade:
 
 ```bash
-python scripts/capture_allnations_catalog.py --max-pages 150 --delay 1.5
+python scripts/capture_allnations_catalog.py --max-pages 1000 --delay 1.0
 ```
 
 O script gera:
@@ -71,11 +71,11 @@ O script gera:
 
 ## Limites, responsabilidade e interpretação
 
-- O site não foi capturado ao vivo nesta publicação; é necessário executar o script no ambiente do operador para confirmar conectividade, regras atuais de `robots.txt` e quantidade de produtos.
+- O coletor foi atualizado para normalizar links legados com barras invertidas, canonicalizar o host, remover parâmetros comuns de rastreamento, evitar rotas de conta/pedido/checkout e descobrir URLs em sitemaps públicos quando permitidos. A execução deve ser repetida para validar a melhoria; estes ajustes não garantem a captura integral do catálogo.
 - Por padrão, o script verifica `robots.txt` e respeita as regras legíveis para o identificador do coletor e para `*`. Se não conseguir ler o ficheiro de regras, termina conservadoramente.
 - Não contorna login, CAPTCHA, autenticação, bloqueios HTTP, limites 401/403/429 ou controles de acesso. Não usar `--ignore-robots` sem autorização explícita do proprietário.
 - Um catálogo B2B pode exigir conta. Nesse caso, o script não irá descobrir produtos restritos e não tenta contornar autenticação.
 - A captura percorre links alcançáveis a partir do ponto inicial com limite de páginas e atraso configuráveis. URLs não ligadas, feeds/APIs não referenciados e páginas carregadas apenas por fluxos privados podem faltar.
-- O resultado não deve ser descrito como catálogo completo sem conferir paginação, sitemap, categorias, totais e cobertura do site. Ausência no CSV não significa que o fornecedor não venda o item.
+- O resultado não deve ser descrito como catálogo completo sem conferir paginação, sitemap, categorias, totais e cobertura do site. O limite padrão do workflow foi aumentado para 1.000 páginas; confirme a duração e os limites do servidor. Ausência no CSV não significa que o fornecedor não venda o item.
 - Preços, disponibilidade, SKU e marca só são preenchidos quando constam do HTML público capturado. Nenhum valor é estimado ou fabricado.
 - Antes de usar os dados em licitações, revalidar preço, impostos, frete, prazo, garantia, validade e disponibilidade junto ao fornecedor.
