@@ -23,6 +23,7 @@ from collections import deque
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
+from xml.etree import ElementTree
 from urllib.parse import urljoin, urlparse, urldefrag
 
 import requests
@@ -224,6 +225,7 @@ def main() -> int:
         return 3
 
     queue = deque([start])
+    errors: list[dict[str, str]] = []
     # Discover public sitemap URLs where permitted, to improve catalog coverage.
     sitemap_candidates = [urljoin(BASE, "/sitemap.xml"), urljoin(BASE, "/sitemap_index.xml")]
     for sitemap_url in sitemap_candidates:
@@ -232,16 +234,17 @@ def main() -> int:
         try:
             sitemap_response = session.get(sitemap_url, timeout=args.timeout)
             if sitemap_response.ok and "xml" in sitemap_response.headers.get("Content-Type", "").lower():
-                sitemap_soup = BeautifulSoup(sitemap_response.text, "xml")
-                for loc in sitemap_soup.find_all("loc"):
-                    candidate = normalize_url(loc.get_text(strip=True))
-                    if candidate and candidate not in queue:
-                        queue.append(candidate)
+                # Parse XML with the standard library; no optional lxml dependency required.
+                root = ElementTree.fromstring(sitemap_response.content)
+                for loc in root.iter():
+                    if loc.tag.rsplit("}", 1)[-1].lower() == "loc" and loc.text:
+                        candidate = normalize_url(loc.text.strip())
+                        if candidate and candidate not in queue:
+                            queue.append(candidate)
         except requests.RequestException as exc:
             errors.append({"url": sitemap_url, "status": "erro_sitemap", "erro": str(exc)[:300]})
     visited: set[str] = set()
     found_products: dict[str, dict[str, str]] = {}
-    errors: list[dict[str, str]] = []
     started = datetime.now(timezone.utc).isoformat(timespec="seconds")
     pages_ok = 0
 
