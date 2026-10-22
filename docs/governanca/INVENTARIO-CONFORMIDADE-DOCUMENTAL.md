@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | bd28f5b6e826d9ab018fceef3547028a30b91b6f2989e0ba1abf9e96e033f3e8 |
-| **Commit de referência (versão anterior)** | [e776ca388783fc07b0c24a031aaab3df139d0a34](https://github.com/carlos-andrade/LICITACAO/commit/e776ca388783fc07b0c24a031aaab3df139d0a34) |
+| **SHA-256 (conteúdo canónico)** | 411dbb78c83eb5905b10709191501ca00dff70bbf9da6a2357c959422f347bdc |
+| **Commit de referência (versão anterior)** | [bc475ec021f1c7a30a3430a75ae61ab10491a696](https://github.com/carlos-andrade/LICITACAO/commit/bc475ec021f1c7a30a3430a75ae61ab10491a696) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **47**.
-- Documentos conformes após normalização e verificação de hash: **47/47**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **48**.
+- Documentos conformes após normalização e verificação de hash: **48/48**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **1**.
 
 ## Inventário Markdown
 
@@ -55,6 +55,7 @@
 | `FORNECEDORES/EDITAL-2026-96-UFRB.md` | `LIC-DOC-FORNECEDORES-EDITAL-2026-96-UFRB-MD-97544501` | CONFORME — Conforme |
 | `FORNECEDORES/FLUXO-COTACAO-E-VALIDACAO.md` | `LIC-DOC-FORNECEDORES-FLUXO-COTACAO-E-VALIDACAO-MD-8CA6432F` | CONFORME — Conforme |
 | `FORNECEDORES/README.md` | `LIC-DOC-FORNECEDORES-README-MD-94CB4341` | CONFORME — Conforme |
+| `FORNECEDORES/VERIFICACAO-INTEGRIDADE-CAPTURA-ALLNATIONS.md` | `LIC-VER-ALLNATIONS-001` | CONFORME — Conforme |
 | `IMPRESSÃO/README.md` | `LIC-DOC-IMPRESS-O-README-MD-F3064904` | CONFORME — Conforme |
 | `ORÇAMENTOS/README.md` | `LIC-DOC-OR-AMENTOS-README-MD-F1F0A227` | CONFORME — Conforme |
 | `PROMPT/README.md` | `LIC-DOC-PROMPT-README-MD-268D4326` | CONFORME — Conforme |

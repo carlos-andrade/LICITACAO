@@ -7,9 +7,9 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | RELATÓRIO DE VERIFICAÇÃO |
 | **Fase** | Validação de evidência |
-| **Estado** | DIVERGÊNCIA_DE_HASH |
+| **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | d3038a1db9cc0d46429febd8ff3852678570006bad752a94f6eeeb5b0cec9b69 |
+| **SHA-256 (conteúdo canónico)** | 39475d68b37c6b9ff11ddae24ac79f9199d174428b3a271c4edcba6b7b4316d6 |
 | **Commit de referência (versão anterior)** | N/A — documento inicial |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |
