@@ -1,20 +1,21 @@
 #!/usr/bin/env python3
-"""Captura produtos publicamente acessíveis no site All Nations.
+"""Captura catálogo ALLNATIONS com login opcional por secrets do ambiente.
 
 Uso:
   python scripts/capture_allnations_catalog.py
   python scripts/capture_allnations_catalog.py --output FORNECEDORES/allnations-produtos.csv
   python scripts/capture_allnations_catalog.py --max-pages 150 --delay 1.5
 
-O script não contorna login, CAPTCHA, bloqueios, nem restrições do robots.txt.
-Só inclui produtos quando a página expõe dados legíveis publicamente.
-Preço pode estar ausente em catálogo B2B; não é inventado.
+A autenticação opcional usa ALLNATIONS_EMAIL e ALLNATIONS_PASSWORD via ambiente.
+Não grava credenciais ou cookies nos resultados e não contorna CAPTCHA/MFA.
+Respeita robots.txt; preços ausentes não são inventados.
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import json
+import os
 import re
 import sys
 import time
@@ -141,6 +142,11 @@ def product_row(p: dict[str, Any], url: str, soup: BeautifulSoup, timestamp: str
         currency_tag = soup.select_one('meta[property="product:price:currency"], meta[itemprop="priceCurrency"], [itemprop="priceCurrency"]')
         if currency_tag:
             currency = text(currency_tag.get("content") or currency_tag.get("value") or currency_tag.get_text(" ", strip=True))
+    price_source = "JSON-LD/Product" if price else ""
+    if not price:
+        price, price_source = extract_visible_price(soup)
+    if price and not currency:
+        currency = "BRL"
     brand = p.get("brand")
     model = first(p.get("model"), p.get("mpn"))
     return {
@@ -155,10 +161,77 @@ def product_row(p: dict[str, Any], url: str, soup: BeautifulSoup, timestamp: str
         "moeda": currency,
         "disponibilidade": availability,
         "url_produto": url,
-        "origem_dado": "JSON-LD/Product",
-        "status_captura": "capturado",
-        "observacoes": "Campos ausentes não foram inferidos; preço pode depender de login/cadastro B2B.",
+        "origem_dado": price_source or "JSON-LD/Product",
+        "status_captura": "capturado_com_preco" if price else "produto_sem_preco_exposto",
+        "observacoes": "Preço capturado apenas quando explicitamente exposto; validar condições comerciais.",
     }
+
+
+def login_with_env(session: requests.Session, robots: urllib.robotparser.RobotFileParser,
+                   timeout: float) -> tuple[bool, str]:
+    """Login opcional por formulário HTML convencional, sem expor credenciais."""
+    email = os.environ.get("ALLNATIONS_EMAIL", "").strip()
+    password = os.environ.get("ALLNATIONS_PASSWORD", "")
+    if not email and not password:
+        return False, "secrets de login não configurados; modo público"
+    if not email or not password:
+        return False, "configuração incompleta: defina ALLNATIONS_EMAIL e ALLNATIONS_PASSWORD"
+    login_url = urljoin(BASE, "login")
+    try:
+        if not robots.can_fetch(USER_AGENT, login_url) or not robots.can_fetch("*", login_url):
+            return False, "robots.txt não permite abrir a URL de login"
+        response = session.get(login_url, timeout=timeout)
+        response.raise_for_status()
+        soup = BeautifulSoup(response.text, "html.parser")
+        form = next((f for f in soup.find_all("form") if f.select_one('input[type="password"]')), None)
+        if form is None:
+            return False, "formulário de login convencional não identificado"
+        password_input = form.select_one('input[type="password"]')
+        email_input = form.select_one('input[type="email"], input[name*="email" i], input[name*="username" i], input[name*="login" i]')
+        if not email_input or not email_input.get("name") or not password_input.get("name"):
+            return False, "campos de e-mail/senha não identificados"
+        payload = {}
+        for field in form.select("input[name]"):
+            kind = (field.get("type") or "text").lower()
+            if kind == "hidden":
+                payload[field["name"]] = field.get("value", "")
+            elif kind in ("checkbox", "radio") and field.has_attr("checked"):
+                payload[field["name"]] = field.get("value", "on")
+        payload[email_input["name"]] = email
+        payload[password_input["name"]] = password
+        action = urljoin(response.url, form.get("action") or response.url)
+        parsed = urlparse(action)
+        if parsed.scheme != "https" or parsed.hostname not in (DOMAIN, "www." + DOMAIN):
+            return False, "ação de login fora do domínio HTTPS esperado"
+        submitted = session.post(action, data=payload, timeout=timeout, allow_redirects=True)
+        submitted.raise_for_status()
+        if BeautifulSoup(submitted.text, "html.parser").select_one('input[type="password"]'):
+            return False, "login não confirmado; formulário de senha continua presente"
+        return True, "login enviado; sessão mantida no requests.Session"
+    except requests.RequestException as exc:
+        return False, "falha de rede no login: " + type(exc).__name__
+
+def extract_visible_price(soup: BeautifulSoup) -> tuple[str, str]:
+    """Extrai preço somente de campos/seletores explícitos de preço."""
+    selectors = (
+        'meta[property="product:price:amount"]',
+        'meta[itemprop="price"]',
+        '[itemprop="price"][content]',
+        '[itemprop="price"][value]',
+        '.product-price .price',
+        '.prices .actual-price',
+        '.actual-price',
+        '.price-value',
+        '.product-price',
+    )
+    for selector in selectors:
+        tag = soup.select_one(selector)
+        if not tag:
+            continue
+        value = text(tag.get("content") or tag.get("value") or tag.get_text(" ", strip=True))
+        if re.search(r"\d", value) and re.fullmatch(r"[\sR$€£A-Z]*\d[\d.,\s]*", value, re.I):
+            return value.strip(), "HTML/preço-visível"
+    return "", ""
 
 def meta_product(soup: BeautifulSoup, url: str, timestamp: str) -> dict[str, str] | None:
     def meta(*names: str) -> str:
@@ -219,6 +292,11 @@ def main() -> int:
             return robots.can_fetch(USER_AGENT, url) and robots.can_fetch("*", url)
         except Exception:
             return False
+
+    auth_ok, auth_status = login_with_env(session, robots, args.timeout)
+    print("Autenticacao ALLNATIONS: " + auth_status)
+    if not auth_ok and (os.environ.get("ALLNATIONS_EMAIL") or os.environ.get("ALLNATIONS_PASSWORD")):
+        print("Aviso: captura continuará sem sessão autenticada.", file=sys.stderr)
 
     if not allowed(start):
         print(f"robots.txt não permite capturar {start}. Encerrado sem contornar a regra.", file=sys.stderr)
@@ -318,7 +396,11 @@ def main() -> int:
         "paginas_visitadas": len(visited), "paginas_html_lidas": pages_ok,
         "produtos_distintos": len(rows), "max_pages": args.max_pages,
         "atraso_segundos": args.delay,
-        "observacao": "A captura cobre apenas URLs públicas permitidas pelo robots.txt e alcançáveis a partir do ponto inicial; não prova que o catálogo completo do fornecedor foi obtido. Áreas B2B/login e produtos sem metadados legíveis podem não aparecer.",
+        "modo_autenticacao": "autenticado" if auth_ok else "publico_ou_login_nao_confirmado",
+        "status_autenticacao": auth_status,
+        "precos_capturados": sum(1 for row in rows if row.get("preco")),
+        "produtos_sem_preco": sum(1 for row in rows if not row.get("preco")),
+        "observacao": "A captura respeita robots.txt e não contorna CAPTCHA/MFA. Preços ausentes não são inferidos.",
         "produtos": rows, "erros_ou_restricoes": errors,
     }
     json_output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
