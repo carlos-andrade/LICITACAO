@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0.0",
+  "id": "PNCP-UFRJ-2026-548-ITEM-1",
+  "opportunity_id": "PNCP-UFRJ-2026-548",
+  "source_item_id": "1",
+  "description_original": "Copo descartável biodegradável, capacidade 180 ml, pacote com 100 unidades",
+  "description_normalized": "Pacote com 100 copos descartáveis biodegradáveis, 180 ml",
+  "classification_code": "617347",
+  "classification_system": "CATMAT",
+  "quantity": 715,
+  "unit": "pacote",
+  "reference_unit_price": 8.67,
+  "reference_total_price": 6199.05,
+  "currency": "BRL",
+  "technical_requirements": [
+    "Polipropileno (PP)",
+    "Capacidade de 180 ml",
+    "Para líquidos quentes e frios",
+    "Oxi-biodegradável",
+    "Atóxico",
+    "Requisito normativo a esclarecer entre aviso e Termo de Referência",
+    "Termo de Referência menciona ABNT 14865:2012 e selo Inmetro"
+  ],
+  "delivery_locations": [
+    "Decania CCJE — Av. Pasteur 250, Palácio Universitário, Praia Vermelha/Urca, Rio de Janeiro/RJ",
+    "FACC — Av. Pasteur 250, Palácio Universitário, Praia Vermelha/Urca, Rio de Janeiro/RJ",
+    "Faculdade Nacional de Direito — Rua Moncorvo Filho 8, Centro, Rio de Janeiro/RJ",
+    "Instituto de Economia — Av. Pasteur 250, sala 125, Palácio Universitário, Praia Vermelha/Urca, Rio de Janeiro/RJ",
+    "IRID — Av. Pasteur 250, fundos, campus Praia Vermelha, Rio de Janeiro/RJ"
+  ],
+  "delivery_deadline": null,
+  "validation_status": "has_conflicts",
+  "source_document_ids": [
+    "UFRJ-AVISO-25-2026",
+    "UFRJ-TR-9-2026"
+  ],
+  "notes": [
+    "Quantidade: 715 pacotes × 100 = 71.500 copos.",
+    "Prazo indicado no Termo de Referência: entrega em uma remessa até 10 dias após recebimento da nota de empenho; confirmar interpretação e datas antes da contratação.",
+    "CEP de um destino apresenta possível erro de digitação no documento; confirmar com a UFRJ."
+  ]
+}
