@@ -52,6 +52,7 @@ jobs:
           git add EDITAIS/CONTRATACAO-00394502000144-2026-14259
           if ! git diff --cached --quiet; then
             git commit -m "data: extrair contratação PNCP específica"
+            git pull --rebase origin main
             git push
           else
             echo "Sem alterações nos resultados."
