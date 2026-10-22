@@ -9,7 +9,7 @@
 | **Fase** | Captura experimental / validação |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 47772c830349b1aa81a74f18c15f781bfa7a655b54e924d91d47743b16f5af4e |
+| **SHA-256 (conteúdo canónico)** | f1c7a6868b7d95d3d7b1afef3441a0121b6dee49ce8e8d765b6e3b4e99f98651 |
 | **Commit de referência (versão anterior)** | N/A — novo documento |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |
