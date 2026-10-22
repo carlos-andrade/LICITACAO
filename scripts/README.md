@@ -24,9 +24,8 @@ python scripts/pncp_capture.py "URL_DO_PNCP" --output-dir EDITAIS --github --git
 ```
 
 Não grave o token no script nem faça commit dele. A permissão do token e as regras de proteção da branch podem bloquear a publicação; confira `*-publicacao-github.json`. A opção `--github` publica só o relatório, JSON bruto e CSV de itens, não envia os binários baixados.
-```
 
-Os arquivos recebem nomes baseados no ano, sequencial e CNPJ. O script não atualiza o GitHub diretamente: ele gera artefatos locais para revisão e commit, evitando publicar automaticamente uma captura parcial ou campos errados. Se a captura for integrada a GitHub Actions futuramente, use credenciais em secrets e mantenha revisão dos resultados antes do merge.
+Os arquivos recebem nomes baseados no ano, sequencial e CNPJ. A publicação usa a API de conteúdo do GitHub e pode falhar se o token não tiver permissão ou se a branch estiver protegida; confira o relatório de publicação gerado localmente.
 
 ## Fontes oficiais
 - [Swagger da API pública de consulta do PNCP](https://pncp.gov.br/api/consulta/swagger-ui/index.html)
