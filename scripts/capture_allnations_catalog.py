@@ -124,19 +124,90 @@ def stock_from_product(p: dict[str, Any]) -> str:
                 return str(int(float(value)))
     return ""
 
+def _explicit_quantity(value: Any) -> str:
+    """Normaliza apenas números inteiros explícitos; não converte disponibilidade em quantidade."""
+    if isinstance(value, dict):
+        # Schema.org QuantitativeValue: {"value": 12, "unitCode": "C62"}
+        value = value.get("value")
+    if isinstance(value, bool) or value is None:
+        return ""
+    raw = str(value).strip()
+    if re.fullmatch(r"\d+(?:\.0+)?", raw):
+        return str(int(float(raw)))
+    return ""
+
+
+def _quantity_in_object(node: Any, depth: int = 0) -> str:
+    """Procura campos de quantidade conhecidos em estruturas JSON embutidas, com profundidade limitada."""
+    if depth > 12:
+        return ""
+    if isinstance(node, dict):
+        # Only accept quantity-specific keys; generic "value" is accepted only inside a quantity field.
+        keys = (
+            "inventoryLevel", "inventoryQuantity", "stockQuantity",
+            "availableQuantity", "quantityAvailable", "quantityInStock",
+            "stock_quantity", "inventory_quantity", "stock_quantity_value",
+            "qtyAvailable", "qty_available", "quantity",
+        )
+        for key in keys:
+            if key in node:
+                result = _explicit_quantity(node[key])
+                if result:
+                    return result
+        # Recurse into common product/offer/state containers, avoiding arbitrary unrelated page values.
+        for key in ("product", "products", "item", "items", "offer", "offers", "inventory", "stock", "data", "props", "pageProps", "productData", "variants", "variant"):
+            if key in node:
+                result = _quantity_in_object(node[key], depth + 1)
+                if result:
+                    return result
+        return ""
+    if isinstance(node, list):
+        for item in node[:200]:
+            result = _quantity_in_object(item, depth + 1)
+            if result:
+                return result
+    return ""
+
+
 def visible_stock_quantity(soup: BeautifulSoup) -> str:
-    """Extrai quantidade somente de elementos explicitamente associados a stock/quantidade."""
+    """Extrai quantidade numérica explícita de HTML, atributos e JSON embutido."""
     selectors = (
         '[itemprop="inventoryLevel"]', '[itemprop="inventoryQuantity"]',
-        '[data-stock-quantity]', '[data-inventory-quantity]',
-        '.stock-quantity', '.stockQuantity', '.inventory-quantity',
-        '.available-quantity', '.qty-available',
+        '[itemprop="quantity"]', '[data-stock-quantity]', '[data-inventory-quantity]',
+        '[data-quantity]', '[data-stock]', '.stock-quantity', '.stockQuantity',
+        '.inventory-quantity', '.available-quantity', '.qty-available',
+        '[data-testid*="stock" i]', '[data-testid*="quantity" i]',
+        '[class*="stock-quantity" i]', '[class*="inventory-quantity" i]',
+        '[class*="available-quantity" i]',
     )
     for selector in selectors:
-        tag = soup.select_one(selector)
-        if not tag:
+        for tag in soup.select(selector)[:10]:
+            value = text(tag.get("content") or tag.get("value") or
+                         tag.get("data-stock-quantity") or tag.get("data-inventory-quantity") or
+                         tag.get("data-quantity") or tag.get("data-stock") or
+                         tag.get_text(" ", strip=True))
+            match = re.fullmatch(r"\s*(?:quantidade\s*(?:em estoque)?\s*:?\s*)?(\d+)\s*(?:unidades?|pcs?)?\s*", value, re.I)
+            if match:
+                return match.group(1)
+
+    # Product pages may embed inventory in application/json or framework state rather than JSON-LD.
+    for tag in soup.find_all("script"):
+        raw = tag.string or tag.get_text()
+        if not raw or len(raw) > 2_000_000:
             continue
-        value = text(tag.get("content") or tag.get("value") or tag.get("data-stock-quantity") or tag.get("data-inventory-quantity") or tag.get_text(" ", strip=True))
+        script_type = (tag.get("type") or "").lower()
+        script_id = (tag.get("id") or "").lower()
+        if "json" in script_type or script_id in ("__next_data__", "__nuxt_data__"):
+            try:
+                quantity = _quantity_in_object(json.loads(raw))
+                if quantity:
+                    return quantity
+            except (ValueError, TypeError):
+                pass
+
+    # Last resort: numeric quantity only inside elements whose labels explicitly mention stock/quantity.
+    for tag in soup.select('[aria-label*="estoque" i], [aria-label*="quantidade" i], [title*="estoque" i], [title*="quantidade" i]')[:20]:
+        value = text(tag.get("aria-label") or tag.get("title") or tag.get_text(" ", strip=True))
         match = re.fullmatch(r"\s*(?:quantidade\s*(?:em estoque)?\s*:?\s*)?(\d+)\s*(?:unidades?|pcs?)?\s*", value, re.I)
         if match:
             return match.group(1)
