@@ -1,52 +1,46 @@
-# UFRJ — Estimativa preliminar de impostos e entrega
+# UFRJ — Estimativa refinada de impostos, frete e teto de compra
 Data: 22/10/2026
 
-## Base do edital
+## Dados confirmados do edital e do usuário
 - Quantidade: 715 pacotes.
-- Preço de referência por pacote: R$ 8,67.
-- Receita bruta máxima estimada: R$ 6.199,05.
-- Meta de lucro: 50% da receita bruta = aproximadamente R$ 3.099,53.
-- Teto de todos os custos somados: aproximadamente R$ 3.099,52 (50% da receita, sujeito a arredondamento).
+- Preço de referência: R$ 8,67 por pacote.
+- Receita bruta máxima se vender pelo valor de referência: R$ 6.199,05.
+- Meta do usuário: lucro de pelo menos 50% da receita/preço de referência.
+- Teto total de custos para preservar essa meta: aproximadamente R$ 3.099,53 (metade de R$ 6.199,05; usar R$ 3.099,52 como limite operacional conservador por arredondamento).
+- Regime informado: MEI.
+- Receita anual informada pelo usuário: abaixo do limite de R$ 81.000, mas o valor acumulado exato não foi fornecido.
+- CEP de origem informado: 05685-000, São Paulo/SP.
+- Destino: cinco pontos da UFRJ no Rio de Janeiro/RJ; o frete precisa contemplar a entrega nos cinco pontos, não apenas o transporte entre cidades.
 
-## Impostos — não presumir regime
-Há um CCMEI entre os documentos do projeto, então deve-se confirmar se a contratação será faturada pela empresa enquanto MEI, se ela permanece enquadrada e se a atividade é permitida.
-- MEI: em regra, recolhe DAS mensal fixo; não se deve simplesmente aplicar 4% sobre esta venda como se fosse a alíquota do MEI. O DAS e eventuais exceções fiscais devem ser confirmados com o contador.
-- Simples Nacional (comércio): simulações ilustrativas, não determinação tributária:
-  - 4% da receita: R$ 247,96.
-  - 6% da receita: R$ 371,94.
-A alíquota efetiva do Simples depende da receita bruta acumulada em 12 meses e da situação fiscal. O limite anual vigente para MEI é R$ 81.000; considerar todas as receitas da atividade.
+## Impostos — cenário MEI
+A Receita Federal informa que, em 2026, o DAS-MEI de comércio/indústria (contribuição INSS + ICMS) é R$ 82,05 por mês. Para serviços, o valor é diferente. Fonte oficial: https://www8.receita.fazenda.gov.br/SimplesNacional/Noticias/NoticiaCompleta.aspx?id=48dfa572-321f-423b-a014-5ed6629cb0ba
 
-## Entrega — cenários para testar viabilidade
-Não há cotação formal de transportadora. Os valores abaixo são premissas de orçamento, não preços confirmados:
-| Cenário | Frete total | Frete por pacote |
-| Econômico | R$ 500,00 | R$ 0,70 |
-| Intermediário | R$ 750,00 | R$ 1,05 |
-| Conservador | R$ 1.000,00 | R$ 1,40 |
+Para esta simulação, alocamos um mês de DAS de comércio (R$ 82,05) ao contrato. Isso é um rateio prudencial de custo fixo, não uma alíquota adicional sobre a venda. O DAS é devido mensalmente independentemente da receita específica desta venda, desde que o enquadramento permaneça válido.
 
-Pressupõe-se uma entrega consolidada aos cinco pontos da UFRJ. Origem da carga, volume físico, veículo, descarga e eventual necessidade de múltiplas viagens podem alterar o custo.
+**Ponto de controle:** confirme que a receita bruta acumulada do ano, somada aos R$ 6.199,05 deste contrato e a outras receitas ainda previstas, permanece dentro do limite aplicável ao MEI. A resposta “está abaixo do limite” não revela quanto resta de margem. Também é necessário confirmar que a ocupação/CNAE permite a atividade e que o MEI pode cumprir a habilitação e a emissão de nota fiscal exigidas na contratação pública.
 
-## Teto máximo para compra da mercadoria
-Cálculo: (teto total de custos R$ 3.099,52 − imposto simulado − frete estimado) ÷ 715.
+## Frete — referência pública, não cotação
+Uma página de transportadora publica frete fracionado São Paulo → Rio de Janeiro a partir de R$ 637,40, referindo-se a carga mínima de 30 kg ou 0,33 m³; o preço final depende de peso, cubagem, valor declarado e modalidade. Fonte: https://zurcadtransportes.com.br/quanto-custa-frete
 
-| Cenário | Imposto simulado | Frete | Teto total para mercadoria | Teto de compra por pacote |
+Esse valor **não é uma cotação para esta carga** e não confirma entrega nos cinco endereços. Sem quantidade de volumes, peso total, dimensões das caixas e confirmação de entrega múltipla, o frete real não pode ser fechado. Para planejamento, simulamos R$ 637,40 (referência pública inicial), R$ 750 e R$ 1.000. Os dois últimos são hipóteses, não preços consultados.
+
+## Cálculo do teto para compra dos produtos
+Fórmula conservadora:
+(R$ 3.099,52 de custo total máximo − R$ 82,05 de DAS alocado − frete) ÷ 715 pacotes.
+
+| Cenário de frete | Frete por pacote | DAS alocado | Teto agregado para mercadoria | Teto de compra por pacote |
 |---|---:|---:|---:|---:|
-| MEI, sem imposto percentual adicional considerado* | R$ 0,00 adicional | R$ 500,00 | R$ 2.599,52 | R$ 3,64 |
-| MEI, sem imposto percentual adicional considerado* | R$ 0,00 adicional | R$ 750,00 | R$ 2.349,52 | R$ 3,29 |
-| MEI, sem imposto percentual adicional considerado* | R$ 0,00 adicional | R$ 1.000,00 | R$ 2.099,52 | R$ 2,94 |
-| Simples, hipótese 4% | R$ 247,96 | R$ 500,00 | R$ 2.351,56 | R$ 3,29 |
-| Simples, hipótese 4% | R$ 247,96 | R$ 750,00 | R$ 2.101,56 | R$ 2,94 |
-| Simples, hipótese 4% | R$ 247,96 | R$ 1.000,00 | R$ 1.851,56 | R$ 2,59 |
-| Simples, hipótese 6% | R$ 371,94 | R$ 500,00 | R$ 2.227,58 | R$ 3,12 |
-| Simples, hipótese 6% | R$ 371,94 | R$ 750,00 | R$ 1.977,58 | R$ 2,77 |
-| Simples, hipótese 6% | R$ 371,94 | R$ 1.000,00 | R$ 1.727,58 | R$ 2,42 |
+| Referência pública inicial: R$ 637,40 | R$ 0,89 | R$ 82,05 | R$ 2.380,07 | R$ 3,33 |
+| Hipótese intermediária: R$ 750,00 | R$ 1,05 | R$ 82,05 | R$ 2.267,47 | R$ 3,17 |
+| Hipótese conservadora: R$ 1.000,00 | R$ 1,40 | R$ 82,05 | R$ 2.017,47 | R$ 2,82 |
 
-*O cenário MEI não significa ausência de tributos: não atribui imposto percentual incremental à venda e ainda exige considerar o DAS do período, eventuais exceções e a regularidade do enquadramento. Não inclui outros custos como embalagem, mão de obra, capital de giro, tarifas bancárias ou custos contábeis.
+Os tetos acima ainda não reservam verba para embalagem, mão de obra, deslocamentos entre os cinco locais, taxas, custos financeiros, perdas ou outros gastos. Se houver qualquer um desses custos, subtraí-los antes de determinar o preço máximo de compra. Por prudência, não tratar o cenário de R$ 637,40 como custo de entrega garantido.
 
-## Conclusão
-Para manter lucro de 50% da receita, o custo da mercadoria precisaria ficar aproximadamente entre R$ 2,42 e R$ 3,64 por pacote nos cenários simulados acima. Trata-se de um teto matemático preliminar; deve-se reduzir ainda mais o teto caso existam custos adicionais. Os preços públicos pesquisados anteriormente estavam acima desse intervalo, portanto a oportunidade parece inviável sem preço direto de fábrica muito inferior ao varejo.
+## Conclusão econômica
+Para manter lucro de pelo menos 50% da receita de R$ 6.199,05, o preço de aquisição precisaria ficar em torno de R$ 2,82 a R$ 3,33 por pacote nos cenários simulados, antes de outros custos operacionais. Os preços públicos encontrados anteriormente estavam substancialmente acima disso. A operação parece inviável sem preço direto de fabricante muito abaixo do varejo e uma solução de frete consolidado de baixo custo.
 
-## Dados necessários para fechar o cálculo
-1. Confirmar se a nota será emitida como MEI ou por empresa do Simples Nacional fora do MEI.
-2. Informar de qual cidade/CEP a carga sairá.
-3. Obter cotação de entrega consolidada, com confirmação de que atende os cinco destinos e o prazo do edital.
-4. Confirmar com o contador o tratamento fiscal da venda e se a receita anual da empresa permanece dentro do limite aplicável.
+## Próximos passos objetivos
+1. Pedir cotação formal de frete com origem CEP 05685-000 e os cinco destinos finais no Rio, informando peso real, dimensões e número de volumes. Solicitar valor total com taxas de entrega múltipla, descarga, seguro, impostos do transporte e prazo.
+2. Pedir aos fornecedores preço por pacote para 715 unidades de embalagem (71.500 copos), com entrega incluída ou separada, disponibilidade comprovada e documentação técnica compatível com o TR.
+3. Confirmar com o contador: CNAE/ocupação permitida, emissão de NF para órgão público, situação cadastral e margem exata restante até o limite anual do MEI.
+4. Não ofertar lance antes de validar produto, preço, frete e capacidade de entrega. Se o custo total passar de R$ 3.099,52, a meta de lucro não será atingida.
