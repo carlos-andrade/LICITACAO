@@ -35,7 +35,13 @@ def obj(d: dict, key: str) -> dict:
 
 def edital_url(d: dict) -> str:
     control=val(pick(d,"numeroControlePNCP","numeroControlePncp"))
-    if control: return APP + "?id=" + requests.utils.quote(control)
+    if control:
+        # Número de controle: CNPJ-modalidade-sequencial/ano; monta rota conforme o PNCP.
+        m=re.fullmatch(r"(\\d{14})-(\\d+)-(\\d+)/(\\d{4})",control)
+        if m:
+            cnpj, modalidade, seq, ano=m.groups()
+            return f"https://pncp.gov.br/app/editais/{cnpj}/{ano}/{seq}"
+        return APP + "?id=" + requests.utils.quote(control)
     return APP
 
 def flatten(d: dict, captured: str) -> dict[str,str]:
