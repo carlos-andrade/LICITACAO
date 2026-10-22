@@ -1,4 +1,24 @@
 # Sistema LICITAÇÃO — Arquitetura Central
+
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-ARQ-CENTRAL-001 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | ARQUITETURA |
+| **Fase** | Arquitetura e engenharia |
+| **Estado** | EM_REVISAO |
+| **Versão** | 0.2.0 |
+| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **Commit de referência (versão anterior)** | [3c74a81572a96edffc8d032c1c14e9bcc29f7904](https://github.com/carlos-andrade/LICITACAO/commit/3c74a81572a96edffc8d032c1c14e9bcc29f7904) |
+| **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente de aprovação documental |
+| **Origem** | Conteúdo anterior e histórico Git |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 Versão: 0.1
 Data: 22/10/2026
 Repositório oficial: https://github.com/carlos-andrade/LICITACAO
