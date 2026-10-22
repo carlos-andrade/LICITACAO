@@ -30,7 +30,7 @@ jobs:
         run: python -m py_compile scripts/capture_pncp_contratacao.py
       - name: Extrair dados da contratação
         env:
-          CONTRATACAO_URL: ${{ inputs.url }}
+          CONTRATACAO_URL: ${{ inputs.url || 'https://pncp.gov.br/app/editais/00394502000144/2026/14259' }}
         run: python scripts/capture_pncp_contratacao.py --url "$CONTRATACAO_URL"
       - name: Publicar resultados
         run: |
