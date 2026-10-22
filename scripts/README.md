@@ -16,6 +16,16 @@ python -m pip install requests beautifulsoup4
 python scripts/pncp_capture.py "https://pncp.gov.br/app/editais/33663683000116/2026/548" --output-dir EDITAIS --download-docs
 ```
 
+Para também publicar os arquivos de texto (Markdown, JSON e CSV, quando existir) em `EDITAIS/` no GitHub, configure uma variável de ambiente `GITHUB_TOKEN` com permissão de conteúdo no repositório e rode:
+```bash
+# Linux/macOS
+export GITHUB_TOKEN="SEU_TOKEN"
+python scripts/pncp_capture.py "URL_DO_PNCP" --output-dir EDITAIS --github --github-repo carlos-andrade/LICITACAO --github-branch main
+```
+
+Não grave o token no script nem faça commit dele. A permissão do token e as regras de proteção da branch podem bloquear a publicação; confira `*-publicacao-github.json`. A opção `--github` publica só o relatório, JSON bruto e CSV de itens, não envia os binários baixados.
+```
+
 Os arquivos recebem nomes baseados no ano, sequencial e CNPJ. O script não atualiza o GitHub diretamente: ele gera artefatos locais para revisão e commit, evitando publicar automaticamente uma captura parcial ou campos errados. Se a captura for integrada a GitHub Actions futuramente, use credenciais em secrets e mantenha revisão dos resultados antes do merge.
 
 ## Fontes oficiais
