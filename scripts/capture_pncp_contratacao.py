@@ -95,11 +95,14 @@ def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int
     today=datetime.now(timezone.utc).date()
     future=(today+timedelta(days=365)).strftime("%Y%m%d")
     past=(today-timedelta(days=45)).strftime("%Y%m%d")
+    # Primeiro buscar na publicação oficial: a API limita a janela de datas; usar
+    # a data de publicação indicada no edital e poucos dias de margem.
+    pub_from=(today-timedelta(days=3)).strftime("%Y%m%d")
+    pub_to=(today+timedelta(days=3)).strftime("%Y%m%d")
     variants=[
-      # A lista pública deve ser delimitada pela janela de publicação; manter modalidade 8 como na consulta original do PNCP.
-      ("proposta_cnpj_janela",PROPOSTA_URL,{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},5),
-      ("proposta_cnpj_sem_modalidade_janela",PROPOSTA_URL,{"dataInicial":past,"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},5),
-      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},3),
+      ("publicacao_cnpj_dispensa",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":pub_from,"dataFinal":pub_to,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},5),
+      ("publicacao_dispensa",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":pub_from,"dataFinal":pub_to,"codigoModalidadeContratacao":8,"tamanhoPagina":50},5),
+      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},2),
     ]
     diagnostics=[]
     for variant_name,endpoint,base_params,max_pages in variants:
@@ -274,7 +277,7 @@ def main():
       "erros_por_endpoint":errors,"avisos_por_endpoint":warnings,
       "quantidade_itens":len(item_rows),"quantidade_eventos":len(event_rows),
       "quantidade_itens_esperada":14,
-      "observacao":"Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A consulta alternativa pesquisa uma janela de publicação com e sem filtro de modalidade, para reduzir paginação e respeitar os códigos publicados pelo PNCP. A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
+      "observacao":"Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A consulta alternativa pesquisa primeiro a publicação oficial numa janela curta de datas. Para Dispensa de Licitação, o código de modalidade do PNCP é 8; o endpoint de publicação pode rejeitar intervalos longos de datas. A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
     }
     (out/"contratacao-geral.json").write_text(json.dumps(raw.get("geral",{}),ensure_ascii=False,indent=2),encoding="utf-8")
     (out/"itens.json").write_text(json.dumps(raw.get("itens",{}),ensure_ascii=False,indent=2),encoding="utf-8")
