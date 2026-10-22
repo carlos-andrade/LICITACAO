@@ -1,8 +1,9 @@
 {
-  "status": "AGUARDANDO_EXECUCAO",
-  "observacao": "Os dados reais serão gerados ao executar o workflow; nenhum registo fictício foi inserido.",
-  "fonte": "https://pncp.gov.br/api/consulta/v1/contratacoes/proposta",
+  "status": "COMPLETO",
+  "capturado_em_utc": "2026-10-22T20:39:20+00:00",
   "url_origem": "https://pncp.gov.br/app/editais?pagina=1&status=recebendo_proposta&tam_pagina=100&tem_nfe_contrato=false&indicador_orcamento_sigiloso=false&modalidades=8",
+  "api_endpoint": "https://pncp.gov.br/api/consulta/v1/contratacoes/proposta",
+  "dataFinal": "20261022",
   "codigoModalidadeContratacao": 8,
   "tamanhoPaginaAPI": 50,
   "filtros_da_tela_registrados_na_origem": {
@@ -14,5 +15,10 @@
       8
     ]
   },
-  "nota": "tem_nfe_contrato e indicador_orcamento_sigiloso não estão documentados como filtros do endpoint de propostas abertas."
+  "nota_filtros": "O endpoint /contratacoes/proposta oferece recebimento aberto e filtro de modalidade. Os parâmetros tem_nfe_contrato e indicador_orcamento_sigiloso não estão documentados para este endpoint, portanto não foram simulados.",
+  "paginas_consultadas": 1,
+  "total_paginas_informado_pela_api": 1,
+  "total_registros_informado_pela_api": 45,
+  "registros_unicos_capturados": 45,
+  "limite_max_paginas_configurado": 0
 }
