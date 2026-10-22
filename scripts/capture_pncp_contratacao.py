@@ -250,6 +250,8 @@ def main():
     try: raw["eventos"]=fetch_json(s,events_endpoint,{"pagina":1,"tamanhoPagina":100})
     except Exception as e: errors["eventos"]=str(e); logging.warning("eventos: %s",e)
     general=first_dict(raw.get("geral",{}))
+    if not raw.get("geral"):
+      general_source="indisponivel"
     items=list_data(raw.get("itens",{}))
     events=list_data(raw.get("eventos",{}))
     general_row=flatten_general(general,captured,args.url,cnpj,year,seq)
