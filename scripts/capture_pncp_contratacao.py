@@ -91,7 +91,6 @@ def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int
     expected_cnpj=cnpj
     expected_year=int(year)
     expected_seq=int(seq)
-    data_final=(datetime.now(timezone.utc).date()).strftime("%Y%m%d")
     # A consulta exige dataFinal; uma data futura captura avisos que ainda recebem propostas.
     from datetime import timedelta
     data_final=(datetime.now(timezone.utc).date()+timedelta(days=365)).strftime("%Y%m%d")
@@ -109,7 +108,7 @@ def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int
         records=list_data(payload)
         for record in records:
             control=clean(pick(record,"numeroControlePNCP","numeroControlePncp"))
-            match=re.fullmatch(r"(\\d{14})-(\\d+)-(\\d+)/(\\d{4})",control)
+            match=re.fullmatch(r"(\d{14})-(\d+)-(\d+)/(\d{4})",control)
             if match:
                 rec_cnpj,_,rec_seq,rec_year=match.groups()
                 if rec_cnpj==expected_cnpj and int(rec_year)==expected_year and int(rec_seq)==expected_seq:
@@ -146,9 +145,9 @@ def flatten_general(d: dict, captured: str, url: str, cnpj: str, year: int, seq:
       "numero_aviso":clean(pick(d,"numeroCompra","numeroAviso","sequencialCompra",default=seq)),
       "ultima_atualizacao":clean(pick(d,"dataAtualizacao","dataAtualizacaoGlobal","dataPublicacaoPncp")),
       "orgao_cnpj":clean(pick(org,"cnpj",default=pick(d,"cnpjOrgao",default=cnpj))),
-      "orgao_entidade":clean(pick(org,"razaoSocial","nome","nomeOrgao",default=pick(d,"nomeOrgao"))),
-      "unidade_codigo":clean(pick(unit,"codigoUnidade","codigo","codigoUnidadeAdministrativa")),
-      "unidade_compradora":clean(pick(unit,"nomeUnidade","nome","unidadeNome")),
+      "orgao_entidade":clean(pick(org,"razaoSocial","nome","nomeOrgao",default=pick(d,"nomeOrgao","razaoSocialOrgao"))),
+      "unidade_codigo":clean(pick(unit,"codigoUnidade","codigo","codigoUnidadeAdministrativa",default=pick(d,"codigoUnidadeAdministrativa"))),
+      "unidade_compradora":clean(pick(unit,"nomeUnidade","nome","unidadeNome",default=pick(d,"unidadeNome","nomeUnidade"))),
       "uf":clean(pick(unit,"uf",default=pick(d,"uf"))),
       "municipio":clean(pick(unit,"municipioNome","nomeMunicipio",default=pick(d,"municipioNome","municipio"))),
       "orgao_subrogado":clean(pick(suborg,"razaoSocial","nome",default=pick(d,"orgaoSubRogadoNome","orgaoSubrogadoNome"))),
