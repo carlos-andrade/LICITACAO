@@ -96,10 +96,10 @@ def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int
     future=(today+timedelta(days=365)).strftime("%Y%m%d")
     past=(today-timedelta(days=45)).strftime("%Y%m%d")
     variants=[
-      ("proposta_cnpj_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},20),
-      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},20),
-      ("proposta_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"tamanhoPagina":50},20),
-      ("publicacao_cnpj_modalidade",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},20),
+      ("proposta_cnpj_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},2),
+      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},2),
+      ("proposta_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"tamanhoPagina":50},5),
+      ("publicacao_cnpj_modalidade",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},2),
     ]
     diagnostics=[]
     for variant_name,endpoint,base_params,max_pages in variants:
