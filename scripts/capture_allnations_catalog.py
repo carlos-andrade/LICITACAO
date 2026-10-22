@@ -458,7 +458,7 @@ def main() -> int:
         "produtos": rows, "erros_ou_restricoes": errors,
     }
     json_output.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf-8")
-    print(json.dumps({k: result[k] for k in ("fonte", "paginas_visitadas", "paginas_html_lidas", "produtos_distintos", "max_pages", "erros_ou_restricoes")}, ensure_ascii=False, indent=2))
+    print(json.dumps({k: result[k] for k in ("fonte", "paginas_visitadas", "paginas_html_lidas", "produtos_distintos", "precos_capturados", "produtos_sem_preco", "quantidades_estoque_capturadas", "produtos_sem_quantidade_estoque_exposta", "max_pages", "erros_ou_restricoes")}, ensure_ascii=False, indent=2))
     print(f"CSV: {output}\nJSON: {json_output}")
     return 0
 
