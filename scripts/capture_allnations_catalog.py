@@ -158,7 +158,7 @@ def meta_product(soup: BeautifulSoup, url: str, timestamp: str) -> dict[str, str
 
 def main() -> int:
     parser = argparse.ArgumentParser(description="Captura catálogo público All Nations para CSV/JSON.")
-    parser.add_argument("--start-url", default=BASE)
+    parser.add_argument("--start-url", default=urljoin(BASE, "all"))
     parser.add_argument("--output", default="FORNECEDORES/allnations-produtos.csv")
     parser.add_argument("--json-output", default="FORNECEDORES/allnations-produtos.json")
     parser.add_argument("--max-pages", type=int, default=300)
