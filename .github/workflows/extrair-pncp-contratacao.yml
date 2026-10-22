@@ -35,7 +35,16 @@ jobs:
       - name: Extrair dados da contratação
         env:
           CONTRATACAO_URL: ${{ inputs.url || 'https://pncp.gov.br/app/editais/00394502000144/2026/14259' }}
-        run: python scripts/capture_pncp_contratacao.py --url "$CONTRATACAO_URL"
+        run: |
+          set +e
+          python scripts/capture_pncp_contratacao.py --url "$CONTRATACAO_URL"
+          status=$?
+          set -e
+          # Exit code 2 means valid partial extraction: publish it with PARCIAL/FALHA metadata
+          # so stale files are not left looking complete. Other errors still fail the job.
+          if [ "$status" -ne 0 ] && [ "$status" -ne 2 ]; then
+            exit "$status"
+          fi
       - name: Publicar resultados
         run: |
           git config user.name "github-actions[bot]"
