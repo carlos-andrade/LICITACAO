@@ -2,13 +2,22 @@
 
 | Campo | Valor |
 |---|---|
-| Identificador | LIC-PREC-PMESP-90019-2026-001 |
-| Processo | SEI 057.00372713/2026-46 |
-| UASG | 180194 |
-| Órgão | Centro de Inteligência da Polícia Militar de São Paulo |
-| Consulta de preços | 22/10/2026 |
-| Fonte oficial do procedimento | [PNCP](https://pncp.gov.br/) — validar o registro específico e anexos antes de qualquer decisão |
-| Situação | Pesquisa preliminar; não representa cotação formal nem preço vencedor |
+| **ID** | LIC-DOC-CIFICACAO-PMESP-90019-2026-COMPARATIVO-PRECOS-MD-E7A249B0 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | COMPARATIVO_PRECOS |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | f93e1e0756d6eb22813004a317d8698d7c5dff39203c196e8cd89f1aaceb4710 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/precificacao/PMESP-90019-2026-comparativo-precos.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## Premissas e limitações
 

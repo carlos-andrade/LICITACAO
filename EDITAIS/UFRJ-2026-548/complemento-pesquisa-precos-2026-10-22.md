@@ -1,5 +1,24 @@
 # Complemento de pesquisa de preços — UFRJ 2026/548
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-26-548-COMPLEMENTO-PESQUISA-PRECOS-2026-10-22-MD-1C46682F |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 15cabb3ad44727a0eebb2ab2ae95e0bd83c05d617e35b8594dbf7e7eabf92f44 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/UFRJ-2026-548/complemento-pesquisa-precos-2026-10-22.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 **Data de consulta:** 22/10/2026. Valores públicos de varejo, não propostas formais nem confirmação de fornecimento de 715 pacotes.
 
 | Fornecedor | Produto anunciado | Preço por pacote de 100 | Total aritmético para 715 | Diferença ante referência de R$ 6.199,05 | Ressalvas |

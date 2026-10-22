@@ -9,7 +9,7 @@
 | **Fase** | Arquitetura e engenharia |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.2.0 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **SHA-256 (conteúdo canónico)** | d555bdd2aece8bae585cd35124a6689c0a51e11dea4dbb45ee827a0a29e66ebf |
 | **Commit de referência (versão anterior)** | [3c74a81572a96edffc8d032c1c14e9bcc29f7904](https://github.com/carlos-andrade/LICITACAO/commit/3c74a81572a96edffc8d032c1c14e9bcc29f7904) |
 | **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
 | **Data de atualização** | 2026-10-22 |

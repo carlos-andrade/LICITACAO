@@ -1,5 +1,24 @@
 # Decisão de adoção da GOVERNANCA — LICITACAO
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-DOCS-GOVERNANCA-DECISAO-ADOCAO-GOVERNANCA-MD-DA483360 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | a3e4d71a8f2b5314819b108ee866cfb6e2ee6f3df8b05a429c76739f09b5a939 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/DECISAO-ADOCAO-GOVERNANCA.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 - **ID:** LIC-GOV-ADOCAO-001
 - **Estado:** PROPOSTA FORMAL — AGUARDANDO APROVAÇÃO HUMANA
 - **Repositório consumidor:** `carlos-andrade/LICITACAO`

@@ -7,11 +7,15 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | RELATORIO_DE_INSPECAO |
 | **Fase** | Adoção de governança — decisão |
-| **Estado** | APROVADO_COM_LIMITACOES |
+| **Estado** | EM_REVISAO |
 | **Versão** | 0.4.1 |
-| **Data de atualização** | 2026-10-21 |
+| **SHA-256 (conteúdo canónico)** | 0fc7333ff910963acf660fe2998886f16791b21eec833dcd5ce93dd5dacbfe33 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
 | **Responsável** | Carlos Andrade, conforme registo-mestre |
 | **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/INSPECAO-DE-ADOCAO.md` |
 | **Autoridade superior** | [GOVERNANCA/CONSTITUICAO.md](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 

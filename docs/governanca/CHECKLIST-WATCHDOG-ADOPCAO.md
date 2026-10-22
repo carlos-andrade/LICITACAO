@@ -3,10 +3,21 @@
 | Campo | Valor |
 |---|---|
 | **ID** | LIC-WD-CHECKLIST-001 |
-| **Data de execução documental** | 2026-10-21 |
-| **Estado** | EXECUTADA — WATCHDOG NÃO OPERACIONAL |
-| **Responsável pelo registo** | Carlos Andrade, conforme registo do projeto |
-| **Escopo** | Revisão documental e evidências disponíveis; não equivale a teste de produção |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 6d2d96a7f6e54d48dba1a56d801fb56ff402ba432817edf13ffd8a1bd3e97f62 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/CHECKLIST-WATCHDOG-ADOPCAO.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## Resultados
 

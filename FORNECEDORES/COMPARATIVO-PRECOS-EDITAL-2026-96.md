@@ -1,5 +1,24 @@
 # Comparativo de preços — Edital UFRB 2026/96
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-ORNECEDORES-COMPARATIVO-PRECOS-EDITAL-2026-96-MD-2D52CD98 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | COMPARATIVO_PRECOS |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 6aeb6dd482c28ae833d90954a918be438a19c43d109ea1980e1875a6e81b7353 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/COMPARATIVO-PRECOS-EDITAL-2026-96.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 > **Status: preliminar, sem cotações recebidas.** Valores de fornecedores não foram inventados. A estimativa de R$ 10.072,00 consta apenas em fonte secundária e precisa ser confirmada no PNCP/aviso oficial. Não há itens, quantidades, unidades ou preços unitários oficiais confirmados nesta ficha.
 
 - **Órgão:** Universidade Federal do Recôncavo da Bahia (UFRB)

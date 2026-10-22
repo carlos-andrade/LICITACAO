@@ -7,12 +7,12 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | README |
 | **Fase** | Adoção de governança |
-| **Estado** | APROVADO_COM_LIMITACOES |
+| **Estado** | EM_REVISAO |
 | **Versão** | 0.2.0 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após validação final do conteúdo |
+| **SHA-256 (conteúdo canónico)** | 9da9e7d2e7debc1758904b7ecade2aab4b3dd5352387dd10499b3d6bccaa3812 |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
-| **Data de atualização** | 2026-10-20 |
+| **Data de atualização** | 2026-10-22 |
 | **Responsável** | Proprietário do repositório LICITACAO |
 | **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | Expansão controlada do README inicial |

@@ -9,7 +9,7 @@
 | **Fase** | Pesquisa de preços e viabilidade |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **SHA-256 (conteúdo canónico)** | 4b030daee555378fd5288b6d0ff80c31f19ee0f3f9ec408c16957b8bcf05b557 |
 | **Commit de referência (versão anterior)** | [ef34a20311342cc737c4258e80093b80833e955e](https://github.com/carlos-andrade/LICITACAO/commit/ef34a20311342cc737c4258e80093b80833e955e) |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |
@@ -18,7 +18,6 @@
 | **Origem** | PNCP e páginas públicas dos fornecedores citadas no corpo |
 | **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
-
 
 **Data da pesquisa:** 22/10/2026  
 **Objeto:** copo descartável biodegradável, 180 ml, pacote com 100 unidades, em PP, para líquidos quentes e frios, atóxico, com aditivo oxibiodegradável conforme descrição do item.  

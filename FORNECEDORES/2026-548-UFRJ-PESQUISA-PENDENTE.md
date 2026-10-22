@@ -1,5 +1,24 @@
 # Pesquisa de fornecedores — PNCP 33663683000116/2026/548
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-FORNECEDORES-2026-548-UFRJ-PESQUISA-PENDENTE-MD-E4EE14A6 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 7a8da11fc05565c2878456df15218d39fa07e942dac6edf726096bd8e6c0f509 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-PESQUISA-PENDENTE.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 - **Data da consulta:** 22/10/2026
 - **Processo:** https://pncp.gov.br/app/editais/33663683000116/2026/548
 - **Estado:** BLOQUEADO — objeto não confirmado; pesquisa de fornecedores ainda não pode ser realizada com segurança.

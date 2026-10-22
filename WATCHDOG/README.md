@@ -9,10 +9,10 @@
 | **Fase** | Adoção de governança |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.1.0 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após validação final do conteúdo |
+| **SHA-256 (conteúdo canónico)** | 0e07441e3042a92b806df72094d44f0d127577e55645ffedaa1029e28dd74d19 |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
-| **Data de atualização** | 2026-10-20 |
+| **Data de atualização** | 2026-10-22 |
 | **Responsável** | Proprietário do repositório LICITACAO |
 | **Aprovador** | Pendente de aprovação formal |
 | **Origem** | Adaptação inicial do [WATCHDOG da GOVERNANCA](https://github.com/carlos-andrade/GOVERNANCA/tree/main/WATCHDOG) |

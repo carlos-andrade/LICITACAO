@@ -1,5 +1,24 @@
 # Pesquisa preliminar de fornecedores — Aviso de Contratação Direta 25/2026 (UFRJ)
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-RJ-PESQUISA-FORNECEDORES-COPOS-BIODEGRADAVEIS-MD-902476FF |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 6115e7e1595e7454890b77b30729948bb7887a832061ac5fdae5f7ae827ddc53 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-PESQUISA-FORNECEDORES-COPOS-BIODEGRADAVEIS.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 **Data da pesquisa:** 22/10/2026  
 **Processo:** 23079.235349/2026-08  
 **PNCP:** https://pncp.gov.br/app/editais/33663683000116/2026/548  

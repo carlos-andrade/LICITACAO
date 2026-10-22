@@ -4,14 +4,20 @@
 |---|---|
 | **ID** | LIC-G0-001 |
 | **Projeto** | LICITACAO |
-| **Gate** | G0 — Entrada |
-| **Estado** | APROVADO — G0 e adoção documental aprovados com limitações |
-| **Data da avaliação** | 2026-10-21 |
-| **Autoridade normativa** | [Constituição da GOVERNANCA, secção 5](https://github.com/carlos-andrade/GOVERNANCA/blob/main/CONSTITUICAO.md) |
-| **Inspeção associada** | [INSPECAO-DE-ADOCAO.md](INSPECAO-DE-ADOCAO.md) |
-| **Decisão registada** | Pedido explícito do titular do repositório para resolver G0 e ativar LICITACAO, recebido em 2026-10-21; ver esta avaliação e o pedido de ativação pendente das condições técnicas de adoção |
-| **Patrocinador / proprietário** | Carlos Andrade, conforme campo `owner` do registo-mestre da GOVERNANCA |
-| **Responsável do projeto** | Carlos Andrade, conforme registo-mestre; responsabilidades funcionais especializadas serão atribuídas antes das respetivas operações |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | a15cc491fede85011cd103d9618222cc225f3ad1b67d2a51d3194fc9b945cbfe |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/GATE-G0-AVALIACAO.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## 1. Problema e resultado esperado
 

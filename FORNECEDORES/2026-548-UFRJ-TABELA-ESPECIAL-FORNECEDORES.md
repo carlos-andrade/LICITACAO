@@ -1,5 +1,24 @@
 # Pesquisa especial de fornecedores — PNCP 33663683000116/2026/548
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-ES-2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES-MD-18D90AC2 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | COMPARATIVO_PRECOS |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 4800ddf0dcd344324d71a019c54a5ff0ef13e2e28e15c6efb051d879622fac37 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 - **Processo informado:** https://pncp.gov.br/app/editais/33663683000116/2026/548
 - **Órgão associado ao CNPJ:** Universidade Federal do Rio de Janeiro (UFRJ). Esta associação cadastral não identifica o produto do processo.
 - **Data da atualização:** 22/10/2026

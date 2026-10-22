@@ -4,13 +4,20 @@
 |---|---|
 | **ID** | LIC-G0-PLANO-001 |
 | **Projeto** | LICITACAO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | PLANO_DE_REGULARIZACAO |
-| **Estado** | ADOÇÃO DOCUMENTAL APROVADA_COM_LIMITACOES; ATIVAÇÃO CENTRAL EFETIVA |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
 | **Versão** | 0.1.0 |
-| **Data** | 2026-10-21 |
-| **Gate relacionado** | [GATE-G0-AVALIACAO.md](GATE-G0-AVALIACAO.md) |
-| **Issue de acompanhamento** | [LICITACAO #6](https://github.com/carlos-andrade/LICITACAO/issues/6) |
-| **Regra de segurança** | Fail-closed; não altera `enabled: false` |
+| **SHA-256 (conteúdo canónico)** | b8f4ad0268047a40c9a1d37b92f1f933d939f35efccd720c2314efea85e48538 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/PLANO-REGULARIZACAO-G0.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## 1. Objetivo
 

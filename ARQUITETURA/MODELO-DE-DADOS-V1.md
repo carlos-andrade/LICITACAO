@@ -9,7 +9,7 @@
 | **Fase** | Modelagem de dados |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **SHA-256 (conteúdo canónico)** | 37e0e151219afd65e6a861c142feac53bc49b1317451d46ec233d2453fed5170 |
 | **Commit de referência (versão anterior)** | [afe4a46ea2cf5e4ee55b49b7358221e57881f739](https://github.com/carlos-andrade/LICITACAO/commit/afe4a46ea2cf5e4ee55b49b7358221e57881f739) |
 | **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
 | **Data de atualização** | 2026-10-22 |

@@ -1,5 +1,24 @@
 # Prompt Operacional — Análise de Edital PNCP e Mapeamento de Fornecedores
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-PROMPT-ANALISE-EDITAL-PNCP-E-FORNECEDORES-MD-0CFBB474 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | ANALISE |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 91cf06de9bad2be4bb22296056060196aeb951c8d8296f135f986dacdac2c846 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `PROMPT/analise-edital-pncp-e-fornecedores.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 ## Objetivo
 A partir de um link de edital/contratação no Portal Nacional de Contratações Públicas (PNCP), produzir uma análise completa, rastreável e orientada à decisão comercial, identificar potenciais fornecedores do objeto e registrar os resultados no repositório GitHub LICITACAO.
 

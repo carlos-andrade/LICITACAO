@@ -1,5 +1,24 @@
 # Fornecedores potenciais — Edital UFRB 2026/96
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-FORNECEDORES-EDITAL-2026-96-UFRB-MD-97544501 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | b4a5074f905911f731984f6169a4a8c368f2db5d75dd71c12eea4833201767ea |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/EDITAL-2026-96-UFRB.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 > **Estado do levantamento:** pesquisa comercial preliminar; fornecedores ainda não contactados por este projeto. Não há confirmação de preço, estoque, prazo de entrega, frete para Cruz das Almas/BA, aceite de empenho/condições da contratação pública ou habilitação documental. Não tratar esta lista como cotação nem como lista de fornecedores aprovados.
 
 ## 1. Demanda a atender

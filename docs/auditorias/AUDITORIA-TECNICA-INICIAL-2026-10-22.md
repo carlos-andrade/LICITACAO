@@ -2,13 +2,22 @@
 
 | Campo | Valor |
 |---|---|
-| ID | LIC-AUDIT-REPO-001 |
-| Data da auditoria | 2026-10-22 |
-| Repositório | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
-| Branch examinada | main |
-| Commit examinado | cbed64fda61edc2e5e4309b5f055c9e3de80d76b |
-| Tipo | Auditoria estática do conteúdo do repositório |
-| Limitação | Não equivale a executar os scripts localmente nem a validar acesso atual à API PNCP |
+| **ID** | LIC-DOC-DITORIAS-AUDITORIA-TECNICA-INICIAL-2026-10-22-MD-E09EB633 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | AUDITORIA |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | d2a598c2bfde127d71d96981f33b062d7d16183f4b4d5d73e396b6632f18dc77 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/auditorias/AUDITORIA-TECNICA-INICIAL-2026-10-22.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## 1. Resumo executivo
 

@@ -1,4 +1,24 @@
 # UFRJ — Estimativa refinada de impostos, frete e teto de compra
+
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC--548-UFRJ-CALCULO-PRELIMINAR-IMPOSTOS-ENTREGA-MD-FD5397C2 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | ed86953f75433d3ee31032987568d4ccce1e984f73ee5430084f20118e4b098a |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-CALCULO-PRELIMINAR-IMPOSTOS-ENTREGA.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 Data: 22/10/2026
 
 ## Dados confirmados do edital e do usuário

@@ -1,5 +1,24 @@
 # Fluxo de cotação e validação de fornecedores
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-FORNECEDORES-FLUXO-COTACAO-E-VALIDACAO-MD-8CA6432F |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 5e8cd4f622f67dff4da368d618f4dbaff94f56970626b297f04f662ba856b383 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/FLUXO-COTACAO-E-VALIDACAO.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 ## Objetivo
 Registrar evidências comparáveis de fornecedores e impedir que preço indicativo seja tratado como cotação formal ou que menor preço seja confundido com conformidade técnica.
 

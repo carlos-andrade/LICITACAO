@@ -1,5 +1,24 @@
 # Análise preliminar de contratação — PNCP 33663683000116/2026/548
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-EDITAIS-2026-548-UFRJ-ANALISE-PRELIMINAR-MD-8F1B14D2 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | ANALISE |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 0070a33cd892303808ff207f12360aaeb3eadef33d86c1db8a06db073f7ce730 |
+| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/2026-548-UFRJ-ANALISE-PRELIMINAR.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 - **Data da consulta:** 22/10/2026
 - **Estado da análise:** PENDENTE DE VALIDAÇÃO DOCUMENTAL — não usar como parecer final nem como autorização para ofertar.
 - **Link informado:** https://pncp.gov.br/app/editais/33663683000116/2026/548

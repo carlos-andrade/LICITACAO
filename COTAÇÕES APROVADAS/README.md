@@ -9,7 +9,7 @@
 | **Fase** | Gestão e aprovação de cotações |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após normalização |
+| **SHA-256 (conteúdo canónico)** | 2e72bd4041887eec7860d38d4e8cea2db38cd78b1b93842eb54c477769f0de92 |
 | **Commit de referência (versão anterior)** | [006dcee3d1652580ae775c48a1d6190c8ccd0f63](https://github.com/carlos-andrade/LICITACAO/commit/006dcee3d1652580ae775c48a1d6190c8ccd0f63) |
 | **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
 | **Data de atualização** | 2026-10-22 |
@@ -18,7 +18,6 @@
 | **Origem** | Conteúdo anterior e histórico Git |
 | **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
 | **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
-
 
 Pasta destinada a arquivar cotações que foram formalmente selecionadas ou aprovadas para apoiar processos de licitação do projeto LICITACAO.
 
