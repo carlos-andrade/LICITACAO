@@ -1,6 +1,6 @@
 {
   "status": "PARCIAL",
-  "capturado_em_utc": "2026-10-22T22:21:50+00:00",
+  "capturado_em_utc": "2026-10-22T23:14:28+00:00",
   "url_contratacao": "https://pncp.gov.br/app/editais/00394502000144/2026/14259",
   "cnpj": "00394502000144",
   "ano": 2026,
@@ -17,7 +17,7 @@
   "documentacao_api_consulta": "https://pncp.gov.br/api/consulta/swagger-ui/index.html",
   "documentacao_api_itens_historico": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
   "erros_por_endpoint": {
-    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. proposta_cnpj_janela: páginas=5; registros=244; amostras=['00394502000144-1-003337/2026', '00394502000144-1-013399/2026', '00394502000144-1-013455/2026', '00394502000144-1-013637/2026'] | proposta_cnpj_sem_modalidade_janela: páginas=5; registros=250; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026'] | proposta_cnpj: páginas=3; registros=150; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
+    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. publicacao_cnpj_dispensa: páginas=5; registros=250; amostras=['00394502000144-1-013798/2026', '00394502000144-1-013799/2026', '00394502000144-1-013802/2026', '00394502000144-1-013803/2026'] | publicacao_dispensa: falha na página 2: HTTP 429 em https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20261019&dataFinal=20261025&codigoModalidadeContratacao=8&tamanhoPagina=50&pagina=2 | publicacao_dispensa: páginas=1; registros=50; amostras=['61571923000198-1-000030/2026', '87612818000143-1-000495/2026', '45122603000102-1-000653/2026', '00394544000185-1-002284/2026'] | proposta_cnpj: páginas=2; registros=100; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
   },
   "avisos_por_endpoint": {
     "geral_detalhe": "HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259"
@@ -25,5 +25,5 @@
   "quantidade_itens": 14,
   "quantidade_eventos": 30,
   "quantidade_itens_esperada": 14,
-  "observacao": "Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A consulta alternativa pesquisa uma janela de publicação com e sem filtro de modalidade, para reduzir paginação e respeitar os códigos publicados pelo PNCP. A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
+  "observacao": "Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A consulta alternativa pesquisa primeiro a publicação oficial numa janela curta de datas. Para Dispensa de Licitação, o código de modalidade do PNCP é 8; o endpoint de publicação pode rejeitar intervalos longos de datas. A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
 }
