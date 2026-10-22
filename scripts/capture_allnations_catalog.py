@@ -131,6 +131,15 @@ def category_from_product(p: dict[str, Any], soup: BeautifulSoup) -> str:
 def product_row(p: dict[str, Any], url: str, soup: BeautifulSoup, timestamp: str) -> dict[str, str]:
     offers = p.get("offers") if isinstance(p.get("offers"), dict) else {}
     price, currency, availability = price_from_product(p)
+    # Fallback only to explicit product-price metadata in the same product page.
+    if not price:
+        price_tag = soup.select_one('meta[property="product:price:amount"], meta[itemprop="price"], [itemprop="price"]')
+        if price_tag:
+            price = text(price_tag.get("content") or price_tag.get("value") or price_tag.get_text(" ", strip=True))
+    if not currency:
+        currency_tag = soup.select_one('meta[property="product:price:currency"], meta[itemprop="priceCurrency"], [itemprop="priceCurrency"]')
+        if currency_tag:
+            currency = text(currency_tag.get("content") or currency_tag.get("value") or currency_tag.get_text(" ", strip=True))
     brand = p.get("brand")
     model = first(p.get("model"), p.get("mpn"))
     return {
