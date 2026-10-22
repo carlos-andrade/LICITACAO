@@ -9,7 +9,7 @@
 | **Fase** | Cadastro inicial / validação |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 8467f2b5492f6d8bcf900346a623807eae4f987e7018fed19d762efd7af00f01 |
+| **SHA-256 (conteúdo canónico)** | 7e70b4ea2703749baec4c93021e3b480fced8726d356cda8f806d745cbd4b2f7 |
 | **Commit de referência (versão anterior)** | N/A — nova ficha |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |
