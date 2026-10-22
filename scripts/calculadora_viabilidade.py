@@ -93,7 +93,7 @@ def calculate(args: argparse.Namespace) -> dict:
         "target_profit_margin_percent": str((args.target_margin * Decimal("100")).quantize(Decimal("0.01"))),
         "target_profit": str(money(target_profit)),
         "maximum_acquisition_total_for_target": str(money(max_acquisition_total)),
-        "maximum_acquisition_unit_price_for_target": str(money(max_acquisition_unit)),
+        "maximum_acquisition_unit_price_for_target": str(conservative_money(max_acquisition_unit)),
         "currency": "BRL", "evidence_status": "verified" if not pending_costs else "draft_estimate",
         "input_status": {"tax_confirmed": args.tax_confirmed, "freight_confirmed": args.freight_confirmed,
                          "technical_compliance_confirmed": args.technical_compliance_confirmed,
