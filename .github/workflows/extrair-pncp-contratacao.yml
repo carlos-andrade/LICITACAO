@@ -1,6 +1,10 @@
 name: Extrair contratação específica PNCP
 
 on:
+  push:
+    paths:
+      - "scripts/capture_pncp_contratacao.py"
+      - ".github/workflows/extrair-pncp-contratacao.yml"
   workflow_dispatch:
     inputs:
       url:
