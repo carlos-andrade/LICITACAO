@@ -28,3 +28,8 @@ Diretório destinado à organização de documentos e registos relacionados com 
 - Preservar a origem e a integridade dos documentos; não substituir originais por cópias anotadas.
 - Não incluir credenciais, segredos ou dados pessoais desnecessários.
 - Até à aprovação formal do Gate G0, este diretório é apenas estrutura documental; não representa ativação de módulos funcionais.
+
+
+## Coleta automatizada PNCP
+
+A coleta dos editais com propostas abertas e modalidade código 8 está documentada em [README-CAPTURA-PNCP.md](README-CAPTURA-PNCP.md). O script está em [capture_pncp_editais.py](../scripts/capture_pncp_editais.py); o workflow é [Captura de editais PNCP](../.github/workflows/captura-pncp-editais.yml). Os arquivos de resultados só serão considerados preenchidos após uma execução com dados reais.
