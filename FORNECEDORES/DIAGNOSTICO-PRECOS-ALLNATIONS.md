@@ -7,9 +7,9 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | DIAGNÓSTICO TÉCNICO |
 | **Fase** | Investigação da captura |
-| **Estado** | CAUSA_PROVÁVEL_IDENTIFICADA |
+| **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | CALCULAR_APÓS_PREENCHER |
+| **SHA-256 (conteúdo canónico)** | 0693a2fc3642b8419507e2ee1a879279b9535de14c2487dbee157624ba02e093 |
 | **Commit de referência (versão anterior)** | N/A — documento inicial |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |

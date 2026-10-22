@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 411dbb78c83eb5905b10709191501ca00dff70bbf9da6a2357c959422f347bdc |
-| **Commit de referência (versão anterior)** | [bc475ec021f1c7a30a3430a75ae61ab10491a696](https://github.com/carlos-andrade/LICITACAO/commit/bc475ec021f1c7a30a3430a75ae61ab10491a696) |
+| **SHA-256 (conteúdo canónico)** | 9f77a2a0d4a00dcf357dc64012183107db02ac1ff1331f87e5ba52011ed68e9b |
+| **Commit de referência (versão anterior)** | [7cf4dd6c019b150d2e0e187ba2734b69c332a94b](https://github.com/carlos-andrade/LICITACAO/commit/7cf4dd6c019b150d2e0e187ba2734b69c332a94b) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,8 +21,8 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **48**.
-- Documentos conformes após normalização e verificação de hash: **48/48**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **49**.
+- Documentos conformes após normalização e verificação de hash: **49/49**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
@@ -52,6 +52,7 @@
 | `FORNECEDORES/2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES.md` | `LIC-DOC-ES-2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES-MD-18D90AC2` | CONFORME — Conforme |
 | `FORNECEDORES/ALLNATIONS.md` | `LIC-FORN-ALLNATIONS-001` | CONFORME — Conforme |
 | `FORNECEDORES/COMPARATIVO-PRECOS-EDITAL-2026-96.md` | `LIC-DOC-ORNECEDORES-COMPARATIVO-PRECOS-EDITAL-2026-96-MD-2D52CD98` | CONFORME — Conforme |
+| `FORNECEDORES/DIAGNOSTICO-PRECOS-ALLNATIONS.md` | `LIC-DIAG-ALLNATIONS-PRECO-001` | CONFORME — Conforme |
 | `FORNECEDORES/EDITAL-2026-96-UFRB.md` | `LIC-DOC-FORNECEDORES-EDITAL-2026-96-UFRB-MD-97544501` | CONFORME — Conforme |
 | `FORNECEDORES/FLUXO-COTACAO-E-VALIDACAO.md` | `LIC-DOC-FORNECEDORES-FLUXO-COTACAO-E-VALIDACAO-MD-8CA6432F` | CONFORME — Conforme |
 | `FORNECEDORES/README.md` | `LIC-DOC-FORNECEDORES-README-MD-94CB4341` | CONFORME — Conforme |
