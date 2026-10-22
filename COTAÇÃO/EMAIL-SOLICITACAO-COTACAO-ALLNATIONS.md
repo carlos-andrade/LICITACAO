@@ -1,5 +1,24 @@
 # Modelo de e-mail — Solicitação de cotação à ALLNATIONS
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-COTA-O-EMAIL-SOLICITACAO-COTACAO-ALLNATIONS-MD-31E9933C |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | e2f62c567abc0cb5c594e65a1b1a791c0467ef8f3db6fae0b294ee3f32f37dd3 |
+| **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `COTAÇÃO/EMAIL-SOLICITACAO-COTACAO-ALLNATIONS.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 **Destinatário:** preencher com o contato comercial oficial da ALLNATIONS  
 **Assunto:** Solicitação de cotação comercial — catálogo de produtos
 

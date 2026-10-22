@@ -1,5 +1,24 @@
 # ALLNATIONS — Registro de captura e pendência de cotação
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-LNATIONS-REGISTRO-CAPTURA-E-PENDENCIA-COTACAO-MD-58FCB97A |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 2256f16574f505556e60cae31e551209e92410e4a2cec4b6f355af7f8d5fd5cc |
+| **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/ALLNATIONS-REGISTRO-CAPTURA-E-PENDENCIA-COTACAO.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 **Data do registro:** 2026-10-22  
 **Fornecedor:** ALLNATIONS  
 **Fonte consultada:** https://allnations.com.br/  

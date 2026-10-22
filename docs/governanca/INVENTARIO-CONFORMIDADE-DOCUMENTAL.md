@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | cbcd29733ee36e7e6b0b24d4b9d80fecde6174ecebbefc288d4d6c080464516e |
-| **Commit de referência (versão anterior)** | [fc5d1e99031aa8c641280f51f4b57dc37fa11e1d](https://github.com/carlos-andrade/LICITACAO/commit/fc5d1e99031aa8c641280f51f4b57dc37fa11e1d) |
+| **SHA-256 (conteúdo canónico)** | ba07c55e39e64e45e0b9dcca527473f397a569e51e69b315ccf83e5c556ac1f5 |
+| **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **49**.
-- Documentos conformes após normalização e verificação de hash: **49/49**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **51**.
+- Documentos conformes após normalização e verificação de hash: **51/51**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **2**.
 
 ## Inventário Markdown
 
@@ -37,6 +37,7 @@
 | `ARQUITETURA/schemas/README.md` | `LIC-DOC-ARQUITETURA-SCHEMAS-README-MD-8B255086` | CONFORME — Conforme |
 | `CARTA-CONTRATO-PADRAO-ROADMAP.md` | `LIC-GOV-CARTA-ROADMAP-001` | CONFORME — Conforme |
 | `CONSTITUICAO.md` | `LIC-GOV-CONST-001` | CONFORME — Conforme |
+| `COTAÇÃO/EMAIL-SOLICITACAO-COTACAO-ALLNATIONS.md` | `LIC-DOC-COTA-O-EMAIL-SOLICITACAO-COTACAO-ALLNATIONS-MD-31E9933C` | CONFORME — Conforme |
 | `COTAÇÃO/README.md` | `LIC-README-COTACAO-001` | CONFORME — Conforme |
 | `COTAÇÕES APROVADAS/README.md` | `LIC-README-COTACOES-APROVADAS-001` | CONFORME — Conforme |
 | `EDITAIS/2026-548-UFRJ-ANALISE-PRELIMINAR.md` | `LIC-DOC-EDITAIS-2026-548-UFRJ-ANALISE-PRELIMINAR-MD-8F1B14D2` | CONFORME — Conforme |
@@ -50,6 +51,7 @@
 | `FORNECEDORES/2026-548-UFRJ-PESQUISA-FORNECEDORES-COPOS-BIODEGRADAVEIS.md` | `LIC-DOC-RJ-PESQUISA-FORNECEDORES-COPOS-BIODEGRADAVEIS-MD-902476FF` | CONFORME — Conforme |
 | `FORNECEDORES/2026-548-UFRJ-PESQUISA-PENDENTE.md` | `LIC-DOC-FORNECEDORES-2026-548-UFRJ-PESQUISA-PENDENTE-MD-E4EE14A6` | CONFORME — Conforme |
 | `FORNECEDORES/2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES.md` | `LIC-DOC-ES-2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES-MD-18D90AC2` | CONFORME — Conforme |
+| `FORNECEDORES/ALLNATIONS-REGISTRO-CAPTURA-E-PENDENCIA-COTACAO.md` | `LIC-DOC-LNATIONS-REGISTRO-CAPTURA-E-PENDENCIA-COTACAO-MD-58FCB97A` | CONFORME — Conforme |
 | `FORNECEDORES/ALLNATIONS.md` | `LIC-FORN-ALLNATIONS-001` | CONFORME — Conforme |
 | `FORNECEDORES/COMPARATIVO-PRECOS-EDITAL-2026-96.md` | `LIC-DOC-ORNECEDORES-COMPARATIVO-PRECOS-EDITAL-2026-96-MD-2D52CD98` | CONFORME — Conforme |
 | `FORNECEDORES/DIAGNOSTICO-PRECOS-ALLNATIONS.md` | `LIC-DIAG-ALLNATIONS-PRECO-001` | CONFORME — Conforme |
