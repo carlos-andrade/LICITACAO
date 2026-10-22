@@ -13,6 +13,7 @@ Este guia complementa a arquitetura central. Os schemas e exemplos são a primei
 - [Exemplo UFRJ — oportunidade](exemplos/ufrj-2026-548-oportunidade.json)
 - [Exemplo UFRJ — item](exemplos/ufrj-2026-548-item-1.json)
 - [Validador local](../scripts/validate_schemas.py)
+- [Fluxo de cotação e validação de fornecedores](../FORNECEDORES/FLUXO-COTACAO-E-VALIDACAO.md)
 
 ## Identificadores e relações
 - `oportunidade.id` é a chave interna estável.
