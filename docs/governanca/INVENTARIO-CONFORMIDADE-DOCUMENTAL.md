@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 4dc85dca7dc7688aeb8d47a60f554cf7c3dd57e985141b89d37731ae2875634a |
-| **Commit de referência (versão anterior)** | [6005cc81cdaecab3046be2fbdb0e825f5c5ff0d0](https://github.com/carlos-andrade/LICITACAO/commit/6005cc81cdaecab3046be2fbdb0e825f5c5ff0d0) |
+| **SHA-256 (conteúdo canónico)** | 45fcd8a1f7cece6295e1342a6cd97e12a892ddacf6aac8f13be66c5b87adb81d |
+| **Commit de referência (versão anterior)** | [2ef02141df72c364f65c5563ae2b48f340a59c20](https://github.com/carlos-andrade/LICITACAO/commit/2ef02141df72c364f65c5563ae2b48f340a59c20) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -24,7 +24,7 @@
 - Documentos Markdown do projeto (fora de .governanca/upstream): **53**.
 - Documentos conformes após normalização e verificação de hash: **53/53**.
 - IDs duplicados: **0**.
-- Ficheiros PDF/Office no repositório: **1**.
+- Ficheiros PDF/Office no repositório: **2**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
 - Ficheiros Markdown alterados nesta execução: **0**.
 
@@ -90,6 +90,7 @@
 
 | Caminho | Formato | Estado |
 |---|---|---|
+| `EDITAIS/CONTRATACAO-00394502000144-2026-14259/contratacao-completa.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 | `EDITAIS/pncp-editais-abertos.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 
 ## Critérios e limitações
