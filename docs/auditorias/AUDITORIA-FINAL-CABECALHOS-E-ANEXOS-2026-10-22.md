@@ -22,7 +22,7 @@
 ## 1. Resultado do workflow
 
 - Workflow [Validacao do Sistema LICITACAO](https://github.com/carlos-andrade/LICITACAO/actions/runs/39793338249): **concluído com sucesso**.
-- Commit de disparo: `b5e445630ceaf57fac58be0d9022698169d1f41e` não; SHA observado no workflow: `b5e445630ceaf57fac58be0d9022698169d1f41e` não corresponde ao commit real. SHA correto do commit de disparo: `b5e445630ceaf57fac58be0d9022698169d1f41e`? 
+- Commit que disparou o workflow: `b5e445630ceaf57fac58be0d9022698169d1f41e`.
 - Etapas verificadas como concluídas: normalização de cabeçalhos e geração do inventário; publicação da normalização; testes unitários; validação de schemas e exemplos.
 - O workflow criou e publicou o commit [8572920cc2bf0521688794b71d1e672ab044369c](https://github.com/carlos-andrade/LICITACAO/commit/8572920cc2bf0521688794b71d1e672ab044369c), com a mensagem “docs: normalizar cabeçalhos e inventariar conformidade documental”.
 
