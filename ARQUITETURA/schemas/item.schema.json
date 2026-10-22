@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/carlos-andrade/LICITACAO/blob/main/ARQUITETURA/schemas/item.schema.json",
+  "title": "Item de oportunidade",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "opportunity_id", "source_item_id", "description_original", "quantity", "unit", "validation_status"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "id": { "type": "string", "minLength": 3 },
+    "opportunity_id": { "type": "string", "minLength": 3 },
+    "source_item_id": { "type": ["string", "null"] },
+    "description_original": { "type": "string", "minLength": 1 },
+    "description_normalized": { "type": ["string", "null"] },
+    "classification_code": { "type": ["string", "null"] },
+    "classification_system": { "enum": ["CATMAT", "CATSER", "OTHER", null] },
+    "quantity": { "type": "number", "exclusiveMinimum": 0 },
+    "unit": { "type": "string", "minLength": 1 },
+    "reference_unit_price": { "type": ["number", "null"], "minimum": 0 },
+    "reference_total_price": { "type": ["number", "null"], "minimum": 0 },
+    "currency": { "const": "BRL" },
+    "technical_requirements": { "type": "array", "items": { "type": "string" } },
+    "delivery_locations": { "type": "array", "items": { "type": "string" } },
+    "delivery_deadline": { "type": ["string", "null"], "format": "date-time" },
+    "validation_status": { "enum": ["unreviewed", "in_review", "validated", "has_conflicts", "blocked"] },
+    "source_document_ids": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "string" } }
+  }
+}
