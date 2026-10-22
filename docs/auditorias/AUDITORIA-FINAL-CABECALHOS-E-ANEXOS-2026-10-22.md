@@ -7,9 +7,9 @@
 | **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
 | **Tipo documental** | AUDITORIA FINAL |
 | **Fase** | Verificação de automação, inventário e anexos |
-| **Estado** | EM_REVISAO — validação técnica concluída; aprovação substantiva pendente |
+| **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | PENDENTE — calcular após publicação |
+| **SHA-256 (conteúdo canónico)** | b834bee2344171c0817fd64fcfba69f31dfdb197ead059b67042e24224dbb824 |
 | **Commit de referência (versão anterior)** | [8572920cc2bf0521688794b71d1e672ab044369c](https://github.com/carlos-andrade/LICITACAO/commit/8572920cc2bf0521688794b71d1e672ab044369c) |
 | **Data de criação** | 2026-10-22 |
 | **Data de atualização** | 2026-10-22 |

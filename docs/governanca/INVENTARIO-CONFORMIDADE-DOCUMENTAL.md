@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 1b5b371ab61650193bf2bd2d7028f600088b3bd90561e3092d5af65f84fa6f81 |
-| **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
+| **SHA-256 (conteúdo canónico)** | 393ba08af739a06bc247faceb7b935b3b3a87e8018478fee57758685a0aa9742 |
+| **Commit de referência (versão anterior)** | [6b0b8e939eed8024328ccbbe6d9f78a1d1efe5ba](https://github.com/carlos-andrade/LICITACAO/commit/6b0b8e939eed8024328ccbbe6d9f78a1d1efe5ba) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **42**.
-- Documentos conformes após normalização e verificação de hash: **42/42**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **44**.
+- Documentos conformes após normalização e verificação de hash: **44/44**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **42**.
+- Ficheiros Markdown alterados nesta execução: **1**.
 
 ## Inventário Markdown
 
@@ -60,11 +60,13 @@
 | `README.md` | `LIC-README-001` | CONFORME — Conforme |
 | `ROADMAP-PADRAO-GOVERNANCA.md` | `LIC-GOV-ROADMAP-001` | CONFORME — Conforme |
 | `WATCHDOG/README.md` | `LIC-GOV-WD-README-001` | CONFORME — Conforme |
+| `docs/auditorias/AUDITORIA-FINAL-CABECALHOS-E-ANEXOS-2026-10-22.md` | `LIC-AUD-FINAL-2026-10-22-001` | CONFORME — Conforme |
 | `docs/auditorias/AUDITORIA-TECNICA-INICIAL-2026-10-22.md` | `LIC-DOC-DITORIAS-AUDITORIA-TECNICA-INICIAL-2026-10-22-MD-E09EB633` | CONFORME — Conforme |
 | `docs/governanca/CHECKLIST-WATCHDOG-ADOPCAO.md` | `LIC-WD-CHECKLIST-001` | CONFORME — Conforme |
 | `docs/governanca/DECISAO-ADOCAO-GOVERNANCA.md` | `LIC-DOC-DOCS-GOVERNANCA-DECISAO-ADOCAO-GOVERNANCA-MD-DA483360` | CONFORME — Conforme |
 | `docs/governanca/GATE-G0-AVALIACAO.md` | `LIC-G0-001` | CONFORME — Conforme |
 | `docs/governanca/INSPECAO-DE-ADOCAO.md` | `LIC-GOV-INSPEC-001` | CONFORME — Conforme |
+| `docs/governanca/INVENTARIO-CONFORMIDADE-DOCUMENTAL.md` | `LIC-AUD-DOC-001` | CONFORME — Conforme |
 | `docs/governanca/PLANO-REGULARIZACAO-G0.md` | `LIC-G0-PLANO-001` | CONFORME — Conforme |
 | `docs/governanca/PROPOSTA-GATE-G0.md` | `LIC-DOC-DOCS-GOVERNANCA-PROPOSTA-GATE-G0-MD-BE2E0033` | CONFORME — Conforme |
 | `docs/governanca/PROPOSTA-VALIDACAO-DISTRIBUICAO-UPSTREAM.md` | `LIC-GOV-DIST-001` | CONFORME — Conforme |
