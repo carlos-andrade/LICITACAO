@@ -92,8 +92,15 @@ def list_payload(payload):
     if isinstance(payload, list):
         return [item for item in payload if isinstance(item, dict)]
     if isinstance(payload, dict):
+        # Recognize explicit result/item arrays even when empty. An empty API
+        # result must not be converted into a fake single item containing the
+        # whole response envelope.
+        preferred_keys = ("item", "resultado", "results", "dados", "data")
         for key, value in payload.items():
-            if isinstance(value, list) and ("item" in key.lower() or all(isinstance(x, dict) for x in value)) and value:
+            if isinstance(value, list) and (
+                any(term in key.lower() for term in preferred_keys)
+                or all(isinstance(x, dict) for x in value)
+            ):
                 return [item for item in value if isinstance(item, dict)]
         return [payload]
     return []
