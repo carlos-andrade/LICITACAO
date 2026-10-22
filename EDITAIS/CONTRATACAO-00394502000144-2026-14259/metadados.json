@@ -1,6 +1,6 @@
 {
   "status": "PARCIAL",
-  "capturado_em_utc": "2026-10-22T22:20:34+00:00",
+  "capturado_em_utc": "2026-10-22T22:21:50+00:00",
   "url_contratacao": "https://pncp.gov.br/app/editais/00394502000144/2026/14259",
   "cnpj": "00394502000144",
   "ano": 2026,
@@ -11,13 +11,13 @@
     "eventos": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/historico",
     "fallback_geral": "https://pncp.gov.br/api/consulta/v1/contratacoes/proposta"
   },
-  "fonte_dados_gerais": "consulta_detalhe",
+  "fonte_dados_gerais": "indisponivel",
   "base_api_consulta": "https://pncp.gov.br/api/consulta/v1",
   "base_api_itens_historico": "https://pncp.gov.br/api/pncp/v1",
   "documentacao_api_consulta": "https://pncp.gov.br/api/consulta/swagger-ui/index.html",
   "documentacao_api_itens_historico": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
   "erros_por_endpoint": {
-    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. proposta_cnpj_janela: páginas=5; registros=244; amostras=['00394502000144-1-003337/2026', '00394502000144-1-013399/2026', '00394502000144-1-013455/2026', '00394502000144-1-013637/2026'] | proposta_cnpj_sem_modalidade_janela: páginas=5; registros=250; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026'] | proposta_cnpj: falha na página 2: HTTP 429 em https://pncp.gov.br/api/consulta/v1/contratacoes/proposta?dataFinal=20271022&cnpj=00394502000144&tamanhoPagina=50&pagina=2 | proposta_cnpj: páginas=1; registros=50; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
+    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. proposta_cnpj_janela: páginas=5; registros=244; amostras=['00394502000144-1-003337/2026', '00394502000144-1-013399/2026', '00394502000144-1-013455/2026', '00394502000144-1-013637/2026'] | proposta_cnpj_sem_modalidade_janela: páginas=5; registros=250; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026'] | proposta_cnpj: páginas=3; registros=150; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
   },
   "avisos_por_endpoint": {
     "geral_detalhe": "HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259"
