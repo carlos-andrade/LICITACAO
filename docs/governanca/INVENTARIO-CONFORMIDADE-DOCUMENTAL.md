@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | b512be9fb295f7b01d1b8976bdfe93eb18ed606c5c4b170f87bb404a10295eb6 |
-| **Commit de referência (versão anterior)** | [43b405550ea6e3de2dcf6402df5e7292dcf3b25e](https://github.com/carlos-andrade/LICITACAO/commit/43b405550ea6e3de2dcf6402df5e7292dcf3b25e) |
+| **SHA-256 (conteúdo canónico)** | d1ecda74e2996471436108d8b5993777ad0f2c0fb0b60a3336adf928d474ebcd |
+| **Commit de referência (versão anterior)** | [8f69f4c4ecacc44c8fbdc88712f23611bb711e67](https://github.com/carlos-andrade/LICITACAO/commit/8f69f4c4ecacc44c8fbdc88712f23611bb711e67) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **52**.
-- Documentos conformes após normalização e verificação de hash: **52/52**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **53**.
+- Documentos conformes após normalização e verificação de hash: **53/53**.
 - IDs duplicados: **0**.
-- Ficheiros PDF/Office no repositório: **0**.
+- Ficheiros PDF/Office no repositório: **1**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **1**.
+- Ficheiros Markdown alterados nesta execução: **3**.
 
 ## Inventário Markdown
 
@@ -42,6 +42,7 @@
 | `COTAÇÕES APROVADAS/README.md` | `LIC-README-COTACOES-APROVADAS-001` | CONFORME — Conforme |
 | `EDITAIS/2026-548-UFRJ-ANALISE-PRELIMINAR.md` | `LIC-DOC-EDITAIS-2026-548-UFRJ-ANALISE-PRELIMINAR-MD-8F1B14D2` | CONFORME — Conforme |
 | `EDITAIS/2026-96-UFRB.md` | `LIC-DOC-EDITAIS-2026-96-UFRB-MD-8E0C6CF7` | CONFORME — Conforme |
+| `EDITAIS/EXTRATOR-CONTRATACAO-PNCP-00394502000144-2026-14259.md` | `LIC-DOC-OR-CONTRATACAO-PNCP-00394502000144-2026-14259-MD-24820420` | CONFORME — Conforme |
 | `EDITAIS/README-CAPTURA-PNCP.md` | `LIC-DOC-EDITAIS-README-CAPTURA-PNCP-MD-B9D9F42A` | CONFORME — Conforme |
 | `EDITAIS/README.md` | `LIC-DOC-EDITAIS-README-MD-A7AD5675` | CONFORME — Conforme |
 | `EDITAIS/UFRJ-2026-548/README.md` | `LIC-DOC-EDITAIS-UFRJ-2026-548-README-MD-0275427C` | CONFORME — Conforme |
@@ -87,7 +88,9 @@
 
 ## Ficheiros PDF e Office no repositório
 
-Não foram encontrados ficheiros PDF, DOC/DOCX, XLS/XLSX, ODT/ODS ou PPTX versionados neste repositório. Os anexos enviados diretamente na conversa não são ficheiros versionados do Git e exigem uma operação separada para serem editados e publicados.
+| Caminho | Formato | Estado |
+|---|---|---|
+| `EDITAIS/pncp-editais-abertos.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 
 ## Critérios e limitações
 
