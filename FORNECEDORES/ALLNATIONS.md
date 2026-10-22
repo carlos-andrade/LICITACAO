@@ -44,14 +44,44 @@ Confirmar os canais no site institucional antes de enviar solicitação de cota�
 
 **Data de consulta das fontes:** 2026-10-22.
 
-## 4. Pendências de validação
+## 4. Captura de catálogo e produtos publicamente acessíveis
 
+**Fonte-alvo:** [https://allnations.com.br/](https://allnations.com.br/)  
+**Situação da captura ao publicar esta ficha:** **PENDENTE DE EXECUÇÃO NO AMBIENTE DO REPOSITÓRIO**. O domínio não pôde ser lido diretamente pela ferramenta de pesquisa desta sessão. Portanto, não há produtos ou preços confirmados nesta tabela inicial. A tabela será preenchida pelo script apenas com dados que o site torne publicamente capturáveis; nenhum produto será inventado.
+
+O coletor está em [`scripts/capture_allnations_catalog.py`](https://github.com/carlos-andrade/LICITACAO/blob/main/scripts/capture_allnations_catalog.py), com instruções em [`scripts/README-allnations-captura.md`](https://github.com/carlos-andrade/LICITACAO/blob/main/scripts/README-allnations-captura.md).
+
+### Tabela de produtos capturados
+
+| Nº | Produto | Marca | Modelo | SKU | GTIN/EAN | Categoria | Preço | Moeda | Disponibilidade | URL de origem | Estado |
+|---:|---|---|---|---|---|---|---:|---|---|---|---|
+| — | **Nenhum produto confirmado ainda** | — | — | — | — | — | — | — | — | [Site All Nations](https://allnations.com.br/) | PENDENTE — executar coletor e validar cobertura |
+
+### Campos e rastreabilidade
+
+O CSV gerado contém nome, marca, modelo, SKU, GTIN, categoria, preço e moeda quando publicados, disponibilidade, URL de origem, data de captura, origem do dado e observações. O JSON associado regista totais de páginas, restrições e erros encontrados.
+
+**Importante:** o catálogo pode ser B2B e exigir autenticação. O coletor não contorna login, CAPTCHA, bloqueios ou regras do `robots.txt`. A ausência de produto no resultado não prova que o fornecedor não o comercialize. Antes de usar um produto em uma licitação, confirmar diretamente com o fornecedor preço, impostos, frete, prazo, garantia, validade e disponibilidade.
+
+### Execução na raiz do repositório
+
+```bash
+python -m pip install requests beautifulsoup4
+python scripts/capture_allnations_catalog.py --max-pages 300 --delay 1.0
+```
+
+Os ficheiros serão gravados por padrão em `FORNECEDORES/allnations-produtos.csv` e `FORNECEDORES/allnations-produtos.json`. Após a execução, importar os resultados para esta tabela depois de verificar duplicatas, cobertura de URLs e campos obrigatórios. Não colar a tabela bruta sem validar resultados.
+
+## 5. Pendências de validação
+
+- Executar o coletor numa máquina com acesso ao site e confirmar as regras de `robots.txt`.
+- Conferir número de páginas visitadas, produtos capturados, erros e categorias não alcançadas.
 - Confirmar a filial/CNPJ exato que emitirá proposta e nota fiscal.
 - Validar situação cadastral diretamente na Receita Federal.
-- Solicitar catálogo, marcas atendidas, disponibilidade e prazo de entrega, quando aplicável.
-- Registar as propostas recebidas com data, validade, frete, impostos e condições de pagamento.
+- Confirmar preços, marcas, disponibilidade, frete, impostos, prazos e condições de pagamento diretamente com o fornecedor.
 - Vincular a ficha aos editais/processos relevantes quando houver relação documentada.
 
-## 5. Histórico
+## 6. Histórico
 
 - 2026-10-22 — criada ficha inicial; dados de preços e condições comerciais permanecem não informados.
+- 2026-10-22 — adicionado coletor de catálogo público, documentação de execução e tabela inicial sem produtos não verificados.
