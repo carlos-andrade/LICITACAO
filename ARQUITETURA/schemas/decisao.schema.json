@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/carlos-andrade/LICITACAO/blob/main/ARQUITETURA/schemas/decisao.schema.json",
+  "title": "Decisão de participação",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "opportunity_id", "decision", "rationale", "decided_at", "approval_status"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "id": { "type": "string", "minLength": 3 },
+    "opportunity_id": { "type": "string", "minLength": 3 },
+    "decision": { "enum": ["PARTICIPATE", "INVESTIGATE_MORE", "DO_NOT_PARTICIPATE"] },
+    "rationale": { "type": "string", "minLength": 1 },
+    "financial_viability": { "enum": ["viable", "not_viable", "unknown"] },
+    "technical_compliance": { "enum": ["confirmed", "not_compliant", "pending", "conflicting"] },
+    "qualification_status": { "enum": ["confirmed", "not_qualified", "pending", "unknown"] },
+    "risk_level": { "enum": ["low", "medium", "high", "critical", "unknown"] },
+    "conditions": { "type": "array", "items": { "type": "string" } },
+    "blocking_issues": { "type": "array", "items": { "type": "string" } },
+    "decided_by": { "type": ["string", "null"] },
+    "decided_at": { "type": "string", "format": "date-time" },
+    "approval_status": { "enum": ["draft", "pending_approval", "approved", "rejected"] },
+    "approved_by": { "type": ["string", "null"] },
+    "approved_at": { "type": ["string", "null"], "format": "date-time" }
+  }
+}
