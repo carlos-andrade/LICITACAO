@@ -1,5 +1,24 @@
 # Coleta automatizada de editais do PNCP
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-EDITAIS-README-CAPTURA-PNCP-MD-B9D9F42A |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 983062314eb1c5e6c6b18d3a0f0202fe8f6f449b1c6c1db72453a33fa24b1873 |
+| **Commit de referência (versão anterior)** | [8aa16bfcf449724d38f9568be4b1aeb637df7771](https://github.com/carlos-andrade/LICITACAO/commit/8aa16bfcf449724d38f9568be4b1aeb637df7771) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-22 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/README-CAPTURA-PNCP.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 ## Fonte e objetivo
 Tela solicitada: https://pncp.gov.br/app/editais?pagina=1&status=recebendo_proposta&tam_pagina=100&tem_nfe_contrato=false&indicador_orcamento_sigiloso=false&modalidades=8
 

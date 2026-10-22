@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | ba07c55e39e64e45e0b9dcca527473f397a569e51e69b315ccf83e5c556ac1f5 |
-| **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
+| **SHA-256 (conteúdo canónico)** | bc1a916994a0c0382a85f5a620f4db77ca8b79c8cc88c05142f7bf9c6c0b9efc |
+| **Commit de referência (versão anterior)** | [8aa16bfcf449724d38f9568be4b1aeb637df7771](https://github.com/carlos-andrade/LICITACAO/commit/8aa16bfcf449724d38f9568be4b1aeb637df7771) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,8 +21,8 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **51**.
-- Documentos conformes após normalização e verificação de hash: **51/51**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **52**.
+- Documentos conformes após normalização e verificação de hash: **52/52**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
@@ -42,6 +42,7 @@
 | `COTAÇÕES APROVADAS/README.md` | `LIC-README-COTACOES-APROVADAS-001` | CONFORME — Conforme |
 | `EDITAIS/2026-548-UFRJ-ANALISE-PRELIMINAR.md` | `LIC-DOC-EDITAIS-2026-548-UFRJ-ANALISE-PRELIMINAR-MD-8F1B14D2` | CONFORME — Conforme |
 | `EDITAIS/2026-96-UFRB.md` | `LIC-DOC-EDITAIS-2026-96-UFRB-MD-8E0C6CF7` | CONFORME — Conforme |
+| `EDITAIS/README-CAPTURA-PNCP.md` | `LIC-DOC-EDITAIS-README-CAPTURA-PNCP-MD-B9D9F42A` | CONFORME — Conforme |
 | `EDITAIS/README.md` | `LIC-DOC-EDITAIS-README-MD-A7AD5675` | CONFORME — Conforme |
 | `EDITAIS/UFRJ-2026-548/README.md` | `LIC-DOC-EDITAIS-UFRJ-2026-548-README-MD-0275427C` | CONFORME — Conforme |
 | `EDITAIS/UFRJ-2026-548/comparativo-precos-fornecedores-2026-10-22.md` | `LIC-COMP-PRECOS-UFRJ-001` | CONFORME — Conforme |
