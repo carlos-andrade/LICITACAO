@@ -6,7 +6,7 @@ on:
       max_pages:
         description: "Limite máximo de páginas públicas a visitar"
         required: true
-        default: "300"
+        default: "1000"
       delay:
         description: "Intervalo em segundos entre requisições"
         required: true
