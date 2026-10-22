@@ -96,10 +96,10 @@ def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int
     future=(today+timedelta(days=365)).strftime("%Y%m%d")
     past=(today-timedelta(days=45)).strftime("%Y%m%d")
     variants=[
-      ("proposta_cnpj_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},2),
-      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},2),
-      ("proposta_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"tamanhoPagina":50},5),
-      ("publicacao_cnpj_modalidade",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},2),
+      # PNCP usa código 100 para Dispensa; 8 é Pré-qualificação.
+      ("proposta_cnpj_dispensa",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":100,"cnpj":cnpj,"tamanhoPagina":50},5),
+      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},3),
+      ("publicacao_cnpj_dispensa",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":100,"cnpj":cnpj,"tamanhoPagina":50},5),
     ]
     diagnostics=[]
     for variant_name,endpoint,base_params,max_pages in variants:
@@ -202,7 +202,7 @@ def flatten_event(e: dict) -> dict[str,str]:
     return {k:clean(v) for k,v in {
       "data":pick(e,"logManutencaoDataInclusao","data","dataEvento","dataHora"),
       "tipo":pick(e,"tipoLogManutencaoNome","tipo","tipoEvento","descricaoTipoEvento"),
-      "descricao":pick(e,"justificativa","descricao","descricaoEvento","mensagem","documentoTitulo"),
+      "descricao":pick(e,"justificativa","descricao","descricaoEvento","mensagem","documentoTitulo","categoriaLogManutencaoNome"),
       "usuario":pick(e,"usuarioNome","usuario","nomeUsuario"),
     }.items()}
 def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
@@ -256,7 +256,10 @@ def main():
     item_rows=[flatten_item(it,i+1) for i,it in enumerate(items)]
     event_rows=[flatten_event(e) for e in events]
     expected_items=(len(item_rows)==14) if not args.no_items else False
-    is_complete=bool(general) and expected_items and len(event_rows)>0 and not errors
+    general_is_error = isinstance(raw.get("geral"), dict) and bool(raw.get("geral", {}).get("error"))
+    items_have_units = bool(item_rows) and all(row.get("unidade") for row in item_rows)
+    events_have_data = bool(event_rows) and any(any(row.values()) for row in event_rows)
+    is_complete=bool(general) and not general_is_error and expected_items and items_have_units and events_have_data and len(event_rows)>0 and not errors
     meta={
       "status":"COMPLETO" if is_complete else ("PARCIAL" if raw else "FALHA"),
       "capturado_em_utc":captured,"url_contratacao":args.url,"cnpj":cnpj,"ano":year,"sequencial":seq,
@@ -269,7 +272,7 @@ def main():
       "erros_por_endpoint":errors,"avisos_por_endpoint":warnings,
       "quantidade_itens":len(item_rows),"quantidade_eventos":len(event_rows),
       "quantidade_itens_esperada":14,
-      "observacao":"Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato na lista oficial de propostas abertas. A extração só é marcada COMPLETO quando dados gerais, 14 itens e histórico são recuperados."
+      "observacao":"Os campos usam somente dados retornados pela API oficial. A consulta geral usa a rota de detalhe e, se ela retornar 404, procura o identificador PNCP exato nas listas oficiais. A modalidade Dispensa corresponde ao código 100 (código 8 é Pré-qualificação). A extração só é marcada COMPLETO quando dados gerais válidos, 14 itens com unidade e histórico com dados são recuperados."
     }
     (out/"contratacao-geral.json").write_text(json.dumps(raw.get("geral",{}),ensure_ascii=False,indent=2),encoding="utf-8")
     (out/"itens.json").write_text(json.dumps(raw.get("itens",{}),ensure_ascii=False,indent=2),encoding="utf-8")
