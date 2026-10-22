@@ -3,7 +3,7 @@
 Instale: pip install requests beautifulsoup4
 Uso: python pncp_capture.py "https://pncp.gov.br/app/editais/33663683000116/2026/548" --output-dir EDITAIS --download-docs
 """
-import argparse, csv, json, re, sys
+import argparse, csv, json, re, sys, os, base64
 from datetime import datetime
 from pathlib import Path
 from urllib.parse import urlparse, urljoin
@@ -157,6 +157,9 @@ def main():
     parser.add_argument("url")
     parser.add_argument("--output-dir", default="EDITAIS")
     parser.add_argument("--download-docs", action="store_true")
+    parser.add_argument("--github", action="store_true", help="Publica Markdown/CSV/JSON em EDITAIS no GitHub; requer GITHUB_TOKEN")
+    parser.add_argument("--github-repo", default="carlos-andrade/LICITACAO")
+    parser.add_argument("--github-branch", default="main")
     args = parser.parse_args()
     cnpj, year, sequence = parse_url(args.url)
     output_dir = Path(args.output_dir)
@@ -243,6 +246,32 @@ def main():
               "Documentação: [API de Consulta PNCP](https://pncp.gov.br/api/consulta/swagger-ui/index.html) · [Manual PNCP](https://pncp.gov.br/manual/pt-br/latest/)", ""]
     markdown_path = output_dir / (stem + "-tabela-capturada.md")
     markdown_path.write_text("\n".join(lines), encoding="utf-8")
+    if args.github:
+        token = os.environ.get("GITHUB_TOKEN")
+        if not token:
+            raise RuntimeError("--github exige a variável de ambiente GITHUB_TOKEN; nunca inclua o token no código.")
+        headers = {"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json",
+                   "X-GitHub-Api-Version": "2022-11-28"}
+        upload_paths = [markdown_path, raw_path]
+        if items:
+            upload_paths.append(output_dir / (stem + "-itens.csv"))
+        outcomes = []
+        for local_path in upload_paths:
+            remote_path = f"EDITAIS/{local_path.name}"
+            endpoint = f"https://api.github.com/repos/{args.github_repo}/contents/{remote_path}"
+            check = requests.get(endpoint, params={"ref": args.github_branch}, headers=headers, timeout=TIMEOUT)
+            sha = check.json().get("sha") if check.status_code == 200 else None
+            if check.status_code not in (200, 404):
+                outcomes.append({"path": remote_path, "resultado": f"Não foi possível conferir: HTTP {check.status_code}"})
+                continue
+            payload = {"message": f"docs: captura PNCP {cnpj}/{year}/{sequence}", "content": base64.b64encode(local_path.read_bytes()).decode("ascii"), "branch": args.github_branch}
+            if sha:
+                payload["sha"] = sha
+            response = requests.put(endpoint, headers=headers, json=payload, timeout=TIMEOUT)
+            outcomes.append({"path": remote_path, "resultado": "publicado" if response.ok else f"Falha HTTP {response.status_code}: {response.text[:250]}"})
+        publication_path = output_dir / (stem + "-publicacao-github.json")
+        publication_path.write_text(json.dumps(outcomes, ensure_ascii=False, indent=2), encoding="utf-8")
+        print("Publicação GitHub:", json.dumps(outcomes, ensure_ascii=False))
     print("Markdown:", markdown_path)
     print("JSON bruto:", raw_path)
     print("Itens:", len(items), "; documentos:", len(documents))
