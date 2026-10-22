@@ -1,0 +1,19 @@
+{
+  "status": "COMPLETO",
+  "capturado_em_utc": "2026-10-22T21:24:06+00:00",
+  "url_contratacao": "https://pncp.gov.br/app/editais/00394502000144/2026/14259",
+  "cnpj": "00394502000144",
+  "ano": 2026,
+  "sequencial": 14259,
+  "endpoints_consultados": [
+    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259",
+    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/itens",
+    "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/historico"
+  ],
+  "base_api": "https://pncp.gov.br/api/pncp",
+  "documentacao_api": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
+  "erros_por_endpoint": {},
+  "quantidade_itens": 14,
+  "quantidade_eventos": 30,
+  "observacao": "Os campos são preenchidos com os valores efetivamente devolvidos pela API; campos ausentes permanecem vazios. A extração deve ser comparada à página pública se o PNCP alterar o esquema dos endpoints."
+}
