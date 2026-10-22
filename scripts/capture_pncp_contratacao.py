@@ -115,7 +115,7 @@ def flatten_item(item: dict, fallback_num: int) -> dict[str,str]:
       "descricao_resumida":clean(pick(item,"descricao","descricaoItem","nome")),
       "descricao_detalhada":clean(pick(item,"descricaoDetalhada","descricaoComplementar","especificacao")),
       "quantidade":clean(pick(item,"quantidade","quantidadeItem")),
-      "unidade":clean(pick(unit,"nome","sigla",default=pick(item,"unidadeMedidaNome","unidadeFornecimento"))),
+      "unidade":clean(pick(unit,"nome","sigla",default=pick(item,"unidadeMedidaNome","unidadeFornecimento","unidadeMedida"))),
       "valor_unitario_estimado":money(pick(item,"valorUnitarioEstimado","valorUnitario")),
       "valor_total_estimado":money(pick(item,"valorTotal","valorTotalEstimado")),
       "situacao_item":clean(pick(item,"situacaoCompraItemNome","situacaoItem","situacao")),
@@ -166,7 +166,7 @@ def main():
     item_rows=[flatten_item(it,i+1) for i,it in enumerate(items)]
     event_rows=[flatten_event(e) for e in events]
     meta={
-      "status":"COMPLETO" if "geral" in raw and "itens" in raw and general and len(items) > 0 and not errors else ("PARCIAL" if raw else "FALHA"),
+      "status":"COMPLETO" if "geral" in raw and "itens" in raw and general and len(items) == 14 and not errors else ("PARCIAL" if raw else "FALHA"),
       "capturado_em_utc":captured,"url_contratacao":args.url,"cnpj":cnpj,"ano":year,"sequencial":seq,
       "endpoints_consultados":[x[1] for x in candidates],
       "base_api":"https://pncp.gov.br/api/pncp",
