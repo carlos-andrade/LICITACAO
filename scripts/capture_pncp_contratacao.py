@@ -39,7 +39,10 @@ def fetch_json(session: requests.Session, url: str, params: dict|None=None) -> A
             r=session.get(url,params=params,timeout=TIMEOUT)
             if r.status_code in (429,500,502,503,504): raise requests.HTTPError(f"HTTP {r.status_code}")
             r.raise_for_status()
-            return r.json()
+            payload = r.json()
+            if isinstance(payload, dict) and (payload.get("error") or str(payload.get("status", "")).startswith(("301", "302", "400", "404", "500")) or "endpoint foi movido" in str(payload.get("message", "")).lower()):
+                raise RuntimeError(f"Resposta de erro da API: {payload}")
+            return payload
         except (requests.RequestException,ValueError) as e:
             last=e
             if n<4: time.sleep(min(2**n,20))
