@@ -46,7 +46,7 @@ Sem essas confirmações, o cenário permanece como estimativa e a recomendaçã
 - Markup sobre custo = lucro ÷ custo total.
 - Teto de aquisição = orçamento máximo de custos compatível com a meta − custos não relacionados à aquisição.
 
-O teto monetário é arredondado para baixo a centavos antes do cálculo do teto de aquisição, para não exceder o limite de custo por arredondamento.
+O teto monetário é arredondado para baixo a centavos antes do cálculo do teto de aquisição. O preço unitário máximo também é arredondado para baixo a centavos: assim, comprar todas as unidades pelo preço unitário exibido não ultrapassa o teto total. O preço médio matemático pode ser, portanto, ligeiramente superior ao preço unitário operacional permitido.
 
 ## Testes
 ```bash
