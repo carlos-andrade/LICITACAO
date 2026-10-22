@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/carlos-andrade/LICITACAO/blob/main/ARQUITETURA/schemas/documento.schema.json",
+  "title": "Documento de oportunidade",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "opportunity_id", "document_type", "capture_status", "captured_at"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "id": { "type": "string", "minLength": 3 },
+    "opportunity_id": { "type": "string", "minLength": 3 },
+    "document_type": { "enum": ["NOTICE", "TERMO_REFERENCIA", "ANNEX", "AMENDMENT", "AUTHORIZATION", "CONTRACT", "EMPENHO", "OTHER"] },
+    "title": { "type": ["string", "null"] },
+    "source_url": { "type": ["string", "null"], "format": "uri" },
+    "file_path": { "type": ["string", "null"] },
+    "source_document_date": { "type": ["string", "null"], "format": "date" },
+    "captured_at": { "type": "string", "format": "date-time" },
+    "content_sha256": { "type": ["string", "null"], "pattern": "^[a-fA-F0-9]{64}$" },
+    "capture_status": { "enum": ["captured", "failed", "pending_review", "validated"] },
+    "validation_notes": { "type": "array", "items": { "type": "string" } }
+  }
+}
