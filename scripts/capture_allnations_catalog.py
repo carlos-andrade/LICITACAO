@@ -44,14 +44,31 @@ COLUMNS = [
 ]
 
 def normalize_url(url: str, base: str = BASE) -> str | None:
-    url = urldefrag(urljoin(base, url.strip()))[0]
+    # Some legacy menu links contain literal backslashes; browsers treat them as slashes.
+    raw = url.strip().replace("\\\\", "/").replace("\\", "/")
+    url = urldefrag(urljoin(base, raw))[0]
     p = urlparse(url)
     if p.scheme not in ("http", "https") or p.hostname not in (DOMAIN, "www." + DOMAIN):
         return None
-    if p.path.lower().endswith(SKIP_EXTENSIONS):
+    path = re.sub(r"/{2,}", "/", p.path or "/")
+    # Canonicalize host and remove fragments/tracking-only query parameters.
+    host = DOMAIN
+    query_items = []
+    for key, value in __import__("urllib.parse", fromlist=["parse_qsl"]).parse_qsl(p.query, keep_blank_values=True):
+        low = key.lower()
+        if low.startswith("utm_") or low in {"gclid", "fbclid", "msclkid", "ref", "source"}:
+            continue
+        query_items.append((key, value))
+    from urllib.parse import urlencode
+    query = urlencode(query_items, doseq=True)
+    normalized = p._replace(netloc=host, path=path, query=query, fragment="").geturl()
+    if path.lower().endswith(SKIP_EXTENSIONS):
         return None
-    # Remove fragment and common tracking params while preserving functional query strings.
-    return url
+    # Do not crawl account, checkout, order, or payment flows.
+    blocked = ("/minhaconta", "/minha-conta", "/pedido", "/checkout", "/carrinho", "/cart", "/login", "/register")
+    if any(path.lower().startswith(x) for x in blocked):
+        return None
+    return normalized
 
 def text(value: Any) -> str:
     if value is None:
@@ -198,6 +215,21 @@ def main() -> int:
         return 3
 
     queue = deque([start])
+    # Discover public sitemap URLs where permitted, to improve catalog coverage.
+    sitemap_candidates = [urljoin(BASE, "/sitemap.xml"), urljoin(BASE, "/sitemap_index.xml")]
+    for sitemap_url in sitemap_candidates:
+        if not allowed(sitemap_url):
+            continue
+        try:
+            sitemap_response = session.get(sitemap_url, timeout=args.timeout)
+            if sitemap_response.ok and "xml" in sitemap_response.headers.get("Content-Type", "").lower():
+                sitemap_soup = BeautifulSoup(sitemap_response.text, "xml")
+                for loc in sitemap_soup.find_all("loc"):
+                    candidate = normalize_url(loc.get_text(strip=True))
+                    if candidate and candidate not in queue:
+                        queue.append(candidate)
+        except requests.RequestException as exc:
+            errors.append({"url": sitemap_url, "status": "erro_sitemap", "erro": str(exc)[:300]})
     visited: set[str] = set()
     found_products: dict[str, dict[str, str]] = {}
     errors: list[dict[str, str]] = []
