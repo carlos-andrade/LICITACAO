@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 461eb81042202c1a86d29e09082b4ba94deab39d2d73c2cc403335eec3c377db |
-| **Commit de referência (versão anterior)** | [bc3752a7df4c55c0fdc8f2bb6d9d69edba660034](https://github.com/carlos-andrade/LICITACAO/commit/bc3752a7df4c55c0fdc8f2bb6d9d69edba660034) |
+| **SHA-256 (conteúdo canónico)** | 753fb69a5befe8d702f444c4a2427bb7d6ec8ecdefde4e2e734246b42a02d66c |
+| **Commit de referência (versão anterior)** | [171819e4cc62b1c45ddc7ed9f8826a23ef36324b](https://github.com/carlos-andrade/LICITACAO/commit/171819e4cc62b1c45ddc7ed9f8826a23ef36324b) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **46**.
-- Documentos conformes após normalização e verificação de hash: **46/46**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **47**.
+- Documentos conformes após normalização e verificação de hash: **47/47**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **1**.
 
 ## Inventário Markdown
 
@@ -75,6 +75,7 @@
 | `docs/governanca/README.md` | `LIC-GOV-README-001` | CONFORME — Conforme |
 | `docs/governanca/VALIDACAO-DISTRIBUICAO-UPSTREAM.md` | `LIC-DOC-CS-GOVERNANCA-VALIDACAO-DISTRIBUICAO-UPSTREAM-MD-E8D6FAC4` | CONFORME — Conforme |
 | `docs/precificacao/PMESP-90019-2026-comparativo-precos.md` | `LIC-DOC-CIFICACAO-PMESP-90019-2026-COMPARATIVO-PRECOS-MD-E7A249B0` | CONFORME — Conforme |
+| `scripts/README-allnations-captura.md` | `LIC-SCRIPT-ALLNATIONS-CAPTURA-001` | CONFORME — Conforme |
 | `scripts/README-calculadora-viabilidade.md` | `LIC-DOC-SCRIPTS-README-CALCULADORA-VIABILIDADE-MD-D2311248` | CONFORME — Conforme |
 | `scripts/README-captura-integral.md` | `LIC-DOC-SCRIPTS-README-CAPTURA-INTEGRAL-MD-E29DEC8C` | CONFORME — Conforme |
 | `scripts/README.md` | `LIC-DOC-SCRIPTS-README-MD-25B96AA1` | CONFORME — Conforme |
