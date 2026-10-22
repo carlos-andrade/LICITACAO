@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 393ba08af739a06bc247faceb7b935b3b3a87e8018478fee57758685a0aa9742 |
-| **Commit de referência (versão anterior)** | [a0c16df7b058541af42261222401c17992242c3d](https://github.com/carlos-andrade/LICITACAO/commit/a0c16df7b058541af42261222401c17992242c3d) |
+| **SHA-256 (conteúdo canónico)** | 319a73e213dd26cb8b71dc19ae87b23daacae61a515b672f91dd7738fc4c4bfa |
+| **Commit de referência (versão anterior)** | [ef8756973bfea617fc9118c49abe8ed2a29e3bfd](https://github.com/carlos-andrade/LICITACAO/commit/ef8756973bfea617fc9118c49abe8ed2a29e3bfd) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,8 +21,8 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **44**.
-- Documentos conformes após normalização e verificação de hash: **44/44**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **45**.
+- Documentos conformes após normalização e verificação de hash: **45/45**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **0**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
@@ -54,6 +54,7 @@
 | `FORNECEDORES/EDITAL-2026-96-UFRB.md` | `LIC-DOC-FORNECEDORES-EDITAL-2026-96-UFRB-MD-97544501` | CONFORME — Conforme |
 | `FORNECEDORES/FLUXO-COTACAO-E-VALIDACAO.md` | `LIC-DOC-FORNECEDORES-FLUXO-COTACAO-E-VALIDACAO-MD-8CA6432F` | CONFORME — Conforme |
 | `FORNECEDORES/README.md` | `LIC-DOC-FORNECEDORES-README-MD-94CB4341` | CONFORME — Conforme |
+| `IMPRESSÃO/README.md` | `LIC-DOC-IMPRESS-O-README-MD-F3064904` | CONFORME — Conforme |
 | `ORÇAMENTOS/README.md` | `LIC-DOC-OR-AMENTOS-README-MD-F1F0A227` | CONFORME — Conforme |
 | `PROMPT/README.md` | `LIC-DOC-PROMPT-README-MD-268D4326` | CONFORME — Conforme |
 | `PROMPT/analise-edital-pncp-e-fornecedores.md` | `LIC-DOC-PROMPT-ANALISE-EDITAL-PNCP-E-FORNECEDORES-MD-0CFBB474` | CONFORME — Conforme |
