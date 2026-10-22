@@ -6,20 +6,21 @@ calculation aid, not tax advice; tax treatment must be supplied/validated by a
 qualified professional.
 """
 from __future__ import annotations
-
 import argparse
 import json
 import sys
-from decimal import Decimal, InvalidOperation, ROUND_HALF_UP
+from decimal import Decimal, InvalidOperation, ROUND_DOWN, ROUND_HALF_UP
 from pathlib import Path
 
 CENT = Decimal("0.01")
 ZERO = Decimal("0")
 
-
 def money(value: Decimal) -> Decimal:
     return value.quantize(CENT, rounding=ROUND_HALF_UP)
 
+def conservative_money(value: Decimal) -> Decimal:
+    """Round an allowed budget down so rounding never breaches a cost ceiling."""
+    return value.quantize(CENT, rounding=ROUND_DOWN)
 
 def dec(value: str) -> Decimal:
     try:
@@ -30,11 +31,8 @@ def dec(value: str) -> Decimal:
         raise argparse.ArgumentTypeError("Value must be finite")
     return result
 
-
 def calculate(args: argparse.Namespace) -> dict:
-    quantity = args.quantity
-    sale_price = args.sale_price
-    acquisition_price = args.acquisition_price
+    quantity, sale_price, acquisition_price = args.quantity, args.sale_price, args.acquisition_price
     if quantity <= ZERO:
         raise ValueError("quantity must be greater than zero")
     for name in ("sale_price", "acquisition_price", "das_allocated", "freight", "local_delivery", "handling", "financial_costs", "other_costs", "contingency", "tax_rate"):
@@ -54,9 +52,11 @@ def calculate(args: argparse.Namespace) -> dict:
     margin = profit / revenue if revenue else ZERO
     markup = profit / total_cost if total_cost else None
     non_acquisition_costs = tax + other_costs
-    max_acquisition_total = revenue * (Decimal("1") - args.target_margin) - non_acquisition_costs
+    target_cost_ceiling = conservative_money(revenue * (Decimal("1") - args.target_margin))
+    max_acquisition_total = target_cost_ceiling - non_acquisition_costs
     max_acquisition_unit = max_acquisition_total / quantity
     target_profit = revenue * args.target_margin
+
     pending_costs = list(args.pending_cost)
     if not args.tax_confirmed:
         pending_costs.append("Tratamento tributário/alíquota incremental não confirmado por contador ou fonte fiscal competente")
@@ -76,48 +76,32 @@ def calculate(args: argparse.Namespace) -> dict:
         blockers.append("Custos não relacionados à aquisição já excedem o orçamento compatível com a meta")
 
     return {
-        "schema_version": "1.0.0",
-        "id": args.scenario_id,
-        "opportunity_id": args.opportunity_id,
-        "item_id": args.item_id,
-        "scenario_name": args.scenario_name,
-        "quantity": str(quantity),
-        "sale_unit_price": str(money(sale_price)),
-        "revenue_total": str(money(revenue)),
-        "acquisition_unit_price": str(money(acquisition_price)),
-        "acquisition_total": str(money(acquisition)),
-        "taxes_total": str(money(tax)),
-        "das_allocated": str(money(args.das_allocated)),
-        "freight_total": str(money(args.freight)),
-        "local_delivery_total": str(money(args.local_delivery)),
-        "handling_total": str(money(args.handling)),
-        "financial_costs_total": str(money(args.financial_costs)),
-        "other_costs_total": str(money(args.other_costs)),
-        "contingency_total": str(money(args.contingency)),
-        "other_costs_including_das": str(money(other_costs)),
-        "total_cost": str(money(total_cost)),
+        "schema_version": "1.0.0", "id": args.scenario_id,
+        "opportunity_id": args.opportunity_id, "item_id": args.item_id,
+        "scenario_name": args.scenario_name, "quantity": str(quantity),
+        "sale_unit_price": str(money(sale_price)), "revenue_total": str(money(revenue)),
+        "acquisition_unit_price": str(money(acquisition_price)), "acquisition_total": str(money(acquisition)),
+        "taxes_total": str(money(tax)), "das_allocated": str(money(args.das_allocated)),
+        "freight_total": str(money(args.freight)), "local_delivery_total": str(money(args.local_delivery)),
+        "handling_total": str(money(args.handling)), "financial_costs_total": str(money(args.financial_costs)),
+        "other_costs_total": str(money(args.other_costs)), "contingency_total": str(money(args.contingency)),
+        "other_costs_including_das": str(money(other_costs)), "total_cost": str(money(total_cost)),
         "profit": str(money(profit)),
         "margin_on_revenue": str((margin * Decimal("100")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)),
-        "markup_on_cost": None if markup is None else str((markup * Decimal("100")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)),
+        "markup_on_cost": None if total_cost == ZERO else str(((profit / total_cost) * Decimal("100")).quantize(Decimal("0.01"), rounding=ROUND_HALF_UP)),
+        "target_profit_margin": str(args.target_margin),
         "target_profit_margin_percent": str((args.target_margin * Decimal("100")).quantize(Decimal("0.01"))),
         "target_profit": str(money(target_profit)),
         "maximum_acquisition_total_for_target": str(money(max_acquisition_total)),
         "maximum_acquisition_unit_price_for_target": str(money(max_acquisition_unit)),
-        "currency": "BRL",
-        "evidence_status": "verified" if not pending_costs else "draft_estimate",
-        "input_status": {
-            "tax_confirmed": args.tax_confirmed,
-            "freight_confirmed": args.freight_confirmed,
-            "technical_compliance_confirmed": args.technical_compliance_confirmed,
-            "supplier_capacity_confirmed": args.supplier_capacity_confirmed
-        },
-        "assumptions": args.assumption,
-        "pending_costs": pending_costs,
-        "blocking_issues": blockers,
+        "currency": "BRL", "evidence_status": "verified" if not pending_costs else "draft_estimate",
+        "input_status": {"tax_confirmed": args.tax_confirmed, "freight_confirmed": args.freight_confirmed,
+                         "technical_compliance_confirmed": args.technical_compliance_confirmed,
+                         "supplier_capacity_confirmed": args.supplier_capacity_confirmed},
+        "assumptions": args.assumption, "pending_costs": pending_costs, "blocking_issues": blockers,
         "recommendation": "PARTICIPATION_NOT_CLEARED" if blockers else ("MEETS_TARGET_MARGIN" if margin >= args.target_margin else "BELOW_TARGET"),
         "calculated_at": args.calculated_at
     }
-
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
@@ -128,15 +112,15 @@ def main() -> int:
     parser.add_argument("--quantity", type=dec, required=True)
     parser.add_argument("--sale-price", type=dec, required=True, help="sale price per unit")
     parser.add_argument("--acquisition-price", type=dec, required=True, help="acquisition price per unit")
-    parser.add_argument("--tax-rate", type=dec, default=Decimal("0"), help="incremental tax rate on revenue, decimal (e.g. 0.04); do not infer")
-    parser.add_argument("--das-allocated", type=dec, default=ZERO, help="allocated fixed monthly DAS in BRL")
+    parser.add_argument("--tax-rate", type=dec, default=Decimal("0"), help="incremental tax rate on revenue as decimal; do not infer")
+    parser.add_argument("--das-allocated", type=dec, default=ZERO)
     parser.add_argument("--freight", type=dec, default=ZERO)
     parser.add_argument("--local-delivery", type=dec, default=ZERO)
     parser.add_argument("--handling", type=dec, default=ZERO)
     parser.add_argument("--financial-costs", type=dec, default=ZERO)
     parser.add_argument("--other-costs", type=dec, default=ZERO)
     parser.add_argument("--contingency", type=dec, default=ZERO)
-    parser.add_argument("--target-margin", type=dec, default=Decimal("0.50"), help="target margin on revenue, decimal")
+    parser.add_argument("--target-margin", type=dec, default=Decimal("0.50"), help="target margin on revenue as decimal")
     parser.add_argument("--tax-confirmed", action="store_true")
     parser.add_argument("--freight-confirmed", action="store_true")
     parser.add_argument("--technical-compliance-confirmed", action="store_true")
@@ -146,19 +130,16 @@ def main() -> int:
     parser.add_argument("--calculated-at", default="2026-10-22T00:00:00-03:00")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
-
     try:
         result = calculate(args)
     except ValueError as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 2
-
     text = json.dumps(result, ensure_ascii=False, indent=2)
     if args.output:
         args.output.write_text(text + "\n", encoding="utf-8")
     print(text)
     return 0
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
