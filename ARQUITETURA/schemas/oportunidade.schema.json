@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/carlos-andrade/LICITACAO/blob/main/ARQUITETURA/schemas/oportunidade.schema.json",
+  "title": "Oportunidade de contratação pública",
+  "description": "Registro normalizado de uma oportunidade, mantendo separados dados de origem, validação e decisão.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "id", "source", "status", "object", "validation_status", "created_at", "updated_at"],
+  "properties": {
+    "schema_version": { "const": "1.0.0" },
+    "id": { "type": "string", "pattern": "^[A-Z0-9][A-Z0-9._-]{2,99}$" },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["system", "url", "captured_at", "capture_status"],
+      "properties": {
+        "system": { "type": "string", "minLength": 1 },
+        "external_id": { "type": ["string", "null"] },
+        "url": { "type": "string", "format": "uri" },
+        "captured_at": { "type": "string", "format": "date-time" },
+        "capture_status": { "enum": ["success", "partial", "failed", "pending_review"] },
+        "capture_method": { "type": ["string", "null"] }
+      }
+    },
+    "buyer": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": ["string", "null"] },
+        "tax_id": { "type": ["string", "null"] },
+        "uasg": { "type": ["string", "null"] },
+        "unit_name": { "type": ["string", "null"] },
+        "state": { "type": ["string", "null"], "minLength": 2, "maxLength": 2 },
+        "city": { "type": ["string", "null"] }
+      }
+    },
+    "process": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "administrative_process": { "type": ["string", "null"] },
+        "modality": { "type": ["string", "null"] },
+        "legal_basis": { "type": ["string", "null"] },
+        "judgment_criterion": { "type": ["string", "null"] },
+        "dispute_type": { "type": ["string", "null"] }
+      }
+    },
+    "object": { "type": "string", "minLength": 1 },
+    "status": {
+      "enum": [
+        "CAPTURADA", "DOCUMENTOS_PENDENTES", "EM_ANALISE", "AGUARDANDO_COTACOES",
+        "VIABILIDADE_CALCULADA", "DECISAO_PENDENTE", "APROVADA_PARA_PARTICIPAR",
+        "PROPOSTA_PREPARADA", "EM_DISPUTA", "RESULTADO_PUBLICADO", "CONTRATADA",
+        "EMPENHADA", "EM_EXECUCAO", "ENTREGUE", "FATURADA", "PAGA", "ENCERRADA",
+        "DESCARTADA", "INVIAVEL", "SUSPENSA", "REVOGADA", "FRACASSADA", "DESERTA"
+      ]
+    },
+    "dates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "published_at": { "type": ["string", "null"], "format": "date-time" },
+        "proposal_start_at": { "type": ["string", "null"], "format": "date-time" },
+        "proposal_end_at": { "type": ["string", "null"], "format": "date-time" },
+        "session_at": { "type": ["string", "null"], "format": "date-time" },
+        "delivery_deadline": { "type": ["string", "null"], "format": "date-time" },
+        "proposal_validity_days": { "type": ["integer", "null"], "minimum": 0 }
+      }
+    },
+    "estimated_value": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["amount", "currency", "evidence_status"],
+      "properties": {
+        "amount": { "type": "number", "minimum": 0 },
+        "currency": { "const": "BRL" },
+        "evidence_status": { "enum": ["confirmed", "estimated", "pending", "conflicting"] },
+        "source_document_id": { "type": ["string", "null"] }
+      }
+    },
+    "validation_status": { "enum": ["unreviewed", "in_review", "validated", "has_conflicts", "blocked"] },
+    "responsible": { "type": ["string", "null"] },
+    "notes": { "type": "array", "items": { "type": "string" } },
+    "created_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" }
+  }
+}
