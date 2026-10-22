@@ -14,7 +14,7 @@ from urllib.parse import urlparse
 import requests
 
 DEFAULT_URL = "https://pncp.gov.br/app/editais/00394502000144/2026/14259"
-API_ROOT = "https://pncp.gov.br/api/pncp/v1"
+API_ROOT = "https://pncp.gov.br/api/consulta/v1"
 USER_AGENT = "LICITACAO-PNCP-Contratacao/1.0 (+https://github.com/carlos-andrade/LICITACAO)"
 TIMEOUT = 40
 HEADERS = ["numero_item","descricao_resumida","descricao_detalhada","quantidade","unidade","valor_unitario_estimado","valor_total_estimado","situacao_item","criterio_julgamento","link_item"]
