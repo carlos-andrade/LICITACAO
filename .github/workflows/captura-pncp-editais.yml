@@ -1,0 +1,81 @@
+name: Captura de editais PNCP
+
+on:
+  workflow_dispatch:
+    inputs:
+      data_final:
+        description: "Data final AAAAMMDD (vazio usa hoje)"
+        required: false
+        default: ""
+      modality:
+        description: "Código de modalidade"
+        required: true
+        default: "8"
+      max_pages:
+        description: "Máximo de páginas; 0 = todas"
+        required: true
+        default: "0"
+      page_size:
+        description: "Registros por página (10 a 50)"
+        required: true
+        default: "50"
+      delay:
+        description: "Pausa entre páginas em segundos"
+        required: true
+        default: "1.0"
+  schedule:
+    - cron: "25 8 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  capturar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependências
+        run: python -m pip install requests openpyxl
+      - name: Validar sintaxe
+        run: python -m py_compile scripts/capture_pncp_editais.py
+      - name: Executar captura
+        env:
+          DATA_FINAL_INPUT: ${{ inputs.data_final }}
+          MODALITY: ${{ inputs.modality }}
+          MAX_PAGES: ${{ inputs.max_pages }}
+          PAGE_SIZE: ${{ inputs.page_size }}
+          DELAY: ${{ inputs.delay }}
+        run: |
+          DATA_FINAL="$DATA_FINAL_INPUT"
+          if [ -z "$DATA_FINAL" ]; then DATA_FINAL="$(date -u +%Y%m%d)"; fi
+          python scripts/capture_pncp_editais.py \
+            --data-final "$DATA_FINAL" --modality "$MODALITY" \
+            --max-pages "$MAX_PAGES" --page-size "$PAGE_SIZE" --delay "$DELAY"
+      - name: Commit dos resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add EDITAIS/pncp-editais-abertos.csv EDITAIS/pncp-editais-abertos.json EDITAIS/pncp-editais-abertos.xlsx EDITAIS/pncp-editais-metadados.json EDITAIS/README-CAPTURA-PNCP.md
+          if ! git diff --cached --quiet; then
+            git commit -m "data: atualizar tabela de editais PNCP"
+            git push
+          else
+            echo "Nenhuma alteração nos resultados."
+          fi
+      - name: Arquivar resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: pncp-editais-capture
+          path: |
+            EDITAIS/pncp-editais-abertos.csv
+            EDITAIS/pncp-editais-abertos.json
+            EDITAIS/pncp-editais-abertos.xlsx
+            EDITAIS/pncp-editais-metadados.json
+            EDITAIS/README-CAPTURA-PNCP.md
+          if-no-files-found: warn
+          retention-days: 30
