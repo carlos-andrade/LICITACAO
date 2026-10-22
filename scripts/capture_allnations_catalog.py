@@ -41,7 +41,7 @@ SKIP_EXTENSIONS = (".pdf", ".jpg", ".jpeg", ".png", ".gif", ".webp", ".svg",
                    ".zip", ".rar", ".7z", ".mp4", ".mp3", ".css", ".js")
 COLUMNS = [
     "capturado_em_utc", "nome", "marca", "modelo", "sku", "gtin",
-    "categoria", "preco", "moeda", "disponibilidade", "url_produto",
+    "categoria", "preco", "moeda", "disponibilidade", "quantidade_estoque", "url_produto",
     "origem_dado", "status_captura", "observacoes",
 ]
 
@@ -107,6 +107,41 @@ def first(*values: Any) -> str:
                 return text(value)
     return ""
 
+def stock_from_product(p: dict[str, Any]) -> str:
+    """Retorna quantidade apenas quando o catálogo fornece número explícito."""
+    offers = p.get("offers")
+    if isinstance(offers, list):
+        offers = offers[0] if offers else {}
+    offers = offers if isinstance(offers, dict) else {}
+    for node in (p, offers, offers.get("inventoryLevel")):
+        if not isinstance(node, dict):
+            continue
+        for key in ("inventoryLevel", "quantity", "inventoryQuantity", "stock", "stockQuantity", "availableQuantity"):
+            value = node.get(key)
+            if isinstance(value, dict):
+                value = value.get("value")
+            if value is not None and re.fullmatch(r"\s*\d+(?:\.0+)?\s*", str(value)):
+                return str(int(float(value)))
+    return ""
+
+def visible_stock_quantity(soup: BeautifulSoup) -> str:
+    """Extrai quantidade somente de elementos explicitamente associados a stock/quantidade."""
+    selectors = (
+        '[itemprop="inventoryLevel"]', '[itemprop="inventoryQuantity"]',
+        '[data-stock-quantity]', '[data-inventory-quantity]',
+        '.stock-quantity', '.stockQuantity', '.inventory-quantity',
+        '.available-quantity', '.qty-available',
+    )
+    for selector in selectors:
+        tag = soup.select_one(selector)
+        if not tag:
+            continue
+        value = text(tag.get("content") or tag.get("value") or tag.get("data-stock-quantity") or tag.get("data-inventory-quantity") or tag.get_text(" ", strip=True))
+        match = re.fullmatch(r"\s*(?:quantidade\s*(?:em estoque)?\s*:?\s*)?(\d+)\s*(?:unidades?|pcs?)?\s*", value, re.I)
+        if match:
+            return match.group(1)
+    return ""
+
 def price_from_product(p: dict[str, Any]) -> tuple[str, str, str]:
     offers = p.get("offers")
     if isinstance(offers, list):
@@ -133,6 +168,7 @@ def category_from_product(p: dict[str, Any], soup: BeautifulSoup) -> str:
 def product_row(p: dict[str, Any], url: str, soup: BeautifulSoup, timestamp: str) -> dict[str, str]:
     offers = p.get("offers") if isinstance(p.get("offers"), dict) else {}
     price, currency, availability = price_from_product(p)
+    stock_quantity = stock_from_product(p) or visible_stock_quantity(soup)
     # Fallback only to explicit product-price metadata in the same product page.
     if not price:
         price_tag = soup.select_one('meta[property="product:price:amount"], meta[itemprop="price"], [itemprop="price"]')
@@ -160,6 +196,7 @@ def product_row(p: dict[str, Any], url: str, soup: BeautifulSoup, timestamp: str
         "preco": price,
         "moeda": currency,
         "disponibilidade": availability,
+        "quantidade_estoque": stock_quantity,
         "url_produto": url,
         "origem_dado": price_source or "JSON-LD/Product",
         "status_captura": "capturado_com_preco" if price else "produto_sem_preco_exposto",
@@ -251,6 +288,7 @@ def meta_product(soup: BeautifulSoup, url: str, timestamp: str) -> dict[str, str
         return None
     price = meta("product:price:amount")
     currency = meta("product:price:currency")
+    stock_quantity = visible_stock_quantity(soup)
     price_source = "Open Graph/meta" if price else ""
     if not price:
         price, price_source = extract_visible_price(soup)
@@ -263,6 +301,7 @@ def meta_product(soup: BeautifulSoup, url: str, timestamp: str) -> dict[str, str
         "categoria": "", "preco": price,
         "moeda": currency,
         "disponibilidade": meta("product:availability"),
+        "quantidade_estoque": stock_quantity,
         "url_produto": url, "origem_dado": price_source or "Open Graph/meta",
         "status_captura": "capturado_com_preco" if price else "produto_sem_preco_exposto",
         "observacoes": "Preço não inferido; confirmar condições comerciais quando ausente.",
@@ -413,6 +452,8 @@ def main() -> int:
         "status_autenticacao": auth_status,
         "precos_capturados": sum(1 for row in rows if row.get("preco")),
         "produtos_sem_preco": sum(1 for row in rows if not row.get("preco")),
+        "quantidades_estoque_capturadas": sum(1 for row in rows if row.get("quantidade_estoque") != ""),
+        "produtos_sem_quantidade_estoque_exposta": sum(1 for row in rows if row.get("quantidade_estoque") == ""),
         "observacao": "A captura respeita robots.txt e não contorna CAPTCHA/MFA. Preços ausentes não são inferidos.",
         "produtos": rows, "erros_ou_restricoes": errors,
     }
