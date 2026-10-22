@@ -86,44 +86,57 @@ def first_dict(payload: Any) -> dict:
     x=get_data(payload)
     if isinstance(x,list): return x[0] if x and isinstance(x[0],dict) else {}
     return x if isinstance(x,dict) else {}
-def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int) -> dict:
-    """Fallback público: encontra a contratação exata na listagem de propostas abertas."""
+def find_open_proposal(session: requests.Session, cnpj: str, year: int, seq: int) -> tuple[dict,str]:
+    """Fallback público com variações de filtro e busca de publicação."""
+    from datetime import timedelta
     expected_cnpj=cnpj
     expected_year=int(year)
     expected_seq=int(seq)
-    # A consulta exige dataFinal; uma data futura captura avisos que ainda recebem propostas.
-    from datetime import timedelta
-    data_final=(datetime.now(timezone.utc).date()+timedelta(days=365)).strftime("%Y%m%d")
-    params_base={
-        "dataFinal":data_final,
-        "codigoModalidadeContratacao":8,
-        "cnpj":cnpj,
-        "pagina":1,
-        "tamanhoPagina":50,
-    }
-    max_pages=20
-    for page in range(1,max_pages+1):
-        params={**params_base,"pagina":page}
-        payload=fetch_json(session,PROPOSTA_URL,params)
-        records=list_data(payload)
-        for record in records:
-            control=clean(pick(record,"numeroControlePNCP","numeroControlePncp"))
-            match=re.fullmatch(r"(\d{14})-(\d+)-(\d+)/(\d{4})",control)
-            if match:
-                rec_cnpj,_,rec_seq,rec_year=match.groups()
-                if rec_cnpj==expected_cnpj and int(rec_year)==expected_year and int(rec_seq)==expected_seq:
-                    return record
-        if not records or len(records)<50:
-            break
-        total_pages=pick(payload,"totalPaginas","totalPaginasEncontradas","pages",default="")
-        try:
-            if total_pages and page>=int(total_pages): break
-        except (ValueError,TypeError):
-            pass
-        time.sleep(1.0)
+    today=datetime.now(timezone.utc).date()
+    future=(today+timedelta(days=365)).strftime("%Y%m%d")
+    past=(today-timedelta(days=45)).strftime("%Y%m%d")
+    variants=[
+      ("proposta_cnpj_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},20),
+      ("proposta_cnpj",PROPOSTA_URL,{"dataFinal":future,"cnpj":cnpj,"tamanhoPagina":50},20),
+      ("proposta_modalidade",PROPOSTA_URL,{"dataFinal":future,"codigoModalidadeContratacao":8,"tamanhoPagina":50},20),
+      ("publicacao_cnpj_modalidade",f"{CONSULTA_ROOT}/contratacoes/publicacao",{"dataInicial":past,"dataFinal":future,"codigoModalidadeContratacao":8,"cnpj":cnpj,"tamanhoPagina":50},20),
+    ]
+    diagnostics=[]
+    for variant_name,endpoint,base_params,max_pages in variants:
+        pages_scanned=0
+        records_seen=0
+        samples=[]
+        for page in range(1,max_pages+1):
+            try:
+                payload=fetch_json(session,endpoint,{**base_params,"pagina":page})
+            except Exception as exc:
+                diagnostics.append(f"{variant_name}: falha na página {page}: {exc}")
+                break
+            records=list_data(payload)
+            pages_scanned=page
+            records_seen+=len(records)
+            for record in records:
+                control=clean(pick(record,"numeroControlePNCP","numeroControlePncp"))
+                if len(samples)<4 and control:
+                    samples.append(control)
+                match=re.fullmatch(r"(\d{14})-(\d+)-(\d+)/(\d{4})",control)
+                if match:
+                    rec_cnpj,_,rec_seq,rec_year=match.groups()
+                    if rec_cnpj==expected_cnpj and int(rec_year)==expected_year and int(rec_seq)==expected_seq:
+                        return record,variant_name
+            if not records or len(records)<50:
+                break
+            total_pages=pick(payload,"totalPaginas","totalPaginasEncontradas","pages",default="")
+            try:
+                if total_pages and page>=int(total_pages):
+                    break
+            except (ValueError,TypeError):
+                pass
+            time.sleep(0.3)
+        diagnostics.append(f"{variant_name}: páginas={pages_scanned}; registros={records_seen}; amostras={samples}")
     raise RuntimeError(
-        f"Contratação {cnpj}-1-{seq:06d}/{year} não localizada na listagem pública "
-        f"de propostas abertas após até {max_pages} páginas (dataFinal={data_final})."
+        f"Contratação {cnpj}-1-{seq:06d}/{year} não localizada nas rotas públicas alternativas. "
+        + " | ".join(diagnostics)
     )
 
 def money(x: Any) -> str:
@@ -222,8 +235,7 @@ def main():
       if "404" in str(e) or "endpoint foi movido" in str(e).lower():
         warnings["geral_detalhe"]=str(e)
         try:
-          raw["geral"]=find_open_proposal(s,cnpj,year,seq)
-          general_source="consulta_propostas_abertas_fallback"
+          raw["geral"],general_source=find_open_proposal(s,cnpj,year,seq)
         except Exception as fallback_error:
           errors["geral"]=f"Detalhe: {e}; fallback de propostas: {fallback_error}"
           logging.warning("geral: %s",errors["geral"])
