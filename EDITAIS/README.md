@@ -33,3 +33,8 @@ Diretório destinado à organização de documentos e registos relacionados com 
 ## Coleta automatizada PNCP
 
 A coleta dos editais com propostas abertas e modalidade código 8 está documentada em [README-CAPTURA-PNCP.md](README-CAPTURA-PNCP.md). O script está em [capture_pncp_editais.py](../scripts/capture_pncp_editais.py); o workflow é [Captura de editais PNCP](../.github/workflows/captura-pncp-editais.yml). Os arquivos de resultados só serão considerados preenchidos após uma execução com dados reais.
+
+
+## Extrator de contratação específica
+
+Para extração detalhada de uma contratação individual, consulte [o guia do extrator](EXTRATOR-CONTRATACAO-PNCP-00394502000144-2026-14259.md), o [script](../scripts/capture_pncp_contratacao.py) e o [workflow de execução](../.github/workflows/extrair-pncp-contratacao.yml).
