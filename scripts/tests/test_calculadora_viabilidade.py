@@ -36,7 +36,8 @@ class EconomicCalculatorTests(unittest.TestCase):
         result = calc_module.calculate(args())
         self.assertEqual(result["revenue_total"], "6199.05")
         self.assertEqual(result["maximum_acquisition_total_for_target"], "2380.07")
-        self.assertEqual(result["maximum_acquisition_unit_price_for_target"], "3.33")
+        self.assertEqual(result["maximum_acquisition_unit_price_for_target"], "3.32")
+        self.assertLessEqual(Decimal(result["maximum_acquisition_unit_price_for_target"]) * Decimal("715"), Decimal(result["maximum_acquisition_total_for_target"]) )
 
     def test_pending_evidence_blocks_participation(self):
         result = calc_module.calculate(args())
