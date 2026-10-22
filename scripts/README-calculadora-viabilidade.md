@@ -1,0 +1,62 @@
+# Calculadora de viabilidade — Sistema LICITAÇÃO
+
+Arquivo: `scripts/calculadora_viabilidade.py`
+
+## Objetivo
+Calcular receita, custo de aquisição, imposto incremental informado, DAS alocado, frete, despesas adicionais, lucro, margem sobre receita, markup sobre custo e teto máximo de compra para uma meta de margem.
+
+Usa `Decimal` para evitar erros comuns de ponto flutuante. O resultado inclui pendências e bloqueia a liberação para participação quando não há confirmação dos pontos críticos.
+
+## Exemplo de uso
+Executar a partir da raiz do repositório:
+
+```bash
+python scripts/calculadora_viabilidade.py \
+  --opportunity-id PNCP-UFRJ-2026-548 \
+  --item-id PNCP-UFRJ-2026-548-ITEM-1 \
+  --scenario-name "UFRJ base preliminar" \
+  --quantity 715 \
+  --sale-price 8.67 \
+  --acquisition-price 3.00 \
+  --das-allocated 82.05 \
+  --freight 637.40 \
+  --target-margin 0.50 \
+  --assumption "Frete é hipótese pública preliminar, não cotação" \
+  --pending-cost "Entrega nos cinco endereços não cotada" \
+  --output /tmp/ufrj-cenario.json
+```
+
+O exemplo é ilustrativo. Não implica que R$ 3,00 seja um preço de aquisição encontrado ou viável, nem que R$ 637,40 seja o frete real. O programa não presume alíquota fiscal: `--tax-rate` só deve receber um valor validado para a operação.
+
+## Confirmações que afetam o status
+Os flags abaixo só devem ser usados quando houver evidência real:
+- `--tax-confirmed`: tratamento fiscal validado.
+- `--freight-confirmed`: cotação válida cobre a carga e todos os destinos.
+- `--technical-compliance-confirmed`: documentação confirma a especificação do edital.
+- `--supplier-capacity-confirmed`: fornecedor confirmou quantidade e prazo.
+
+Sem essas confirmações, o cenário permanece como estimativa e a recomendação é `PARTICIPATION_NOT_CLEARED`.
+
+## Fórmulas
+- Receita = quantidade × preço de venda unitário.
+- Aquisição = quantidade × custo unitário de aquisição.
+- Custo total = aquisição + imposto incremental + DAS alocado + frete + despesas adicionais.
+- Lucro = receita − custo total.
+- Margem sobre receita = lucro ÷ receita.
+- Markup sobre custo = lucro ÷ custo total.
+- Teto de aquisição = orçamento máximo de custos compatível com a meta − custos não relacionados à aquisição.
+
+O teto monetário é arredondado para baixo a centavos antes do cálculo do teto de aquisição, para não exceder o limite de custo por arredondamento.
+
+## Testes
+```bash
+python -m unittest discover -s scripts/tests -v
+```
+
+Para validar schemas e exemplos:
+```bash
+python -m pip install jsonschema
+python scripts/validate_schemas.py
+```
+
+Os testes devem ser executados em um checkout atualizado antes de considerar a ferramenta validada em produção.
