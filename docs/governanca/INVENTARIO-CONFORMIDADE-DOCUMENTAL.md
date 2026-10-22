@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 319a73e213dd26cb8b71dc19ae87b23daacae61a515b672f91dd7738fc4c4bfa |
-| **Commit de referência (versão anterior)** | [ef8756973bfea617fc9118c49abe8ed2a29e3bfd](https://github.com/carlos-andrade/LICITACAO/commit/ef8756973bfea617fc9118c49abe8ed2a29e3bfd) |
+| **SHA-256 (conteúdo canónico)** | 8b4be74433f1031436f134dfeb8041a690b66ab575841284baff66df17dc7afc |
+| **Commit de referência (versão anterior)** | [18f9cf5693fe3bcb9d0b7634d7077b273f513e72](https://github.com/carlos-andrade/LICITACAO/commit/18f9cf5693fe3bcb9d0b7634d7077b273f513e72) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-22 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -24,9 +24,9 @@
 - Documentos Markdown do projeto (fora de .governanca/upstream): **45**.
 - Documentos conformes após normalização e verificação de hash: **45/45**.
 - IDs duplicados: **0**.
-- Ficheiros PDF/Office no repositório: **0**.
+- Ficheiros PDF/Office no repositório: **1**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **1**.
+- Ficheiros Markdown alterados nesta execução: **0**.
 
 ## Inventário Markdown
 
@@ -80,7 +80,9 @@
 
 ## Ficheiros PDF e Office no repositório
 
-Não foram encontrados ficheiros PDF, DOC/DOCX, XLS/XLSX, ODT/ODS ou PPTX versionados neste repositório. Os anexos enviados diretamente na conversa não são ficheiros versionados do Git e exigem uma operação separada para serem editados e publicados.
+| Caminho | Formato | Estado |
+|---|---|---|
+| `IMPRESSÃO/ORCAMENTOS_README_IMPRESSAO.pdf` | .pdf | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 
 ## Critérios e limitações
 
