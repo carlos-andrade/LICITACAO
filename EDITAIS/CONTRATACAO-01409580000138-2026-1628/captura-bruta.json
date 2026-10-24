@@ -1,0 +1,745 @@
+{
+  "metadados": {
+    "status": "CAPTURA_COM_DADOS",
+    "capturado_em_utc": "2026-10-24T11:59:41+00:00",
+    "url_contratacao": "https://pncp.gov.br/app/editais/01409580000138/2026/1628",
+    "identificacao": {
+      "cnpj": "01409580000138",
+      "ano": 2026,
+      "sequencial": 1628,
+      "numero_controle_esperado": "01409580000138-1-001628/2026"
+    },
+    "fonte_primaria": "Portal Nacional de Contratações Públicas (PNCP)",
+    "endpoints_consultados": [
+      {
+        "secao": "geral_consulta",
+        "url": "https://pncp.gov.br/api/consulta/v1/orgaos/01409580000138/compras/2026/1628",
+        "parametros": null
+      },
+      {
+        "secao": "geral_pncp",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628",
+        "parametros": null
+      },
+      {
+        "secao": "itens",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/itens",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      },
+      {
+        "secao": "arquivos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      },
+      {
+        "secao": "arquivo_1",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_2",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_3",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_4",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_5",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/5",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_6",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/6",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_7",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/7",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_8",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/8",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_9",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/9",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_10",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/10",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_11",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/11",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_12",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/12",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_13",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/13",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_14",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/14",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_15",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/15",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_16",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/16",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_17",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/17",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_18",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/18",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_19",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/19",
+        "parametros": null
+      },
+      {
+        "secao": "arquivo_20",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/20",
+        "parametros": null
+      },
+      {
+        "secao": "historico",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/historico",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      },
+      {
+        "secao": "atas",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/atas",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      },
+      {
+        "secao": "contratos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/contratos",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      },
+      {
+        "secao": "empenhos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/empenhos",
+        "parametros": {
+          "pagina": 1,
+          "tamanhoPagina": 100
+        }
+      }
+    ],
+    "diagnostico_http": [
+      {
+        "secao": "geral_consulta",
+        "url": "https://pncp.gov.br/api/consulta/v1/orgaos/01409580000138/compras/2026/1628",
+        "http": 200,
+        "content_type": "application/json",
+        "bytes": 1856,
+        "final_url": "https://pncp.gov.br/api/consulta/v1/orgaos/01409580000138/compras/2026/1628"
+      },
+      {
+        "secao": "geral_pncp",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628",
+        "http": 301,
+        "content_type": "application/json",
+        "bytes": 280,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628"
+      },
+      {
+        "secao": "itens",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/itens?pagina=1&tamanhoPagina=100",
+        "http": 200,
+        "content_type": "application/json",
+        "bytes": 4921,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/itens?pagina=1&tamanhoPagina=100"
+      },
+      {
+        "secao": "arquivos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos?pagina=1&tamanhoPagina=100",
+        "http": 200,
+        "content_type": "application/json",
+        "bytes": 1995,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos?pagina=1&tamanhoPagina=100"
+      },
+      {
+        "secao": "arquivo_1",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+        "http": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 65704,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1"
+      },
+      {
+        "secao": "arquivo_2",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+        "http": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 7869,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2"
+      },
+      {
+        "secao": "arquivo_3",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+        "http": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 8673,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3"
+      },
+      {
+        "secao": "arquivo_4",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+        "http": 200,
+        "content_type": "application/octet-stream",
+        "bytes": 1241843,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4"
+      },
+      {
+        "secao": "arquivo_5",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/5",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_6",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/6",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_7",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/7",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_8",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/8",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_9",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/9",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_10",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/10",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_11",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/11",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_12",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/12",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_13",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/13",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_14",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/14",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_15",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/15",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_16",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/16",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_17",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/17",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_18",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/18",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_19",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/19",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "arquivo_20",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/20",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "historico",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/historico?pagina=1&tamanhoPagina=100",
+        "http": 200,
+        "content_type": "application/json",
+        "bytes": 2629,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/historico?pagina=1&tamanhoPagina=100"
+      },
+      {
+        "secao": "atas",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/atas?pagina=1&tamanhoPagina=100",
+        "http": 204,
+        "content_type": "application/json",
+        "bytes": 0,
+        "final_url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/atas?pagina=1&tamanhoPagina=100"
+      },
+      {
+        "secao": "contratos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/contratos?pagina=1&tamanhoPagina=100",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      },
+      {
+        "secao": "empenhos",
+        "url": "https://pncp.gov.br/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/empenhos?pagina=1&tamanhoPagina=100",
+        "http": 404,
+        "error": "endpoint não encontrado"
+      }
+    ],
+    "quantidade_respostas_capturadas": 10,
+    "quantidade_itens_normalizados": 2,
+    "quantidade_links_detectados": 4,
+    "quantidade_arquivos_baixados": 0,
+    "avisos": [
+      "Captura best-effort: HTTP 404 em endpoint opcional não prova inexistência de dados.",
+      "Confira diagnóstico, paginação e os documentos oficiais antes de decidir.",
+      "O conteúdo original é preservado no JSON; campos normalizados dependem dos nomes de campo retornados pela API.",
+      "Nenhum preço de fornecedor é inventado ou considerado cotação confirmada."
+    ]
+  },
+  "respostas_api": {
+    "geral_consulta": {
+      "valorTotalEstimado": 2560.0,
+      "valorTotalHomologado": null,
+      "orcamentoSigilosoCodigo": 1,
+      "orcamentoSigilosoDescricao": "Compra sem sigilo",
+      "numeroControlePNCP": "01409580000138-1-001628/2026",
+      "linkSistemaOrigem": "",
+      "linkProcessoEletronico": null,
+      "anoCompra": 2026,
+      "sequencialCompra": 1628,
+      "numeroCompra": "123869",
+      "processo": "202600574184",
+      "orgaoEntidade": {
+        "cnpj": "01409580000138",
+        "razaoSocial": "ESTADO DE GOIAS",
+        "poderId": "N",
+        "esferaId": "E"
+      },
+      "unidadeOrgao": {
+        "ufNome": "Goiás",
+        "ufSigla": "GO",
+        "municipioNome": "Goiânia",
+        "nomeUnidade": "MINISTÉRIO PÚBLICO DO ESTADO DE GOIÁS",
+        "codigoUnidade": "40",
+        "codigoIbge": "5208707"
+      },
+      "orgaoSubRogado": null,
+      "unidadeSubRogada": null,
+      "modalidadeId": 8,
+      "modalidadeNome": "Dispensa",
+      "justificativaPresencial": null,
+      "modoDisputaId": 4,
+      "modoDisputaNome": "Dispensa Com Disputa",
+      "tipoInstrumentoConvocatorioCodigo": 2,
+      "tipoInstrumentoConvocatorioNome": "Aviso de Contratação Direta",
+      "amparoLegal": {
+        "nome": "Lei 14.133/2021, Art. 75, II",
+        "descricao": "Dispensa de Licitação: para contratação que envolva valores inferiores a R$ 50.000,00 (cinquenta mil reais), no caso de outros serviços e compras",
+        "codigo": 19
+      },
+      "objetoCompra": "Aquisição de 01 (um) medidor digital de espessura por ultrassom, fornecido com certificado de calibração rastreável à Rede Brasileira de Calibração (RBC/Inmetro), e de gel acoplante para ensaio de ultrassom.",
+      "informacaoComplementar": null,
+      "srp": false,
+      "fontesOrcamentarias": [],
+      "emendaParlamentar": null,
+      "dataPublicacaoPncp": "2026-10-22T15:47:27",
+      "dataAberturaProposta": "2026-10-23T08:00:00",
+      "dataEncerramentoProposta": "2026-10-29T08:00:00",
+      "situacaoCompraId": 1,
+      "situacaoCompraNome": "Divulgada no PNCP",
+      "existeResultado": false,
+      "dataInclusao": "2026-10-22T15:47:27",
+      "dataAtualizacao": "2026-10-22T15:47:27",
+      "dataAtualizacaoGlobal": "2026-10-22T15:48:04",
+      "usuarioNome": "SISLOG - Sistema de Logística de Goiás"
+    },
+    "geral_pncp": {
+      "timestamp": "2026-10-24T08:59:43.051-03:00",
+      "status": "301",
+      "error": "301 MOVED_PERMANENTLY",
+      "message": "Este endpoint foi movido para: https://pncp.gov.br:10240/api/consulta/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}",
+      "path": "/pncp-api/v1/orgaos/01409580000138/compras/2026/1628"
+    },
+    "itens": [
+      {
+        "numeroItem": 1,
+        "descricao": "Medidores, medidor de espessura ultrassônico com datalogger.",
+        "materialOuServico": "M",
+        "materialOuServicoNome": "Material",
+        "valorUnitarioEstimado": 2380.0,
+        "valorTotal": 2380.0,
+        "quantidade": 1.0,
+        "unidadeMedida": "UNIDADE",
+        "orcamentoSigiloso": false,
+        "itemCategoriaId": 3,
+        "itemCategoriaNome": "Não se aplica",
+        "patrimonio": null,
+        "codigoRegistroImobiliario": null,
+        "criterioJulgamentoId": 1,
+        "criterioJulgamentoNome": "Menor preço",
+        "situacaoCompraItem": 1,
+        "situacaoCompraItemNome": "Em andamento",
+        "tipoBeneficio": 1,
+        "tipoBeneficioNome": "Participação exclusiva para ME/EPP",
+        "incentivoProdutivoBasico": false,
+        "dataInclusao": "2026-10-22T15:47:27",
+        "dataAtualizacao": "2026-10-22T15:47:27",
+        "temResultado": false,
+        "imagem": 0,
+        "aplicabilidadeMargemPreferenciaNormal": false,
+        "aplicabilidadeMargemPreferenciaAdicional": false,
+        "percentualMargemPreferenciaNormal": null,
+        "percentualMargemPreferenciaAdicional": null,
+        "ncmNbsCodigo": null,
+        "ncmNbsDescricao": null,
+        "catalogo": null,
+        "categoriaItemCatalogo": null,
+        "catalogoCodigoItem": null,
+        "informacaoComplementar": "MEDIDOR DIGITAL DE ESPESSURA POR ULTRASSOM, portátil, com as seguintes características mínimas: - Técnica de medição por pulso-eco (contato); - Modo eco-eco (medição através de pintura/revestimento, desconsiderando a camada de tinta), com faixa mínima em aço de 3 a 25 mm; - Faixa de medição em aço (modo pulso-eco), com o transdutor fornecido: de 1,0 mm (ou inferior) a 200 mm (ou superior); - Resolução de leitura selecionável, com resolução mínima de 0,01 mm; - Exatidão de ± (0,5% da leitura + 0,05 mm) ou melhor; - Ajuste da velocidade do som na faixa mínima de 1.000 a 9.999 m/s, com tabela de materiais pré- rogramada (no mínimo aço-carbono, aço inoxidável, ferro fundido, alumínio, cobre e latão); - Calibração por bloco-padrão e zeragem do transdutor no próprio equipamento, com calibração de dois pontos; - Transdutor com frequência de 5 MHz, diâmetro de contato de até 12 mm, apto à medição em superfícies curvas de tubos com diâmetro externo a partir de 20 mm (ou inferior); - Memória interna mínima de 2.000 (duas mil) leituras, com organização por arquivos/pontos e exportação dos dados para computador (USB ou Bluetooth), acompanhado do respectivo software ou aplicativo; - Visor digital retroiluminado, com indicação de estabilidade de acoplamento; - Alimentação por pilhas ou bateria recarregável, com autonomia mínima de 20 horas de operação; - Temperatura de operação mínima de 0 °C a 45 °C; - Fornecido com: transdutor de 5 MHz com cabo, bloco-padrão de aço para calibração, maleta rígida de transporte, cabo de comunicação/software, manual de operação em português; - Certificado de calibração rastreável, emitido por laboratório acreditado pelo Inmetro (RBC) segundo a ABNT NBR ISO/IEC\n17025, com data de emissão não superior a 90 (noventa) dias da entrega, apresentando os erros de indicação e a incerteza de medição; - Garantia mínima de 90 (noventa) dias contra defeitos de fabricação, contados da data de entrega; - Referências: Metrotokyo MTK180; MITECH MT 180; ou equivalente técnico.",
+        "tipoMargemPreferencia": null,
+        "exigenciaConteudoNacional": false
+      },
+      {
+        "numeroItem": 2,
+        "descricao": "Medidores, medidor de espessura ultrassônico com datalogger.",
+        "materialOuServico": "M",
+        "materialOuServicoNome": "Material",
+        "valorUnitarioEstimado": 90.0,
+        "valorTotal": 180.0,
+        "quantidade": 2.0,
+        "unidadeMedida": "UNIDADE",
+        "orcamentoSigiloso": false,
+        "itemCategoriaId": 3,
+        "itemCategoriaNome": "Não se aplica",
+        "patrimonio": null,
+        "codigoRegistroImobiliario": null,
+        "criterioJulgamentoId": 1,
+        "criterioJulgamentoNome": "Menor preço",
+        "situacaoCompraItem": 1,
+        "situacaoCompraItemNome": "Em andamento",
+        "tipoBeneficio": 1,
+        "tipoBeneficioNome": "Participação exclusiva para ME/EPP",
+        "incentivoProdutivoBasico": false,
+        "dataInclusao": "2026-10-22T15:47:27",
+        "dataAtualizacao": "2026-10-22T15:47:27",
+        "temResultado": false,
+        "imagem": 0,
+        "aplicabilidadeMargemPreferenciaNormal": false,
+        "aplicabilidadeMargemPreferenciaAdicional": false,
+        "percentualMargemPreferenciaNormal": null,
+        "percentualMargemPreferenciaAdicional": null,
+        "ncmNbsCodigo": null,
+        "ncmNbsDescricao": null,
+        "catalogo": null,
+        "categoriaItemCatalogo": null,
+        "catalogoCodigoItem": null,
+        "informacaoComplementar": "GEL ACOPLANTE PARA ENSAIO DE ULTRASSOM, industrial, de média/alta viscosidade (gel), à base de glicol ou glicerina, solúvel em água, não tóxico, não corrosivo para aço-carbono, com baixo teor de halogênios e enxofre (<50ppm), faixa de temperatura de uso que abranja no mínimo 0 °C a 50 °C, fornecido em bombona/galão de 3,78 a 5 litros, com validade mínima de 12 (doze) meses a partir da entrega. Deve ser acompanhado por frasco de aplicação de 300 a 400 ml, com o respectivo bico aplicador. Referências: Magnaflux (Sonotech) Ultragel II; ou equivalente técnico.",
+        "tipoMargemPreferencia": null,
+        "exigenciaConteudoNacional": false
+      }
+    ],
+    "arquivos": [
+      {
+        "uri": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+        "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+        "statusAtivo": true,
+        "cnpj": "01409580000138",
+        "anoCompra": 2026,
+        "sequencialCompra": 1628,
+        "dataPublicacaoPncp": "2026-10-22T15:47:28",
+        "sequencialDocumento": 1,
+        "titulo": "AVISO DE DISPENSA ELETRONICA",
+        "tipoDocumentoNome": "Aviso de Contratação Direta",
+        "tipoDocumentoDescricao": "Aviso de Contratação Direta",
+        "tipoDocumentoId": 1
+      },
+      {
+        "uri": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+        "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+        "statusAtivo": true,
+        "cnpj": "01409580000138",
+        "anoCompra": 2026,
+        "sequencialCompra": 1628,
+        "dataPublicacaoPncp": "2026-10-22T15:47:54",
+        "sequencialDocumento": 2,
+        "titulo": "Termo de Anuencia V.1",
+        "tipoDocumentoNome": "Outros Documentos",
+        "tipoDocumentoDescricao": "Outros Documentos",
+        "tipoDocumentoId": 16
+      },
+      {
+        "uri": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+        "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+        "statusAtivo": true,
+        "cnpj": "01409580000138",
+        "anoCompra": 2026,
+        "sequencialCompra": 1628,
+        "dataPublicacaoPncp": "2026-10-22T15:47:58",
+        "sequencialDocumento": 3,
+        "titulo": "Declaracao de Regularidade do CNMP",
+        "tipoDocumentoNome": "Outros Documentos",
+        "tipoDocumentoDescricao": "Outros Documentos",
+        "tipoDocumentoId": 16
+      },
+      {
+        "uri": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+        "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+        "statusAtivo": true,
+        "cnpj": "01409580000138",
+        "anoCompra": 2026,
+        "sequencialCompra": 1628,
+        "dataPublicacaoPncp": "2026-10-22T15:48:04",
+        "sequencialDocumento": 4,
+        "titulo": "Termo de Referencia V.1",
+        "tipoDocumentoNome": "Termo de Referência",
+        "tipoDocumentoDescricao": "Termo de Referência",
+        "tipoDocumentoId": 4
+      }
+    ],
+    "arquivo_1": {
+      "binary_response": true,
+      "bytes": 65704,
+      "arquivo_local": "EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_1.bin",
+      "sha256": "bd00b4763bb7cca39e299942329826fc8bdcae8d66e2aec5665fccc2e71c8e4d"
+    },
+    "arquivo_2": {
+      "binary_response": true,
+      "bytes": 7869,
+      "arquivo_local": "EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_2.bin",
+      "sha256": "d7603a58ed467a333282e6cc6a5b58e70b1d0845d2b4149dc3abf6b1581135d7"
+    },
+    "arquivo_3": {
+      "binary_response": true,
+      "bytes": 8673,
+      "arquivo_local": "EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_3.bin",
+      "sha256": "a1401e92a35865d730781f8a838706516d97060e54f2efadbcb20c57e49ff77a"
+    },
+    "arquivo_4": {
+      "binary_response": true,
+      "bytes": 1241843,
+      "arquivo_local": "EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_4.bin",
+      "sha256": "2ed22ae817c0590a8e7ea9fcbbc534352e48a23a54f9fe3ea9f646402e8a484d"
+    },
+    "historico": [
+      {
+        "justificativa": null,
+        "tipoLogManutencao": 0,
+        "categoriaLogManutencao": 6,
+        "logManutencaoDataInclusao": "2026-10-22T15:47:58",
+        "categoriaLogManutencaoNome": "Documento de Contratação",
+        "usuarioNome": "SISLOG - Sistema de Logística de Goiás",
+        "itemNumero": null,
+        "documentoTipo": "Outros Documentos",
+        "documentoTitulo": "Declaracao de Regularidade do CNMP",
+        "documentoSequencial": 3,
+        "tipoLogManutencaoNome": "Inclusão",
+        "compraAno": 2026,
+        "compraOrgaoCnpj": "01409580000138",
+        "compraSequencial": 1628,
+        "itemResultadoNumero": null,
+        "itemResultadoSequencial": null
+      },
+      {
+        "justificativa": null,
+        "tipoLogManutencao": 0,
+        "categoriaLogManutencao": 6,
+        "logManutencaoDataInclusao": "2026-10-22T15:48:04",
+        "categoriaLogManutencaoNome": "Documento de Contratação",
+        "usuarioNome": "SISLOG - Sistema de Logística de Goiás",
+        "itemNumero": null,
+        "documentoTipo": "Termo de Referência",
+        "documentoTitulo": "Termo de Referencia V.1",
+        "documentoSequencial": 4,
+        "tipoLogManutencaoNome": "Inclusão",
+        "compraAno": 2026,
+        "compraOrgaoCnpj": "01409580000138",
+        "compraSequencial": 1628,
+        "itemResultadoNumero": null,
+        "itemResultadoSequencial": null
+      },
+      {
+        "justificativa": null,
+        "tipoLogManutencao": 0,
+        "categoriaLogManutencao": 6,
+        "logManutencaoDataInclusao": "2026-10-22T15:47:54",
+        "categoriaLogManutencaoNome": "Documento de Contratação",
+        "usuarioNome": "SISLOG - Sistema de Logística de Goiás",
+        "itemNumero": null,
+        "documentoTipo": "Outros Documentos",
+        "documentoTitulo": "Termo de Anuencia V.1",
+        "documentoSequencial": 2,
+        "tipoLogManutencaoNome": "Inclusão",
+        "compraAno": 2026,
+        "compraOrgaoCnpj": "01409580000138",
+        "compraSequencial": 1628,
+        "itemResultadoNumero": null,
+        "itemResultadoSequencial": null
+      },
+      {
+        "justificativa": null,
+        "tipoLogManutencao": 0,
+        "categoriaLogManutencao": 1,
+        "logManutencaoDataInclusao": "2026-10-22T15:47:27",
+        "categoriaLogManutencaoNome": "Contratação",
+        "usuarioNome": "SISLOG - Sistema de Logística de Goiás",
+        "itemNumero": null,
+        "documentoTipo": null,
+        "documentoTitulo": null,
+        "documentoSequencial": null,
+        "tipoLogManutencaoNome": "Inclusão",
+        "compraAno": 2026,
+        "compraOrgaoCnpj": "01409580000138",
+        "compraSequencial": 1628,
+        "itemResultadoNumero": null,
+        "itemResultadoSequencial": null
+      },
+      {
+        "justificativa": null,
+        "tipoLogManutencao": 0,
+        "categoriaLogManutencao": 6,
+        "logManutencaoDataInclusao": "2026-10-22T15:47:28",
+        "categoriaLogManutencaoNome": "Documento de Contratação",
+        "usuarioNome": "SISLOG - Sistema de Logística de Goiás",
+        "itemNumero": null,
+        "documentoTipo": "Aviso de Contratação Direta",
+        "documentoTitulo": "AVISO DE DISPENSA ELETRONICA",
+        "documentoSequencial": 1,
+        "tipoLogManutencaoNome": "Inclusão",
+        "compraAno": 2026,
+        "compraOrgaoCnpj": "01409580000138",
+        "compraSequencial": 1628,
+        "itemResultadoNumero": null,
+        "itemResultadoSequencial": null
+      }
+    ],
+    "atas": {
+      "binary_response": true,
+      "bytes": 0,
+      "arquivo_local": "EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/atas.bin",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "links_arquivos": [
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+      "campo": "[0].uri",
+      "origem": "arquivos"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+      "campo": "[1].uri",
+      "origem": "arquivos"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+      "campo": "[2].uri",
+      "origem": "arquivos"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+      "campo": "[3].uri",
+      "origem": "arquivos"
+    }
+  ],
+  "downloads": [
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1",
+      "campo": "[0].uri",
+      "origem": "arquivos",
+      "status": "falha: HTTPSConnectionPool(host='pncp.gov.br', port=10240): Max retries exceeded with url: /pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='pncp.gov.br', port=10240) at 0x7e1a03559dc0>, 'Connection to pncp.gov.br timed out. (connect timeout=40)'))"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2",
+      "campo": "[1].uri",
+      "origem": "arquivos",
+      "status": "falha: HTTPSConnectionPool(host='pncp.gov.br', port=10240): Max retries exceeded with url: /pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2 (Caused by ConnectTimeoutError(<HTTPSConnection(host='pncp.gov.br', port=10240) at 0x7e1a0355a0c0>, 'Connection to pncp.gov.br timed out. (connect timeout=40)'))"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3",
+      "campo": "[2].uri",
+      "origem": "arquivos",
+      "status": "falha: HTTPSConnectionPool(host='pncp.gov.br', port=10240): Max retries exceeded with url: /pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3 (Caused by ConnectTimeoutError(<HTTPSConnection(host='pncp.gov.br', port=10240) at 0x7e1a0355a4b0>, 'Connection to pncp.gov.br timed out. (connect timeout=40)'))"
+    },
+    {
+      "url": "https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4",
+      "campo": "[3].uri",
+      "origem": "arquivos",
+      "status": "falha: HTTPSConnectionPool(host='pncp.gov.br', port=10240): Max retries exceeded with url: /pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4 (Caused by ConnectTimeoutError(<HTTPSConnection(host='pncp.gov.br', port=10240) at 0x7e1a0355a8d0>, 'Connection to pncp.gov.br timed out. (connect timeout=40)'))"
+    }
+  ]
+}

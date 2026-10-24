@@ -1,0 +1,274 @@
+﻿secao;campo;valor
+geral_consulta;valorTotalEstimado;2560.0
+geral_consulta;valorTotalHomologado;None
+geral_consulta;orcamentoSigilosoCodigo;1
+geral_consulta;orcamentoSigilosoDescricao;Compra sem sigilo
+geral_consulta;numeroControlePNCP;01409580000138-1-001628/2026
+geral_consulta;linkSistemaOrigem;
+geral_consulta;linkProcessoEletronico;None
+geral_consulta;anoCompra;2026
+geral_consulta;sequencialCompra;1628
+geral_consulta;numeroCompra;123869
+geral_consulta;processo;202600574184
+geral_consulta;orgaoEntidade.cnpj;01409580000138
+geral_consulta;orgaoEntidade.razaoSocial;ESTADO DE GOIAS
+geral_consulta;orgaoEntidade.poderId;N
+geral_consulta;orgaoEntidade.esferaId;E
+geral_consulta;unidadeOrgao.ufNome;Goiás
+geral_consulta;unidadeOrgao.ufSigla;GO
+geral_consulta;unidadeOrgao.municipioNome;Goiânia
+geral_consulta;unidadeOrgao.nomeUnidade;MINISTÉRIO PÚBLICO DO ESTADO DE GOIÁS
+geral_consulta;unidadeOrgao.codigoUnidade;40
+geral_consulta;unidadeOrgao.codigoIbge;5208707
+geral_consulta;orgaoSubRogado;None
+geral_consulta;unidadeSubRogada;None
+geral_consulta;modalidadeId;8
+geral_consulta;modalidadeNome;Dispensa
+geral_consulta;justificativaPresencial;None
+geral_consulta;modoDisputaId;4
+geral_consulta;modoDisputaNome;Dispensa Com Disputa
+geral_consulta;tipoInstrumentoConvocatorioCodigo;2
+geral_consulta;tipoInstrumentoConvocatorioNome;Aviso de Contratação Direta
+geral_consulta;amparoLegal.nome;Lei 14.133/2021, Art. 75, II
+geral_consulta;amparoLegal.descricao;Dispensa de Licitação: para contratação que envolva valores inferiores a R$ 50.000,00 (cinquenta mil reais), no caso de outros serviços e compras
+geral_consulta;amparoLegal.codigo;19
+geral_consulta;objetoCompra;Aquisição de 01 (um) medidor digital de espessura por ultrassom, fornecido com certificado de calibração rastreável à Rede Brasileira de Calibração (RBC/Inmetro), e de gel acoplante para ensaio de ultrassom.
+geral_consulta;informacaoComplementar;None
+geral_consulta;srp;False
+geral_consulta;emendaParlamentar;None
+geral_consulta;dataPublicacaoPncp;2026-10-22T15:47:27
+geral_consulta;dataAberturaProposta;2026-10-23T08:00:00
+geral_consulta;dataEncerramentoProposta;2026-10-29T08:00:00
+geral_consulta;situacaoCompraId;1
+geral_consulta;situacaoCompraNome;Divulgada no PNCP
+geral_consulta;existeResultado;False
+geral_consulta;dataInclusao;2026-10-22T15:47:27
+geral_consulta;dataAtualizacao;2026-10-22T15:47:27
+geral_consulta;dataAtualizacaoGlobal;2026-10-22T15:48:04
+geral_consulta;usuarioNome;SISLOG - Sistema de Logística de Goiás
+geral_pncp;timestamp;2026-10-24T08:59:43.051-03:00
+geral_pncp;status;301
+geral_pncp;error;301 MOVED_PERMANENTLY
+geral_pncp;message;Este endpoint foi movido para: https://pncp.gov.br:10240/api/consulta/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}
+geral_pncp;path;/pncp-api/v1/orgaos/01409580000138/compras/2026/1628
+itens;[0].numeroItem;1
+itens;[0].descricao;Medidores, medidor de espessura ultrassônico com datalogger.
+itens;[0].materialOuServico;M
+itens;[0].materialOuServicoNome;Material
+itens;[0].valorUnitarioEstimado;2380.0
+itens;[0].valorTotal;2380.0
+itens;[0].quantidade;1.0
+itens;[0].unidadeMedida;UNIDADE
+itens;[0].orcamentoSigiloso;False
+itens;[0].itemCategoriaId;3
+itens;[0].itemCategoriaNome;Não se aplica
+itens;[0].patrimonio;None
+itens;[0].codigoRegistroImobiliario;None
+itens;[0].criterioJulgamentoId;1
+itens;[0].criterioJulgamentoNome;Menor preço
+itens;[0].situacaoCompraItem;1
+itens;[0].situacaoCompraItemNome;Em andamento
+itens;[0].tipoBeneficio;1
+itens;[0].tipoBeneficioNome;Participação exclusiva para ME/EPP
+itens;[0].incentivoProdutivoBasico;False
+itens;[0].dataInclusao;2026-10-22T15:47:27
+itens;[0].dataAtualizacao;2026-10-22T15:47:27
+itens;[0].temResultado;False
+itens;[0].imagem;0
+itens;[0].aplicabilidadeMargemPreferenciaNormal;False
+itens;[0].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[0].percentualMargemPreferenciaNormal;None
+itens;[0].percentualMargemPreferenciaAdicional;None
+itens;[0].ncmNbsCodigo;None
+itens;[0].ncmNbsDescricao;None
+itens;[0].catalogo;None
+itens;[0].categoriaItemCatalogo;None
+itens;[0].catalogoCodigoItem;None
+itens;[0].informacaoComplementar;"MEDIDOR DIGITAL DE ESPESSURA POR ULTRASSOM, portátil, com as seguintes características mínimas: - Técnica de medição por pulso-eco (contato); - Modo eco-eco (medição através de pintura/revestimento, desconsiderando a camada de tinta), com faixa mínima em aço de 3 a 25 mm; - Faixa de medição em aço (modo pulso-eco), com o transdutor fornecido: de 1,0 mm (ou inferior) a 200 mm (ou superior); - Resolução de leitura selecionável, com resolução mínima de 0,01 mm; - Exatidão de ± (0,5% da leitura + 0,05 mm) ou melhor; - Ajuste da velocidade do som na faixa mínima de 1.000 a 9.999 m/s, com tabela de materiais pré- rogramada (no mínimo aço-carbono, aço inoxidável, ferro fundido, alumínio, cobre e latão); - Calibração por bloco-padrão e zeragem do transdutor no próprio equipamento, com calibração de dois pontos; - Transdutor com frequência de 5 MHz, diâmetro de contato de até 12 mm, apto à medição em superfícies curvas de tubos com diâmetro externo a partir de 20 mm (ou inferior); - Memória interna mínima de 2.000 (duas mil) leituras, com organização por arquivos/pontos e exportação dos dados para computador (USB ou Bluetooth), acompanhado do respectivo software ou aplicativo; - Visor digital retroiluminado, com indicação de estabilidade de acoplamento; - Alimentação por pilhas ou bateria recarregável, com autonomia mínima de 20 horas de operação; - Temperatura de operação mínima de 0 °C a 45 °C; - Fornecido com: transdutor de 5 MHz com cabo, bloco-padrão de aço para calibração, maleta rígida de transporte, cabo de comunicação/software, manual de operação em português; - Certificado de calibração rastreável, emitido por laboratório acreditado pelo Inmetro (RBC) segundo a ABNT NBR ISO/IEC
+17025, com data de emissão não superior a 90 (noventa) dias da entrega, apresentando os erros de indicação e a incerteza de medição; - Garantia mínima de 90 (noventa) dias contra defeitos de fabricação, contados da data de entrega; - Referências: Metrotokyo MTK180; MITECH MT 180; ou equivalente técnico."
+itens;[0].tipoMargemPreferencia;None
+itens;[0].exigenciaConteudoNacional;False
+itens;[1].numeroItem;2
+itens;[1].descricao;Medidores, medidor de espessura ultrassônico com datalogger.
+itens;[1].materialOuServico;M
+itens;[1].materialOuServicoNome;Material
+itens;[1].valorUnitarioEstimado;90.0
+itens;[1].valorTotal;180.0
+itens;[1].quantidade;2.0
+itens;[1].unidadeMedida;UNIDADE
+itens;[1].orcamentoSigiloso;False
+itens;[1].itemCategoriaId;3
+itens;[1].itemCategoriaNome;Não se aplica
+itens;[1].patrimonio;None
+itens;[1].codigoRegistroImobiliario;None
+itens;[1].criterioJulgamentoId;1
+itens;[1].criterioJulgamentoNome;Menor preço
+itens;[1].situacaoCompraItem;1
+itens;[1].situacaoCompraItemNome;Em andamento
+itens;[1].tipoBeneficio;1
+itens;[1].tipoBeneficioNome;Participação exclusiva para ME/EPP
+itens;[1].incentivoProdutivoBasico;False
+itens;[1].dataInclusao;2026-10-22T15:47:27
+itens;[1].dataAtualizacao;2026-10-22T15:47:27
+itens;[1].temResultado;False
+itens;[1].imagem;0
+itens;[1].aplicabilidadeMargemPreferenciaNormal;False
+itens;[1].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[1].percentualMargemPreferenciaNormal;None
+itens;[1].percentualMargemPreferenciaAdicional;None
+itens;[1].ncmNbsCodigo;None
+itens;[1].ncmNbsDescricao;None
+itens;[1].catalogo;None
+itens;[1].categoriaItemCatalogo;None
+itens;[1].catalogoCodigoItem;None
+itens;[1].informacaoComplementar;"GEL ACOPLANTE PARA ENSAIO DE ULTRASSOM, industrial, de média/alta viscosidade (gel), à base de glicol ou glicerina, solúvel em água, não tóxico, não corrosivo para aço-carbono, com baixo teor de halogênios e enxofre (<50ppm), faixa de temperatura de uso que abranja no mínimo 0 °C a 50 °C, fornecido em bombona/galão de 3,78 a 5 litros, com validade mínima de 12 (doze) meses a partir da entrega. Deve ser acompanhado por frasco de aplicação de 300 a 400 ml, com o respectivo bico aplicador. Referências: Magnaflux (Sonotech) Ultragel II; ou equivalente técnico."
+itens;[1].tipoMargemPreferencia;None
+itens;[1].exigenciaConteudoNacional;False
+arquivos;[0].uri;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1
+arquivos;[0].url;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/1
+arquivos;[0].statusAtivo;True
+arquivos;[0].cnpj;01409580000138
+arquivos;[0].anoCompra;2026
+arquivos;[0].sequencialCompra;1628
+arquivos;[0].dataPublicacaoPncp;2026-10-22T15:47:28
+arquivos;[0].sequencialDocumento;1
+arquivos;[0].titulo;AVISO DE DISPENSA ELETRONICA
+arquivos;[0].tipoDocumentoNome;Aviso de Contratação Direta
+arquivos;[0].tipoDocumentoDescricao;Aviso de Contratação Direta
+arquivos;[0].tipoDocumentoId;1
+arquivos;[1].uri;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2
+arquivos;[1].url;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/2
+arquivos;[1].statusAtivo;True
+arquivos;[1].cnpj;01409580000138
+arquivos;[1].anoCompra;2026
+arquivos;[1].sequencialCompra;1628
+arquivos;[1].dataPublicacaoPncp;2026-10-22T15:47:54
+arquivos;[1].sequencialDocumento;2
+arquivos;[1].titulo;Termo de Anuencia V.1
+arquivos;[1].tipoDocumentoNome;Outros Documentos
+arquivos;[1].tipoDocumentoDescricao;Outros Documentos
+arquivos;[1].tipoDocumentoId;16
+arquivos;[2].uri;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3
+arquivos;[2].url;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/3
+arquivos;[2].statusAtivo;True
+arquivos;[2].cnpj;01409580000138
+arquivos;[2].anoCompra;2026
+arquivos;[2].sequencialCompra;1628
+arquivos;[2].dataPublicacaoPncp;2026-10-22T15:47:58
+arquivos;[2].sequencialDocumento;3
+arquivos;[2].titulo;Declaracao de Regularidade do CNMP
+arquivos;[2].tipoDocumentoNome;Outros Documentos
+arquivos;[2].tipoDocumentoDescricao;Outros Documentos
+arquivos;[2].tipoDocumentoId;16
+arquivos;[3].uri;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4
+arquivos;[3].url;https://pncp.gov.br:10240/pncp-api/v1/orgaos/01409580000138/compras/2026/1628/arquivos/4
+arquivos;[3].statusAtivo;True
+arquivos;[3].cnpj;01409580000138
+arquivos;[3].anoCompra;2026
+arquivos;[3].sequencialCompra;1628
+arquivos;[3].dataPublicacaoPncp;2026-10-22T15:48:04
+arquivos;[3].sequencialDocumento;4
+arquivos;[3].titulo;Termo de Referencia V.1
+arquivos;[3].tipoDocumentoNome;Termo de Referência
+arquivos;[3].tipoDocumentoDescricao;Termo de Referência
+arquivos;[3].tipoDocumentoId;4
+arquivo_1;binary_response;True
+arquivo_1;bytes;65704
+arquivo_1;arquivo_local;EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_1.bin
+arquivo_1;sha256;bd00b4763bb7cca39e299942329826fc8bdcae8d66e2aec5665fccc2e71c8e4d
+arquivo_2;binary_response;True
+arquivo_2;bytes;7869
+arquivo_2;arquivo_local;EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_2.bin
+arquivo_2;sha256;d7603a58ed467a333282e6cc6a5b58e70b1d0845d2b4149dc3abf6b1581135d7
+arquivo_3;binary_response;True
+arquivo_3;bytes;8673
+arquivo_3;arquivo_local;EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_3.bin
+arquivo_3;sha256;a1401e92a35865d730781f8a838706516d97060e54f2efadbcb20c57e49ff77a
+arquivo_4;binary_response;True
+arquivo_4;bytes;1241843
+arquivo_4;arquivo_local;EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/arquivo_4.bin
+arquivo_4;sha256;2ed22ae817c0590a8e7ea9fcbbc534352e48a23a54f9fe3ea9f646402e8a484d
+historico;[0].justificativa;None
+historico;[0].tipoLogManutencao;0
+historico;[0].categoriaLogManutencao;6
+historico;[0].logManutencaoDataInclusao;2026-10-22T15:47:58
+historico;[0].categoriaLogManutencaoNome;Documento de Contratação
+historico;[0].usuarioNome;SISLOG - Sistema de Logística de Goiás
+historico;[0].itemNumero;None
+historico;[0].documentoTipo;Outros Documentos
+historico;[0].documentoTitulo;Declaracao de Regularidade do CNMP
+historico;[0].documentoSequencial;3
+historico;[0].tipoLogManutencaoNome;Inclusão
+historico;[0].compraAno;2026
+historico;[0].compraOrgaoCnpj;01409580000138
+historico;[0].compraSequencial;1628
+historico;[0].itemResultadoNumero;None
+historico;[0].itemResultadoSequencial;None
+historico;[1].justificativa;None
+historico;[1].tipoLogManutencao;0
+historico;[1].categoriaLogManutencao;6
+historico;[1].logManutencaoDataInclusao;2026-10-22T15:48:04
+historico;[1].categoriaLogManutencaoNome;Documento de Contratação
+historico;[1].usuarioNome;SISLOG - Sistema de Logística de Goiás
+historico;[1].itemNumero;None
+historico;[1].documentoTipo;Termo de Referência
+historico;[1].documentoTitulo;Termo de Referencia V.1
+historico;[1].documentoSequencial;4
+historico;[1].tipoLogManutencaoNome;Inclusão
+historico;[1].compraAno;2026
+historico;[1].compraOrgaoCnpj;01409580000138
+historico;[1].compraSequencial;1628
+historico;[1].itemResultadoNumero;None
+historico;[1].itemResultadoSequencial;None
+historico;[2].justificativa;None
+historico;[2].tipoLogManutencao;0
+historico;[2].categoriaLogManutencao;6
+historico;[2].logManutencaoDataInclusao;2026-10-22T15:47:54
+historico;[2].categoriaLogManutencaoNome;Documento de Contratação
+historico;[2].usuarioNome;SISLOG - Sistema de Logística de Goiás
+historico;[2].itemNumero;None
+historico;[2].documentoTipo;Outros Documentos
+historico;[2].documentoTitulo;Termo de Anuencia V.1
+historico;[2].documentoSequencial;2
+historico;[2].tipoLogManutencaoNome;Inclusão
+historico;[2].compraAno;2026
+historico;[2].compraOrgaoCnpj;01409580000138
+historico;[2].compraSequencial;1628
+historico;[2].itemResultadoNumero;None
+historico;[2].itemResultadoSequencial;None
+historico;[3].justificativa;None
+historico;[3].tipoLogManutencao;0
+historico;[3].categoriaLogManutencao;1
+historico;[3].logManutencaoDataInclusao;2026-10-22T15:47:27
+historico;[3].categoriaLogManutencaoNome;Contratação
+historico;[3].usuarioNome;SISLOG - Sistema de Logística de Goiás
+historico;[3].itemNumero;None
+historico;[3].documentoTipo;None
+historico;[3].documentoTitulo;None
+historico;[3].documentoSequencial;None
+historico;[3].tipoLogManutencaoNome;Inclusão
+historico;[3].compraAno;2026
+historico;[3].compraOrgaoCnpj;01409580000138
+historico;[3].compraSequencial;1628
+historico;[3].itemResultadoNumero;None
+historico;[3].itemResultadoSequencial;None
+historico;[4].justificativa;None
+historico;[4].tipoLogManutencao;0
+historico;[4].categoriaLogManutencao;6
+historico;[4].logManutencaoDataInclusao;2026-10-22T15:47:28
+historico;[4].categoriaLogManutencaoNome;Documento de Contratação
+historico;[4].usuarioNome;SISLOG - Sistema de Logística de Goiás
+historico;[4].itemNumero;None
+historico;[4].documentoTipo;Aviso de Contratação Direta
+historico;[4].documentoTitulo;AVISO DE DISPENSA ELETRONICA
+historico;[4].documentoSequencial;1
+historico;[4].tipoLogManutencaoNome;Inclusão
+historico;[4].compraAno;2026
+historico;[4].compraOrgaoCnpj;01409580000138
+historico;[4].compraSequencial;1628
+historico;[4].itemResultadoNumero;None
+historico;[4].itemResultadoSequencial;None
+atas;binary_response;True
+atas;bytes;0
+atas;arquivo_local;EDITAIS/CONTRATACAO-01409580000138-2026-1628/arquivos_originais/atas.bin
+atas;sha256;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
