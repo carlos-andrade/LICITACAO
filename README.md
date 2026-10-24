@@ -9,7 +9,7 @@
 | **Fase** | Adoção de governança |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.2.0 |
-| **SHA-256 (conteúdo canónico)** | ff180d045d7057f7e19ed1f393a0e2e5deb45258cef23725783eb0fff24ab568 |
+| **SHA-256 (conteúdo canónico)** | 61b4cf6bbd54a5ea068a8d123e065fe79fac056d620c5dd568482591ab225724 |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
 | **Data de atualização** | 2026-10-24 |
