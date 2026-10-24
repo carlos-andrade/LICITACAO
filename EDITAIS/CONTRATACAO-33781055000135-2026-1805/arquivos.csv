@@ -1,0 +1,6 @@
+﻿url;campo;origem
+https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=25450106000042026;linkSistemaOrigem;geral_consulta
+https://sei.fiocruz.br/sei/controlador.php?acao=procedimento_trabalhar&acao_origem=procedimento_controlar&acao_retorno=procedimento_controlar&id_procedimento=6100222&infra_sistema=100000100&infra_unidade_atual=110000629&infra_hash=fb37fb759fe5dbc7cd40b800a26fe53e14745c61d89fed2f0c04a5678ce16f7b;linkProcessoEletronico;geral_consulta
+https://catalogo.compras.gov.br/cnbs-web/busca;[0].catalogo.url;itens
+https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/1;[0].uri;arquivos
+https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/2;[1].uri;arquivos

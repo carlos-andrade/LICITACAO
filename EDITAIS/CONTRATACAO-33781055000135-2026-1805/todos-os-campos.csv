@@ -1,0 +1,3529 @@
+﻿secao;campo;valor
+geral_consulta;valorTotalEstimado;56995.05
+geral_consulta;valorTotalHomologado;None
+geral_consulta;orcamentoSigilosoCodigo;1
+geral_consulta;orcamentoSigilosoDescricao;Compra sem sigilo
+geral_consulta;numeroControlePNCP;33781055000135-1-001805/2026
+geral_consulta;linkSistemaOrigem;https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=25450106000042026
+geral_consulta;linkProcessoEletronico;https://sei.fiocruz.br/sei/controlador.php?acao=procedimento_trabalhar&acao_origem=procedimento_controlar&acao_retorno=procedimento_controlar&id_procedimento=6100222&infra_sistema=100000100&infra_unidade_atual=110000629&infra_hash=fb37fb759fe5dbc7cd40b800a26fe53e14745c61d89fed2f0c04a5678ce16f7b
+geral_consulta;anoCompra;2026
+geral_consulta;sequencialCompra;1805
+geral_consulta;numeroCompra;4
+geral_consulta;processo;25420.000077/2026-15
+geral_consulta;orgaoEntidade.cnpj;33781055000135
+geral_consulta;orgaoEntidade.razaoSocial;FUNDACAO OSWALDO CRUZ
+geral_consulta;orgaoEntidade.poderId;E
+geral_consulta;orgaoEntidade.esferaId;F
+geral_consulta;unidadeOrgao.ufNome;Rio de Janeiro
+geral_consulta;unidadeOrgao.ufSigla;RJ
+geral_consulta;unidadeOrgao.municipioNome;Rio de Janeiro
+geral_consulta;unidadeOrgao.codigoUnidade;254501
+geral_consulta;unidadeOrgao.nomeUnidade;INSTITUTO DE CIÊNCIA E TEC. EM BIOMODELOS
+geral_consulta;unidadeOrgao.codigoIbge;3304557
+geral_consulta;orgaoSubRogado;None
+geral_consulta;unidadeSubRogada;None
+geral_consulta;modalidadeId;8
+geral_consulta;modalidadeNome;Dispensa
+geral_consulta;justificativaPresencial;None
+geral_consulta;modoDisputaId;4
+geral_consulta;modoDisputaNome;Dispensa Com Disputa
+geral_consulta;tipoInstrumentoConvocatorioCodigo;2
+geral_consulta;tipoInstrumentoConvocatorioNome;Aviso de Contratação Direta
+geral_consulta;amparoLegal.nome;Lei 14.133/2021, Art. 75, II
+geral_consulta;amparoLegal.descricao;Dispensa de Licitação: para contratação que envolva valores inferiores a R$ 50.000,00 (cinquenta mil reais), no caso de outros serviços e compras
+geral_consulta;amparoLegal.codigo;19
+geral_consulta;objetoCompra;Aquisição de Peças e Insumos para Caldeiras e Autoclaves.
+geral_consulta;informacaoComplementar;O Termo de Referência será anexado no Comprasnet, quando da divulgação da Dispensa Eletrônica, conforme determina o Artigo 7 da Instrução Normativa SEGES/ME nº 67 de 08 de julho de 2021. Caso a especificação e medida do CATMAT/SIDEC sejam diferentes do que constam no Termo de Referência, CONSIDERAR SOMENTE O DESCRITO NO TERMO DE REFERÊNCIA.
+geral_consulta;srp;False
+geral_consulta;fontesOrcamentarias[0].codigo;4
+geral_consulta;fontesOrcamentarias[0].nome;Federal
+geral_consulta;fontesOrcamentarias[0].descricao;Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.
+geral_consulta;fontesOrcamentarias[0].dataInclusao;2026-10-22T13:54:00
+geral_consulta;emendaParlamentar;None
+geral_consulta;dataPublicacaoPncp;2026-10-22T13:54:00
+geral_consulta;dataAberturaProposta;2026-10-23T08:00:00
+geral_consulta;dataEncerramentoProposta;2026-10-29T08:00:00
+geral_consulta;situacaoCompraId;1
+geral_consulta;situacaoCompraNome;Divulgada no PNCP
+geral_consulta;existeResultado;False
+geral_consulta;dataInclusao;2026-10-22T13:54:00
+geral_consulta;dataAtualizacao;2026-10-22T13:54:00
+geral_consulta;dataAtualizacaoGlobal;2026-10-22T13:55:14
+geral_consulta;usuarioNome;Compras.gov.br
+geral_pncp;timestamp;2026-10-24T09:02:54.137-03:00
+geral_pncp;status;301
+geral_pncp;error;301 MOVED_PERMANENTLY
+geral_pncp;message;Este endpoint foi movido para: https://pncp.gov.br:35888/api/consulta/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}
+geral_pncp;path;/pncp-api/v1/orgaos/33781055000135/compras/2026/1805
+itens;[0].numeroItem;1
+itens;[0].descricao;Aguarrás aplicação: solvente de tinta, composição: 100% destilado de petróleo, características adicionais: origem mineral, sem benzeno, álcool ou querozene O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[0].materialOuServico;M
+itens;[0].materialOuServicoNome;Material
+itens;[0].valorUnitarioEstimado;27.3
+itens;[0].valorTotal;273.0
+itens;[0].quantidade;10.0
+itens;[0].unidadeMedida;Lata ML
+itens;[0].orcamentoSigiloso;False
+itens;[0].itemCategoriaId;3
+itens;[0].itemCategoriaNome;Não se aplica
+itens;[0].patrimonio;None
+itens;[0].codigoRegistroImobiliario;None
+itens;[0].criterioJulgamentoId;1
+itens;[0].criterioJulgamentoNome;Menor preço
+itens;[0].situacaoCompraItem;1
+itens;[0].situacaoCompraItemNome;Em andamento
+itens;[0].tipoBeneficio;5
+itens;[0].tipoBeneficioNome;Não se aplica
+itens;[0].incentivoProdutivoBasico;False
+itens;[0].dataInclusao;2026-10-22T13:55:02
+itens;[0].dataAtualizacao;2026-10-22T13:55:13
+itens;[0].temResultado;False
+itens;[0].imagem;0
+itens;[0].aplicabilidadeMargemPreferenciaNormal;False
+itens;[0].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[0].percentualMargemPreferenciaNormal;None
+itens;[0].percentualMargemPreferenciaAdicional;None
+itens;[0].ncmNbsCodigo;None
+itens;[0].ncmNbsDescricao;None
+itens;[0].catalogo.id;1
+itens;[0].catalogo.nome;Catálogo do Compras.gov.br
+itens;[0].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[0].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[0].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[0].catalogo.statusAtivo;True
+itens;[0].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[0].categoriaItemCatalogo;None
+itens;[0].catalogoCodigoItem;429924
+itens;[0].informacaoComplementar;None
+itens;[0].tipoMargemPreferencia;None
+itens;[0].exigenciaConteudoNacional;False
+itens;[1].numeroItem;2
+itens;[1].descricao;Bolsa Transporte material: nailon de alta resistência, dimensões: 300 x 480 x 280, características adicionais: 03 compartimentos externos com fixação autoade O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[1].materialOuServico;M
+itens;[1].materialOuServicoNome;Material
+itens;[1].valorUnitarioEstimado;211.14
+itens;[1].valorTotal;422.28
+itens;[1].quantidade;2.0
+itens;[1].unidadeMedida;Unidade
+itens;[1].orcamentoSigiloso;False
+itens;[1].itemCategoriaId;3
+itens;[1].itemCategoriaNome;Não se aplica
+itens;[1].patrimonio;None
+itens;[1].codigoRegistroImobiliario;None
+itens;[1].criterioJulgamentoId;1
+itens;[1].criterioJulgamentoNome;Menor preço
+itens;[1].situacaoCompraItem;1
+itens;[1].situacaoCompraItemNome;Em andamento
+itens;[1].tipoBeneficio;5
+itens;[1].tipoBeneficioNome;Não se aplica
+itens;[1].incentivoProdutivoBasico;False
+itens;[1].dataInclusao;2026-10-22T13:55:04
+itens;[1].dataAtualizacao;2026-10-22T13:55:13
+itens;[1].temResultado;False
+itens;[1].imagem;0
+itens;[1].aplicabilidadeMargemPreferenciaNormal;False
+itens;[1].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[1].percentualMargemPreferenciaNormal;None
+itens;[1].percentualMargemPreferenciaAdicional;None
+itens;[1].ncmNbsCodigo;None
+itens;[1].ncmNbsDescricao;None
+itens;[1].catalogo.id;1
+itens;[1].catalogo.nome;Catálogo do Compras.gov.br
+itens;[1].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[1].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[1].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[1].catalogo.statusAtivo;True
+itens;[1].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[1].categoriaItemCatalogo;None
+itens;[1].catalogoCodigoItem;630909
+itens;[1].informacaoComplementar;None
+itens;[1].tipoMargemPreferencia;None
+itens;[1].exigenciaConteudoNacional;False
+itens;[2].numeroItem;3
+itens;[2].descricao;Contator tipo: tripolar, tensão trabalho: 220, corrente trabalho: 32, aplicação: subestação, número e tipo de contatos auxiliares: 1 na O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[2].materialOuServico;M
+itens;[2].materialOuServicoNome;Material
+itens;[2].valorUnitarioEstimado;278.02
+itens;[2].valorTotal;1668.12
+itens;[2].quantidade;6.0
+itens;[2].unidadeMedida;Unidade
+itens;[2].orcamentoSigiloso;False
+itens;[2].itemCategoriaId;3
+itens;[2].itemCategoriaNome;Não se aplica
+itens;[2].patrimonio;None
+itens;[2].codigoRegistroImobiliario;None
+itens;[2].criterioJulgamentoId;1
+itens;[2].criterioJulgamentoNome;Menor preço
+itens;[2].situacaoCompraItem;1
+itens;[2].situacaoCompraItemNome;Em andamento
+itens;[2].tipoBeneficio;5
+itens;[2].tipoBeneficioNome;Não se aplica
+itens;[2].incentivoProdutivoBasico;False
+itens;[2].dataInclusao;2026-10-22T13:55:02
+itens;[2].dataAtualizacao;2026-10-22T13:55:13
+itens;[2].temResultado;False
+itens;[2].imagem;0
+itens;[2].aplicabilidadeMargemPreferenciaNormal;False
+itens;[2].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[2].percentualMargemPreferenciaNormal;None
+itens;[2].percentualMargemPreferenciaAdicional;None
+itens;[2].ncmNbsCodigo;85365090
+itens;[2].ncmNbsDescricao;None
+itens;[2].catalogo.id;1
+itens;[2].catalogo.nome;Catálogo do Compras.gov.br
+itens;[2].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[2].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[2].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[2].catalogo.statusAtivo;True
+itens;[2].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[2].categoriaItemCatalogo;None
+itens;[2].catalogoCodigoItem;342346
+itens;[2].informacaoComplementar;None
+itens;[2].tipoMargemPreferencia;None
+itens;[2].exigenciaConteudoNacional;False
+itens;[3].numeroItem;4
+itens;[3].descricao;Contator tipo: tripolar, tensão trabalho: 220, corrente trabalho: 65, aplicação: subestação O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[3].materialOuServico;M
+itens;[3].materialOuServicoNome;Material
+itens;[3].valorUnitarioEstimado;568.29
+itens;[3].valorTotal;3409.74
+itens;[3].quantidade;6.0
+itens;[3].unidadeMedida;Unidade
+itens;[3].orcamentoSigiloso;False
+itens;[3].itemCategoriaId;3
+itens;[3].itemCategoriaNome;Não se aplica
+itens;[3].patrimonio;None
+itens;[3].codigoRegistroImobiliario;None
+itens;[3].criterioJulgamentoId;1
+itens;[3].criterioJulgamentoNome;Menor preço
+itens;[3].situacaoCompraItem;1
+itens;[3].situacaoCompraItemNome;Em andamento
+itens;[3].tipoBeneficio;5
+itens;[3].tipoBeneficioNome;Não se aplica
+itens;[3].incentivoProdutivoBasico;False
+itens;[3].dataInclusao;2026-10-22T13:54:00
+itens;[3].dataAtualizacao;2026-10-22T13:55:13
+itens;[3].temResultado;False
+itens;[3].imagem;0
+itens;[3].aplicabilidadeMargemPreferenciaNormal;False
+itens;[3].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[3].percentualMargemPreferenciaNormal;None
+itens;[3].percentualMargemPreferenciaAdicional;None
+itens;[3].ncmNbsCodigo;85365090
+itens;[3].ncmNbsDescricao;None
+itens;[3].catalogo.id;1
+itens;[3].catalogo.nome;Catálogo do Compras.gov.br
+itens;[3].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[3].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[3].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[3].catalogo.statusAtivo;True
+itens;[3].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[3].categoriaItemCatalogo;None
+itens;[3].catalogoCodigoItem;342351
+itens;[3].informacaoComplementar;None
+itens;[3].tipoMargemPreferencia;None
+itens;[3].exigenciaConteudoNacional;False
+itens;[4].numeroItem;5
+itens;[4].descricao;Peça/Componente Compressor tipo: correia, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[4].materialOuServico;M
+itens;[4].materialOuServicoNome;Material
+itens;[4].valorUnitarioEstimado;15.8
+itens;[4].valorTotal;316.0
+itens;[4].quantidade;20.0
+itens;[4].unidadeMedida;Unidade
+itens;[4].orcamentoSigiloso;False
+itens;[4].itemCategoriaId;3
+itens;[4].itemCategoriaNome;Não se aplica
+itens;[4].patrimonio;None
+itens;[4].codigoRegistroImobiliario;None
+itens;[4].criterioJulgamentoId;1
+itens;[4].criterioJulgamentoNome;Menor preço
+itens;[4].situacaoCompraItem;1
+itens;[4].situacaoCompraItemNome;Em andamento
+itens;[4].tipoBeneficio;5
+itens;[4].tipoBeneficioNome;Não se aplica
+itens;[4].incentivoProdutivoBasico;False
+itens;[4].dataInclusao;2026-10-22T13:55:06
+itens;[4].dataAtualizacao;2026-10-22T13:55:13
+itens;[4].temResultado;False
+itens;[4].imagem;0
+itens;[4].aplicabilidadeMargemPreferenciaNormal;False
+itens;[4].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[4].percentualMargemPreferenciaNormal;None
+itens;[4].percentualMargemPreferenciaAdicional;None
+itens;[4].ncmNbsCodigo;84
+itens;[4].ncmNbsDescricao;None
+itens;[4].catalogo.id;1
+itens;[4].catalogo.nome;Catálogo do Compras.gov.br
+itens;[4].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[4].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[4].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[4].catalogo.statusAtivo;True
+itens;[4].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[4].categoriaItemCatalogo;None
+itens;[4].catalogoCodigoItem;468719
+itens;[4].informacaoComplementar;None
+itens;[4].tipoMargemPreferencia;None
+itens;[4].exigenciaConteudoNacional;False
+itens;[5].numeroItem;6
+itens;[5].descricao;Peça/Componente Compressor tipo: correia, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[5].materialOuServico;M
+itens;[5].materialOuServicoNome;Material
+itens;[5].valorUnitarioEstimado;24.69
+itens;[5].valorTotal;592.56
+itens;[5].quantidade;24.0
+itens;[5].unidadeMedida;Unidade
+itens;[5].orcamentoSigiloso;False
+itens;[5].itemCategoriaId;3
+itens;[5].itemCategoriaNome;Não se aplica
+itens;[5].patrimonio;None
+itens;[5].codigoRegistroImobiliario;None
+itens;[5].criterioJulgamentoId;1
+itens;[5].criterioJulgamentoNome;Menor preço
+itens;[5].situacaoCompraItem;1
+itens;[5].situacaoCompraItemNome;Em andamento
+itens;[5].tipoBeneficio;5
+itens;[5].tipoBeneficioNome;Não se aplica
+itens;[5].incentivoProdutivoBasico;False
+itens;[5].dataInclusao;2026-10-22T13:55:02
+itens;[5].dataAtualizacao;2026-10-22T13:55:13
+itens;[5].temResultado;False
+itens;[5].imagem;0
+itens;[5].aplicabilidadeMargemPreferenciaNormal;False
+itens;[5].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[5].percentualMargemPreferenciaNormal;None
+itens;[5].percentualMargemPreferenciaAdicional;None
+itens;[5].ncmNbsCodigo;84
+itens;[5].ncmNbsDescricao;None
+itens;[5].catalogo.id;1
+itens;[5].catalogo.nome;Catálogo do Compras.gov.br
+itens;[5].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[5].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[5].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[5].catalogo.statusAtivo;True
+itens;[5].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[5].categoriaItemCatalogo;None
+itens;[5].catalogoCodigoItem;468719
+itens;[5].informacaoComplementar;None
+itens;[5].tipoMargemPreferencia;None
+itens;[5].exigenciaConteudoNacional;False
+itens;[6].numeroItem;7
+itens;[6].descricao;Peça/Componente Compressor tipo: correia, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[6].materialOuServico;M
+itens;[6].materialOuServicoNome;Material
+itens;[6].valorUnitarioEstimado;9.4
+itens;[6].valorTotal;141.0
+itens;[6].quantidade;15.0
+itens;[6].unidadeMedida;Unidade
+itens;[6].orcamentoSigiloso;False
+itens;[6].itemCategoriaId;3
+itens;[6].itemCategoriaNome;Não se aplica
+itens;[6].patrimonio;None
+itens;[6].codigoRegistroImobiliario;None
+itens;[6].criterioJulgamentoId;1
+itens;[6].criterioJulgamentoNome;Menor preço
+itens;[6].situacaoCompraItem;1
+itens;[6].situacaoCompraItemNome;Em andamento
+itens;[6].tipoBeneficio;5
+itens;[6].tipoBeneficioNome;Não se aplica
+itens;[6].incentivoProdutivoBasico;False
+itens;[6].dataInclusao;2026-10-22T13:55:06
+itens;[6].dataAtualizacao;2026-10-22T13:55:14
+itens;[6].temResultado;False
+itens;[6].imagem;0
+itens;[6].aplicabilidadeMargemPreferenciaNormal;False
+itens;[6].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[6].percentualMargemPreferenciaNormal;None
+itens;[6].percentualMargemPreferenciaAdicional;None
+itens;[6].ncmNbsCodigo;84
+itens;[6].ncmNbsDescricao;None
+itens;[6].catalogo.id;1
+itens;[6].catalogo.nome;Catálogo do Compras.gov.br
+itens;[6].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[6].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[6].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[6].catalogo.statusAtivo;True
+itens;[6].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[6].categoriaItemCatalogo;None
+itens;[6].catalogoCodigoItem;468719
+itens;[6].informacaoComplementar;None
+itens;[6].tipoMargemPreferencia;None
+itens;[6].exigenciaConteudoNacional;False
+itens;[7].numeroItem;8
+itens;[7].descricao;Peça/Componente Compressor tipo: correia, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[7].materialOuServico;M
+itens;[7].materialOuServicoNome;Material
+itens;[7].valorUnitarioEstimado;15.09
+itens;[7].valorTotal;301.8
+itens;[7].quantidade;20.0
+itens;[7].unidadeMedida;Unidade
+itens;[7].orcamentoSigiloso;False
+itens;[7].itemCategoriaId;3
+itens;[7].itemCategoriaNome;Não se aplica
+itens;[7].patrimonio;None
+itens;[7].codigoRegistroImobiliario;None
+itens;[7].criterioJulgamentoId;1
+itens;[7].criterioJulgamentoNome;Menor preço
+itens;[7].situacaoCompraItem;1
+itens;[7].situacaoCompraItemNome;Em andamento
+itens;[7].tipoBeneficio;5
+itens;[7].tipoBeneficioNome;Não se aplica
+itens;[7].incentivoProdutivoBasico;False
+itens;[7].dataInclusao;2026-10-22T13:55:02
+itens;[7].dataAtualizacao;2026-10-22T13:55:13
+itens;[7].temResultado;False
+itens;[7].imagem;0
+itens;[7].aplicabilidadeMargemPreferenciaNormal;False
+itens;[7].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[7].percentualMargemPreferenciaNormal;None
+itens;[7].percentualMargemPreferenciaAdicional;None
+itens;[7].ncmNbsCodigo;84
+itens;[7].ncmNbsDescricao;None
+itens;[7].catalogo.id;1
+itens;[7].catalogo.nome;Catálogo do Compras.gov.br
+itens;[7].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[7].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[7].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[7].catalogo.statusAtivo;True
+itens;[7].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[7].categoriaItemCatalogo;None
+itens;[7].catalogoCodigoItem;468719
+itens;[7].informacaoComplementar;None
+itens;[7].tipoMargemPreferencia;None
+itens;[7].exigenciaConteudoNacional;False
+itens;[8].numeroItem;9
+itens;[8].descricao;Peça/Componente Compressor tipo: elemento filtro de ar, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[8].materialOuServico;M
+itens;[8].materialOuServicoNome;Material
+itens;[8].valorUnitarioEstimado;29.28
+itens;[8].valorTotal;585.6
+itens;[8].quantidade;20.0
+itens;[8].unidadeMedida;Unidade
+itens;[8].orcamentoSigiloso;False
+itens;[8].itemCategoriaId;3
+itens;[8].itemCategoriaNome;Não se aplica
+itens;[8].patrimonio;None
+itens;[8].codigoRegistroImobiliario;None
+itens;[8].criterioJulgamentoId;1
+itens;[8].criterioJulgamentoNome;Menor preço
+itens;[8].situacaoCompraItem;1
+itens;[8].situacaoCompraItemNome;Em andamento
+itens;[8].tipoBeneficio;5
+itens;[8].tipoBeneficioNome;Não se aplica
+itens;[8].incentivoProdutivoBasico;False
+itens;[8].dataInclusao;2026-10-22T13:55:05
+itens;[8].dataAtualizacao;2026-10-22T13:55:13
+itens;[8].temResultado;False
+itens;[8].imagem;0
+itens;[8].aplicabilidadeMargemPreferenciaNormal;False
+itens;[8].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[8].percentualMargemPreferenciaNormal;None
+itens;[8].percentualMargemPreferenciaAdicional;None
+itens;[8].ncmNbsCodigo;84
+itens;[8].ncmNbsDescricao;None
+itens;[8].catalogo.id;1
+itens;[8].catalogo.nome;Catálogo do Compras.gov.br
+itens;[8].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[8].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[8].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[8].catalogo.statusAtivo;True
+itens;[8].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[8].categoriaItemCatalogo;None
+itens;[8].catalogoCodigoItem;468338
+itens;[8].informacaoComplementar;None
+itens;[8].tipoMargemPreferencia;None
+itens;[8].exigenciaConteudoNacional;False
+itens;[9].numeroItem;10
+itens;[9].descricao;Peça/Componente Compressor tipo: elemento filtro de ar, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[9].materialOuServico;M
+itens;[9].materialOuServicoNome;Material
+itens;[9].valorUnitarioEstimado;23.51
+itens;[9].valorTotal;705.3
+itens;[9].quantidade;30.0
+itens;[9].unidadeMedida;Unidade
+itens;[9].orcamentoSigiloso;False
+itens;[9].itemCategoriaId;3
+itens;[9].itemCategoriaNome;Não se aplica
+itens;[9].patrimonio;None
+itens;[9].codigoRegistroImobiliario;None
+itens;[9].criterioJulgamentoId;1
+itens;[9].criterioJulgamentoNome;Menor preço
+itens;[9].situacaoCompraItem;1
+itens;[9].situacaoCompraItemNome;Em andamento
+itens;[9].tipoBeneficio;5
+itens;[9].tipoBeneficioNome;Não se aplica
+itens;[9].incentivoProdutivoBasico;False
+itens;[9].dataInclusao;2026-10-22T13:55:06
+itens;[9].dataAtualizacao;2026-10-22T13:55:14
+itens;[9].temResultado;False
+itens;[9].imagem;0
+itens;[9].aplicabilidadeMargemPreferenciaNormal;False
+itens;[9].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[9].percentualMargemPreferenciaNormal;None
+itens;[9].percentualMargemPreferenciaAdicional;None
+itens;[9].ncmNbsCodigo;84
+itens;[9].ncmNbsDescricao;None
+itens;[9].catalogo.id;1
+itens;[9].catalogo.nome;Catálogo do Compras.gov.br
+itens;[9].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[9].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[9].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[9].catalogo.statusAtivo;True
+itens;[9].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[9].categoriaItemCatalogo;None
+itens;[9].catalogoCodigoItem;468338
+itens;[9].informacaoComplementar;None
+itens;[9].tipoMargemPreferencia;None
+itens;[9].exigenciaConteudoNacional;False
+itens;[10].numeroItem;11
+itens;[10].descricao;Peça/Componente Compressor tipo: elemento filtro de ar, aplicação: compressor de ar O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[10].materialOuServico;M
+itens;[10].materialOuServicoNome;Material
+itens;[10].valorUnitarioEstimado;27.93
+itens;[10].valorTotal;558.6
+itens;[10].quantidade;20.0
+itens;[10].unidadeMedida;Unidade
+itens;[10].orcamentoSigiloso;False
+itens;[10].itemCategoriaId;3
+itens;[10].itemCategoriaNome;Não se aplica
+itens;[10].patrimonio;None
+itens;[10].codigoRegistroImobiliario;None
+itens;[10].criterioJulgamentoId;1
+itens;[10].criterioJulgamentoNome;Menor preço
+itens;[10].situacaoCompraItem;1
+itens;[10].situacaoCompraItemNome;Em andamento
+itens;[10].tipoBeneficio;5
+itens;[10].tipoBeneficioNome;Não se aplica
+itens;[10].incentivoProdutivoBasico;False
+itens;[10].dataInclusao;2026-10-22T13:55:03
+itens;[10].dataAtualizacao;2026-10-22T13:55:13
+itens;[10].temResultado;False
+itens;[10].imagem;0
+itens;[10].aplicabilidadeMargemPreferenciaNormal;False
+itens;[10].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[10].percentualMargemPreferenciaNormal;None
+itens;[10].percentualMargemPreferenciaAdicional;None
+itens;[10].ncmNbsCodigo;84
+itens;[10].ncmNbsDescricao;None
+itens;[10].catalogo.id;1
+itens;[10].catalogo.nome;Catálogo do Compras.gov.br
+itens;[10].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[10].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[10].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[10].catalogo.statusAtivo;True
+itens;[10].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[10].categoriaItemCatalogo;None
+itens;[10].catalogoCodigoItem;468338
+itens;[10].informacaoComplementar;None
+itens;[10].tipoMargemPreferencia;None
+itens;[10].exigenciaConteudoNacional;False
+itens;[11].numeroItem;12
+itens;[11].descricao;Escova material: aço carbono, material cabo: plástico, quantidade fios aço: 4 fileiras, aplicação: limpeza geral O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[11].materialOuServico;M
+itens;[11].materialOuServicoNome;Material
+itens;[11].valorUnitarioEstimado;14.02
+itens;[11].valorTotal;28.04
+itens;[11].quantidade;2.0
+itens;[11].unidadeMedida;Unidade
+itens;[11].orcamentoSigiloso;False
+itens;[11].itemCategoriaId;3
+itens;[11].itemCategoriaNome;Não se aplica
+itens;[11].patrimonio;None
+itens;[11].codigoRegistroImobiliario;None
+itens;[11].criterioJulgamentoId;1
+itens;[11].criterioJulgamentoNome;Menor preço
+itens;[11].situacaoCompraItem;1
+itens;[11].situacaoCompraItemNome;Em andamento
+itens;[11].tipoBeneficio;5
+itens;[11].tipoBeneficioNome;Não se aplica
+itens;[11].incentivoProdutivoBasico;False
+itens;[11].dataInclusao;2026-10-22T13:55:03
+itens;[11].dataAtualizacao;2026-10-22T13:55:13
+itens;[11].temResultado;False
+itens;[11].imagem;0
+itens;[11].aplicabilidadeMargemPreferenciaNormal;False
+itens;[11].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[11].percentualMargemPreferenciaNormal;None
+itens;[11].percentualMargemPreferenciaAdicional;None
+itens;[11].ncmNbsCodigo;None
+itens;[11].ncmNbsDescricao;None
+itens;[11].catalogo.id;1
+itens;[11].catalogo.nome;Catálogo do Compras.gov.br
+itens;[11].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[11].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[11].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[11].catalogo.statusAtivo;True
+itens;[11].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[11].categoriaItemCatalogo;None
+itens;[11].catalogoCodigoItem;448500
+itens;[11].informacaoComplementar;None
+itens;[11].tipoMargemPreferencia;None
+itens;[11].exigenciaConteudoNacional;False
+itens;[12].numeroItem;13
+itens;[12].descricao;"Filtro  "" Y "" material do corpo: aço astm-a-216gr.wcb, pressão máxima: 150, material do elemento filtrante: aço inox aisi-304, diâmetro nominal: 25, aplicação: redes e tubulações navais, caracteristicas adicionais: extremidades flanges din 2501 pn10 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência."
+itens;[12].materialOuServico;M
+itens;[12].materialOuServicoNome;Material
+itens;[12].valorUnitarioEstimado;139.3
+itens;[12].valorTotal;417.9
+itens;[12].quantidade;3.0
+itens;[12].unidadeMedida;Unidade
+itens;[12].orcamentoSigiloso;False
+itens;[12].itemCategoriaId;3
+itens;[12].itemCategoriaNome;Não se aplica
+itens;[12].patrimonio;None
+itens;[12].codigoRegistroImobiliario;None
+itens;[12].criterioJulgamentoId;1
+itens;[12].criterioJulgamentoNome;Menor preço
+itens;[12].situacaoCompraItem;1
+itens;[12].situacaoCompraItemNome;Em andamento
+itens;[12].tipoBeneficio;5
+itens;[12].tipoBeneficioNome;Não se aplica
+itens;[12].incentivoProdutivoBasico;False
+itens;[12].dataInclusao;2026-10-22T13:55:04
+itens;[12].dataAtualizacao;2026-10-22T13:55:13
+itens;[12].temResultado;False
+itens;[12].imagem;0
+itens;[12].aplicabilidadeMargemPreferenciaNormal;False
+itens;[12].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[12].percentualMargemPreferenciaNormal;None
+itens;[12].percentualMargemPreferenciaAdicional;None
+itens;[12].ncmNbsCodigo;84
+itens;[12].ncmNbsDescricao;None
+itens;[12].catalogo.id;1
+itens;[12].catalogo.nome;Catálogo do Compras.gov.br
+itens;[12].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[12].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[12].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[12].catalogo.statusAtivo;True
+itens;[12].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[12].categoriaItemCatalogo;None
+itens;[12].catalogoCodigoItem;604505
+itens;[12].informacaoComplementar;None
+itens;[12].tipoMargemPreferencia;None
+itens;[12].exigenciaConteudoNacional;False
+itens;[13].numeroItem;14
+itens;[13].descricao;Fita Isolante Elétrica material básico: pvc auto-extinguível, resistência à tensão: até 750, cor: preta, classe temperatura: 90, comprimento: 20, largura: 19, espessura: 0,19, normas técnicas: nbr 5.037, características adicionais: não aplicável O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[13].materialOuServico;M
+itens;[13].materialOuServicoNome;Material
+itens;[13].valorUnitarioEstimado;12.26
+itens;[13].valorTotal;122.6
+itens;[13].quantidade;10.0
+itens;[13].unidadeMedida;Unidade
+itens;[13].orcamentoSigiloso;False
+itens;[13].itemCategoriaId;3
+itens;[13].itemCategoriaNome;Não se aplica
+itens;[13].patrimonio;None
+itens;[13].codigoRegistroImobiliario;None
+itens;[13].criterioJulgamentoId;1
+itens;[13].criterioJulgamentoNome;Menor preço
+itens;[13].situacaoCompraItem;1
+itens;[13].situacaoCompraItemNome;Em andamento
+itens;[13].tipoBeneficio;5
+itens;[13].tipoBeneficioNome;Não se aplica
+itens;[13].incentivoProdutivoBasico;False
+itens;[13].dataInclusao;2026-10-22T13:55:07
+itens;[13].dataAtualizacao;2026-10-22T13:55:13
+itens;[13].temResultado;False
+itens;[13].imagem;0
+itens;[13].aplicabilidadeMargemPreferenciaNormal;False
+itens;[13].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[13].percentualMargemPreferenciaNormal;None
+itens;[13].percentualMargemPreferenciaAdicional;None
+itens;[13].ncmNbsCodigo;85469000
+itens;[13].ncmNbsDescricao;None
+itens;[13].catalogo.id;1
+itens;[13].catalogo.nome;Catálogo do Compras.gov.br
+itens;[13].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[13].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[13].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[13].catalogo.statusAtivo;True
+itens;[13].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[13].categoriaItemCatalogo;None
+itens;[13].catalogoCodigoItem;226953
+itens;[13].informacaoComplementar;None
+itens;[13].tipoMargemPreferencia;None
+itens;[13].exigenciaConteudoNacional;False
+itens;[14].numeroItem;15
+itens;[14].descricao;Fita Veda Rosca material: teflon, comprimento: 50, largura: 18, espessura: 0,06 a 0,08, resistência temperatura: -200 a 260, normas técnicas: abnt, mil spec t-27730-a O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[14].materialOuServico;M
+itens;[14].materialOuServicoNome;Material
+itens;[14].valorUnitarioEstimado;19.38
+itens;[14].valorTotal;193.8
+itens;[14].quantidade;10.0
+itens;[14].unidadeMedida;Unidade
+itens;[14].orcamentoSigiloso;False
+itens;[14].itemCategoriaId;3
+itens;[14].itemCategoriaNome;Não se aplica
+itens;[14].patrimonio;None
+itens;[14].codigoRegistroImobiliario;None
+itens;[14].criterioJulgamentoId;1
+itens;[14].criterioJulgamentoNome;Menor preço
+itens;[14].situacaoCompraItem;1
+itens;[14].situacaoCompraItemNome;Em andamento
+itens;[14].tipoBeneficio;5
+itens;[14].tipoBeneficioNome;Não se aplica
+itens;[14].incentivoProdutivoBasico;False
+itens;[14].dataInclusao;2026-10-22T13:55:04
+itens;[14].dataAtualizacao;2026-10-22T13:55:13
+itens;[14].temResultado;False
+itens;[14].imagem;0
+itens;[14].aplicabilidadeMargemPreferenciaNormal;False
+itens;[14].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[14].percentualMargemPreferenciaNormal;None
+itens;[14].percentualMargemPreferenciaAdicional;None
+itens;[14].ncmNbsCodigo;None
+itens;[14].ncmNbsDescricao;None
+itens;[14].catalogo.id;1
+itens;[14].catalogo.nome;Catálogo do Compras.gov.br
+itens;[14].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[14].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[14].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[14].catalogo.statusAtivo;True
+itens;[14].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[14].categoriaItemCatalogo;None
+itens;[14].catalogoCodigoItem;225709
+itens;[14].informacaoComplementar;None
+itens;[14].tipoMargemPreferencia;None
+itens;[14].exigenciaConteudoNacional;False
+itens;[15].numeroItem;16
+itens;[15].descricao;Graxa tipo base: óleo mineral, tipo espessante: cálcio/lítio, ponto gota: 180, tipo aditivos: anticorrosivo/antioxidante/antidesgaste/agente de, aplicação: múltipla, consistência nlgi: 2, características adicionais: azul O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[15].materialOuServico;M
+itens;[15].materialOuServicoNome;Material
+itens;[15].valorUnitarioEstimado;671.45
+itens;[15].valorTotal;671.45
+itens;[15].quantidade;1.0
+itens;[15].unidadeMedida;Balde KG
+itens;[15].orcamentoSigiloso;False
+itens;[15].itemCategoriaId;3
+itens;[15].itemCategoriaNome;Não se aplica
+itens;[15].patrimonio;None
+itens;[15].codigoRegistroImobiliario;None
+itens;[15].criterioJulgamentoId;1
+itens;[15].criterioJulgamentoNome;Menor preço
+itens;[15].situacaoCompraItem;1
+itens;[15].situacaoCompraItemNome;Em andamento
+itens;[15].tipoBeneficio;5
+itens;[15].tipoBeneficioNome;Não se aplica
+itens;[15].incentivoProdutivoBasico;False
+itens;[15].dataInclusao;2026-10-22T13:55:05
+itens;[15].dataAtualizacao;2026-10-22T13:55:13
+itens;[15].temResultado;False
+itens;[15].imagem;0
+itens;[15].aplicabilidadeMargemPreferenciaNormal;False
+itens;[15].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[15].percentualMargemPreferenciaNormal;None
+itens;[15].percentualMargemPreferenciaAdicional;None
+itens;[15].ncmNbsCodigo;None
+itens;[15].ncmNbsDescricao;None
+itens;[15].catalogo.id;1
+itens;[15].catalogo.nome;Catálogo do Compras.gov.br
+itens;[15].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[15].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[15].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[15].catalogo.statusAtivo;True
+itens;[15].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[15].categoriaItemCatalogo;None
+itens;[15].catalogoCodigoItem;271739
+itens;[15].informacaoComplementar;None
+itens;[15].tipoMargemPreferencia;None
+itens;[15].exigenciaConteudoNacional;False
+itens;[16].numeroItem;17
+itens;[16].descricao;Teflon tipo: fita, formato: retangular, comprimento: 10, largura: 20, aplicação: vedação de tubulação, espessura: 7 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[16].materialOuServico;M
+itens;[16].materialOuServicoNome;Material
+itens;[16].valorUnitarioEstimado;1118.81
+itens;[16].valorTotal;2237.62
+itens;[16].quantidade;2.0
+itens;[16].unidadeMedida;Unidade
+itens;[16].orcamentoSigiloso;False
+itens;[16].itemCategoriaId;3
+itens;[16].itemCategoriaNome;Não se aplica
+itens;[16].patrimonio;None
+itens;[16].codigoRegistroImobiliario;None
+itens;[16].criterioJulgamentoId;1
+itens;[16].criterioJulgamentoNome;Menor preço
+itens;[16].situacaoCompraItem;1
+itens;[16].situacaoCompraItemNome;Em andamento
+itens;[16].tipoBeneficio;5
+itens;[16].tipoBeneficioNome;Não se aplica
+itens;[16].incentivoProdutivoBasico;False
+itens;[16].dataInclusao;2026-10-22T13:55:07
+itens;[16].dataAtualizacao;2026-10-22T13:55:13
+itens;[16].temResultado;False
+itens;[16].imagem;0
+itens;[16].aplicabilidadeMargemPreferenciaNormal;False
+itens;[16].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[16].percentualMargemPreferenciaNormal;None
+itens;[16].percentualMargemPreferenciaAdicional;None
+itens;[16].ncmNbsCodigo;None
+itens;[16].ncmNbsDescricao;None
+itens;[16].catalogo.id;1
+itens;[16].catalogo.nome;Catálogo do Compras.gov.br
+itens;[16].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[16].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[16].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[16].catalogo.statusAtivo;True
+itens;[16].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[16].categoriaItemCatalogo;None
+itens;[16].catalogoCodigoItem;450199
+itens;[16].informacaoComplementar;None
+itens;[16].tipoMargemPreferencia;None
+itens;[16].exigenciaConteudoNacional;False
+itens;[17].numeroItem;18
+itens;[17].descricao;"Manômetro material caixa: aço estampado, diâmetro mostrador: 63, tipo rosca conexão: 1/4"" npt, faixa escala: 0 a 20 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência."
+itens;[17].materialOuServico;M
+itens;[17].materialOuServicoNome;Material
+itens;[17].valorUnitarioEstimado;62.95
+itens;[17].valorTotal;377.7
+itens;[17].quantidade;6.0
+itens;[17].unidadeMedida;Unidade
+itens;[17].orcamentoSigiloso;False
+itens;[17].itemCategoriaId;3
+itens;[17].itemCategoriaNome;Não se aplica
+itens;[17].patrimonio;None
+itens;[17].codigoRegistroImobiliario;None
+itens;[17].criterioJulgamentoId;1
+itens;[17].criterioJulgamentoNome;Menor preço
+itens;[17].situacaoCompraItem;1
+itens;[17].situacaoCompraItemNome;Em andamento
+itens;[17].tipoBeneficio;5
+itens;[17].tipoBeneficioNome;Não se aplica
+itens;[17].incentivoProdutivoBasico;False
+itens;[17].dataInclusao;2026-10-22T13:55:04
+itens;[17].dataAtualizacao;2026-10-22T13:55:13
+itens;[17].temResultado;False
+itens;[17].imagem;0
+itens;[17].aplicabilidadeMargemPreferenciaNormal;False
+itens;[17].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[17].percentualMargemPreferenciaNormal;None
+itens;[17].percentualMargemPreferenciaAdicional;None
+itens;[17].ncmNbsCodigo;9026
+itens;[17].ncmNbsDescricao;None
+itens;[17].catalogo.id;1
+itens;[17].catalogo.nome;Catálogo do Compras.gov.br
+itens;[17].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[17].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[17].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[17].catalogo.statusAtivo;True
+itens;[17].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[17].categoriaItemCatalogo;None
+itens;[17].catalogoCodigoItem;465426
+itens;[17].informacaoComplementar;None
+itens;[17].tipoMargemPreferencia;None
+itens;[17].exigenciaConteudoNacional;False
+itens;[18].numeroItem;19
+itens;[18].descricao;Niple Tubo Condução Metálica material: aço carbono, tipo: encosto, diâmetro nominal: 3/8, comprimento: não aplicável, classe pressão: não aplicável, tipo extremidades: roscadas bsp, tratamento superficial: não aplicável, normas técnicas: não aplicável O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[18].materialOuServico;M
+itens;[18].materialOuServicoNome;Material
+itens;[18].valorUnitarioEstimado;16.31
+itens;[18].valorTotal;65.24
+itens;[18].quantidade;4.0
+itens;[18].unidadeMedida;Unidade
+itens;[18].orcamentoSigiloso;False
+itens;[18].itemCategoriaId;3
+itens;[18].itemCategoriaNome;Não se aplica
+itens;[18].patrimonio;None
+itens;[18].codigoRegistroImobiliario;None
+itens;[18].criterioJulgamentoId;1
+itens;[18].criterioJulgamentoNome;Menor preço
+itens;[18].situacaoCompraItem;1
+itens;[18].situacaoCompraItemNome;Em andamento
+itens;[18].tipoBeneficio;5
+itens;[18].tipoBeneficioNome;Não se aplica
+itens;[18].incentivoProdutivoBasico;False
+itens;[18].dataInclusao;2026-10-22T13:55:04
+itens;[18].dataAtualizacao;2026-10-22T13:55:14
+itens;[18].temResultado;False
+itens;[18].imagem;0
+itens;[18].aplicabilidadeMargemPreferenciaNormal;False
+itens;[18].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[18].percentualMargemPreferenciaNormal;None
+itens;[18].percentualMargemPreferenciaAdicional;None
+itens;[18].ncmNbsCodigo;None
+itens;[18].ncmNbsDescricao;None
+itens;[18].catalogo.id;1
+itens;[18].catalogo.nome;Catálogo do Compras.gov.br
+itens;[18].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[18].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[18].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[18].catalogo.statusAtivo;True
+itens;[18].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[18].categoriaItemCatalogo;None
+itens;[18].catalogoCodigoItem;220748
+itens;[18].informacaoComplementar;None
+itens;[18].tipoMargemPreferencia;None
+itens;[18].exigenciaConteudoNacional;False
+itens;[19].numeroItem;20
+itens;[19].descricao;Niple Tubo Condução Metálica material: ferro maleável galvanizado, tipo: duplo, diâmetro nominal: 1 1/2, tipo extremidades: roscadas npt, características adicionais: 150 lbs O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[19].materialOuServico;M
+itens;[19].materialOuServicoNome;Material
+itens;[19].valorUnitarioEstimado;38.73
+itens;[19].valorTotal;154.92
+itens;[19].quantidade;4.0
+itens;[19].unidadeMedida;Unidade
+itens;[19].orcamentoSigiloso;False
+itens;[19].itemCategoriaId;3
+itens;[19].itemCategoriaNome;Não se aplica
+itens;[19].patrimonio;None
+itens;[19].codigoRegistroImobiliario;None
+itens;[19].criterioJulgamentoId;1
+itens;[19].criterioJulgamentoNome;Menor preço
+itens;[19].situacaoCompraItem;1
+itens;[19].situacaoCompraItemNome;Em andamento
+itens;[19].tipoBeneficio;5
+itens;[19].tipoBeneficioNome;Não se aplica
+itens;[19].incentivoProdutivoBasico;False
+itens;[19].dataInclusao;2026-10-22T13:55:01
+itens;[19].dataAtualizacao;2026-10-22T13:55:13
+itens;[19].temResultado;False
+itens;[19].imagem;0
+itens;[19].aplicabilidadeMargemPreferenciaNormal;False
+itens;[19].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[19].percentualMargemPreferenciaNormal;None
+itens;[19].percentualMargemPreferenciaAdicional;None
+itens;[19].ncmNbsCodigo;None
+itens;[19].ncmNbsDescricao;None
+itens;[19].catalogo.id;1
+itens;[19].catalogo.nome;Catálogo do Compras.gov.br
+itens;[19].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[19].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[19].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[19].catalogo.statusAtivo;True
+itens;[19].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[19].categoriaItemCatalogo;None
+itens;[19].catalogoCodigoItem;382021
+itens;[19].informacaoComplementar;None
+itens;[19].tipoMargemPreferencia;None
+itens;[19].exigenciaConteudoNacional;False
+itens;[20].numeroItem;21
+itens;[20].descricao;Niple Tubo Condução Metálica material: ferro maleável galvanizado, tipo: duplo, diâmetro nominal: 1, tipo extremidades: roscadas bsp, normas técnicas: nbr 6943 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[20].materialOuServico;M
+itens;[20].materialOuServicoNome;Material
+itens;[20].valorUnitarioEstimado;20.78
+itens;[20].valorTotal;83.12
+itens;[20].quantidade;4.0
+itens;[20].unidadeMedida;Unidade
+itens;[20].orcamentoSigiloso;False
+itens;[20].itemCategoriaId;3
+itens;[20].itemCategoriaNome;Não se aplica
+itens;[20].patrimonio;None
+itens;[20].codigoRegistroImobiliario;None
+itens;[20].criterioJulgamentoId;1
+itens;[20].criterioJulgamentoNome;Menor preço
+itens;[20].situacaoCompraItem;1
+itens;[20].situacaoCompraItemNome;Em andamento
+itens;[20].tipoBeneficio;5
+itens;[20].tipoBeneficioNome;Não se aplica
+itens;[20].incentivoProdutivoBasico;False
+itens;[20].dataInclusao;2026-10-22T13:55:09
+itens;[20].dataAtualizacao;2026-10-22T13:55:13
+itens;[20].temResultado;False
+itens;[20].imagem;0
+itens;[20].aplicabilidadeMargemPreferenciaNormal;False
+itens;[20].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[20].percentualMargemPreferenciaNormal;None
+itens;[20].percentualMargemPreferenciaAdicional;None
+itens;[20].ncmNbsCodigo;None
+itens;[20].ncmNbsDescricao;None
+itens;[20].catalogo.id;1
+itens;[20].catalogo.nome;Catálogo do Compras.gov.br
+itens;[20].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[20].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[20].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[20].catalogo.statusAtivo;True
+itens;[20].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[20].categoriaItemCatalogo;None
+itens;[20].catalogoCodigoItem;352493
+itens;[20].informacaoComplementar;None
+itens;[20].tipoMargemPreferencia;None
+itens;[20].exigenciaConteudoNacional;False
+itens;[21].numeroItem;22
+itens;[21].descricao;Óleo Lubrificante. apresentação: líquido viscoso, origem: sintético, viscosidade: iso 100, 150 e 320, uso: compressor, referência fabril: ce 755 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[21].materialOuServico;M
+itens;[21].materialOuServicoNome;Material
+itens;[21].valorUnitarioEstimado;61.0
+itens;[21].valorTotal;1098.0
+itens;[21].quantidade;18.0
+itens;[21].unidadeMedida;Unidade
+itens;[21].orcamentoSigiloso;False
+itens;[21].itemCategoriaId;3
+itens;[21].itemCategoriaNome;Não se aplica
+itens;[21].patrimonio;None
+itens;[21].codigoRegistroImobiliario;None
+itens;[21].criterioJulgamentoId;1
+itens;[21].criterioJulgamentoNome;Menor preço
+itens;[21].situacaoCompraItem;1
+itens;[21].situacaoCompraItemNome;Em andamento
+itens;[21].tipoBeneficio;5
+itens;[21].tipoBeneficioNome;Não se aplica
+itens;[21].incentivoProdutivoBasico;False
+itens;[21].dataInclusao;2026-10-22T13:55:09
+itens;[21].dataAtualizacao;2026-10-22T13:55:13
+itens;[21].temResultado;False
+itens;[21].imagem;0
+itens;[21].aplicabilidadeMargemPreferenciaNormal;False
+itens;[21].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[21].percentualMargemPreferenciaNormal;None
+itens;[21].percentualMargemPreferenciaAdicional;None
+itens;[21].ncmNbsCodigo;None
+itens;[21].ncmNbsDescricao;None
+itens;[21].catalogo.id;1
+itens;[21].catalogo.nome;Catálogo do Compras.gov.br
+itens;[21].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[21].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[21].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[21].catalogo.statusAtivo;True
+itens;[21].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[21].categoriaItemCatalogo;None
+itens;[21].catalogoCodigoItem;486604
+itens;[21].informacaoComplementar;None
+itens;[21].tipoMargemPreferencia;None
+itens;[21].exigenciaConteudoNacional;False
+itens;[22].numeroItem;23
+itens;[22].descricao;Óleo Lubrificante. apresentação: líquido viscoso, origem: sintético, viscosidade: iso 100, 150 e 320, uso: compressor, referência fabril: ce 755 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[22].materialOuServico;M
+itens;[22].materialOuServicoNome;Material
+itens;[22].valorUnitarioEstimado;72.15
+itens;[22].valorTotal;3607.5
+itens;[22].quantidade;50.0
+itens;[22].unidadeMedida;Unidade
+itens;[22].orcamentoSigiloso;False
+itens;[22].itemCategoriaId;3
+itens;[22].itemCategoriaNome;Não se aplica
+itens;[22].patrimonio;None
+itens;[22].codigoRegistroImobiliario;None
+itens;[22].criterioJulgamentoId;1
+itens;[22].criterioJulgamentoNome;Menor preço
+itens;[22].situacaoCompraItem;1
+itens;[22].situacaoCompraItemNome;Em andamento
+itens;[22].tipoBeneficio;5
+itens;[22].tipoBeneficioNome;Não se aplica
+itens;[22].incentivoProdutivoBasico;False
+itens;[22].dataInclusao;2026-10-22T13:55:09
+itens;[22].dataAtualizacao;2026-10-22T13:55:14
+itens;[22].temResultado;False
+itens;[22].imagem;0
+itens;[22].aplicabilidadeMargemPreferenciaNormal;False
+itens;[22].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[22].percentualMargemPreferenciaNormal;None
+itens;[22].percentualMargemPreferenciaAdicional;None
+itens;[22].ncmNbsCodigo;None
+itens;[22].ncmNbsDescricao;None
+itens;[22].catalogo.id;1
+itens;[22].catalogo.nome;Catálogo do Compras.gov.br
+itens;[22].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[22].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[22].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[22].catalogo.statusAtivo;True
+itens;[22].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[22].categoriaItemCatalogo;None
+itens;[22].catalogoCodigoItem;486604
+itens;[22].informacaoComplementar;None
+itens;[22].tipoMargemPreferencia;None
+itens;[22].exigenciaConteudoNacional;False
+itens;[23].numeroItem;24
+itens;[23].descricao;Desengripante composição: óleo mineral e aditivos, finalidade: protetivo antiferruginoso, aplicação: uso geral, características adicionais: inibidor de oxidação e corrosão e propilente O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[23].materialOuServico;M
+itens;[23].materialOuServicoNome;Material
+itens;[23].valorUnitarioEstimado;34.45
+itens;[23].valorTotal;206.7
+itens;[23].quantidade;6.0
+itens;[23].unidadeMedida;Unidade
+itens;[23].orcamentoSigiloso;False
+itens;[23].itemCategoriaId;3
+itens;[23].itemCategoriaNome;Não se aplica
+itens;[23].patrimonio;None
+itens;[23].codigoRegistroImobiliario;None
+itens;[23].criterioJulgamentoId;1
+itens;[23].criterioJulgamentoNome;Menor preço
+itens;[23].situacaoCompraItem;1
+itens;[23].situacaoCompraItemNome;Em andamento
+itens;[23].tipoBeneficio;5
+itens;[23].tipoBeneficioNome;Não se aplica
+itens;[23].incentivoProdutivoBasico;False
+itens;[23].dataInclusao;2026-10-22T13:55:09
+itens;[23].dataAtualizacao;2026-10-22T13:55:14
+itens;[23].temResultado;False
+itens;[23].imagem;0
+itens;[23].aplicabilidadeMargemPreferenciaNormal;False
+itens;[23].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[23].percentualMargemPreferenciaNormal;None
+itens;[23].percentualMargemPreferenciaAdicional;None
+itens;[23].ncmNbsCodigo;None
+itens;[23].ncmNbsDescricao;None
+itens;[23].catalogo.id;1
+itens;[23].catalogo.nome;Catálogo do Compras.gov.br
+itens;[23].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[23].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[23].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[23].catalogo.statusAtivo;True
+itens;[23].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[23].categoriaItemCatalogo;None
+itens;[23].catalogoCodigoItem;297450
+itens;[23].informacaoComplementar;None
+itens;[23].tipoMargemPreferencia;None
+itens;[23].exigenciaConteudoNacional;False
+itens;[24].numeroItem;25
+itens;[24].descricao;Desengripante composição: aditivos inibidores corrosão e oxidação,tensoativo, apresentação: spray, finalidade: eliminar ferrugem / repelir umidade / lubrificar, aplicação: lubrificante e anticorrosivo O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[24].materialOuServico;M
+itens;[24].materialOuServicoNome;Material
+itens;[24].valorUnitarioEstimado;10.09
+itens;[24].valorTotal;252.25
+itens;[24].quantidade;25.0
+itens;[24].unidadeMedida;Unidade
+itens;[24].orcamentoSigiloso;False
+itens;[24].itemCategoriaId;3
+itens;[24].itemCategoriaNome;Não se aplica
+itens;[24].patrimonio;None
+itens;[24].codigoRegistroImobiliario;None
+itens;[24].criterioJulgamentoId;1
+itens;[24].criterioJulgamentoNome;Menor preço
+itens;[24].situacaoCompraItem;1
+itens;[24].situacaoCompraItemNome;Em andamento
+itens;[24].tipoBeneficio;5
+itens;[24].tipoBeneficioNome;Não se aplica
+itens;[24].incentivoProdutivoBasico;False
+itens;[24].dataInclusao;2026-10-22T13:55:07
+itens;[24].dataAtualizacao;2026-10-22T13:55:14
+itens;[24].temResultado;False
+itens;[24].imagem;0
+itens;[24].aplicabilidadeMargemPreferenciaNormal;False
+itens;[24].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[24].percentualMargemPreferenciaNormal;None
+itens;[24].percentualMargemPreferenciaAdicional;None
+itens;[24].ncmNbsCodigo;None
+itens;[24].ncmNbsDescricao;None
+itens;[24].catalogo.id;1
+itens;[24].catalogo.nome;Catálogo do Compras.gov.br
+itens;[24].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[24].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[24].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[24].catalogo.statusAtivo;True
+itens;[24].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[24].categoriaItemCatalogo;None
+itens;[24].catalogoCodigoItem;242215
+itens;[24].informacaoComplementar;None
+itens;[24].tipoMargemPreferencia;None
+itens;[24].exigenciaConteudoNacional;False
+itens;[25].numeroItem;26
+itens;[25].descricao;Papelão material: papelão/trama de aço, espessura: 3, comprimento: 2, largura: 1,50, tipo: hidráulico, aplicação: vedaçoes de alta temperatura, características adicionais: temperatura de ate 550 graus, celcius, acabamento O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[25].materialOuServico;M
+itens;[25].materialOuServicoNome;Material
+itens;[25].valorUnitarioEstimado;2046.05
+itens;[25].valorTotal;2046.05
+itens;[25].quantidade;1.0
+itens;[25].unidadeMedida;Unidade
+itens;[25].orcamentoSigiloso;False
+itens;[25].itemCategoriaId;3
+itens;[25].itemCategoriaNome;Não se aplica
+itens;[25].patrimonio;None
+itens;[25].codigoRegistroImobiliario;None
+itens;[25].criterioJulgamentoId;1
+itens;[25].criterioJulgamentoNome;Menor preço
+itens;[25].situacaoCompraItem;1
+itens;[25].situacaoCompraItemNome;Em andamento
+itens;[25].tipoBeneficio;5
+itens;[25].tipoBeneficioNome;Não se aplica
+itens;[25].incentivoProdutivoBasico;False
+itens;[25].dataInclusao;2026-10-22T13:55:08
+itens;[25].dataAtualizacao;2026-10-22T13:55:14
+itens;[25].temResultado;False
+itens;[25].imagem;0
+itens;[25].aplicabilidadeMargemPreferenciaNormal;False
+itens;[25].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[25].percentualMargemPreferenciaNormal;None
+itens;[25].percentualMargemPreferenciaAdicional;None
+itens;[25].ncmNbsCodigo;None
+itens;[25].ncmNbsDescricao;None
+itens;[25].catalogo.id;1
+itens;[25].catalogo.nome;Catálogo do Compras.gov.br
+itens;[25].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[25].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[25].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[25].catalogo.statusAtivo;True
+itens;[25].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[25].categoriaItemCatalogo;None
+itens;[25].catalogoCodigoItem;461629
+itens;[25].informacaoComplementar;None
+itens;[25].tipoMargemPreferencia;None
+itens;[25].exigenciaConteudoNacional;False
+itens;[26].numeroItem;27
+itens;[26].descricao;Conexão Hidráulica material: ferro fundido maleável, tipo: plug, tipo fixação: roscável, aplicação: instalações prediais água fria, características adicionais: acabamento galvanizado a fogo (zincado), bitola lado roscável: 1 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[26].materialOuServico;M
+itens;[26].materialOuServicoNome;Material
+itens;[26].valorUnitarioEstimado;24.27
+itens;[26].valorTotal;97.08
+itens;[26].quantidade;4.0
+itens;[26].unidadeMedida;Unidade
+itens;[26].orcamentoSigiloso;False
+itens;[26].itemCategoriaId;3
+itens;[26].itemCategoriaNome;Não se aplica
+itens;[26].patrimonio;None
+itens;[26].codigoRegistroImobiliario;None
+itens;[26].criterioJulgamentoId;1
+itens;[26].criterioJulgamentoNome;Menor preço
+itens;[26].situacaoCompraItem;1
+itens;[26].situacaoCompraItemNome;Em andamento
+itens;[26].tipoBeneficio;5
+itens;[26].tipoBeneficioNome;Não se aplica
+itens;[26].incentivoProdutivoBasico;False
+itens;[26].dataInclusao;2026-10-22T13:55:08
+itens;[26].dataAtualizacao;2026-10-22T13:55:13
+itens;[26].temResultado;False
+itens;[26].imagem;0
+itens;[26].aplicabilidadeMargemPreferenciaNormal;False
+itens;[26].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[26].percentualMargemPreferenciaNormal;None
+itens;[26].percentualMargemPreferenciaAdicional;None
+itens;[26].ncmNbsCodigo;None
+itens;[26].ncmNbsDescricao;None
+itens;[26].catalogo.id;1
+itens;[26].catalogo.nome;Catálogo do Compras.gov.br
+itens;[26].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[26].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[26].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[26].catalogo.statusAtivo;True
+itens;[26].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[26].categoriaItemCatalogo;None
+itens;[26].catalogoCodigoItem;234222
+itens;[26].informacaoComplementar;None
+itens;[26].tipoMargemPreferencia;None
+itens;[26].exigenciaConteudoNacional;False
+itens;[27].numeroItem;28
+itens;[27].descricao;Conexão Hidráulica material: ferro fundido maleável, tipo: plug, tipo fixação: roscável, aplicação: instalações prediais água fria, características adicionais: acabamento galvanizado a fogo (zincado), bitola lado roscável: 1/2 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[27].materialOuServico;M
+itens;[27].materialOuServicoNome;Material
+itens;[27].valorUnitarioEstimado;10.38
+itens;[27].valorTotal;41.52
+itens;[27].quantidade;4.0
+itens;[27].unidadeMedida;Unidade
+itens;[27].orcamentoSigiloso;False
+itens;[27].itemCategoriaId;3
+itens;[27].itemCategoriaNome;Não se aplica
+itens;[27].patrimonio;None
+itens;[27].codigoRegistroImobiliario;None
+itens;[27].criterioJulgamentoId;1
+itens;[27].criterioJulgamentoNome;Menor preço
+itens;[27].situacaoCompraItem;1
+itens;[27].situacaoCompraItemNome;Em andamento
+itens;[27].tipoBeneficio;5
+itens;[27].tipoBeneficioNome;Não se aplica
+itens;[27].incentivoProdutivoBasico;False
+itens;[27].dataInclusao;2026-10-22T13:55:10
+itens;[27].dataAtualizacao;2026-10-22T13:55:14
+itens;[27].temResultado;False
+itens;[27].imagem;0
+itens;[27].aplicabilidadeMargemPreferenciaNormal;False
+itens;[27].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[27].percentualMargemPreferenciaNormal;None
+itens;[27].percentualMargemPreferenciaAdicional;None
+itens;[27].ncmNbsCodigo;None
+itens;[27].ncmNbsDescricao;None
+itens;[27].catalogo.id;1
+itens;[27].catalogo.nome;Catálogo do Compras.gov.br
+itens;[27].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[27].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[27].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[27].catalogo.statusAtivo;True
+itens;[27].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[27].categoriaItemCatalogo;None
+itens;[27].catalogoCodigoItem;232556
+itens;[27].informacaoComplementar;None
+itens;[27].tipoMargemPreferencia;None
+itens;[27].exigenciaConteudoNacional;False
+itens;[28].numeroItem;29
+itens;[28].descricao;Conexão Hidráulica material: ferro fundido maleável, tipo: plug, tipo fixação: roscável, aplicação: instalações prediais água fria, características adicionais: acabamento galvanizado a fogo (zincado), bitola lado roscável: 1 1/2 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[28].materialOuServico;M
+itens;[28].materialOuServicoNome;Material
+itens;[28].valorUnitarioEstimado;22.15
+itens;[28].valorTotal;88.6
+itens;[28].quantidade;4.0
+itens;[28].unidadeMedida;Unidade
+itens;[28].orcamentoSigiloso;False
+itens;[28].itemCategoriaId;3
+itens;[28].itemCategoriaNome;Não se aplica
+itens;[28].patrimonio;None
+itens;[28].codigoRegistroImobiliario;None
+itens;[28].criterioJulgamentoId;1
+itens;[28].criterioJulgamentoNome;Menor preço
+itens;[28].situacaoCompraItem;1
+itens;[28].situacaoCompraItemNome;Em andamento
+itens;[28].tipoBeneficio;5
+itens;[28].tipoBeneficioNome;Não se aplica
+itens;[28].incentivoProdutivoBasico;False
+itens;[28].dataInclusao;2026-10-22T13:55:10
+itens;[28].dataAtualizacao;2026-10-22T13:55:13
+itens;[28].temResultado;False
+itens;[28].imagem;0
+itens;[28].aplicabilidadeMargemPreferenciaNormal;False
+itens;[28].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[28].percentualMargemPreferenciaNormal;None
+itens;[28].percentualMargemPreferenciaAdicional;None
+itens;[28].ncmNbsCodigo;None
+itens;[28].ncmNbsDescricao;None
+itens;[28].catalogo.id;1
+itens;[28].catalogo.nome;Catálogo do Compras.gov.br
+itens;[28].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[28].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[28].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[28].catalogo.statusAtivo;True
+itens;[28].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[28].categoriaItemCatalogo;None
+itens;[28].catalogoCodigoItem;232558
+itens;[28].informacaoComplementar;None
+itens;[28].tipoMargemPreferencia;None
+itens;[28].exigenciaConteudoNacional;False
+itens;[29].numeroItem;30
+itens;[29].descricao;Conexão Hidráulica material: ferro fundido maleável, tipo: plug, tipo fixação: roscável, aplicação: instalações prediais água fria, características adicionais: acabamento galvanizado a fogo (zincado), bitola lado roscável: 3/4 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[29].materialOuServico;M
+itens;[29].materialOuServicoNome;Material
+itens;[29].valorUnitarioEstimado;9.45
+itens;[29].valorTotal;37.8
+itens;[29].quantidade;4.0
+itens;[29].unidadeMedida;Unidade
+itens;[29].orcamentoSigiloso;False
+itens;[29].itemCategoriaId;3
+itens;[29].itemCategoriaNome;Não se aplica
+itens;[29].patrimonio;None
+itens;[29].codigoRegistroImobiliario;None
+itens;[29].criterioJulgamentoId;1
+itens;[29].criterioJulgamentoNome;Menor preço
+itens;[29].situacaoCompraItem;1
+itens;[29].situacaoCompraItemNome;Em andamento
+itens;[29].tipoBeneficio;5
+itens;[29].tipoBeneficioNome;Não se aplica
+itens;[29].incentivoProdutivoBasico;False
+itens;[29].dataInclusao;2026-10-22T13:55:10
+itens;[29].dataAtualizacao;2026-10-22T13:55:14
+itens;[29].temResultado;False
+itens;[29].imagem;0
+itens;[29].aplicabilidadeMargemPreferenciaNormal;False
+itens;[29].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[29].percentualMargemPreferenciaNormal;None
+itens;[29].percentualMargemPreferenciaAdicional;None
+itens;[29].ncmNbsCodigo;None
+itens;[29].ncmNbsDescricao;None
+itens;[29].catalogo.id;1
+itens;[29].catalogo.nome;Catálogo do Compras.gov.br
+itens;[29].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[29].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[29].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[29].catalogo.statusAtivo;True
+itens;[29].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[29].categoriaItemCatalogo;None
+itens;[29].catalogoCodigoItem;232557
+itens;[29].informacaoComplementar;None
+itens;[29].tipoMargemPreferencia;None
+itens;[29].exigenciaConteudoNacional;False
+itens;[30].numeroItem;31
+itens;[30].descricao;Peças / Acessórios Equipamentos Especializados tipo 4: bomba, aplicação: lavadora O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[30].materialOuServico;M
+itens;[30].materialOuServicoNome;Material
+itens;[30].valorUnitarioEstimado;79.09
+itens;[30].valorTotal;790.9
+itens;[30].quantidade;10.0
+itens;[30].unidadeMedida;Unidade
+itens;[30].orcamentoSigiloso;False
+itens;[30].itemCategoriaId;3
+itens;[30].itemCategoriaNome;Não se aplica
+itens;[30].patrimonio;None
+itens;[30].codigoRegistroImobiliario;None
+itens;[30].criterioJulgamentoId;1
+itens;[30].criterioJulgamentoNome;Menor preço
+itens;[30].situacaoCompraItem;1
+itens;[30].situacaoCompraItemNome;Em andamento
+itens;[30].tipoBeneficio;5
+itens;[30].tipoBeneficioNome;Não se aplica
+itens;[30].incentivoProdutivoBasico;False
+itens;[30].dataInclusao;2026-10-22T13:55:05
+itens;[30].dataAtualizacao;2026-10-22T13:55:13
+itens;[30].temResultado;False
+itens;[30].imagem;0
+itens;[30].aplicabilidadeMargemPreferenciaNormal;False
+itens;[30].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[30].percentualMargemPreferenciaNormal;None
+itens;[30].percentualMargemPreferenciaAdicional;None
+itens;[30].ncmNbsCodigo;None
+itens;[30].ncmNbsDescricao;None
+itens;[30].catalogo.id;1
+itens;[30].catalogo.nome;Catálogo do Compras.gov.br
+itens;[30].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[30].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[30].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[30].catalogo.statusAtivo;True
+itens;[30].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[30].categoriaItemCatalogo;None
+itens;[30].catalogoCodigoItem;453334
+itens;[30].informacaoComplementar;None
+itens;[30].tipoMargemPreferencia;None
+itens;[30].exigenciaConteudoNacional;False
+itens;[31].numeroItem;32
+itens;[31].descricao;Graxa - Silicone aspecto físico: pastosa, consistência: baixa, composição: base de silicone gráu alimentício, cor: branca, uso: lubrificante O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[31].materialOuServico;M
+itens;[31].materialOuServicoNome;Material
+itens;[31].valorUnitarioEstimado;210.9
+itens;[31].valorTotal;1476.3
+itens;[31].quantidade;7.0
+itens;[31].unidadeMedida;Unidade
+itens;[31].orcamentoSigiloso;False
+itens;[31].itemCategoriaId;3
+itens;[31].itemCategoriaNome;Não se aplica
+itens;[31].patrimonio;None
+itens;[31].codigoRegistroImobiliario;None
+itens;[31].criterioJulgamentoId;1
+itens;[31].criterioJulgamentoNome;Menor preço
+itens;[31].situacaoCompraItem;1
+itens;[31].situacaoCompraItemNome;Em andamento
+itens;[31].tipoBeneficio;5
+itens;[31].tipoBeneficioNome;Não se aplica
+itens;[31].incentivoProdutivoBasico;False
+itens;[31].dataInclusao;2026-10-22T13:55:08
+itens;[31].dataAtualizacao;2026-10-22T13:55:14
+itens;[31].temResultado;False
+itens;[31].imagem;0
+itens;[31].aplicabilidadeMargemPreferenciaNormal;False
+itens;[31].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[31].percentualMargemPreferenciaNormal;None
+itens;[31].percentualMargemPreferenciaAdicional;None
+itens;[31].ncmNbsCodigo;None
+itens;[31].ncmNbsDescricao;None
+itens;[31].catalogo.id;1
+itens;[31].catalogo.nome;Catálogo do Compras.gov.br
+itens;[31].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[31].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[31].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[31].catalogo.statusAtivo;True
+itens;[31].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[31].categoriaItemCatalogo;None
+itens;[31].catalogoCodigoItem;454606
+itens;[31].informacaoComplementar;None
+itens;[31].tipoMargemPreferencia;None
+itens;[31].exigenciaConteudoNacional;False
+itens;[32].numeroItem;33
+itens;[32].descricao;"Pressostato forma construtiva: caixa a prova de tempo, tipo contato: selado, quantidade contatos: 1, material conector: latão, material diafragma: neoprene, tipo rosca conexão: 1/2"" npt, faixa trabalho: 0 a 160, ponto ajuste: 7,20 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência."
+itens;[32].materialOuServico;M
+itens;[32].materialOuServicoNome;Material
+itens;[32].valorUnitarioEstimado;71.9
+itens;[32].valorTotal;719.0
+itens;[32].quantidade;10.0
+itens;[32].unidadeMedida;Unidade
+itens;[32].orcamentoSigiloso;False
+itens;[32].itemCategoriaId;3
+itens;[32].itemCategoriaNome;Não se aplica
+itens;[32].patrimonio;None
+itens;[32].codigoRegistroImobiliario;None
+itens;[32].criterioJulgamentoId;1
+itens;[32].criterioJulgamentoNome;Menor preço
+itens;[32].situacaoCompraItem;1
+itens;[32].situacaoCompraItemNome;Em andamento
+itens;[32].tipoBeneficio;5
+itens;[32].tipoBeneficioNome;Não se aplica
+itens;[32].incentivoProdutivoBasico;False
+itens;[32].dataInclusao;2026-10-22T13:55:08
+itens;[32].dataAtualizacao;2026-10-22T13:55:13
+itens;[32].temResultado;False
+itens;[32].imagem;0
+itens;[32].aplicabilidadeMargemPreferenciaNormal;False
+itens;[32].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[32].percentualMargemPreferenciaNormal;None
+itens;[32].percentualMargemPreferenciaAdicional;None
+itens;[32].ncmNbsCodigo;9032
+itens;[32].ncmNbsDescricao;None
+itens;[32].catalogo.id;1
+itens;[32].catalogo.nome;Catálogo do Compras.gov.br
+itens;[32].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[32].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[32].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[32].catalogo.statusAtivo;True
+itens;[32].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[32].categoriaItemCatalogo;None
+itens;[32].catalogoCodigoItem;213180
+itens;[32].informacaoComplementar;None
+itens;[32].tipoMargemPreferencia;None
+itens;[32].exigenciaConteudoNacional;False
+itens;[33].numeroItem;34
+itens;[33].descricao;Reparo Válvula Hidráulica material: plástico, tipo fixação: roscável, componentes: cabeçote universal e botão de acionamento, referência: ke/dfn O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[33].materialOuServico;M
+itens;[33].materialOuServicoNome;Material
+itens;[33].valorUnitarioEstimado;26.76
+itens;[33].valorTotal;401.4
+itens;[33].quantidade;15.0
+itens;[33].unidadeMedida;Unidade
+itens;[33].orcamentoSigiloso;False
+itens;[33].itemCategoriaId;3
+itens;[33].itemCategoriaNome;Não se aplica
+itens;[33].patrimonio;None
+itens;[33].codigoRegistroImobiliario;None
+itens;[33].criterioJulgamentoId;1
+itens;[33].criterioJulgamentoNome;Menor preço
+itens;[33].situacaoCompraItem;1
+itens;[33].situacaoCompraItemNome;Em andamento
+itens;[33].tipoBeneficio;5
+itens;[33].tipoBeneficioNome;Não se aplica
+itens;[33].incentivoProdutivoBasico;False
+itens;[33].dataInclusao;2026-10-22T13:55:11
+itens;[33].dataAtualizacao;2026-10-22T13:55:14
+itens;[33].temResultado;False
+itens;[33].imagem;0
+itens;[33].aplicabilidadeMargemPreferenciaNormal;False
+itens;[33].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[33].percentualMargemPreferenciaNormal;None
+itens;[33].percentualMargemPreferenciaAdicional;None
+itens;[33].ncmNbsCodigo;84
+itens;[33].ncmNbsDescricao;None
+itens;[33].catalogo.id;1
+itens;[33].catalogo.nome;Catálogo do Compras.gov.br
+itens;[33].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[33].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[33].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[33].catalogo.statusAtivo;True
+itens;[33].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[33].categoriaItemCatalogo;None
+itens;[33].catalogoCodigoItem;398131
+itens;[33].informacaoComplementar;None
+itens;[33].tipoMargemPreferencia;None
+itens;[33].exigenciaConteudoNacional;False
+itens;[34].numeroItem;35
+itens;[34].descricao;Peça/Componente Compressor tipo: separador condensado, aplicação: compressor O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[34].materialOuServico;M
+itens;[34].materialOuServicoNome;Material
+itens;[34].valorUnitarioEstimado;24532.96
+itens;[34].valorTotal;24532.96
+itens;[34].quantidade;1.0
+itens;[34].unidadeMedida;Unidade
+itens;[34].orcamentoSigiloso;False
+itens;[34].itemCategoriaId;3
+itens;[34].itemCategoriaNome;Não se aplica
+itens;[34].patrimonio;None
+itens;[34].codigoRegistroImobiliario;None
+itens;[34].criterioJulgamentoId;1
+itens;[34].criterioJulgamentoNome;Menor preço
+itens;[34].situacaoCompraItem;1
+itens;[34].situacaoCompraItemNome;Em andamento
+itens;[34].tipoBeneficio;5
+itens;[34].tipoBeneficioNome;Não se aplica
+itens;[34].incentivoProdutivoBasico;False
+itens;[34].dataInclusao;2026-10-22T13:55:11
+itens;[34].dataAtualizacao;2026-10-22T13:55:13
+itens;[34].temResultado;False
+itens;[34].imagem;0
+itens;[34].aplicabilidadeMargemPreferenciaNormal;False
+itens;[34].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[34].percentualMargemPreferenciaNormal;None
+itens;[34].percentualMargemPreferenciaAdicional;None
+itens;[34].ncmNbsCodigo;84
+itens;[34].ncmNbsDescricao;None
+itens;[34].catalogo.id;1
+itens;[34].catalogo.nome;Catálogo do Compras.gov.br
+itens;[34].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[34].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[34].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[34].catalogo.statusAtivo;True
+itens;[34].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[34].categoriaItemCatalogo;None
+itens;[34].catalogoCodigoItem;443536
+itens;[34].informacaoComplementar;None
+itens;[34].tipoMargemPreferencia;None
+itens;[34].exigenciaConteudoNacional;False
+itens;[35].numeroItem;36
+itens;[35].descricao;Tê - Conexão Para Tubos Canos - Roscável material: ferro galvanizado, diâmetro entrada: 1, aplicação: instalações prediais água fria O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[35].materialOuServico;M
+itens;[35].materialOuServicoNome;Material
+itens;[35].valorUnitarioEstimado;21.76
+itens;[35].valorTotal;108.8
+itens;[35].quantidade;5.0
+itens;[35].unidadeMedida;Unidade
+itens;[35].orcamentoSigiloso;False
+itens;[35].itemCategoriaId;3
+itens;[35].itemCategoriaNome;Não se aplica
+itens;[35].patrimonio;None
+itens;[35].codigoRegistroImobiliario;None
+itens;[35].criterioJulgamentoId;1
+itens;[35].criterioJulgamentoNome;Menor preço
+itens;[35].situacaoCompraItem;1
+itens;[35].situacaoCompraItemNome;Em andamento
+itens;[35].tipoBeneficio;5
+itens;[35].tipoBeneficioNome;Não se aplica
+itens;[35].incentivoProdutivoBasico;False
+itens;[35].dataInclusao;2026-10-22T13:55:10
+itens;[35].dataAtualizacao;2026-10-22T13:55:14
+itens;[35].temResultado;False
+itens;[35].imagem;0
+itens;[35].aplicabilidadeMargemPreferenciaNormal;False
+itens;[35].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[35].percentualMargemPreferenciaNormal;None
+itens;[35].percentualMargemPreferenciaAdicional;None
+itens;[35].ncmNbsCodigo;None
+itens;[35].ncmNbsDescricao;None
+itens;[35].catalogo.id;1
+itens;[35].catalogo.nome;Catálogo do Compras.gov.br
+itens;[35].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[35].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[35].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[35].catalogo.statusAtivo;True
+itens;[35].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[35].categoriaItemCatalogo;None
+itens;[35].catalogoCodigoItem;333307
+itens;[35].informacaoComplementar;None
+itens;[35].tipoMargemPreferencia;None
+itens;[35].exigenciaConteudoNacional;False
+itens;[36].numeroItem;37
+itens;[36].descricao;Tubo Aço especificação: galvanizado, diâmetro externo: 1, comprimento: 6, características adicionais: chapa 18 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[36].materialOuServico;M
+itens;[36].materialOuServicoNome;Material
+itens;[36].valorUnitarioEstimado;409.36
+itens;[36].valorTotal;1228.08
+itens;[36].quantidade;3.0
+itens;[36].unidadeMedida;Unidade
+itens;[36].orcamentoSigiloso;False
+itens;[36].itemCategoriaId;3
+itens;[36].itemCategoriaNome;Não se aplica
+itens;[36].patrimonio;None
+itens;[36].codigoRegistroImobiliario;None
+itens;[36].criterioJulgamentoId;1
+itens;[36].criterioJulgamentoNome;Menor preço
+itens;[36].situacaoCompraItem;1
+itens;[36].situacaoCompraItemNome;Em andamento
+itens;[36].tipoBeneficio;5
+itens;[36].tipoBeneficioNome;Não se aplica
+itens;[36].incentivoProdutivoBasico;False
+itens;[36].dataInclusao;2026-10-22T13:55:12
+itens;[36].dataAtualizacao;2026-10-22T13:55:13
+itens;[36].temResultado;False
+itens;[36].imagem;0
+itens;[36].aplicabilidadeMargemPreferenciaNormal;False
+itens;[36].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[36].percentualMargemPreferenciaNormal;None
+itens;[36].percentualMargemPreferenciaAdicional;None
+itens;[36].ncmNbsCodigo;None
+itens;[36].ncmNbsDescricao;None
+itens;[36].catalogo.id;1
+itens;[36].catalogo.nome;Catálogo do Compras.gov.br
+itens;[36].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[36].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[36].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[36].catalogo.statusAtivo;True
+itens;[36].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[36].categoriaItemCatalogo;None
+itens;[36].catalogoCodigoItem;466328
+itens;[36].informacaoComplementar;None
+itens;[36].tipoMargemPreferencia;None
+itens;[36].exigenciaConteudoNacional;False
+itens;[37].numeroItem;38
+itens;[37].descricao;Tubo Ferro Galvanizado bitola: 1/2, características adicionais: rosqueável sem costura, espessura: 2 O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[37].materialOuServico;M
+itens;[37].materialOuServicoNome;Material
+itens;[37].valorUnitarioEstimado;233.63
+itens;[37].valorTotal;700.89
+itens;[37].quantidade;3.0
+itens;[37].unidadeMedida;Unidade
+itens;[37].orcamentoSigiloso;False
+itens;[37].itemCategoriaId;3
+itens;[37].itemCategoriaNome;Não se aplica
+itens;[37].patrimonio;None
+itens;[37].codigoRegistroImobiliario;None
+itens;[37].criterioJulgamentoId;1
+itens;[37].criterioJulgamentoNome;Menor preço
+itens;[37].situacaoCompraItem;1
+itens;[37].situacaoCompraItemNome;Em andamento
+itens;[37].tipoBeneficio;5
+itens;[37].tipoBeneficioNome;Não se aplica
+itens;[37].incentivoProdutivoBasico;False
+itens;[37].dataInclusao;2026-10-22T13:55:07
+itens;[37].dataAtualizacao;2026-10-22T13:55:14
+itens;[37].temResultado;False
+itens;[37].imagem;0
+itens;[37].aplicabilidadeMargemPreferenciaNormal;False
+itens;[37].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[37].percentualMargemPreferenciaNormal;None
+itens;[37].percentualMargemPreferenciaAdicional;None
+itens;[37].ncmNbsCodigo;None
+itens;[37].ncmNbsDescricao;None
+itens;[37].catalogo.id;1
+itens;[37].catalogo.nome;Catálogo do Compras.gov.br
+itens;[37].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[37].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[37].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[37].catalogo.statusAtivo;True
+itens;[37].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[37].categoriaItemCatalogo;None
+itens;[37].catalogoCodigoItem;385101
+itens;[37].informacaoComplementar;None
+itens;[37].tipoMargemPreferencia;None
+itens;[37].exigenciaConteudoNacional;False
+itens;[38].numeroItem;39
+itens;[38].descricao;União Tubo Condução Metálica material: ferro maleável galvanizado, diâmetro nominal: 1 1/2, tipo extremidades: roscadas bsp, características adicionais: assento cônico de bronze O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[38].materialOuServico;M
+itens;[38].materialOuServicoNome;Material
+itens;[38].valorUnitarioEstimado;75.61
+itens;[38].valorTotal;378.05
+itens;[38].quantidade;5.0
+itens;[38].unidadeMedida;Unidade
+itens;[38].orcamentoSigiloso;False
+itens;[38].itemCategoriaId;3
+itens;[38].itemCategoriaNome;Não se aplica
+itens;[38].patrimonio;None
+itens;[38].codigoRegistroImobiliario;None
+itens;[38].criterioJulgamentoId;1
+itens;[38].criterioJulgamentoNome;Menor preço
+itens;[38].situacaoCompraItem;1
+itens;[38].situacaoCompraItemNome;Em andamento
+itens;[38].tipoBeneficio;5
+itens;[38].tipoBeneficioNome;Não se aplica
+itens;[38].incentivoProdutivoBasico;False
+itens;[38].dataInclusao;2026-10-22T13:55:12
+itens;[38].dataAtualizacao;2026-10-22T13:55:14
+itens;[38].temResultado;False
+itens;[38].imagem;0
+itens;[38].aplicabilidadeMargemPreferenciaNormal;False
+itens;[38].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[38].percentualMargemPreferenciaNormal;None
+itens;[38].percentualMargemPreferenciaAdicional;None
+itens;[38].ncmNbsCodigo;None
+itens;[38].ncmNbsDescricao;None
+itens;[38].catalogo.id;1
+itens;[38].catalogo.nome;Catálogo do Compras.gov.br
+itens;[38].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[38].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[38].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[38].catalogo.statusAtivo;True
+itens;[38].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[38].categoriaItemCatalogo;None
+itens;[38].catalogoCodigoItem;360624
+itens;[38].informacaoComplementar;None
+itens;[38].tipoMargemPreferencia;None
+itens;[38].exigenciaConteudoNacional;False
+itens;[39].numeroItem;40
+itens;[39].descricao;União Tubo Condução Metálica material: ferro fundido maleável, tipo: não aplicável, tipo assento: plano, material assento: não aplicável, diâmetro nominal: 1 1/2, classe pressão: não aplicável, tipo extremidades: roscadas bsp, tratamento superficial: galvanizado, normas técnicas: nbr 6323/6414/6590/6943/8133, características adicionais: junta nitripack O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[39].materialOuServico;M
+itens;[39].materialOuServicoNome;Material
+itens;[39].valorUnitarioEstimado;75.61
+itens;[39].valorTotal;378.05
+itens;[39].quantidade;5.0
+itens;[39].unidadeMedida;Unidade
+itens;[39].orcamentoSigiloso;False
+itens;[39].itemCategoriaId;3
+itens;[39].itemCategoriaNome;Não se aplica
+itens;[39].patrimonio;None
+itens;[39].codigoRegistroImobiliario;None
+itens;[39].criterioJulgamentoId;1
+itens;[39].criterioJulgamentoNome;Menor preço
+itens;[39].situacaoCompraItem;1
+itens;[39].situacaoCompraItemNome;Em andamento
+itens;[39].tipoBeneficio;5
+itens;[39].tipoBeneficioNome;Não se aplica
+itens;[39].incentivoProdutivoBasico;False
+itens;[39].dataInclusao;2026-10-22T13:55:12
+itens;[39].dataAtualizacao;2026-10-22T13:55:14
+itens;[39].temResultado;False
+itens;[39].imagem;0
+itens;[39].aplicabilidadeMargemPreferenciaNormal;False
+itens;[39].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[39].percentualMargemPreferenciaNormal;None
+itens;[39].percentualMargemPreferenciaAdicional;None
+itens;[39].ncmNbsCodigo;None
+itens;[39].ncmNbsDescricao;None
+itens;[39].catalogo.id;1
+itens;[39].catalogo.nome;Catálogo do Compras.gov.br
+itens;[39].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[39].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[39].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[39].catalogo.statusAtivo;True
+itens;[39].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[39].categoriaItemCatalogo;None
+itens;[39].catalogoCodigoItem;233384
+itens;[39].informacaoComplementar;None
+itens;[39].tipoMargemPreferencia;None
+itens;[39].exigenciaConteudoNacional;False
+itens;[40].numeroItem;41
+itens;[40].descricao;Peça Equipamento Médico tipo 1: válvula de segurança, função: contra vazamento, compatível: compatível c/ autoclave O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[40].materialOuServico;M
+itens;[40].materialOuServicoNome;Material
+itens;[40].valorUnitarioEstimado;140.01
+itens;[40].valorTotal;1400.1
+itens;[40].quantidade;10.0
+itens;[40].unidadeMedida;Unidade
+itens;[40].orcamentoSigiloso;False
+itens;[40].itemCategoriaId;3
+itens;[40].itemCategoriaNome;Não se aplica
+itens;[40].patrimonio;None
+itens;[40].codigoRegistroImobiliario;None
+itens;[40].criterioJulgamentoId;1
+itens;[40].criterioJulgamentoNome;Menor preço
+itens;[40].situacaoCompraItem;1
+itens;[40].situacaoCompraItemNome;Em andamento
+itens;[40].tipoBeneficio;5
+itens;[40].tipoBeneficioNome;Não se aplica
+itens;[40].incentivoProdutivoBasico;False
+itens;[40].dataInclusao;2026-10-22T13:55:08
+itens;[40].dataAtualizacao;2026-10-22T13:55:13
+itens;[40].temResultado;False
+itens;[40].imagem;0
+itens;[40].aplicabilidadeMargemPreferenciaNormal;False
+itens;[40].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[40].percentualMargemPreferenciaNormal;None
+itens;[40].percentualMargemPreferenciaAdicional;None
+itens;[40].ncmNbsCodigo;84192000
+itens;[40].ncmNbsDescricao;None
+itens;[40].catalogo.id;1
+itens;[40].catalogo.nome;Catálogo do Compras.gov.br
+itens;[40].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[40].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[40].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[40].catalogo.statusAtivo;True
+itens;[40].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[40].categoriaItemCatalogo;None
+itens;[40].catalogoCodigoItem;460700
+itens;[40].informacaoComplementar;None
+itens;[40].tipoMargemPreferencia;None
+itens;[40].exigenciaConteudoNacional;False
+itens;[41].numeroItem;42
+itens;[41].descricao;Peça Equipamento Médico tipo 1: válvula de segurança, função: contra vazamento, compatível: compatível c/ autoclave O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[41].materialOuServico;M
+itens;[41].materialOuServicoNome;Material
+itens;[41].valorUnitarioEstimado;113.73
+itens;[41].valorTotal;1364.76
+itens;[41].quantidade;12.0
+itens;[41].unidadeMedida;Unidade
+itens;[41].orcamentoSigiloso;False
+itens;[41].itemCategoriaId;3
+itens;[41].itemCategoriaNome;Não se aplica
+itens;[41].patrimonio;None
+itens;[41].codigoRegistroImobiliario;None
+itens;[41].criterioJulgamentoId;1
+itens;[41].criterioJulgamentoNome;Menor preço
+itens;[41].situacaoCompraItem;1
+itens;[41].situacaoCompraItemNome;Em andamento
+itens;[41].tipoBeneficio;5
+itens;[41].tipoBeneficioNome;Não se aplica
+itens;[41].incentivoProdutivoBasico;False
+itens;[41].dataInclusao;2026-10-22T13:55:05
+itens;[41].dataAtualizacao;2026-10-22T13:55:13
+itens;[41].temResultado;False
+itens;[41].imagem;0
+itens;[41].aplicabilidadeMargemPreferenciaNormal;False
+itens;[41].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[41].percentualMargemPreferenciaNormal;None
+itens;[41].percentualMargemPreferenciaAdicional;None
+itens;[41].ncmNbsCodigo;84192000
+itens;[41].ncmNbsDescricao;None
+itens;[41].catalogo.id;1
+itens;[41].catalogo.nome;Catálogo do Compras.gov.br
+itens;[41].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[41].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[41].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[41].catalogo.statusAtivo;True
+itens;[41].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[41].categoriaItemCatalogo;None
+itens;[41].catalogoCodigoItem;460700
+itens;[41].informacaoComplementar;None
+itens;[41].tipoMargemPreferencia;None
+itens;[41].exigenciaConteudoNacional;False
+itens;[42].numeroItem;43
+itens;[42].descricao;Peças / Acessórios Autoclave tipo: valvula retenção O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[42].materialOuServico;M
+itens;[42].materialOuServicoNome;Material
+itens;[42].valorUnitarioEstimado;146.01
+itens;[42].valorTotal;730.05
+itens;[42].quantidade;5.0
+itens;[42].unidadeMedida;Unidade
+itens;[42].orcamentoSigiloso;False
+itens;[42].itemCategoriaId;3
+itens;[42].itemCategoriaNome;Não se aplica
+itens;[42].patrimonio;None
+itens;[42].codigoRegistroImobiliario;None
+itens;[42].criterioJulgamentoId;1
+itens;[42].criterioJulgamentoNome;Menor preço
+itens;[42].situacaoCompraItem;1
+itens;[42].situacaoCompraItemNome;Em andamento
+itens;[42].tipoBeneficio;5
+itens;[42].tipoBeneficioNome;Não se aplica
+itens;[42].incentivoProdutivoBasico;False
+itens;[42].dataInclusao;2026-10-22T13:55:06
+itens;[42].dataAtualizacao;2026-10-22T13:55:13
+itens;[42].temResultado;False
+itens;[42].imagem;0
+itens;[42].aplicabilidadeMargemPreferenciaNormal;False
+itens;[42].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[42].percentualMargemPreferenciaNormal;None
+itens;[42].percentualMargemPreferenciaAdicional;None
+itens;[42].ncmNbsCodigo;84
+itens;[42].ncmNbsDescricao;None
+itens;[42].catalogo.id;1
+itens;[42].catalogo.nome;Catálogo do Compras.gov.br
+itens;[42].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[42].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[42].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[42].catalogo.statusAtivo;True
+itens;[42].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[42].categoriaItemCatalogo;None
+itens;[42].catalogoCodigoItem;453563
+itens;[42].informacaoComplementar;None
+itens;[42].tipoMargemPreferencia;None
+itens;[42].exigenciaConteudoNacional;False
+itens;[43].numeroItem;44
+itens;[43].descricao;Peças / Acessórios Autoclave tipo: valvula retenção O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[43].materialOuServico;M
+itens;[43].materialOuServicoNome;Material
+itens;[43].valorUnitarioEstimado;96.6
+itens;[43].valorTotal;1449.0
+itens;[43].quantidade;15.0
+itens;[43].unidadeMedida;Unidade
+itens;[43].orcamentoSigiloso;False
+itens;[43].itemCategoriaId;3
+itens;[43].itemCategoriaNome;Não se aplica
+itens;[43].patrimonio;None
+itens;[43].codigoRegistroImobiliario;None
+itens;[43].criterioJulgamentoId;1
+itens;[43].criterioJulgamentoNome;Menor preço
+itens;[43].situacaoCompraItem;1
+itens;[43].situacaoCompraItemNome;Em andamento
+itens;[43].tipoBeneficio;5
+itens;[43].tipoBeneficioNome;Não se aplica
+itens;[43].incentivoProdutivoBasico;False
+itens;[43].dataInclusao;2026-10-22T13:55:12
+itens;[43].dataAtualizacao;2026-10-22T13:55:14
+itens;[43].temResultado;False
+itens;[43].imagem;0
+itens;[43].aplicabilidadeMargemPreferenciaNormal;False
+itens;[43].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[43].percentualMargemPreferenciaNormal;None
+itens;[43].percentualMargemPreferenciaAdicional;None
+itens;[43].ncmNbsCodigo;84
+itens;[43].ncmNbsDescricao;None
+itens;[43].catalogo.id;1
+itens;[43].catalogo.nome;Catálogo do Compras.gov.br
+itens;[43].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[43].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[43].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[43].catalogo.statusAtivo;True
+itens;[43].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[43].categoriaItemCatalogo;None
+itens;[43].catalogoCodigoItem;453563
+itens;[43].informacaoComplementar;None
+itens;[43].tipoMargemPreferencia;None
+itens;[43].exigenciaConteudoNacional;False
+itens;[44].numeroItem;45
+itens;[44].descricao;Peça Equipamento Médico tipo 1: válvula de segurança, função: contra vazamento, compatível: compatível c/ autoclave O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[44].materialOuServico;M
+itens;[44].materialOuServicoNome;Material
+itens;[44].valorUnitarioEstimado;19.96
+itens;[44].valorTotal;239.52
+itens;[44].quantidade;12.0
+itens;[44].unidadeMedida;Unidade
+itens;[44].orcamentoSigiloso;False
+itens;[44].itemCategoriaId;3
+itens;[44].itemCategoriaNome;Não se aplica
+itens;[44].patrimonio;None
+itens;[44].codigoRegistroImobiliario;None
+itens;[44].criterioJulgamentoId;1
+itens;[44].criterioJulgamentoNome;Menor preço
+itens;[44].situacaoCompraItem;1
+itens;[44].situacaoCompraItemNome;Em andamento
+itens;[44].tipoBeneficio;5
+itens;[44].tipoBeneficioNome;Não se aplica
+itens;[44].incentivoProdutivoBasico;False
+itens;[44].dataInclusao;2026-10-22T13:55:12
+itens;[44].dataAtualizacao;2026-10-22T13:55:13
+itens;[44].temResultado;False
+itens;[44].imagem;0
+itens;[44].aplicabilidadeMargemPreferenciaNormal;False
+itens;[44].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[44].percentualMargemPreferenciaNormal;None
+itens;[44].percentualMargemPreferenciaAdicional;None
+itens;[44].ncmNbsCodigo;84192000
+itens;[44].ncmNbsDescricao;None
+itens;[44].catalogo.id;1
+itens;[44].catalogo.nome;Catálogo do Compras.gov.br
+itens;[44].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[44].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[44].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[44].catalogo.statusAtivo;True
+itens;[44].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[44].categoriaItemCatalogo;None
+itens;[44].catalogoCodigoItem;460700
+itens;[44].informacaoComplementar;None
+itens;[44].tipoMargemPreferencia;None
+itens;[44].exigenciaConteudoNacional;False
+itens;[45].numeroItem;46
+itens;[45].descricao;Produto Concentrado - Limpeza Veiculo Automotivo tipo: vaselina líquida O Termo de Referência será disponibilizado no Comprasnet quando da divulgação da Dispensa Eletrônica. Em caso de divergência entre a descrição do CATMAT/SIDEC e o Termo de Referência, prevalecerão as especificações constantes no Termo de Referência.
+itens;[45].materialOuServico;M
+itens;[45].materialOuServicoNome;Material
+itens;[45].valorUnitarioEstimado;59.06
+itens;[45].valorTotal;295.3
+itens;[45].quantidade;5.0
+itens;[45].unidadeMedida;Embalagem ML
+itens;[45].orcamentoSigiloso;False
+itens;[45].itemCategoriaId;3
+itens;[45].itemCategoriaNome;Não se aplica
+itens;[45].patrimonio;None
+itens;[45].codigoRegistroImobiliario;None
+itens;[45].criterioJulgamentoId;1
+itens;[45].criterioJulgamentoNome;Menor preço
+itens;[45].situacaoCompraItem;1
+itens;[45].situacaoCompraItemNome;Em andamento
+itens;[45].tipoBeneficio;5
+itens;[45].tipoBeneficioNome;Não se aplica
+itens;[45].incentivoProdutivoBasico;False
+itens;[45].dataInclusao;2026-10-22T13:55:13
+itens;[45].dataAtualizacao;2026-10-22T13:55:14
+itens;[45].temResultado;False
+itens;[45].imagem;0
+itens;[45].aplicabilidadeMargemPreferenciaNormal;False
+itens;[45].aplicabilidadeMargemPreferenciaAdicional;False
+itens;[45].percentualMargemPreferenciaNormal;None
+itens;[45].percentualMargemPreferenciaAdicional;None
+itens;[45].ncmNbsCodigo;None
+itens;[45].ncmNbsDescricao;None
+itens;[45].catalogo.id;1
+itens;[45].catalogo.nome;Catálogo do Compras.gov.br
+itens;[45].catalogo.descricao;Catálogo de bens e serviços do Compras.gov.br
+itens;[45].catalogo.dataInclusao;2021-12-22T20:10:19
+itens;[45].catalogo.dataAtualizacao;2024-11-13T21:21:13
+itens;[45].catalogo.statusAtivo;True
+itens;[45].catalogo.url;https://catalogo.compras.gov.br/cnbs-web/busca
+itens;[45].categoriaItemCatalogo;None
+itens;[45].catalogoCodigoItem;421259
+itens;[45].informacaoComplementar;None
+itens;[45].tipoMargemPreferencia;None
+itens;[45].exigenciaConteudoNacional;False
+arquivos;[0].uri;https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/1
+arquivos;[0].url;https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/1
+arquivos;[0].statusAtivo;True
+arquivos;[0].cnpj;33781055000135
+arquivos;[0].anoCompra;2026
+arquivos;[0].sequencialCompra;1805
+arquivos;[0].dataPublicacaoPncp;2026-10-22T13:54:00
+arquivos;[0].sequencialDocumento;1
+arquivos;[0].titulo;TR254501_000037_2026.pdf
+arquivos;[0].tipoDocumentoNome;Termo de Referência
+arquivos;[0].tipoDocumentoDescricao;Termo de Referência
+arquivos;[0].tipoDocumentoId;4
+arquivos;[1].uri;https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/2
+arquivos;[1].url;https://pncp.gov.br:35888/pncp-api/v1/orgaos/33781055000135/compras/2026/1805/arquivos/2
+arquivos;[1].statusAtivo;True
+arquivos;[1].cnpj;33781055000135
+arquivos;[1].anoCompra;2026
+arquivos;[1].sequencialCompra;1805
+arquivos;[1].dataPublicacaoPncp;2026-10-22T13:55:02
+arquivos;[1].sequencialDocumento;2
+arquivos;[1].titulo;35/2026.pdf
+arquivos;[1].tipoDocumentoNome;Aviso de Contratação Direta
+arquivos;[1].tipoDocumentoDescricao;Aviso de Contratação Direta
+arquivos;[1].tipoDocumentoId;1
+arquivo_1;binary_response;True
+arquivo_1;bytes;206724
+arquivo_1;arquivo_local;EDITAIS/CONTRATACAO-33781055000135-2026-1805/arquivos_originais/arquivo_1.bin
+arquivo_1;sha256;28e6bfd1ba81eb2c7aa5addb89766f28a984164a6ae6a634ecd7f46f1b52a18d
+arquivo_2;binary_response;True
+arquivo_2;bytes;158538
+arquivo_2;arquivo_local;EDITAIS/CONTRATACAO-33781055000135-2026-1805/arquivos_originais/arquivo_2.bin
+arquivo_2;sha256;0981fe1e1ccef10443576876d8f4be3dcb20899761de63c45158d5c89f206515
+historico;[0].justificativa;None
+historico;[0].tipoLogManutencao;0
+historico;[0].categoriaLogManutencao;4
+historico;[0].logManutencaoDataInclusao;2026-10-22T13:55:02
+historico;[0].usuarioNome;Compras.gov.br
+historico;[0].itemNumero;8
+historico;[0].documentoTipo;None
+historico;[0].documentoTitulo;None
+historico;[0].documentoSequencial;None
+historico;[0].tipoLogManutencaoNome;Inclusão
+historico;[0].categoriaLogManutencaoNome;Item de Contratação
+historico;[0].compraOrgaoCnpj;33781055000135
+historico;[0].compraAno;2026
+historico;[0].compraSequencial;1805
+historico;[0].itemResultadoNumero;None
+historico;[0].itemResultadoSequencial;None
+historico;[1].justificativa;None
+historico;[1].tipoLogManutencao;0
+historico;[1].categoriaLogManutencao;4
+historico;[1].logManutencaoDataInclusao;2026-10-22T13:55:06
+historico;[1].usuarioNome;Compras.gov.br
+historico;[1].itemNumero;43
+historico;[1].documentoTipo;None
+historico;[1].documentoTitulo;None
+historico;[1].documentoSequencial;None
+historico;[1].tipoLogManutencaoNome;Inclusão
+historico;[1].categoriaLogManutencaoNome;Item de Contratação
+historico;[1].compraOrgaoCnpj;33781055000135
+historico;[1].compraAno;2026
+historico;[1].compraSequencial;1805
+historico;[1].itemResultadoNumero;None
+historico;[1].itemResultadoSequencial;None
+historico;[2].justificativa;None
+historico;[2].tipoLogManutencao;0
+historico;[2].categoriaLogManutencao;4
+historico;[2].logManutencaoDataInclusao;2026-10-22T13:55:07
+historico;[2].usuarioNome;Compras.gov.br
+historico;[2].itemNumero;25
+historico;[2].documentoTipo;None
+historico;[2].documentoTitulo;None
+historico;[2].documentoSequencial;None
+historico;[2].tipoLogManutencaoNome;Inclusão
+historico;[2].categoriaLogManutencaoNome;Item de Contratação
+historico;[2].compraOrgaoCnpj;33781055000135
+historico;[2].compraAno;2026
+historico;[2].compraSequencial;1805
+historico;[2].itemResultadoNumero;None
+historico;[2].itemResultadoSequencial;None
+historico;[3].justificativa;None
+historico;[3].tipoLogManutencao;0
+historico;[3].categoriaLogManutencao;4
+historico;[3].logManutencaoDataInclusao;2026-10-22T13:55:07
+historico;[3].usuarioNome;Compras.gov.br
+historico;[3].itemNumero;38
+historico;[3].documentoTipo;None
+historico;[3].documentoTitulo;None
+historico;[3].documentoSequencial;None
+historico;[3].tipoLogManutencaoNome;Inclusão
+historico;[3].categoriaLogManutencaoNome;Item de Contratação
+historico;[3].compraOrgaoCnpj;33781055000135
+historico;[3].compraAno;2026
+historico;[3].compraSequencial;1805
+historico;[3].itemResultadoNumero;None
+historico;[3].itemResultadoSequencial;None
+historico;[4].justificativa;None
+historico;[4].tipoLogManutencao;0
+historico;[4].categoriaLogManutencao;4
+historico;[4].logManutencaoDataInclusao;2026-10-22T13:55:12
+historico;[4].usuarioNome;Compras.gov.br
+historico;[4].itemNumero;37
+historico;[4].documentoTipo;None
+historico;[4].documentoTitulo;None
+historico;[4].documentoSequencial;None
+historico;[4].tipoLogManutencaoNome;Inclusão
+historico;[4].categoriaLogManutencaoNome;Item de Contratação
+historico;[4].compraOrgaoCnpj;33781055000135
+historico;[4].compraAno;2026
+historico;[4].compraSequencial;1805
+historico;[4].itemResultadoNumero;None
+historico;[4].itemResultadoSequencial;None
+historico;[5].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[5].tipoLogManutencao;1
+historico;[5].categoriaLogManutencao;4
+historico;[5].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[5].usuarioNome;Compras.gov.br
+historico;[5].itemNumero;18
+historico;[5].documentoTipo;None
+historico;[5].documentoTitulo;None
+historico;[5].documentoSequencial;None
+historico;[5].tipoLogManutencaoNome;Retificação
+historico;[5].categoriaLogManutencaoNome;Item de Contratação
+historico;[5].compraOrgaoCnpj;33781055000135
+historico;[5].compraAno;2026
+historico;[5].compraSequencial;1805
+historico;[5].itemResultadoNumero;None
+historico;[5].itemResultadoSequencial;None
+historico;[6].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[6].tipoLogManutencao;1
+historico;[6].categoriaLogManutencao;4
+historico;[6].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[6].usuarioNome;Compras.gov.br
+historico;[6].itemNumero;21
+historico;[6].documentoTipo;None
+historico;[6].documentoTitulo;None
+historico;[6].documentoSequencial;None
+historico;[6].tipoLogManutencaoNome;Retificação
+historico;[6].categoriaLogManutencaoNome;Item de Contratação
+historico;[6].compraOrgaoCnpj;33781055000135
+historico;[6].compraAno;2026
+historico;[6].compraSequencial;1805
+historico;[6].itemResultadoNumero;None
+historico;[6].itemResultadoSequencial;None
+historico;[7].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[7].tipoLogManutencao;1
+historico;[7].categoriaLogManutencao;4
+historico;[7].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[7].usuarioNome;Compras.gov.br
+historico;[7].itemNumero;2
+historico;[7].documentoTipo;None
+historico;[7].documentoTitulo;None
+historico;[7].documentoSequencial;None
+historico;[7].tipoLogManutencaoNome;Retificação
+historico;[7].categoriaLogManutencaoNome;Item de Contratação
+historico;[7].compraOrgaoCnpj;33781055000135
+historico;[7].compraAno;2026
+historico;[7].compraSequencial;1805
+historico;[7].itemResultadoNumero;None
+historico;[7].itemResultadoSequencial;None
+historico;[8].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[8].tipoLogManutencao;1
+historico;[8].categoriaLogManutencao;4
+historico;[8].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[8].usuarioNome;Compras.gov.br
+historico;[8].itemNumero;30
+historico;[8].documentoTipo;None
+historico;[8].documentoTitulo;None
+historico;[8].documentoSequencial;None
+historico;[8].tipoLogManutencaoNome;Retificação
+historico;[8].categoriaLogManutencaoNome;Item de Contratação
+historico;[8].compraOrgaoCnpj;33781055000135
+historico;[8].compraAno;2026
+historico;[8].compraSequencial;1805
+historico;[8].itemResultadoNumero;None
+historico;[8].itemResultadoSequencial;None
+historico;[9].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[9].tipoLogManutencao;1
+historico;[9].categoriaLogManutencao;4
+historico;[9].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[9].usuarioNome;Compras.gov.br
+historico;[9].itemNumero;10
+historico;[9].documentoTipo;None
+historico;[9].documentoTitulo;None
+historico;[9].documentoSequencial;None
+historico;[9].tipoLogManutencaoNome;Retificação
+historico;[9].categoriaLogManutencaoNome;Item de Contratação
+historico;[9].compraOrgaoCnpj;33781055000135
+historico;[9].compraAno;2026
+historico;[9].compraSequencial;1805
+historico;[9].itemResultadoNumero;None
+historico;[9].itemResultadoSequencial;None
+historico;[10].justificativa;None
+historico;[10].tipoLogManutencao;0
+historico;[10].categoriaLogManutencao;4
+historico;[10].logManutencaoDataInclusao;2026-10-22T13:55:05
+historico;[10].usuarioNome;Compras.gov.br
+historico;[10].itemNumero;42
+historico;[10].documentoTipo;None
+historico;[10].documentoTitulo;None
+historico;[10].documentoSequencial;None
+historico;[10].tipoLogManutencaoNome;Inclusão
+historico;[10].categoriaLogManutencaoNome;Item de Contratação
+historico;[10].compraOrgaoCnpj;33781055000135
+historico;[10].compraAno;2026
+historico;[10].compraSequencial;1805
+historico;[10].itemResultadoNumero;None
+historico;[10].itemResultadoSequencial;None
+historico;[11].justificativa;None
+historico;[11].tipoLogManutencao;0
+historico;[11].categoriaLogManutencao;4
+historico;[11].logManutencaoDataInclusao;2026-10-22T13:55:12
+historico;[11].usuarioNome;Compras.gov.br
+historico;[11].itemNumero;45
+historico;[11].documentoTipo;None
+historico;[11].documentoTitulo;None
+historico;[11].documentoSequencial;None
+historico;[11].tipoLogManutencaoNome;Inclusão
+historico;[11].categoriaLogManutencaoNome;Item de Contratação
+historico;[11].compraOrgaoCnpj;33781055000135
+historico;[11].compraAno;2026
+historico;[11].compraSequencial;1805
+historico;[11].itemResultadoNumero;None
+historico;[11].itemResultadoSequencial;None
+historico;[12].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[12].tipoLogManutencao;1
+historico;[12].categoriaLogManutencao;4
+historico;[12].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[12].usuarioNome;Compras.gov.br
+historico;[12].itemNumero;26
+historico;[12].documentoTipo;None
+historico;[12].documentoTitulo;None
+historico;[12].documentoSequencial;None
+historico;[12].tipoLogManutencaoNome;Retificação
+historico;[12].categoriaLogManutencaoNome;Item de Contratação
+historico;[12].compraOrgaoCnpj;33781055000135
+historico;[12].compraAno;2026
+historico;[12].compraSequencial;1805
+historico;[12].itemResultadoNumero;None
+historico;[12].itemResultadoSequencial;None
+historico;[13].justificativa;None
+historico;[13].tipoLogManutencao;0
+historico;[13].categoriaLogManutencao;4
+historico;[13].logManutencaoDataInclusao;2026-10-22T13:55:04
+historico;[13].usuarioNome;Compras.gov.br
+historico;[13].itemNumero;18
+historico;[13].documentoTipo;None
+historico;[13].documentoTitulo;None
+historico;[13].documentoSequencial;None
+historico;[13].tipoLogManutencaoNome;Inclusão
+historico;[13].categoriaLogManutencaoNome;Item de Contratação
+historico;[13].compraOrgaoCnpj;33781055000135
+historico;[13].compraAno;2026
+historico;[13].compraSequencial;1805
+historico;[13].itemResultadoNumero;None
+historico;[13].itemResultadoSequencial;None
+historico;[14].justificativa;None
+historico;[14].tipoLogManutencao;0
+historico;[14].categoriaLogManutencao;4
+historico;[14].logManutencaoDataInclusao;2026-10-22T13:55:04
+historico;[14].usuarioNome;Compras.gov.br
+historico;[14].itemNumero;2
+historico;[14].documentoTipo;None
+historico;[14].documentoTitulo;None
+historico;[14].documentoSequencial;None
+historico;[14].tipoLogManutencaoNome;Inclusão
+historico;[14].categoriaLogManutencaoNome;Item de Contratação
+historico;[14].compraOrgaoCnpj;33781055000135
+historico;[14].compraAno;2026
+historico;[14].compraSequencial;1805
+historico;[14].itemResultadoNumero;None
+historico;[14].itemResultadoSequencial;None
+historico;[15].justificativa;None
+historico;[15].tipoLogManutencao;0
+historico;[15].categoriaLogManutencao;4
+historico;[15].logManutencaoDataInclusao;2026-10-22T13:55:06
+historico;[15].usuarioNome;Compras.gov.br
+historico;[15].itemNumero;5
+historico;[15].documentoTipo;None
+historico;[15].documentoTitulo;None
+historico;[15].documentoSequencial;None
+historico;[15].tipoLogManutencaoNome;Inclusão
+historico;[15].categoriaLogManutencaoNome;Item de Contratação
+historico;[15].compraOrgaoCnpj;33781055000135
+historico;[15].compraAno;2026
+historico;[15].compraSequencial;1805
+historico;[15].itemResultadoNumero;None
+historico;[15].itemResultadoSequencial;None
+historico;[16].justificativa;None
+historico;[16].tipoLogManutencao;0
+historico;[16].categoriaLogManutencao;4
+historico;[16].logManutencaoDataInclusao;2026-10-22T13:55:08
+historico;[16].usuarioNome;Compras.gov.br
+historico;[16].itemNumero;27
+historico;[16].documentoTipo;None
+historico;[16].documentoTitulo;None
+historico;[16].documentoSequencial;None
+historico;[16].tipoLogManutencaoNome;Inclusão
+historico;[16].categoriaLogManutencaoNome;Item de Contratação
+historico;[16].compraOrgaoCnpj;33781055000135
+historico;[16].compraAno;2026
+historico;[16].compraSequencial;1805
+historico;[16].itemResultadoNumero;None
+historico;[16].itemResultadoSequencial;None
+historico;[17].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[17].tipoLogManutencao;1
+historico;[17].categoriaLogManutencao;4
+historico;[17].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[17].usuarioNome;Compras.gov.br
+historico;[17].itemNumero;17
+historico;[17].documentoTipo;None
+historico;[17].documentoTitulo;None
+historico;[17].documentoSequencial;None
+historico;[17].tipoLogManutencaoNome;Retificação
+historico;[17].categoriaLogManutencaoNome;Item de Contratação
+historico;[17].compraOrgaoCnpj;33781055000135
+historico;[17].compraAno;2026
+historico;[17].compraSequencial;1805
+historico;[17].itemResultadoNumero;None
+historico;[17].itemResultadoSequencial;None
+historico;[18].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[18].tipoLogManutencao;1
+historico;[18].categoriaLogManutencao;4
+historico;[18].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[18].usuarioNome;Compras.gov.br
+historico;[18].itemNumero;36
+historico;[18].documentoTipo;None
+historico;[18].documentoTitulo;None
+historico;[18].documentoSequencial;None
+historico;[18].tipoLogManutencaoNome;Retificação
+historico;[18].categoriaLogManutencaoNome;Item de Contratação
+historico;[18].compraOrgaoCnpj;33781055000135
+historico;[18].compraAno;2026
+historico;[18].compraSequencial;1805
+historico;[18].itemResultadoNumero;None
+historico;[18].itemResultadoSequencial;None
+historico;[19].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[19].tipoLogManutencao;1
+historico;[19].categoriaLogManutencao;4
+historico;[19].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[19].usuarioNome;Compras.gov.br
+historico;[19].itemNumero;1
+historico;[19].documentoTipo;None
+historico;[19].documentoTitulo;None
+historico;[19].documentoSequencial;None
+historico;[19].tipoLogManutencaoNome;Retificação
+historico;[19].categoriaLogManutencaoNome;Item de Contratação
+historico;[19].compraOrgaoCnpj;33781055000135
+historico;[19].compraAno;2026
+historico;[19].compraSequencial;1805
+historico;[19].itemResultadoNumero;None
+historico;[19].itemResultadoSequencial;None
+historico;[20].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[20].tipoLogManutencao;1
+historico;[20].categoriaLogManutencao;4
+historico;[20].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[20].usuarioNome;Compras.gov.br
+historico;[20].itemNumero;13
+historico;[20].documentoTipo;None
+historico;[20].documentoTitulo;None
+historico;[20].documentoSequencial;None
+historico;[20].tipoLogManutencaoNome;Retificação
+historico;[20].categoriaLogManutencaoNome;Item de Contratação
+historico;[20].compraOrgaoCnpj;33781055000135
+historico;[20].compraAno;2026
+historico;[20].compraSequencial;1805
+historico;[20].itemResultadoNumero;None
+historico;[20].itemResultadoSequencial;None
+historico;[21].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[21].tipoLogManutencao;1
+historico;[21].categoriaLogManutencao;4
+historico;[21].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[21].usuarioNome;Compras.gov.br
+historico;[21].itemNumero;38
+historico;[21].documentoTipo;None
+historico;[21].documentoTitulo;None
+historico;[21].documentoSequencial;None
+historico;[21].tipoLogManutencaoNome;Retificação
+historico;[21].categoriaLogManutencaoNome;Item de Contratação
+historico;[21].compraOrgaoCnpj;33781055000135
+historico;[21].compraAno;2026
+historico;[21].compraSequencial;1805
+historico;[21].itemResultadoNumero;None
+historico;[21].itemResultadoSequencial;None
+historico;[22].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[22].tipoLogManutencao;1
+historico;[22].categoriaLogManutencao;4
+historico;[22].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[22].usuarioNome;Compras.gov.br
+historico;[22].itemNumero;5
+historico;[22].documentoTipo;None
+historico;[22].documentoTitulo;None
+historico;[22].documentoSequencial;None
+historico;[22].tipoLogManutencaoNome;Retificação
+historico;[22].categoriaLogManutencaoNome;Item de Contratação
+historico;[22].compraOrgaoCnpj;33781055000135
+historico;[22].compraAno;2026
+historico;[22].compraSequencial;1805
+historico;[22].itemResultadoNumero;None
+historico;[22].itemResultadoSequencial;None
+historico;[23].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[23].tipoLogManutencao;1
+historico;[23].categoriaLogManutencao;4
+historico;[23].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[23].usuarioNome;Compras.gov.br
+historico;[23].itemNumero;44
+historico;[23].documentoTipo;None
+historico;[23].documentoTitulo;None
+historico;[23].documentoSequencial;None
+historico;[23].tipoLogManutencaoNome;Retificação
+historico;[23].categoriaLogManutencaoNome;Item de Contratação
+historico;[23].compraOrgaoCnpj;33781055000135
+historico;[23].compraAno;2026
+historico;[23].compraSequencial;1805
+historico;[23].itemResultadoNumero;None
+historico;[23].itemResultadoSequencial;None
+historico;[24].justificativa;None
+historico;[24].tipoLogManutencao;0
+historico;[24].categoriaLogManutencao;4
+historico;[24].logManutencaoDataInclusao;2026-10-22T13:55:03
+historico;[24].usuarioNome;Compras.gov.br
+historico;[24].itemNumero;11
+historico;[24].documentoTipo;None
+historico;[24].documentoTitulo;None
+historico;[24].documentoSequencial;None
+historico;[24].tipoLogManutencaoNome;Inclusão
+historico;[24].categoriaLogManutencaoNome;Item de Contratação
+historico;[24].compraOrgaoCnpj;33781055000135
+historico;[24].compraAno;2026
+historico;[24].compraSequencial;1805
+historico;[24].itemResultadoNumero;None
+historico;[24].itemResultadoSequencial;None
+historico;[25].justificativa;None
+historico;[25].tipoLogManutencao;0
+historico;[25].categoriaLogManutencao;4
+historico;[25].logManutencaoDataInclusao;2026-10-22T13:55:07
+historico;[25].usuarioNome;Compras.gov.br
+historico;[25].itemNumero;14
+historico;[25].documentoTipo;None
+historico;[25].documentoTitulo;None
+historico;[25].documentoSequencial;None
+historico;[25].tipoLogManutencaoNome;Inclusão
+historico;[25].categoriaLogManutencaoNome;Item de Contratação
+historico;[25].compraOrgaoCnpj;33781055000135
+historico;[25].compraAno;2026
+historico;[25].compraSequencial;1805
+historico;[25].itemResultadoNumero;None
+historico;[25].itemResultadoSequencial;None
+historico;[26].justificativa;None
+historico;[26].tipoLogManutencao;0
+historico;[26].categoriaLogManutencao;4
+historico;[26].logManutencaoDataInclusao;2026-10-22T13:55:10
+historico;[26].usuarioNome;Compras.gov.br
+historico;[26].itemNumero;29
+historico;[26].documentoTipo;None
+historico;[26].documentoTitulo;None
+historico;[26].documentoSequencial;None
+historico;[26].tipoLogManutencaoNome;Inclusão
+historico;[26].categoriaLogManutencaoNome;Item de Contratação
+historico;[26].compraOrgaoCnpj;33781055000135
+historico;[26].compraAno;2026
+historico;[26].compraSequencial;1805
+historico;[26].itemResultadoNumero;None
+historico;[26].itemResultadoSequencial;None
+historico;[27].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[27].tipoLogManutencao;1
+historico;[27].categoriaLogManutencao;4
+historico;[27].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[27].usuarioNome;Compras.gov.br
+historico;[27].itemNumero;42
+historico;[27].documentoTipo;None
+historico;[27].documentoTitulo;None
+historico;[27].documentoSequencial;None
+historico;[27].tipoLogManutencaoNome;Retificação
+historico;[27].categoriaLogManutencaoNome;Item de Contratação
+historico;[27].compraOrgaoCnpj;33781055000135
+historico;[27].compraAno;2026
+historico;[27].compraSequencial;1805
+historico;[27].itemResultadoNumero;None
+historico;[27].itemResultadoSequencial;None
+historico;[28].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[28].tipoLogManutencao;1
+historico;[28].categoriaLogManutencao;4
+historico;[28].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[28].usuarioNome;Compras.gov.br
+historico;[28].itemNumero;15
+historico;[28].documentoTipo;None
+historico;[28].documentoTitulo;None
+historico;[28].documentoSequencial;None
+historico;[28].tipoLogManutencaoNome;Retificação
+historico;[28].categoriaLogManutencaoNome;Item de Contratação
+historico;[28].compraOrgaoCnpj;33781055000135
+historico;[28].compraAno;2026
+historico;[28].compraSequencial;1805
+historico;[28].itemResultadoNumero;None
+historico;[28].itemResultadoSequencial;None
+historico;[29].justificativa;None
+historico;[29].tipoLogManutencao;0
+historico;[29].categoriaLogManutencao;6
+historico;[29].logManutencaoDataInclusao;2026-10-22T13:55:02
+historico;[29].usuarioNome;Compras.gov.br
+historico;[29].itemNumero;None
+historico;[29].documentoTipo;Aviso de Contratação Direta
+historico;[29].documentoTitulo;35/2026.pdf
+historico;[29].documentoSequencial;2
+historico;[29].tipoLogManutencaoNome;Inclusão
+historico;[29].categoriaLogManutencaoNome;Documento de Contratação
+historico;[29].compraOrgaoCnpj;33781055000135
+historico;[29].compraAno;2026
+historico;[29].compraSequencial;1805
+historico;[29].itemResultadoNumero;None
+historico;[29].itemResultadoSequencial;None
+historico;[30].justificativa;None
+historico;[30].tipoLogManutencao;0
+historico;[30].categoriaLogManutencao;4
+historico;[30].logManutencaoDataInclusao;2026-10-22T13:55:10
+historico;[30].usuarioNome;Compras.gov.br
+historico;[30].itemNumero;28
+historico;[30].documentoTipo;None
+historico;[30].documentoTitulo;None
+historico;[30].documentoSequencial;None
+historico;[30].tipoLogManutencaoNome;Inclusão
+historico;[30].categoriaLogManutencaoNome;Item de Contratação
+historico;[30].compraOrgaoCnpj;33781055000135
+historico;[30].compraAno;2026
+historico;[30].compraSequencial;1805
+historico;[30].itemResultadoNumero;None
+historico;[30].itemResultadoSequencial;None
+historico;[31].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[31].tipoLogManutencao;1
+historico;[31].categoriaLogManutencao;4
+historico;[31].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[31].usuarioNome;Compras.gov.br
+historico;[31].itemNumero;20
+historico;[31].documentoTipo;None
+historico;[31].documentoTitulo;None
+historico;[31].documentoSequencial;None
+historico;[31].tipoLogManutencaoNome;Retificação
+historico;[31].categoriaLogManutencaoNome;Item de Contratação
+historico;[31].compraOrgaoCnpj;33781055000135
+historico;[31].compraAno;2026
+historico;[31].compraSequencial;1805
+historico;[31].itemResultadoNumero;None
+historico;[31].itemResultadoSequencial;None
+historico;[32].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[32].tipoLogManutencao;1
+historico;[32].categoriaLogManutencao;4
+historico;[32].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[32].usuarioNome;Compras.gov.br
+historico;[32].itemNumero;29
+historico;[32].documentoTipo;None
+historico;[32].documentoTitulo;None
+historico;[32].documentoSequencial;None
+historico;[32].tipoLogManutencaoNome;Retificação
+historico;[32].categoriaLogManutencaoNome;Item de Contratação
+historico;[32].compraOrgaoCnpj;33781055000135
+historico;[32].compraAno;2026
+historico;[32].compraSequencial;1805
+historico;[32].itemResultadoNumero;None
+historico;[32].itemResultadoSequencial;None
+historico;[33].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[33].tipoLogManutencao;1
+historico;[33].categoriaLogManutencao;4
+historico;[33].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[33].usuarioNome;Compras.gov.br
+historico;[33].itemNumero;24
+historico;[33].documentoTipo;None
+historico;[33].documentoTitulo;None
+historico;[33].documentoSequencial;None
+historico;[33].tipoLogManutencaoNome;Retificação
+historico;[33].categoriaLogManutencaoNome;Item de Contratação
+historico;[33].compraOrgaoCnpj;33781055000135
+historico;[33].compraAno;2026
+historico;[33].compraSequencial;1805
+historico;[33].itemResultadoNumero;None
+historico;[33].itemResultadoSequencial;None
+historico;[34].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[34].tipoLogManutencao;1
+historico;[34].categoriaLogManutencao;4
+historico;[34].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[34].usuarioNome;Compras.gov.br
+historico;[34].itemNumero;35
+historico;[34].documentoTipo;None
+historico;[34].documentoTitulo;None
+historico;[34].documentoSequencial;None
+historico;[34].tipoLogManutencaoNome;Retificação
+historico;[34].categoriaLogManutencaoNome;Item de Contratação
+historico;[34].compraOrgaoCnpj;33781055000135
+historico;[34].compraAno;2026
+historico;[34].compraSequencial;1805
+historico;[34].itemResultadoNumero;None
+historico;[34].itemResultadoSequencial;None
+historico;[35].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[35].tipoLogManutencao;1
+historico;[35].categoriaLogManutencao;4
+historico;[35].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[35].usuarioNome;Compras.gov.br
+historico;[35].itemNumero;4
+historico;[35].documentoTipo;None
+historico;[35].documentoTitulo;None
+historico;[35].documentoSequencial;None
+historico;[35].tipoLogManutencaoNome;Retificação
+historico;[35].categoriaLogManutencaoNome;Item de Contratação
+historico;[35].compraOrgaoCnpj;33781055000135
+historico;[35].compraAno;2026
+historico;[35].compraSequencial;1805
+historico;[35].itemResultadoNumero;None
+historico;[35].itemResultadoSequencial;None
+historico;[36].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[36].tipoLogManutencao;1
+historico;[36].categoriaLogManutencao;4
+historico;[36].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[36].usuarioNome;Compras.gov.br
+historico;[36].itemNumero;19
+historico;[36].documentoTipo;None
+historico;[36].documentoTitulo;None
+historico;[36].documentoSequencial;None
+historico;[36].tipoLogManutencaoNome;Retificação
+historico;[36].categoriaLogManutencaoNome;Item de Contratação
+historico;[36].compraOrgaoCnpj;33781055000135
+historico;[36].compraAno;2026
+historico;[36].compraSequencial;1805
+historico;[36].itemResultadoNumero;None
+historico;[36].itemResultadoSequencial;None
+historico;[37].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[37].tipoLogManutencao;1
+historico;[37].categoriaLogManutencao;4
+historico;[37].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[37].usuarioNome;Compras.gov.br
+historico;[37].itemNumero;37
+historico;[37].documentoTipo;None
+historico;[37].documentoTitulo;None
+historico;[37].documentoSequencial;None
+historico;[37].tipoLogManutencaoNome;Retificação
+historico;[37].categoriaLogManutencaoNome;Item de Contratação
+historico;[37].compraOrgaoCnpj;33781055000135
+historico;[37].compraAno;2026
+historico;[37].compraSequencial;1805
+historico;[37].itemResultadoNumero;None
+historico;[37].itemResultadoSequencial;None
+historico;[38].justificativa;None
+historico;[38].tipoLogManutencao;0
+historico;[38].categoriaLogManutencao;4
+historico;[38].logManutencaoDataInclusao;2026-10-22T13:55:12
+historico;[38].usuarioNome;Compras.gov.br
+historico;[38].itemNumero;39
+historico;[38].documentoTipo;None
+historico;[38].documentoTitulo;None
+historico;[38].documentoSequencial;None
+historico;[38].tipoLogManutencaoNome;Inclusão
+historico;[38].categoriaLogManutencaoNome;Item de Contratação
+historico;[38].compraOrgaoCnpj;33781055000135
+historico;[38].compraAno;2026
+historico;[38].compraSequencial;1805
+historico;[38].itemResultadoNumero;None
+historico;[38].itemResultadoSequencial;None
+historico;[39].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[39].tipoLogManutencao;1
+historico;[39].categoriaLogManutencao;4
+historico;[39].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[39].usuarioNome;Compras.gov.br
+historico;[39].itemNumero;8
+historico;[39].documentoTipo;None
+historico;[39].documentoTitulo;None
+historico;[39].documentoSequencial;None
+historico;[39].tipoLogManutencaoNome;Retificação
+historico;[39].categoriaLogManutencaoNome;Item de Contratação
+historico;[39].compraOrgaoCnpj;33781055000135
+historico;[39].compraAno;2026
+historico;[39].compraSequencial;1805
+historico;[39].itemResultadoNumero;None
+historico;[39].itemResultadoSequencial;None
+historico;[40].justificativa;None
+historico;[40].tipoLogManutencao;0
+historico;[40].categoriaLogManutencao;4
+historico;[40].logManutencaoDataInclusao;2026-10-22T13:55:02
+historico;[40].usuarioNome;Compras.gov.br
+historico;[40].itemNumero;1
+historico;[40].documentoTipo;None
+historico;[40].documentoTitulo;None
+historico;[40].documentoSequencial;None
+historico;[40].tipoLogManutencaoNome;Inclusão
+historico;[40].categoriaLogManutencaoNome;Item de Contratação
+historico;[40].compraOrgaoCnpj;33781055000135
+historico;[40].compraAno;2026
+historico;[40].compraSequencial;1805
+historico;[40].itemResultadoNumero;None
+historico;[40].itemResultadoSequencial;None
+historico;[41].justificativa;None
+historico;[41].tipoLogManutencao;0
+historico;[41].categoriaLogManutencao;4
+historico;[41].logManutencaoDataInclusao;2026-10-22T13:55:03
+historico;[41].usuarioNome;Compras.gov.br
+historico;[41].itemNumero;12
+historico;[41].documentoTipo;None
+historico;[41].documentoTitulo;None
+historico;[41].documentoSequencial;None
+historico;[41].tipoLogManutencaoNome;Inclusão
+historico;[41].categoriaLogManutencaoNome;Item de Contratação
+historico;[41].compraOrgaoCnpj;33781055000135
+historico;[41].compraAno;2026
+historico;[41].compraSequencial;1805
+historico;[41].itemResultadoNumero;None
+historico;[41].itemResultadoSequencial;None
+historico;[42].justificativa;None
+historico;[42].tipoLogManutencao;0
+historico;[42].categoriaLogManutencao;1
+historico;[42].logManutencaoDataInclusao;2026-10-22T13:54:00
+historico;[42].usuarioNome;Compras.gov.br
+historico;[42].itemNumero;None
+historico;[42].documentoTipo;None
+historico;[42].documentoTitulo;None
+historico;[42].documentoSequencial;None
+historico;[42].tipoLogManutencaoNome;Inclusão
+historico;[42].categoriaLogManutencaoNome;Contratação
+historico;[42].compraOrgaoCnpj;33781055000135
+historico;[42].compraAno;2026
+historico;[42].compraSequencial;1805
+historico;[42].itemResultadoNumero;None
+historico;[42].itemResultadoSequencial;None
+historico;[43].justificativa;None
+historico;[43].tipoLogManutencao;0
+historico;[43].categoriaLogManutencao;6
+historico;[43].logManutencaoDataInclusao;2026-10-22T13:54:00
+historico;[43].usuarioNome;Compras.gov.br
+historico;[43].itemNumero;None
+historico;[43].documentoTipo;Termo de Referência
+historico;[43].documentoTitulo;TR254501_000037_2026.pdf
+historico;[43].documentoSequencial;1
+historico;[43].tipoLogManutencaoNome;Inclusão
+historico;[43].categoriaLogManutencaoNome;Documento de Contratação
+historico;[43].compraOrgaoCnpj;33781055000135
+historico;[43].compraAno;2026
+historico;[43].compraSequencial;1805
+historico;[43].itemResultadoNumero;None
+historico;[43].itemResultadoSequencial;None
+historico;[44].justificativa;None
+historico;[44].tipoLogManutencao;0
+historico;[44].categoriaLogManutencao;4
+historico;[44].logManutencaoDataInclusao;2026-10-22T13:55:09
+historico;[44].usuarioNome;Compras.gov.br
+historico;[44].itemNumero;24
+historico;[44].documentoTipo;None
+historico;[44].documentoTitulo;None
+historico;[44].documentoSequencial;None
+historico;[44].tipoLogManutencaoNome;Inclusão
+historico;[44].categoriaLogManutencaoNome;Item de Contratação
+historico;[44].compraOrgaoCnpj;33781055000135
+historico;[44].compraAno;2026
+historico;[44].compraSequencial;1805
+historico;[44].itemResultadoNumero;None
+historico;[44].itemResultadoSequencial;None
+historico;[45].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[45].tipoLogManutencao;1
+historico;[45].categoriaLogManutencao;4
+historico;[45].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[45].usuarioNome;Compras.gov.br
+historico;[45].itemNumero;31
+historico;[45].documentoTipo;None
+historico;[45].documentoTitulo;None
+historico;[45].documentoSequencial;None
+historico;[45].tipoLogManutencaoNome;Retificação
+historico;[45].categoriaLogManutencaoNome;Item de Contratação
+historico;[45].compraOrgaoCnpj;33781055000135
+historico;[45].compraAno;2026
+historico;[45].compraSequencial;1805
+historico;[45].itemResultadoNumero;None
+historico;[45].itemResultadoSequencial;None
+historico;[46].justificativa;None
+historico;[46].tipoLogManutencao;0
+historico;[46].categoriaLogManutencao;4
+historico;[46].logManutencaoDataInclusao;2026-10-22T13:55:08
+historico;[46].usuarioNome;Compras.gov.br
+historico;[46].itemNumero;32
+historico;[46].documentoTipo;None
+historico;[46].documentoTitulo;None
+historico;[46].documentoSequencial;None
+historico;[46].tipoLogManutencaoNome;Inclusão
+historico;[46].categoriaLogManutencaoNome;Item de Contratação
+historico;[46].compraOrgaoCnpj;33781055000135
+historico;[46].compraAno;2026
+historico;[46].compraSequencial;1805
+historico;[46].itemResultadoNumero;None
+historico;[46].itemResultadoSequencial;None
+historico;[47].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[47].tipoLogManutencao;1
+historico;[47].categoriaLogManutencao;4
+historico;[47].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[47].usuarioNome;Compras.gov.br
+historico;[47].itemNumero;45
+historico;[47].documentoTipo;None
+historico;[47].documentoTitulo;None
+historico;[47].documentoSequencial;None
+historico;[47].tipoLogManutencaoNome;Retificação
+historico;[47].categoriaLogManutencaoNome;Item de Contratação
+historico;[47].compraOrgaoCnpj;33781055000135
+historico;[47].compraAno;2026
+historico;[47].compraSequencial;1805
+historico;[47].itemResultadoNumero;None
+historico;[47].itemResultadoSequencial;None
+historico;[48].justificativa;None
+historico;[48].tipoLogManutencao;0
+historico;[48].categoriaLogManutencao;4
+historico;[48].logManutencaoDataInclusao;2026-10-22T13:55:08
+historico;[48].usuarioNome;Compras.gov.br
+historico;[48].itemNumero;41
+historico;[48].documentoTipo;None
+historico;[48].documentoTitulo;None
+historico;[48].documentoSequencial;None
+historico;[48].tipoLogManutencaoNome;Inclusão
+historico;[48].categoriaLogManutencaoNome;Item de Contratação
+historico;[48].compraOrgaoCnpj;33781055000135
+historico;[48].compraAno;2026
+historico;[48].compraSequencial;1805
+historico;[48].itemResultadoNumero;None
+historico;[48].itemResultadoSequencial;None
+historico;[49].justificativa;None
+historico;[49].tipoLogManutencao;0
+historico;[49].categoriaLogManutencao;4
+historico;[49].logManutencaoDataInclusao;2026-10-22T13:55:11
+historico;[49].usuarioNome;Compras.gov.br
+historico;[49].itemNumero;34
+historico;[49].documentoTipo;None
+historico;[49].documentoTitulo;None
+historico;[49].documentoSequencial;None
+historico;[49].tipoLogManutencaoNome;Inclusão
+historico;[49].categoriaLogManutencaoNome;Item de Contratação
+historico;[49].compraOrgaoCnpj;33781055000135
+historico;[49].compraAno;2026
+historico;[49].compraSequencial;1805
+historico;[49].itemResultadoNumero;None
+historico;[49].itemResultadoSequencial;None
+historico;[50].justificativa;None
+historico;[50].tipoLogManutencao;0
+historico;[50].categoriaLogManutencao;4
+historico;[50].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[50].usuarioNome;Compras.gov.br
+historico;[50].itemNumero;46
+historico;[50].documentoTipo;None
+historico;[50].documentoTitulo;None
+historico;[50].documentoSequencial;None
+historico;[50].tipoLogManutencaoNome;Inclusão
+historico;[50].categoriaLogManutencaoNome;Item de Contratação
+historico;[50].compraOrgaoCnpj;33781055000135
+historico;[50].compraAno;2026
+historico;[50].compraSequencial;1805
+historico;[50].itemResultadoNumero;None
+historico;[50].itemResultadoSequencial;None
+historico;[51].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[51].tipoLogManutencao;1
+historico;[51].categoriaLogManutencao;4
+historico;[51].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[51].usuarioNome;Compras.gov.br
+historico;[51].itemNumero;46
+historico;[51].documentoTipo;None
+historico;[51].documentoTitulo;None
+historico;[51].documentoSequencial;None
+historico;[51].tipoLogManutencaoNome;Retificação
+historico;[51].categoriaLogManutencaoNome;Item de Contratação
+historico;[51].compraOrgaoCnpj;33781055000135
+historico;[51].compraAno;2026
+historico;[51].compraSequencial;1805
+historico;[51].itemResultadoNumero;None
+historico;[51].itemResultadoSequencial;None
+historico;[52].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[52].tipoLogManutencao;1
+historico;[52].categoriaLogManutencao;4
+historico;[52].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[52].usuarioNome;Compras.gov.br
+historico;[52].itemNumero;32
+historico;[52].documentoTipo;None
+historico;[52].documentoTitulo;None
+historico;[52].documentoSequencial;None
+historico;[52].tipoLogManutencaoNome;Retificação
+historico;[52].categoriaLogManutencaoNome;Item de Contratação
+historico;[52].compraOrgaoCnpj;33781055000135
+historico;[52].compraAno;2026
+historico;[52].compraSequencial;1805
+historico;[52].itemResultadoNumero;None
+historico;[52].itemResultadoSequencial;None
+historico;[53].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[53].tipoLogManutencao;1
+historico;[53].categoriaLogManutencao;4
+historico;[53].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[53].usuarioNome;Compras.gov.br
+historico;[53].itemNumero;40
+historico;[53].documentoTipo;None
+historico;[53].documentoTitulo;None
+historico;[53].documentoSequencial;None
+historico;[53].tipoLogManutencaoNome;Retificação
+historico;[53].categoriaLogManutencaoNome;Item de Contratação
+historico;[53].compraOrgaoCnpj;33781055000135
+historico;[53].compraAno;2026
+historico;[53].compraSequencial;1805
+historico;[53].itemResultadoNumero;None
+historico;[53].itemResultadoSequencial;None
+historico;[54].justificativa;None
+historico;[54].tipoLogManutencao;0
+historico;[54].categoriaLogManutencao;4
+historico;[54].logManutencaoDataInclusao;2026-10-22T13:55:04
+historico;[54].usuarioNome;Compras.gov.br
+historico;[54].itemNumero;15
+historico;[54].documentoTipo;None
+historico;[54].documentoTitulo;None
+historico;[54].documentoSequencial;None
+historico;[54].tipoLogManutencaoNome;Inclusão
+historico;[54].categoriaLogManutencaoNome;Item de Contratação
+historico;[54].compraOrgaoCnpj;33781055000135
+historico;[54].compraAno;2026
+historico;[54].compraSequencial;1805
+historico;[54].itemResultadoNumero;None
+historico;[54].itemResultadoSequencial;None
+historico;[55].justificativa;None
+historico;[55].tipoLogManutencao;0
+historico;[55].categoriaLogManutencao;4
+historico;[55].logManutencaoDataInclusao;2026-10-22T13:55:05
+historico;[55].usuarioNome;Compras.gov.br
+historico;[55].itemNumero;31
+historico;[55].documentoTipo;None
+historico;[55].documentoTitulo;None
+historico;[55].documentoSequencial;None
+historico;[55].tipoLogManutencaoNome;Inclusão
+historico;[55].categoriaLogManutencaoNome;Item de Contratação
+historico;[55].compraOrgaoCnpj;33781055000135
+historico;[55].compraAno;2026
+historico;[55].compraSequencial;1805
+historico;[55].itemResultadoNumero;None
+historico;[55].itemResultadoSequencial;None
+historico;[56].justificativa;None
+historico;[56].tipoLogManutencao;0
+historico;[56].categoriaLogManutencao;4
+historico;[56].logManutencaoDataInclusao;2026-10-22T13:55:05
+historico;[56].usuarioNome;Compras.gov.br
+historico;[56].itemNumero;16
+historico;[56].documentoTipo;None
+historico;[56].documentoTitulo;None
+historico;[56].documentoSequencial;None
+historico;[56].tipoLogManutencaoNome;Inclusão
+historico;[56].categoriaLogManutencaoNome;Item de Contratação
+historico;[56].compraOrgaoCnpj;33781055000135
+historico;[56].compraAno;2026
+historico;[56].compraSequencial;1805
+historico;[56].itemResultadoNumero;None
+historico;[56].itemResultadoSequencial;None
+historico;[57].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[57].tipoLogManutencao;1
+historico;[57].categoriaLogManutencao;4
+historico;[57].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[57].usuarioNome;Compras.gov.br
+historico;[57].itemNumero;23
+historico;[57].documentoTipo;None
+historico;[57].documentoTitulo;None
+historico;[57].documentoSequencial;None
+historico;[57].tipoLogManutencaoNome;Retificação
+historico;[57].categoriaLogManutencaoNome;Item de Contratação
+historico;[57].compraOrgaoCnpj;33781055000135
+historico;[57].compraAno;2026
+historico;[57].compraSequencial;1805
+historico;[57].itemResultadoNumero;None
+historico;[57].itemResultadoSequencial;None
+historico;[58].justificativa;None
+historico;[58].tipoLogManutencao;0
+historico;[58].categoriaLogManutencao;4
+historico;[58].logManutencaoDataInclusao;2026-10-22T13:55:02
+historico;[58].usuarioNome;Compras.gov.br
+historico;[58].itemNumero;3
+historico;[58].documentoTipo;None
+historico;[58].documentoTitulo;None
+historico;[58].documentoSequencial;None
+historico;[58].tipoLogManutencaoNome;Inclusão
+historico;[58].categoriaLogManutencaoNome;Item de Contratação
+historico;[58].compraOrgaoCnpj;33781055000135
+historico;[58].compraAno;2026
+historico;[58].compraSequencial;1805
+historico;[58].itemResultadoNumero;None
+historico;[58].itemResultadoSequencial;None
+historico;[59].justificativa;None
+historico;[59].tipoLogManutencao;0
+historico;[59].categoriaLogManutencao;4
+historico;[59].logManutencaoDataInclusao;2026-10-22T13:55:08
+historico;[59].usuarioNome;Compras.gov.br
+historico;[59].itemNumero;26
+historico;[59].documentoTipo;None
+historico;[59].documentoTitulo;None
+historico;[59].documentoSequencial;None
+historico;[59].tipoLogManutencaoNome;Inclusão
+historico;[59].categoriaLogManutencaoNome;Item de Contratação
+historico;[59].compraOrgaoCnpj;33781055000135
+historico;[59].compraAno;2026
+historico;[59].compraSequencial;1805
+historico;[59].itemResultadoNumero;None
+historico;[59].itemResultadoSequencial;None
+historico;[60].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[60].tipoLogManutencao;1
+historico;[60].categoriaLogManutencao;4
+historico;[60].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[60].usuarioNome;Compras.gov.br
+historico;[60].itemNumero;39
+historico;[60].documentoTipo;None
+historico;[60].documentoTitulo;None
+historico;[60].documentoSequencial;None
+historico;[60].tipoLogManutencaoNome;Retificação
+historico;[60].categoriaLogManutencaoNome;Item de Contratação
+historico;[60].compraOrgaoCnpj;33781055000135
+historico;[60].compraAno;2026
+historico;[60].compraSequencial;1805
+historico;[60].itemResultadoNumero;None
+historico;[60].itemResultadoSequencial;None
+historico;[61].justificativa;None
+historico;[61].tipoLogManutencao;0
+historico;[61].categoriaLogManutencao;4
+historico;[61].logManutencaoDataInclusao;2026-10-22T13:55:01
+historico;[61].usuarioNome;Compras.gov.br
+historico;[61].itemNumero;20
+historico;[61].documentoTipo;None
+historico;[61].documentoTitulo;None
+historico;[61].documentoSequencial;None
+historico;[61].tipoLogManutencaoNome;Inclusão
+historico;[61].categoriaLogManutencaoNome;Item de Contratação
+historico;[61].compraOrgaoCnpj;33781055000135
+historico;[61].compraAno;2026
+historico;[61].compraSequencial;1805
+historico;[61].itemResultadoNumero;None
+historico;[61].itemResultadoSequencial;None
+historico;[62].justificativa;None
+historico;[62].tipoLogManutencao;0
+historico;[62].categoriaLogManutencao;4
+historico;[62].logManutencaoDataInclusao;2026-10-22T13:55:04
+historico;[62].usuarioNome;Compras.gov.br
+historico;[62].itemNumero;13
+historico;[62].documentoTipo;None
+historico;[62].documentoTitulo;None
+historico;[62].documentoSequencial;None
+historico;[62].tipoLogManutencaoNome;Inclusão
+historico;[62].categoriaLogManutencaoNome;Item de Contratação
+historico;[62].compraOrgaoCnpj;33781055000135
+historico;[62].compraAno;2026
+historico;[62].compraSequencial;1805
+historico;[62].itemResultadoNumero;None
+historico;[62].itemResultadoSequencial;None
+historico;[63].justificativa;None
+historico;[63].tipoLogManutencao;0
+historico;[63].categoriaLogManutencao;4
+historico;[63].logManutencaoDataInclusao;2026-10-22T13:55:10
+historico;[63].usuarioNome;Compras.gov.br
+historico;[63].itemNumero;36
+historico;[63].documentoTipo;None
+historico;[63].documentoTitulo;None
+historico;[63].documentoSequencial;None
+historico;[63].tipoLogManutencaoNome;Inclusão
+historico;[63].categoriaLogManutencaoNome;Item de Contratação
+historico;[63].compraOrgaoCnpj;33781055000135
+historico;[63].compraAno;2026
+historico;[63].compraSequencial;1805
+historico;[63].itemResultadoNumero;None
+historico;[63].itemResultadoSequencial;None
+historico;[64].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[64].tipoLogManutencao;1
+historico;[64].categoriaLogManutencao;4
+historico;[64].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[64].usuarioNome;Compras.gov.br
+historico;[64].itemNumero;16
+historico;[64].documentoTipo;None
+historico;[64].documentoTitulo;None
+historico;[64].documentoSequencial;None
+historico;[64].tipoLogManutencaoNome;Retificação
+historico;[64].categoriaLogManutencaoNome;Item de Contratação
+historico;[64].compraOrgaoCnpj;33781055000135
+historico;[64].compraAno;2026
+historico;[64].compraSequencial;1805
+historico;[64].itemResultadoNumero;None
+historico;[64].itemResultadoSequencial;None
+historico;[65].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[65].tipoLogManutencao;1
+historico;[65].categoriaLogManutencao;4
+historico;[65].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[65].usuarioNome;Compras.gov.br
+historico;[65].itemNumero;28
+historico;[65].documentoTipo;None
+historico;[65].documentoTitulo;None
+historico;[65].documentoSequencial;None
+historico;[65].tipoLogManutencaoNome;Retificação
+historico;[65].categoriaLogManutencaoNome;Item de Contratação
+historico;[65].compraOrgaoCnpj;33781055000135
+historico;[65].compraAno;2026
+historico;[65].compraSequencial;1805
+historico;[65].itemResultadoNumero;None
+historico;[65].itemResultadoSequencial;None
+historico;[66].justificativa;None
+historico;[66].tipoLogManutencao;0
+historico;[66].categoriaLogManutencao;4
+historico;[66].logManutencaoDataInclusao;2026-10-22T13:55:06
+historico;[66].usuarioNome;Compras.gov.br
+historico;[66].itemNumero;7
+historico;[66].documentoTipo;None
+historico;[66].documentoTitulo;None
+historico;[66].documentoSequencial;None
+historico;[66].tipoLogManutencaoNome;Inclusão
+historico;[66].categoriaLogManutencaoNome;Item de Contratação
+historico;[66].compraOrgaoCnpj;33781055000135
+historico;[66].compraAno;2026
+historico;[66].compraSequencial;1805
+historico;[66].itemResultadoNumero;None
+historico;[66].itemResultadoSequencial;None
+historico;[67].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[67].tipoLogManutencao;1
+historico;[67].categoriaLogManutencao;4
+historico;[67].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[67].usuarioNome;Compras.gov.br
+historico;[67].itemNumero;22
+historico;[67].documentoTipo;None
+historico;[67].documentoTitulo;None
+historico;[67].documentoSequencial;None
+historico;[67].tipoLogManutencaoNome;Retificação
+historico;[67].categoriaLogManutencaoNome;Item de Contratação
+historico;[67].compraOrgaoCnpj;33781055000135
+historico;[67].compraAno;2026
+historico;[67].compraSequencial;1805
+historico;[67].itemResultadoNumero;None
+historico;[67].itemResultadoSequencial;None
+historico;[68].justificativa;None
+historico;[68].tipoLogManutencao;0
+historico;[68].categoriaLogManutencao;4
+historico;[68].logManutencaoDataInclusao;2026-10-22T13:55:12
+historico;[68].usuarioNome;Compras.gov.br
+historico;[68].itemNumero;44
+historico;[68].documentoTipo;None
+historico;[68].documentoTitulo;None
+historico;[68].documentoSequencial;None
+historico;[68].tipoLogManutencaoNome;Inclusão
+historico;[68].categoriaLogManutencaoNome;Item de Contratação
+historico;[68].compraOrgaoCnpj;33781055000135
+historico;[68].compraAno;2026
+historico;[68].compraSequencial;1805
+historico;[68].itemResultadoNumero;None
+historico;[68].itemResultadoSequencial;None
+historico;[69].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[69].tipoLogManutencao;1
+historico;[69].categoriaLogManutencao;4
+historico;[69].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[69].usuarioNome;Compras.gov.br
+historico;[69].itemNumero;33
+historico;[69].documentoTipo;None
+historico;[69].documentoTitulo;None
+historico;[69].documentoSequencial;None
+historico;[69].tipoLogManutencaoNome;Retificação
+historico;[69].categoriaLogManutencaoNome;Item de Contratação
+historico;[69].compraOrgaoCnpj;33781055000135
+historico;[69].compraAno;2026
+historico;[69].compraSequencial;1805
+historico;[69].itemResultadoNumero;None
+historico;[69].itemResultadoSequencial;None
+historico;[70].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[70].tipoLogManutencao;1
+historico;[70].categoriaLogManutencao;4
+historico;[70].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[70].usuarioNome;Compras.gov.br
+historico;[70].itemNumero;41
+historico;[70].documentoTipo;None
+historico;[70].documentoTitulo;None
+historico;[70].documentoSequencial;None
+historico;[70].tipoLogManutencaoNome;Retificação
+historico;[70].categoriaLogManutencaoNome;Item de Contratação
+historico;[70].compraOrgaoCnpj;33781055000135
+historico;[70].compraAno;2026
+historico;[70].compraSequencial;1805
+historico;[70].itemResultadoNumero;None
+historico;[70].itemResultadoSequencial;None
+historico;[71].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[71].tipoLogManutencao;1
+historico;[71].categoriaLogManutencao;4
+historico;[71].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[71].usuarioNome;Compras.gov.br
+historico;[71].itemNumero;9
+historico;[71].documentoTipo;None
+historico;[71].documentoTitulo;None
+historico;[71].documentoSequencial;None
+historico;[71].tipoLogManutencaoNome;Retificação
+historico;[71].categoriaLogManutencaoNome;Item de Contratação
+historico;[71].compraOrgaoCnpj;33781055000135
+historico;[71].compraAno;2026
+historico;[71].compraSequencial;1805
+historico;[71].itemResultadoNumero;None
+historico;[71].itemResultadoSequencial;None
+historico;[72].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[72].tipoLogManutencao;1
+historico;[72].categoriaLogManutencao;4
+historico;[72].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[72].usuarioNome;Compras.gov.br
+historico;[72].itemNumero;3
+historico;[72].documentoTipo;None
+historico;[72].documentoTitulo;None
+historico;[72].documentoSequencial;None
+historico;[72].tipoLogManutencaoNome;Retificação
+historico;[72].categoriaLogManutencaoNome;Item de Contratação
+historico;[72].compraOrgaoCnpj;33781055000135
+historico;[72].compraAno;2026
+historico;[72].compraSequencial;1805
+historico;[72].itemResultadoNumero;None
+historico;[72].itemResultadoSequencial;None
+historico;[73].justificativa;None
+historico;[73].tipoLogManutencao;0
+historico;[73].categoriaLogManutencao;4
+historico;[73].logManutencaoDataInclusao;2026-10-22T13:55:04
+historico;[73].usuarioNome;Compras.gov.br
+historico;[73].itemNumero;19
+historico;[73].documentoTipo;None
+historico;[73].documentoTitulo;None
+historico;[73].documentoSequencial;None
+historico;[73].tipoLogManutencaoNome;Inclusão
+historico;[73].categoriaLogManutencaoNome;Item de Contratação
+historico;[73].compraOrgaoCnpj;33781055000135
+historico;[73].compraAno;2026
+historico;[73].compraSequencial;1805
+historico;[73].itemResultadoNumero;None
+historico;[73].itemResultadoSequencial;None
+historico;[74].justificativa;None
+historico;[74].tipoLogManutencao;0
+historico;[74].categoriaLogManutencao;4
+historico;[74].logManutencaoDataInclusao;2026-10-22T13:55:06
+historico;[74].usuarioNome;Compras.gov.br
+historico;[74].itemNumero;10
+historico;[74].documentoTipo;None
+historico;[74].documentoTitulo;None
+historico;[74].documentoSequencial;None
+historico;[74].tipoLogManutencaoNome;Inclusão
+historico;[74].categoriaLogManutencaoNome;Item de Contratação
+historico;[74].compraOrgaoCnpj;33781055000135
+historico;[74].compraAno;2026
+historico;[74].compraSequencial;1805
+historico;[74].itemResultadoNumero;None
+historico;[74].itemResultadoSequencial;None
+historico;[75].justificativa;None
+historico;[75].tipoLogManutencao;0
+historico;[75].categoriaLogManutencao;4
+historico;[75].logManutencaoDataInclusao;2026-10-22T13:55:10
+historico;[75].usuarioNome;Compras.gov.br
+historico;[75].itemNumero;30
+historico;[75].documentoTipo;None
+historico;[75].documentoTitulo;None
+historico;[75].documentoSequencial;None
+historico;[75].tipoLogManutencaoNome;Inclusão
+historico;[75].categoriaLogManutencaoNome;Item de Contratação
+historico;[75].compraOrgaoCnpj;33781055000135
+historico;[75].compraAno;2026
+historico;[75].compraSequencial;1805
+historico;[75].itemResultadoNumero;None
+historico;[75].itemResultadoSequencial;None
+historico;[76].justificativa;None
+historico;[76].tipoLogManutencao;0
+historico;[76].categoriaLogManutencao;4
+historico;[76].logManutencaoDataInclusao;2026-10-22T13:55:08
+historico;[76].usuarioNome;Compras.gov.br
+historico;[76].itemNumero;33
+historico;[76].documentoTipo;None
+historico;[76].documentoTitulo;None
+historico;[76].documentoSequencial;None
+historico;[76].tipoLogManutencaoNome;Inclusão
+historico;[76].categoriaLogManutencaoNome;Item de Contratação
+historico;[76].compraOrgaoCnpj;33781055000135
+historico;[76].compraAno;2026
+historico;[76].compraSequencial;1805
+historico;[76].itemResultadoNumero;None
+historico;[76].itemResultadoSequencial;None
+historico;[77].justificativa;None
+historico;[77].tipoLogManutencao;0
+historico;[77].categoriaLogManutencao;4
+historico;[77].logManutencaoDataInclusao;2026-10-22T13:55:11
+historico;[77].usuarioNome;Compras.gov.br
+historico;[77].itemNumero;35
+historico;[77].documentoTipo;None
+historico;[77].documentoTitulo;None
+historico;[77].documentoSequencial;None
+historico;[77].tipoLogManutencaoNome;Inclusão
+historico;[77].categoriaLogManutencaoNome;Item de Contratação
+historico;[77].compraOrgaoCnpj;33781055000135
+historico;[77].compraAno;2026
+historico;[77].compraSequencial;1805
+historico;[77].itemResultadoNumero;None
+historico;[77].itemResultadoSequencial;None
+historico;[78].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[78].tipoLogManutencao;1
+historico;[78].categoriaLogManutencao;4
+historico;[78].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[78].usuarioNome;Compras.gov.br
+historico;[78].itemNumero;34
+historico;[78].documentoTipo;None
+historico;[78].documentoTitulo;None
+historico;[78].documentoSequencial;None
+historico;[78].tipoLogManutencaoNome;Retificação
+historico;[78].categoriaLogManutencaoNome;Item de Contratação
+historico;[78].compraOrgaoCnpj;33781055000135
+historico;[78].compraAno;2026
+historico;[78].compraSequencial;1805
+historico;[78].itemResultadoNumero;None
+historico;[78].itemResultadoSequencial;None
+historico;[79].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[79].tipoLogManutencao;1
+historico;[79].categoriaLogManutencao;4
+historico;[79].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[79].usuarioNome;Compras.gov.br
+historico;[79].itemNumero;25
+historico;[79].documentoTipo;None
+historico;[79].documentoTitulo;None
+historico;[79].documentoSequencial;None
+historico;[79].tipoLogManutencaoNome;Retificação
+historico;[79].categoriaLogManutencaoNome;Item de Contratação
+historico;[79].compraOrgaoCnpj;33781055000135
+historico;[79].compraAno;2026
+historico;[79].compraSequencial;1805
+historico;[79].itemResultadoNumero;None
+historico;[79].itemResultadoSequencial;None
+historico;[80].justificativa;None
+historico;[80].tipoLogManutencao;0
+historico;[80].categoriaLogManutencao;4
+historico;[80].logManutencaoDataInclusao;2026-10-22T13:55:02
+historico;[80].usuarioNome;Compras.gov.br
+historico;[80].itemNumero;6
+historico;[80].documentoTipo;None
+historico;[80].documentoTitulo;None
+historico;[80].documentoSequencial;None
+historico;[80].tipoLogManutencaoNome;Inclusão
+historico;[80].categoriaLogManutencaoNome;Item de Contratação
+historico;[80].compraOrgaoCnpj;33781055000135
+historico;[80].compraAno;2026
+historico;[80].compraSequencial;1805
+historico;[80].itemResultadoNumero;None
+historico;[80].itemResultadoSequencial;None
+historico;[81].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[81].tipoLogManutencao;1
+historico;[81].categoriaLogManutencao;4
+historico;[81].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[81].usuarioNome;Compras.gov.br
+historico;[81].itemNumero;14
+historico;[81].documentoTipo;None
+historico;[81].documentoTitulo;None
+historico;[81].documentoSequencial;None
+historico;[81].tipoLogManutencaoNome;Retificação
+historico;[81].categoriaLogManutencaoNome;Item de Contratação
+historico;[81].compraOrgaoCnpj;33781055000135
+historico;[81].compraAno;2026
+historico;[81].compraSequencial;1805
+historico;[81].itemResultadoNumero;None
+historico;[81].itemResultadoSequencial;None
+historico;[82].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[82].tipoLogManutencao;1
+historico;[82].categoriaLogManutencao;4
+historico;[82].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[82].usuarioNome;Compras.gov.br
+historico;[82].itemNumero;11
+historico;[82].documentoTipo;None
+historico;[82].documentoTitulo;None
+historico;[82].documentoSequencial;None
+historico;[82].tipoLogManutencaoNome;Retificação
+historico;[82].categoriaLogManutencaoNome;Item de Contratação
+historico;[82].compraOrgaoCnpj;33781055000135
+historico;[82].compraAno;2026
+historico;[82].compraSequencial;1805
+historico;[82].itemResultadoNumero;None
+historico;[82].itemResultadoSequencial;None
+historico;[83].justificativa;None
+historico;[83].tipoLogManutencao;0
+historico;[83].categoriaLogManutencao;4
+historico;[83].logManutencaoDataInclusao;2026-10-22T13:55:05
+historico;[83].usuarioNome;Compras.gov.br
+historico;[83].itemNumero;9
+historico;[83].documentoTipo;None
+historico;[83].documentoTitulo;None
+historico;[83].documentoSequencial;None
+historico;[83].tipoLogManutencaoNome;Inclusão
+historico;[83].categoriaLogManutencaoNome;Item de Contratação
+historico;[83].compraOrgaoCnpj;33781055000135
+historico;[83].compraAno;2026
+historico;[83].compraSequencial;1805
+historico;[83].itemResultadoNumero;None
+historico;[83].itemResultadoSequencial;None
+historico;[84].justificativa;None
+historico;[84].tipoLogManutencao;0
+historico;[84].categoriaLogManutencao;4
+historico;[84].logManutencaoDataInclusao;2026-10-22T13:55:12
+historico;[84].usuarioNome;Compras.gov.br
+historico;[84].itemNumero;40
+historico;[84].documentoTipo;None
+historico;[84].documentoTitulo;None
+historico;[84].documentoSequencial;None
+historico;[84].tipoLogManutencaoNome;Inclusão
+historico;[84].categoriaLogManutencaoNome;Item de Contratação
+historico;[84].compraOrgaoCnpj;33781055000135
+historico;[84].compraAno;2026
+historico;[84].compraSequencial;1805
+historico;[84].itemResultadoNumero;None
+historico;[84].itemResultadoSequencial;None
+historico;[85].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[85].tipoLogManutencao;1
+historico;[85].categoriaLogManutencao;4
+historico;[85].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[85].usuarioNome;Compras.gov.br
+historico;[85].itemNumero;6
+historico;[85].documentoTipo;None
+historico;[85].documentoTitulo;None
+historico;[85].documentoSequencial;None
+historico;[85].tipoLogManutencaoNome;Retificação
+historico;[85].categoriaLogManutencaoNome;Item de Contratação
+historico;[85].compraOrgaoCnpj;33781055000135
+historico;[85].compraAno;2026
+historico;[85].compraSequencial;1805
+historico;[85].itemResultadoNumero;None
+historico;[85].itemResultadoSequencial;None
+historico;[86].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[86].tipoLogManutencao;1
+historico;[86].categoriaLogManutencao;4
+historico;[86].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[86].usuarioNome;Compras.gov.br
+historico;[86].itemNumero;27
+historico;[86].documentoTipo;None
+historico;[86].documentoTitulo;None
+historico;[86].documentoSequencial;None
+historico;[86].tipoLogManutencaoNome;Retificação
+historico;[86].categoriaLogManutencaoNome;Item de Contratação
+historico;[86].compraOrgaoCnpj;33781055000135
+historico;[86].compraAno;2026
+historico;[86].compraSequencial;1805
+historico;[86].itemResultadoNumero;None
+historico;[86].itemResultadoSequencial;None
+historico;[87].justificativa;None
+historico;[87].tipoLogManutencao;0
+historico;[87].categoriaLogManutencao;4
+historico;[87].logManutencaoDataInclusao;2026-10-22T13:55:07
+historico;[87].usuarioNome;Compras.gov.br
+historico;[87].itemNumero;17
+historico;[87].documentoTipo;None
+historico;[87].documentoTitulo;None
+historico;[87].documentoSequencial;None
+historico;[87].tipoLogManutencaoNome;Inclusão
+historico;[87].categoriaLogManutencaoNome;Item de Contratação
+historico;[87].compraOrgaoCnpj;33781055000135
+historico;[87].compraAno;2026
+historico;[87].compraSequencial;1805
+historico;[87].itemResultadoNumero;None
+historico;[87].itemResultadoSequencial;None
+historico;[88].justificativa;None
+historico;[88].tipoLogManutencao;0
+historico;[88].categoriaLogManutencao;4
+historico;[88].logManutencaoDataInclusao;2026-10-22T13:55:09
+historico;[88].usuarioNome;Compras.gov.br
+historico;[88].itemNumero;21
+historico;[88].documentoTipo;None
+historico;[88].documentoTitulo;None
+historico;[88].documentoSequencial;None
+historico;[88].tipoLogManutencaoNome;Inclusão
+historico;[88].categoriaLogManutencaoNome;Item de Contratação
+historico;[88].compraOrgaoCnpj;33781055000135
+historico;[88].compraAno;2026
+historico;[88].compraSequencial;1805
+historico;[88].itemResultadoNumero;None
+historico;[88].itemResultadoSequencial;None
+historico;[89].justificativa;None
+historico;[89].tipoLogManutencao;0
+historico;[89].categoriaLogManutencao;4
+historico;[89].logManutencaoDataInclusao;2026-10-22T13:55:09
+historico;[89].usuarioNome;Compras.gov.br
+historico;[89].itemNumero;22
+historico;[89].documentoTipo;None
+historico;[89].documentoTitulo;None
+historico;[89].documentoSequencial;None
+historico;[89].tipoLogManutencaoNome;Inclusão
+historico;[89].categoriaLogManutencaoNome;Item de Contratação
+historico;[89].compraOrgaoCnpj;33781055000135
+historico;[89].compraAno;2026
+historico;[89].compraSequencial;1805
+historico;[89].itemResultadoNumero;None
+historico;[89].itemResultadoSequencial;None
+historico;[90].justificativa;None
+historico;[90].tipoLogManutencao;0
+historico;[90].categoriaLogManutencao;4
+historico;[90].logManutencaoDataInclusao;2026-10-22T13:55:09
+historico;[90].usuarioNome;Compras.gov.br
+historico;[90].itemNumero;23
+historico;[90].documentoTipo;None
+historico;[90].documentoTitulo;None
+historico;[90].documentoSequencial;None
+historico;[90].tipoLogManutencaoNome;Inclusão
+historico;[90].categoriaLogManutencaoNome;Item de Contratação
+historico;[90].compraOrgaoCnpj;33781055000135
+historico;[90].compraAno;2026
+historico;[90].compraSequencial;1805
+historico;[90].itemResultadoNumero;None
+historico;[90].itemResultadoSequencial;None
+historico;[91].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[91].tipoLogManutencao;1
+historico;[91].categoriaLogManutencao;4
+historico;[91].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[91].usuarioNome;Compras.gov.br
+historico;[91].itemNumero;12
+historico;[91].documentoTipo;None
+historico;[91].documentoTitulo;None
+historico;[91].documentoSequencial;None
+historico;[91].tipoLogManutencaoNome;Retificação
+historico;[91].categoriaLogManutencaoNome;Item de Contratação
+historico;[91].compraOrgaoCnpj;33781055000135
+historico;[91].compraAno;2026
+historico;[91].compraSequencial;1805
+historico;[91].itemResultadoNumero;None
+historico;[91].itemResultadoSequencial;None
+historico;[92].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[92].tipoLogManutencao;1
+historico;[92].categoriaLogManutencao;4
+historico;[92].logManutencaoDataInclusao;2026-10-22T13:55:13
+historico;[92].usuarioNome;Compras.gov.br
+historico;[92].itemNumero;43
+historico;[92].documentoTipo;None
+historico;[92].documentoTitulo;None
+historico;[92].documentoSequencial;None
+historico;[92].tipoLogManutencaoNome;Retificação
+historico;[92].categoriaLogManutencaoNome;Item de Contratação
+historico;[92].compraOrgaoCnpj;33781055000135
+historico;[92].compraAno;2026
+historico;[92].compraSequencial;1805
+historico;[92].itemResultadoNumero;None
+historico;[92].itemResultadoSequencial;None
+historico;[93].justificativa;Alteração do item devido a mudança de situação para Em Andamento
+historico;[93].tipoLogManutencao;1
+historico;[93].categoriaLogManutencao;4
+historico;[93].logManutencaoDataInclusao;2026-10-22T13:55:14
+historico;[93].usuarioNome;Compras.gov.br
+historico;[93].itemNumero;7
+historico;[93].documentoTipo;None
+historico;[93].documentoTitulo;None
+historico;[93].documentoSequencial;None
+historico;[93].tipoLogManutencaoNome;Retificação
+historico;[93].categoriaLogManutencaoNome;Item de Contratação
+historico;[93].compraOrgaoCnpj;33781055000135
+historico;[93].compraAno;2026
+historico;[93].compraSequencial;1805
+historico;[93].itemResultadoNumero;None
+historico;[93].itemResultadoSequencial;None
+atas;binary_response;True
+atas;bytes;0
+atas;arquivo_local;EDITAIS/CONTRATACAO-33781055000135-2026-1805/arquivos_originais/atas.bin
+atas;sha256;e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
