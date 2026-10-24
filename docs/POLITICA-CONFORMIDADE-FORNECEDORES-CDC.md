@@ -2,11 +2,22 @@
 
 | Campo | Valor |
 |---|---|
-| Projeto | LICITAÇÃO |
-| Aplicação | Seleção e avaliação de fornecedores para fornecimento a órgãos públicos |
-| Fonte oficial do edital | [PNCP](https://pncp.gov.br/) |
-| Base normativa de referência | Código de Defesa do Consumidor (Lei nº 8.078/1990) e Decreto nº 7.962/2013, conforme aplicabilidade ao caso concreto |
-| Regra comercial interna | Não negociar com fornecedor que descumpra regras aplicáveis de proteção do consumidor ou apresente informação comercial enganosa/incompleta |
+| **ID** | LIC-DOC-DOCS-POLITICA-CONFORMIDADE-FORNECEDORES-CDC-MD-D993CC0E |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 860f44971e183ca24fca9daa1c87631bc32958b5b1344ec0c54c56e42f92f775 |
+| **Commit de referência (versão anterior)** | [92beac50b3a49865819a3dac48a5e9639befdf95](https://github.com/carlos-andrade/LICITACAO/commit/92beac50b3a49865819a3dac48a5e9639befdf95) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-24 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `docs/POLITICA-CONFORMIDADE-FORNECEDORES-CDC.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
 
 ## 1. Princípio
 

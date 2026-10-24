@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 5ceacc16e336d2e24dea7e9be414f12c1ca01adfb0709ae4722104e385921e24 |
-| **Commit de referência (versão anterior)** | [f84c84940641272cbbfdf51f493f1f5379111a1e](https://github.com/carlos-andrade/LICITACAO/commit/f84c84940641272cbbfdf51f493f1f5379111a1e) |
+| **SHA-256 (conteúdo canónico)** | 89f9eaa7210f7ab4864a84de373ebc1aa30185f704df1f1491dec695aacff18e |
+| **Commit de referência (versão anterior)** | [92beac50b3a49865819a3dac48a5e9639befdf95](https://github.com/carlos-andrade/LICITACAO/commit/92beac50b3a49865819a3dac48a5e9639befdf95) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **54**.
-- Documentos conformes após normalização e verificação de hash: **54/54**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **55**.
+- Documentos conformes após normalização e verificação de hash: **55/55**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **2**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **1**.
 
 ## Inventário Markdown
 
@@ -68,6 +68,7 @@
 | `README.md` | `LIC-README-001` | CONFORME — Conforme |
 | `ROADMAP-PADRAO-GOVERNANCA.md` | `LIC-GOV-ROADMAP-001` | CONFORME — Conforme |
 | `WATCHDOG/README.md` | `LIC-GOV-WD-README-001` | CONFORME — Conforme |
+| `docs/POLITICA-CONFORMIDADE-FORNECEDORES-CDC.md` | `LIC-DOC-DOCS-POLITICA-CONFORMIDADE-FORNECEDORES-CDC-MD-D993CC0E` | CONFORME — Conforme |
 | `docs/auditorias/AUDITORIA-FINAL-CABECALHOS-E-ANEXOS-2026-10-22.md` | `LIC-AUD-FINAL-2026-10-22-001` | CONFORME — Conforme |
 | `docs/auditorias/AUDITORIA-TECNICA-INICIAL-2026-10-22.md` | `LIC-DOC-DITORIAS-AUDITORIA-TECNICA-INICIAL-2026-10-22-MD-E09EB633` | CONFORME — Conforme |
 | `docs/governanca/CHECKLIST-WATCHDOG-ADOPCAO.md` | `LIC-WD-CHECKLIST-001` | CONFORME — Conforme |
