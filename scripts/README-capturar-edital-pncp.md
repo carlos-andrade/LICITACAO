@@ -1,5 +1,24 @@
 # Captura reutilizável de editais PNCP
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-SCRIPTS-README-CAPTURAR-EDITAL-PNCP-MD-7C4C13D0 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | f538ce6aa45d543b39bfc627b70dbf164a4eebf19ca93f3deaaac73e6163fb12 |
+| **Commit de referência (versão anterior)** | [1750a00407fd2cb8ce285b8efe039c32882969c5](https://github.com/carlos-andrade/LICITACAO/commit/1750a00407fd2cb8ce285b8efe039c32882969c5) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-24 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `scripts/README-capturar-edital-pncp.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 Script: `scripts/capturar_edital_pncp.py`
 
 ## Execução

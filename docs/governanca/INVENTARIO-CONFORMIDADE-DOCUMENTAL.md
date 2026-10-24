@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | dfe16f9dc5a96880710ad26c950dd3c89c406d2ddb2bf4f458749f7269735f5d |
-| **Commit de referência (versão anterior)** | [5d12b0ce1cd91fa660ec68739cb7b8001920e672](https://github.com/carlos-andrade/LICITACAO/commit/5d12b0ce1cd91fa660ec68739cb7b8001920e672) |
+| **SHA-256 (conteúdo canónico)** | e94779a7d8d2cc46813ecea55227dff22d00bc0482da299325811fee11f428a4 |
+| **Commit de referência (versão anterior)** | [1750a00407fd2cb8ce285b8efe039c32882969c5](https://github.com/carlos-andrade/LICITACAO/commit/1750a00407fd2cb8ce285b8efe039c32882969c5) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,8 +21,8 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **53**.
-- Documentos conformes após normalização e verificação de hash: **53/53**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **54**.
+- Documentos conformes após normalização e verificação de hash: **54/54**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **2**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
@@ -84,6 +84,7 @@
 | `scripts/README-allnations-captura.md` | `LIC-SCRIPT-ALLNATIONS-CAPTURA-001` | CONFORME — Conforme |
 | `scripts/README-calculadora-viabilidade.md` | `LIC-DOC-SCRIPTS-README-CALCULADORA-VIABILIDADE-MD-D2311248` | CONFORME — Conforme |
 | `scripts/README-captura-integral.md` | `LIC-DOC-SCRIPTS-README-CAPTURA-INTEGRAL-MD-E29DEC8C` | CONFORME — Conforme |
+| `scripts/README-capturar-edital-pncp.md` | `LIC-DOC-SCRIPTS-README-CAPTURAR-EDITAL-PNCP-MD-7C4C13D0` | CONFORME — Conforme |
 | `scripts/README.md` | `LIC-DOC-SCRIPTS-README-MD-25B96AA1` | CONFORME — Conforme |
 
 ## Ficheiros PDF e Office no repositório
