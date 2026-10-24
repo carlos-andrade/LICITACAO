@@ -228,7 +228,7 @@ def main():
     s=requests.Session(); s.headers.update({"Accept":"application/json","User-Agent":USER_AGENT})
     captured=datetime.now(timezone.utc).isoformat(timespec="seconds")
     # O PNCP mantém a consulta pública e a API de itens/histórico em bases distintas.
-    general_endpoint=f"{CONSULTA_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}"
+    general_endpoint=f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}"
     items_endpoint=f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/itens"
     events_endpoint=f"{API_ROOT}/orgaos/{cnpj}/compras/{year}/{seq}/historico"
     raw={}; errors={}; warnings={}; general_source="consulta_detalhe"
