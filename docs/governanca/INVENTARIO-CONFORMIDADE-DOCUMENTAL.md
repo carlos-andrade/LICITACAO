@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 89f9eaa7210f7ab4864a84de373ebc1aa30185f704df1f1491dec695aacff18e |
-| **Commit de referência (versão anterior)** | [97917e9494f4966edb40e4b9189aba94f27f1590](https://github.com/carlos-andrade/LICITACAO/commit/97917e9494f4966edb40e4b9189aba94f27f1590) |
+| **SHA-256 (conteúdo canónico)** | 378374e2b58f565d1e4cc49c70bd348e0c0274176c220b3433edecc5e0b7c972 |
+| **Commit de referência (versão anterior)** | [8b994bd70848bf6d46d3d35d2e2e997b4539cea2](https://github.com/carlos-andrade/LICITACAO/commit/8b994bd70848bf6d46d3d35d2e2e997b4539cea2) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -24,9 +24,9 @@
 - Documentos Markdown do projeto (fora de .governanca/upstream): **55**.
 - Documentos conformes após normalização e verificação de hash: **55/55**.
 - IDs duplicados: **0**.
-- Ficheiros PDF/Office no repositório: **2**.
+- Ficheiros PDF/Office no repositório: **4**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **1**.
+- Ficheiros Markdown alterados nesta execução: **0**.
 
 ## Inventário Markdown
 
@@ -93,6 +93,8 @@
 | Caminho | Formato | Estado |
 |---|---|---|
 | `EDITAIS/CONTRATACAO-00394502000144-2026-14259/contratacao-completa.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
+| `EDITAIS/CONTRATACAO-01409580000138-2026-1628/captura-pncp.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
+| `EDITAIS/CONTRATACAO-33781055000135-2026-1805/captura-pncp.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 | `EDITAIS/pncp-editais-abertos.xlsx` | .xlsx | REVISÃO ESPECÍFICA NECESSÁRIA — verificar cabeçalho visual sem alterar conteúdo técnico |
 
 ## Critérios e limitações
