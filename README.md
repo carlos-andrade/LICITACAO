@@ -89,3 +89,16 @@ Ainda não há aplicação de negócio implementada. A distribuição upstream f
 ## Próximo marco
 
 Validar esta preparação documental em Pull Request, executar verificações automatizadas e obter revisão/aceitação explícita antes de iniciar a estrutura funcional.
+
+## Conformidade de fornecedores — CDC e comércio eletrônico
+
+O projeto adota uma política de transparência comercial e diligência de fornecedores, com referência ao Código de Defesa do Consumidor (Lei nº 8.078/1990) e ao Decreto nº 7.962/2013, conforme aplicabilidade jurídica ao caso concreto. Em ofertas digitais, verificar identidade do fornecedor, especificações, preço total e despesas adicionais, disponibilidade, prazo de entrega, condições de pagamento e restrições relevantes. Publicidade enganosa e omissões materiais são sinais de reprovação.
+
+**Regra comercial interna:** fornecedor com descumprimento comprovado de regra aplicável do CDC ou de outra obrigação legal pertinente será **REPROVADO** e não será negociado. Se houver dúvida ou evidência insuficiente, classificar como **PENDENTE**, interromper a aprovação e pedir esclarecimento/revisão; não declarar infração sem evidência. Registrar URL/documento, data da consulta, preço anunciado, frete, tributos/taxas, preço total entregue, estoque, prazo, validade da oferta e confirmação comercial.
+
+Preço anunciado isoladamente não comprova estoque, preço final entregue ou obrigação incondicional de venda em qualquer circunstância. Priorizar cotações formais válidas e confirmações por escrito. A incidência concreta do CDC depende da relação e dos factos; esta política interna não substitui revisão jurídica.
+
+- [Política completa de conformidade de fornecedores](docs/POLITICA-CONFORMIDADE-FORNECEDORES-CDC.md)
+- [Código de Defesa do Consumidor — Planalto](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm)
+- [Decreto nº 7.962/2013 — Planalto](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm)
+
