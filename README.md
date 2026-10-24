@@ -9,7 +9,7 @@
 | **Fase** | Adoção de governança |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.2.0 |
-| **SHA-256 (conteúdo canónico)** | 61b4cf6bbd54a5ea068a8d123e065fe79fac056d620c5dd568482591ab225724 |
+| **SHA-256 (conteúdo canónico)** | 078d2af2d28de88f7777160667ab1d26dd924204a29394f8d055d9f329ea532f |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
 | **Data de atualização** | 2026-10-24 |
@@ -101,4 +101,3 @@ Preço anunciado isoladamente não comprova estoque, preço final entregue ou ob
 - [Política completa de conformidade de fornecedores](docs/POLITICA-CONFORMIDADE-FORNECEDORES-CDC.md)
 - [Código de Defesa do Consumidor — Planalto](https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm)
 - [Decreto nº 7.962/2013 — Planalto](https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm)
-
