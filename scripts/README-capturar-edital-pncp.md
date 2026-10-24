@@ -9,7 +9,7 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | f538ce6aa45d543b39bfc627b70dbf164a4eebf19ca93f3deaaac73e6163fb12 |
+| **SHA-256 (conteúdo canónico)** | 7406723a2c8265e8c1356e89949285166c464943cf5a28359e3fe3117b733f4f |
 | **Commit de referência (versão anterior)** | [1750a00407fd2cb8ce285b8efe039c32882969c5](https://github.com/carlos-andrade/LICITACAO/commit/1750a00407fd2cb8ce285b8efe039c32882969c5) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-24 |
@@ -61,4 +61,3 @@ A pesquisa comercial deve observar a [política de conformidade de fornecedores]
 - Se houver dúvida ou faltar evidência, classificar como PENDENTE e não usar a oferta como cotação aprovada.
 - O preço anunciado não comprova, por si só, estoque, custo final entregue ou obrigação incondicional de venda.
 - Não criar nomes ou preços para preencher a meta de dez fornecedores. Reportar apenas fornecedores encontrados e verificáveis.
-
