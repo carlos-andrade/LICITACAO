@@ -9,10 +9,10 @@
 | **Fase** | Investigação da captura |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 0693a2fc3642b8419507e2ee1a879279b9535de14c2487dbee157624ba02e093 |
+| **SHA-256 (conteúdo canónico)** | fc6d6eaf9064d1444def3620cfe2a95e8c04292ffb373d0bd4057a9c5d130f60 |
 | **Commit de referência (versão anterior)** | N/A — documento inicial |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — sem evidência de aprovação |
 | **Origem** | Inspeção do coletor versionado, JSON/CSV recebidos e página pública de produto ALLNATIONS |

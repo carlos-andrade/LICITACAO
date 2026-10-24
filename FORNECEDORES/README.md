@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | a79ad2dbeb6fd025783d031935816e027ab51aca04fc6746d4f44c452a6ab93f |
+| **SHA-256 (conteúdo canónico)** | e6b8e17f81b5b0297b6bf5b64897580a2c4645757ca69f3d3825bd66b5ba3e01 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/README.md` |

@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 2256f16574f505556e60cae31e551209e92410e4a2cec4b6f355af7f8d5fd5cc |
+| **SHA-256 (conteúdo canónico)** | 9847a8c067276f3e4d6d0ea8093237a79df287ca45b3f7f61fc7581381ba8cc2 |
 | **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/ALLNATIONS-REGISTRO-CAPTURA-E-PENDENCIA-COTACAO.md` |

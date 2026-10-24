@@ -9,10 +9,10 @@
 | **Fase** | Adoção de governança — distribuição upstream |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.2.0 |
-| **SHA-256 (conteúdo canónico)** | 74bd7ca80f556b77e8855c9b86272c2630455629c1173e5827fab3ec42a234b4 |
+| **SHA-256 (conteúdo canónico)** | 53241c44e7993ba1c3a54eba1449bb962d0f13391a5471b89b53bcfe0436c96e |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Carlos Andrade, conforme registo-mestre |
 | **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | [GOVERNANCA/main](https://github.com/carlos-andrade/GOVERNANCA/tree/main) |

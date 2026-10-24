@@ -9,10 +9,10 @@
 | **Fase** | Modelagem de dados |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | 37e0e151219afd65e6a861c142feac53bc49b1317451d46ec233d2453fed5170 |
+| **SHA-256 (conteúdo canónico)** | 0752d3cfaa8515178a514d5418dc9699665ad01cfed6ff85a667094d26fe6566 |
 | **Commit de referência (versão anterior)** | [afe4a46ea2cf5e4ee55b49b7358221e57881f739](https://github.com/carlos-andrade/LICITACAO/commit/afe4a46ea2cf5e4ee55b49b7358221e57881f739) |
 | **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente de aprovação documental |
 | **Origem** | Conteúdo anterior e histórico Git |

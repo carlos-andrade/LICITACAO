@@ -9,10 +9,10 @@
 | **Fase** | Verificação de automação, inventário e anexos |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 4b4ee6daed36f56482515389bc48db533fee8c7896aede2fa4e9ab5592f2bd05 |
+| **SHA-256 (conteúdo canónico)** | e707f4953d61ecb9465d8f97245cf9ae50788d0d073467d2e6be27c2830d4b6d |
 | **Commit de referência (versão anterior)** | [8572920cc2bf0521688794b71d1e672ab044369c](https://github.com/carlos-andrade/LICITACAO/commit/8572920cc2bf0521688794b71d1e672ab044369c) |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há aprovação substantiva demonstrada |
 | **Origem** | Execução do GitHub Actions, inventário versionado e inspeção dos três anexos recebidos nesta conversa |

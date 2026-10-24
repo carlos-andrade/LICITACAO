@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 32d667904aa73c2f68f96737d81f5e358897f0ad4348a9021d2089ae8692c404 |
+| **SHA-256 (conteúdo canónico)** | 890fa0664cc7bdd94a9052b7ced2d0a6ee3f9757b41911c5f9b620ac6e391d62 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/PROPOSTA-GATE-G0.md` |

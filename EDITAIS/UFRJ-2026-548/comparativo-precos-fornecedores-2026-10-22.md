@@ -9,10 +9,10 @@
 | **Fase** | Pesquisa de preços e viabilidade |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | 4b030daee555378fd5288b6d0ff80c31f19ee0f3f9ec408c16957b8bcf05b557 |
+| **SHA-256 (conteúdo canónico)** | e0363dddb792205593ac6b24d12b10ba46d999ca686ebd431268d0b985f3c691 |
 | **Commit de referência (versão anterior)** | [ef34a20311342cc737c4258e80093b80833e955e](https://github.com/carlos-andrade/LICITACAO/commit/ef34a20311342cc737c4258e80093b80833e955e) |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente de validação comercial |
 | **Origem** | PNCP e páginas públicas dos fornecedores citadas no corpo |

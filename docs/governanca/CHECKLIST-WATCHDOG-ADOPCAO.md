@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 6d2d96a7f6e54d48dba1a56d801fb56ff402ba432817edf13ffd8a1bd3e97f62 |
+| **SHA-256 (conteúdo canónico)** | 0807138ad569690d57abf637a49a524c94122ccb15316b73734beb5b69241ef3 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/CHECKLIST-WATCHDOG-ADOPCAO.md` |

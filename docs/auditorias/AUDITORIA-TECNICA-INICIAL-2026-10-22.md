@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | d2a598c2bfde127d71d96981f33b062d7d16183f4b4d5d73e396b6632f18dc77 |
+| **SHA-256 (conteúdo canónico)** | 48d8b22fdfd960dcd80ee2e9b4f3699bfb1995b8fe84b317e9b2e62d044e4b0f |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/auditorias/AUDITORIA-TECNICA-INICIAL-2026-10-22.md` |

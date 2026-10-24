@@ -9,10 +9,10 @@
 | **Fase** | Adoção de governança |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.1.2 |
-| **SHA-256 (conteúdo canónico)** | 869ec291e187202c13b068b9a2eb3fcee4b81820e1ce1503e15619e7139f2de8 |
+| **SHA-256 (conteúdo canónico)** | de558bbd111d682807be39d6c58ddc1ce10be2d16f44bcb24e3e43a73fe50a21 |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Proprietário do repositório LICITACAO |
 | **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | Adaptação local da Carta/Contrato canónica da GOVERNANCA |

@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 3dedc89c10665899d3b2f0a8d52976972dbc1dc2a46c0f1124aa24dbe23a1c44 |
+| **SHA-256 (conteúdo canónico)** | 11a8b3297d30551c85f76ee6c5e81e8ad92fad9abb76c1382ec717ea14bb0310 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/VALIDACAO-DISTRIBUICAO-UPSTREAM.md` |

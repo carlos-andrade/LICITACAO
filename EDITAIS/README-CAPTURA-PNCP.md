@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 355100f585eefa61c269a9f635c8c735d4a81292165a8c4f59dee4f868702ab2 |
+| **SHA-256 (conteúdo canónico)** | a4cae6c388b0d9acbefe531a50db5cfc3a03530af4c13d86f277b817707a3dd8 |
 | **Commit de referência (versão anterior)** | [8f69f4c4ecacc44c8fbdc88712f23611bb711e67](https://github.com/carlos-andrade/LICITACAO/commit/8f69f4c4ecacc44c8fbdc88712f23611bb711e67) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/README-CAPTURA-PNCP.md` |

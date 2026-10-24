@@ -9,10 +9,10 @@
 | **Fase** | Validação de evidência |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 39475d68b37c6b9ff11ddae24ac79f9199d174428b3a271c4edcba6b7b4316d6 |
+| **SHA-256 (conteúdo canónico)** | bfb1efc20b9740fb3caaf1a3e94dab44c0c1c21b87885de4256a39172b73bfe2 |
 | **Commit de referência (versão anterior)** | N/A — documento inicial |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — sem evidência de aprovação |
 | **Origem** | Arquivo recebido nesta conversa: `allnations-catalog-capture (2).zip`; SHA-256 calculado localmente sobre os bytes do arquivo |

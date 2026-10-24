@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 4800ddf0dcd344324d71a019c54a5ff0ef13e2e28e15c6efb051d879622fac37 |
+| **SHA-256 (conteúdo canónico)** | 83ccb8d4bcff9b1c6f3f83a2675ff7c346c71081fb68b81d87b8a0e02ee85ce2 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-TABELA-ESPECIAL-FORNECEDORES.md` |

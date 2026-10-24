@@ -9,10 +9,10 @@
 | **Fase** | Adoção de governança — decisão |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.4.1 |
-| **SHA-256 (conteúdo canónico)** | 0fc7333ff910963acf660fe2998886f16791b21eec833dcd5ce93dd5dacbfe33 |
+| **SHA-256 (conteúdo canónico)** | 50d3ccb1386baf12fa8fe57d0c52b8b158326a18f27cc98e9eeed32db3158f7b |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Carlos Andrade, conforme registo-mestre |
 | **Aprovador** | Carlos Andrade — decisão de adoção registada em 2026-10-21 |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/INSPECAO-DE-ADOCAO.md` |

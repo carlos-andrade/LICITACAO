@@ -9,10 +9,10 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 45fcd8a1f7cece6295e1342a6cd97e12a892ddacf6aac8f13be66c5b87adb81d |
-| **Commit de referência (versão anterior)** | [b2080dd21730bf780b783a300c2feaeb249afed5](https://github.com/carlos-andrade/LICITACAO/commit/b2080dd21730bf780b783a300c2feaeb249afed5) |
+| **SHA-256 (conteúdo canónico)** | e0251ecfa0c7d64e223e6ed4ea1ac4b6ccb34648458f30bd46322a3585514730 |
+| **Commit de referência (versão anterior)** | [92aac18f82012aaf7d42a049cb80adbb793ada27](https://github.com/carlos-andrade/LICITACAO/commit/92aac18f82012aaf7d42a049cb80adbb793ada27) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — auditoria técnica, não aprovação substantiva |
 | **Origem** | Inventário gerado por scripts/normalize_document_headers.py |
@@ -26,7 +26,7 @@
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **2**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **53**.
 
 ## Inventário Markdown
 

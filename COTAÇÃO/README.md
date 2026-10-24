@@ -9,10 +9,10 @@
 | **Fase** | Gestão de cotações |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.1 |
-| **SHA-256 (conteúdo canónico)** | f2d0009b656dde7c885c41409abc98aac9c20fd745dd4a309391d1e3b88c9e0b |
+| **SHA-256 (conteúdo canónico)** | bd19a165e77668f0beb0efe706677cac15959e6204b12d0b8e803e0a3387b57d |
 | **Commit de referência (versão anterior)** | [7606a73c5fb18797e111b73bd314d7682a5f4f84](https://github.com/carlos-andrade/LICITACAO/commit/7606a73c5fb18797e111b73bd314d7682a5f4f84) |
 | **Data de criação** | 2026-10-22 — primeira evidência disponível no repositório |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente de aprovação documental |
 | **Origem** | Conteúdo anterior e histórico Git |

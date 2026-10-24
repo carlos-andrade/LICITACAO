@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.1.0 |
-| **SHA-256 (conteúdo canónico)** | b8f4ad0268047a40c9a1d37b92f1f933d939f35efccd720c2314efea85e48538 |
+| **SHA-256 (conteúdo canónico)** | f757fd9018274809704c89ba58e0b69da62c0f9c260b9d3ec44186014ff19a81 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `docs/governanca/PLANO-REGULARIZACAO-G0.md` |

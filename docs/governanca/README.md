@@ -9,10 +9,10 @@
 | **Fase** | Adoção de governança |
 | **Estado** | EM_REVISAO |
 | **Versão** | 0.1.0 |
-| **SHA-256 (conteúdo canónico)** | bc5519ee3dab692b30ca1213b332bbc40b20dc43878ff462f661c9cdc9699b6b |
+| **SHA-256 (conteúdo canónico)** | ac188752cb02e8f06486e72097bc29312026bed400765e97daee37e6884fbabf |
 | **Commit de referência (versão anterior)** | [f42637de27d382049109e30bb7f05008815d45ef](https://github.com/carlos-andrade/LICITACAO/commit/f42637de27d382049109e30bb7f05008815d45ef) |
 | **Data de criação** | 2026-10-20 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável do projeto — pendente de nomeação formal |
 | **Aprovador** | Pendente |
 | **Origem** | Preparação local para adoção da GOVERNANCA |

@@ -9,10 +9,10 @@
 | **Fase** | Cadastro inicial / validação |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 7e70b4ea2703749baec4c93021e3b480fced8726d356cda8f806d745cbd4b2f7 |
+| **SHA-256 (conteúdo canónico)** | ccc8cfaa385df73e046daeda71de6e5b654facb015ddb17efa7fe7fd1913b972 |
 | **Commit de referência (versão anterior)** | N/A — nova ficha |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — sem evidência de aprovação |
 | **Origem** | Cadastro criado para registo do fornecedor; fontes públicas indicadas abaixo |

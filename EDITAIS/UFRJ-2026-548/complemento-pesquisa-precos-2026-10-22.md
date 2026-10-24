@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 15cabb3ad44727a0eebb2ab2ae95e0bd83c05d617e35b8594dbf7e7eabf92f44 |
+| **SHA-256 (conteúdo canónico)** | b90618ddc86e8639447321474bbaf6460f8f7e766a21dbaa8a34174f056b5b72 |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/UFRJ-2026-548/complemento-pesquisa-precos-2026-10-22.md` |

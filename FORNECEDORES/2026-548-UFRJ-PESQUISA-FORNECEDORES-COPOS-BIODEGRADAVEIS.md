@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 6115e7e1595e7454890b77b30729948bb7887a832061ac5fdae5f7ae827ddc53 |
+| **SHA-256 (conteúdo canónico)** | 70bccda9e7dbdb0bd4c124b97f45b938d0fa5e9f56f5dfe838f1f431a7e7035a |
 | **Commit de referência (versão anterior)** | [b5e445630ceaf57fac58ae963dbedc587d836e52](https://github.com/carlos-andrade/LICITACAO/commit/b5e445630ceaf57fac58ae963dbedc587d836e52) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `FORNECEDORES/2026-548-UFRJ-PESQUISA-FORNECEDORES-COPOS-BIODEGRADAVEIS.md` |

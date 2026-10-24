@@ -9,10 +9,10 @@
 | **Fase** | N/A — fase não definida no conteúdo de origem |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | e2f62c567abc0cb5c594e65a1b1a791c0467ef8f3db6fae0b294ee3f32f37dd3 |
+| **SHA-256 (conteúdo canónico)** | e67147ff3ffbf18f6e116d7c6d58928d8013e9809226aa67db16e1c7eefa7c8c |
 | **Commit de referência (versão anterior)** | [24ca9ce666f0c0223169a254c8a4e4fd71a8edb8](https://github.com/carlos-andrade/LICITACAO/commit/24ca9ce666f0c0223169a254c8a4e4fd71a8edb8) |
 | **Data de criação** | N/A — data histórica não verificada |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — não há evidência de aprovação neste documento |
 | **Origem** | Conteúdo existente no repositório; caminho: `COTAÇÃO/EMAIL-SOLICITACAO-COTACAO-ALLNATIONS.md` |

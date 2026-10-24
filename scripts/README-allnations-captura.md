@@ -9,10 +9,10 @@
 | **Fase** | Captura experimental / validação |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | f1c7a6868b7d95d3d7b1afef3441a0121b6dee49ce8e8d765b6e3b4e99f98651 |
+| **SHA-256 (conteúdo canónico)** | 44f990d2f251717f079b7d294888ff23670241c4f390d3f90faf7a67b9d68747 |
 | **Commit de referência (versão anterior)** | N/A — novo documento |
 | **Data de criação** | 2026-10-22 |
-| **Data de atualização** | 2026-10-22 |
+| **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
 | **Aprovador** | Pendente — sem evidência de aprovação |
 | **Origem** | Implementação para o domínio público allnations.com.br |
