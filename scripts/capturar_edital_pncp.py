@@ -67,12 +67,23 @@ def listish(x):
                 return [i for i in x[k] if isinstance(i, dict)]
     return []
 
+def normalize_pncp_url(value):
+    """Corrige URIs PNCP que publicam a porta interna 10240, mantendo host HTTPS público."""
+    try:
+        parsed = urlparse(value)
+        if parsed.hostname == "pncp.gov.br" and parsed.port == 10240:
+            return parsed._replace(netloc="pncp.gov.br").geturl()
+    except (ValueError, AttributeError):
+        pass
+    return value
+
 def find_urls(obj, base_url):
     found, seen = [], set()
     for key, value in flatten(obj):
         if isinstance(value, str) and value.startswith(("https://", "http://")):
             low = key.lower()
             if any(t in low for t in ("url", "arquivo", "documento", "anexo", "download", "link", "uri")):
+                value = normalize_pncp_url(value)
                 if value not in seen:
                     seen.add(value); found.append({"url": value, "campo": key, "origem": base_url})
     return found
