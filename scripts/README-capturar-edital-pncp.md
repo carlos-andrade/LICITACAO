@@ -52,3 +52,13 @@ A saída será gravada em `EDITAIS/CONTRATACAO-01409580000138-2026-1628/`. Para 
 ## Fonte oficial
 
 [Portal Nacional de Contratações Públicas](https://pncp.gov.br/).
+
+## Controle de conformidade de fornecedores (CDC)
+
+A pesquisa comercial deve observar a [política de conformidade de fornecedores](../docs/POLITICA-CONFORMIDADE-FORNECEDORES-CDC.md), com referência ao CDC e ao Decreto nº 7.962/2013 conforme aplicabilidade. Antes de considerar uma oferta válida, registar a fonte e data, a especificação, o preço anunciado, frete e demais despesas, preço total entregue, disponibilidade, prazo e validade.
+
+- Não negociar com fornecedor quando houver evidência confiável de incumprimento de obrigação legal aplicável, publicidade enganosa ou omissão material.
+- Se houver dúvida ou faltar evidência, classificar como PENDENTE e não usar a oferta como cotação aprovada.
+- O preço anunciado não comprova, por si só, estoque, custo final entregue ou obrigação incondicional de venda.
+- Não criar nomes ou preços para preencher a meta de dez fornecedores. Reportar apenas fornecedores encontrados e verificáveis.
+
