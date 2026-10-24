@@ -1,1 +1,60 @@
-{}
+{
+  "valorTotalHomologado": null,
+  "orgaoEntidade": {
+    "cnpj": "00394502000144",
+    "razaoSocial": "COMANDO DA MARINHA",
+    "poderId": "E",
+    "esferaId": "F"
+  },
+  "dataInclusao": "2026-10-22T17:44:36",
+  "dataAtualizacao": "2026-10-22T17:44:36",
+  "emendaParlamentar": null,
+  "numeroCompra": "165",
+  "processo": "63430.001955/2026-81",
+  "objetoCompra": "Aquisição de itens destinados a GARANTIA DE VOTAÇÃO E APURAÇÃO das eleições 2026.",
+  "informacaoComplementar": "Dispensa de Licitação em função do valor, art. 75, incisos I e II da Lei 14.133/2021 – Nova Lei de Licitações e Contratos.",
+  "dataAberturaProposta": "2026-10-22T18:00:00",
+  "dataEncerramentoProposta": "2026-10-27T08:00:00",
+  "dataPublicacaoPncp": "2026-10-22T17:44:36",
+  "dataAtualizacaoGlobal": "2026-10-22T17:45:40",
+  "unidadeOrgao": {
+    "ufNome": "Rio de Janeiro",
+    "ufSigla": "RJ",
+    "municipioNome": "Rio de Janeiro",
+    "codigoUnidade": "795400",
+    "nomeUnidade": "BATALHAO DE OPERACOES ESPECIAIS DE FN",
+    "codigoIbge": "3304557"
+  },
+  "orgaoSubRogado": null,
+  "unidadeSubRogada": null,
+  "amparoLegal": {
+    "nome": "Lei 14.133/2021, Art. 75, II",
+    "descricao": "Dispensa de Licitação: para contratação que envolva valores inferiores a R$ 50.000,00 (cinquenta mil reais), no caso de outros serviços e compras",
+    "codigo": 19
+  },
+  "linkSistemaOrigem": "https://cnetmobile.estaleiro.serpro.gov.br/comprasnet-web/public/compras/acompanhamento-compra?compra=79540006001652026",
+  "linkProcessoEletronico": "https://licitacoescontratos.dadm.mb",
+  "justificativaPresencial": null,
+  "anoCompra": 2026,
+  "srp": false,
+  "sequencialCompra": 14259,
+  "numeroControlePNCP": "00394502000144-1-014259/2026",
+  "valorTotalEstimado": 23195.11,
+  "modalidadeId": 8,
+  "modalidadeNome": "Dispensa",
+  "modoDisputaId": 4,
+  "modoDisputaNome": "Dispensa Com Disputa",
+  "tipoInstrumentoConvocatorioCodigo": 2,
+  "tipoInstrumentoConvocatorioNome": "Aviso de Contratação Direta",
+  "fontesOrcamentarias": [
+    {
+      "codigo": 4,
+      "nome": "Federal",
+      "descricao": "Recurso orçamentário federal disponível e devidamente vinculado à despesa que será realizada.",
+      "dataInclusao": "2026-10-22T17:44:36"
+    }
+  ],
+  "situacaoCompraId": 1,
+  "situacaoCompraNome": "Divulgada no PNCP",
+  "usuarioNome": "Compras.gov.br"
+}

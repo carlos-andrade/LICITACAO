@@ -1,26 +1,24 @@
 {
-  "status": "PARCIAL",
-  "capturado_em_utc": "2026-10-22T23:16:08+00:00",
+  "status": "COMPLETO",
+  "capturado_em_utc": "2026-10-24T00:44:26+00:00",
   "url_contratacao": "https://pncp.gov.br/app/editais/00394502000144/2026/14259",
   "cnpj": "00394502000144",
   "ano": 2026,
   "sequencial": 14259,
   "endpoints_consultados": {
-    "geral": "https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259",
+    "geral": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259",
     "itens": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/itens",
     "eventos": "https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259/historico",
     "fallback_geral": "https://pncp.gov.br/api/consulta/v1/contratacoes/proposta"
   },
-  "fonte_dados_gerais": "fallback_pagina_oficial_pncp",
+  "fonte_dados_gerais": "publicacao_cnpj_dispensa",
   "base_api_consulta": "https://pncp.gov.br/api/consulta/v1",
   "base_api_itens_historico": "https://pncp.gov.br/api/pncp/v1",
   "documentacao_api_consulta": "https://pncp.gov.br/api/consulta/swagger-ui/index.html",
   "documentacao_api_itens_historico": "https://pncp.gov.br/manual/pt-br/latest/contratacao/consultar_historico_da_contratacao.html",
-  "erros_por_endpoint": {
-    "geral": "Detalhe: HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259; fallback de propostas: Contratação 00394502000144-1-014259/2026 não localizada nas rotas públicas alternativas. publicacao_cnpj_dispensa: páginas=5; registros=250; amostras=['00394502000144-1-013798/2026', '00394502000144-1-013799/2026', '00394502000144-1-013802/2026', '00394502000144-1-013803/2026'] | publicacao_dispensa: falha na página 5: HTTP 429 em https://pncp.gov.br/api/consulta/v1/contratacoes/publicacao?dataInicial=20261019&dataFinal=20261025&codigoModalidadeContratacao=8&tamanhoPagina=50&pagina=5 | publicacao_dispensa: páginas=4; registros=200; amostras=['61571923000198-1-000030/2026', '87612818000143-1-000495/2026', '45122603000102-1-000653/2026', '00394544000185-1-002284/2026'] | proposta_cnpj: páginas=2; registros=100; amostras=['00394502000144-1-000002/2026', '00394502000144-1-000251/2025', '00394502000144-1-001378/2025', '00394502000144-1-000020/2026']"
-  },
+  "erros_por_endpoint": {},
   "avisos_por_endpoint": {
-    "geral_detalhe": "HTTP 404 em https://pncp.gov.br/api/consulta/v1/orgaos/00394502000144/compras/2026/14259"
+    "geral_detalhe": "Resposta de erro da API em https://pncp.gov.br/api/pncp/v1/orgaos/00394502000144/compras/2026/14259: {'timestamp': '2026-10-23T21:44:27.399-03:00', 'status': '301', 'error': '301 MOVED_PERMANENTLY', 'message': 'Este endpoint foi movido para: https://pncp.gov.br/api/consulta/v1/orgaos/{cnpj}/compras/{ano}/{sequencial}', 'path': '/pncp-api/v1/orgaos/00394502000144/compras/2026/14259'}"
   },
   "quantidade_itens": 14,
   "quantidade_eventos": 30,
