@@ -59,6 +59,25 @@ O projeto adotou documentalmente a GOVERNANCA com limitações registadas. G0 es
 
 Nenhuma proposta, preço, fornecedor ou edital será considerado aprovado sem validação específica. Decisões finais de participação, lance, habilitação e execução contratual requerem revisão humana autorizada.
 
+## Política financeira para análise de editais
+
+**Regra comercial adotada em 2026-10-24 — premissa para análise de viabilidade, sujeita à validação por edital.**
+
+A alocação pretendida do valor total do contrato é:
+
+| Destinação | Limite sobre o valor do contrato |
+|---|---:|
+| Custos operacionais totais de fornecimento e execução | Até 60% |
+| Lucro-alvo por negócio fechado | 20% |
+| Reserva financeira preservada | 20% |
+| **Total** | **100%** |
+
+**Interpretação operacional:** os 80% destinados à operação e ao resultado incluem o custo de aquisição dos produtos, frete, seguro, embalagem, tributos, taxas, custos financeiros, mão de obra, entrega, instalação e quaisquer outros custos necessários à execução, além do lucro-alvo de 20% do valor do contrato. Portanto, se o lucro for calculado como 20% do valor total contratado, todos os custos operacionais somados devem caber em até 60% desse valor. Os 20% restantes ficam reservados e não podem ser tratados como verba ordinária para cobrir custos ou lances.
+
+**Exemplo de referência:** em um contrato de R$ 100.000, o teto operacional é R$ 60.000, o lucro-alvo é R$ 20.000 e a reserva é R$ 20.000.
+
+**Regra de decisão:** não recomendar participação ou lance se o custo total comprovado superar 60% do valor estimado de venda, se a margem-alvo não for atingida ou se a reserva precisar ser consumida para cumprir o contrato. Calcular a viabilidade por item e no total, incluindo todos os custos indiretos e riscos previsíveis. Valores não cotados, tributos não confirmados ou fretes não validados devem ser tratados como pendências — nunca como custo zero. A reserva de 20% é uma diretriz de alocação de caixa; não substitui capital de giro, análise de fluxo de caixa ou validação contábil/tributária.
+
 ## Status de governança
 
 O registo canónico é `registry/status-do-projeto.json`. O percentual deve ser calculado apenas a partir de critérios e evidências verificáveis segundo a norma de status da GOVERNANCA. O SVG é uma representação provisória; automatizar a sua geração a partir do registo permanece melhoria técnica, não uma alegação de monitorização operacional.
