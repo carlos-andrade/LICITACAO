@@ -108,6 +108,9 @@ def main():
         ("geral_pncp", api_root, None),
         ("itens", f"{api_root}/itens", {"pagina": 1, "tamanhoPagina": 100}),
         ("arquivos", f"{api_root}/arquivos", {"pagina": 1, "tamanhoPagina": 100}),
+        # O endpoint de arquivos pode expor metadados por lista e/ou por ID.
+        # Consultar IDs sequenciais permite recuperar anexos mesmo quando a lista falha.
+        *[(f"arquivo_{i}", f"{api_root}/arquivos/{i}", None) for i in range(1, 21)],
         ("historico", f"{api_root}/historico", {"pagina": 1, "tamanhoPagina": 100}),
         ("atas", f"{api_root}/atas", {"pagina": 1, "tamanhoPagina": 100}),
         ("contratos", f"{api_root}/contratos", {"pagina": 1, "tamanhoPagina": 100}),
@@ -119,7 +122,11 @@ def main():
         diagnostics.append({"secao": name, **diag})
         if payload is not None:
             if isinstance(payload, bytes):
-                responses[name] = {"binary_response": True, "bytes": len(payload)}
+                binary_dir = folder / "arquivos_originais"
+                binary_dir.mkdir(exist_ok=True)
+                dest = binary_dir / f"{name}.bin"
+                dest.write_bytes(payload)
+                responses[name] = {"binary_response": True, "bytes": len(payload), "arquivo_local": str(dest), "sha256": hashlib.sha256(payload).hexdigest()}
             else:
                 responses[name] = payload
         time.sleep(0.25)
