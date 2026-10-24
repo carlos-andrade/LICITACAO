@@ -1,5 +1,24 @@
 # Verificação e pesquisa inicial — Dispensa MPGO 01409580000138-1-001628/2026
 
+| Campo | Valor |
+|---|---|
+| **ID** | LIC-DOC-580000138-2026-1628-RELATORIO-PESQUISA-PRECOS-MD-70AFB981 |
+| **Projeto** | LICITAÇÃO |
+| **Repositório** | [carlos-andrade/LICITACAO](https://github.com/carlos-andrade/LICITACAO) |
+| **Tipo documental** | DOCUMENTO_TECNICO |
+| **Fase** | N/A — fase não definida no conteúdo de origem |
+| **Estado** | EM_REVISAO |
+| **Versão** | 1.0.0 |
+| **SHA-256 (conteúdo canónico)** | 635f35dcbd1bae0664424c9d3f72b86d57c656e20f970caa04e36c7b74f39bf0 |
+| **Commit de referência (versão anterior)** | [457064d9752d237e95b04fb935cb6b9ae7433f05](https://github.com/carlos-andrade/LICITACAO/commit/457064d9752d237e95b04fb935cb6b9ae7433f05) |
+| **Data de criação** | N/A — data histórica não verificada |
+| **Data de atualização** | 2026-10-24 |
+| **Responsável** | Responsável pelo projeto LICITAÇÃO |
+| **Aprovador** | Pendente — não há evidência de aprovação neste documento |
+| **Origem** | Conteúdo existente no repositório; caminho: `EDITAIS/CONTRATACAO-01409580000138-2026-1628/RELATORIO-PESQUISA-PRECOS.md` |
+| **Autoridade superior** | [Constituição do projeto](https://github.com/carlos-andrade/LICITACAO/blob/main/CONSTITUICAO.md) |
+| **Cadeia de autoridade** | PROMPTS → CARTAS → LAYOUT ÚNICO → CÓDIGO |
+
 **Data da pesquisa:** 24/10/2026  
 **Fonte oficial da contratação:** https://pncp.gov.br/app/editais/01409580000138/2026/1628  
 **Objeto:** aquisição de medidor digital de espessura por ultrassom com datalogger, certificado de calibração rastreável à RBC/Inmetro e gel acoplante.

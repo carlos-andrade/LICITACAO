@@ -9,8 +9,8 @@
 | **Fase** | Normalização e controlo documental |
 | **Estado** | EM_REVISAO |
 | **Versão** | 1.0.0 |
-| **SHA-256 (conteúdo canónico)** | 378374e2b58f565d1e4cc49c70bd348e0c0274176c220b3433edecc5e0b7c972 |
-| **Commit de referência (versão anterior)** | [4e90cf1322e4214b3344ad966f5c8bd25738e804](https://github.com/carlos-andrade/LICITACAO/commit/4e90cf1322e4214b3344ad966f5c8bd25738e804) |
+| **SHA-256 (conteúdo canónico)** | 61182deb102367062e539e4324403dbc10c364fbe30eace7a8462a01cfce8881 |
+| **Commit de referência (versão anterior)** | [457064d9752d237e95b04fb935cb6b9ae7433f05](https://github.com/carlos-andrade/LICITACAO/commit/457064d9752d237e95b04fb935cb6b9ae7433f05) |
 | **Data de criação** | N/A — data histórica não verificada |
 | **Data de atualização** | 2026-10-24 |
 | **Responsável** | Responsável pelo projeto LICITAÇÃO |
@@ -21,12 +21,12 @@
 
 ## Resultado
 
-- Documentos Markdown do projeto (fora de .governanca/upstream): **55**.
-- Documentos conformes após normalização e verificação de hash: **55/55**.
+- Documentos Markdown do projeto (fora de .governanca/upstream): **56**.
+- Documentos conformes após normalização e verificação de hash: **56/56**.
 - IDs duplicados: **0**.
 - Ficheiros PDF/Office no repositório: **4**.
 - Documentos Markdown espelhados em `.governanca/upstream/` auditados sem reescrita: **72** (a fonte de verdade é o repositório upstream).
-- Ficheiros Markdown alterados nesta execução: **0**.
+- Ficheiros Markdown alterados nesta execução: **1**.
 
 ## Inventário Markdown
 
@@ -42,6 +42,7 @@
 | `COTAÇÕES APROVADAS/README.md` | `LIC-README-COTACOES-APROVADAS-001` | CONFORME — Conforme |
 | `EDITAIS/2026-548-UFRJ-ANALISE-PRELIMINAR.md` | `LIC-DOC-EDITAIS-2026-548-UFRJ-ANALISE-PRELIMINAR-MD-8F1B14D2` | CONFORME — Conforme |
 | `EDITAIS/2026-96-UFRB.md` | `LIC-DOC-EDITAIS-2026-96-UFRB-MD-8E0C6CF7` | CONFORME — Conforme |
+| `EDITAIS/CONTRATACAO-01409580000138-2026-1628/RELATORIO-PESQUISA-PRECOS.md` | `LIC-DOC-580000138-2026-1628-RELATORIO-PESQUISA-PRECOS-MD-70AFB981` | CONFORME — Conforme |
 | `EDITAIS/EXTRATOR-CONTRATACAO-PNCP-00394502000144-2026-14259.md` | `LIC-DOC-OR-CONTRATACAO-PNCP-00394502000144-2026-14259-MD-24820420` | CONFORME — Conforme |
 | `EDITAIS/README-CAPTURA-PNCP.md` | `LIC-DOC-EDITAIS-README-CAPTURA-PNCP-MD-B9D9F42A` | CONFORME — Conforme |
 | `EDITAIS/README.md` | `LIC-DOC-EDITAIS-README-MD-A7AD5675` | CONFORME — Conforme |
